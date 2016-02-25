@@ -22,3 +22,58 @@ $sites['theclaycountynews.com'] = 'theclaycountynews.com';
 $sites['www.theclaycountynews.com'] = 'theclaycountynews.com';
 $sites['prod.theclaycountynews.com'] = 'theclaycountynews.com';
 $sites['dev.theclaycountynews.com'] = 'theclaycountynews.com';
+
+/* gunnisontimes.etypegoogle8.com */
+$sites['gunnisontimes.etypegoogle8.com'] = 'gunnisontimes.com';
+$sites['gunnisontimes.com'] = 'gunnisontimes.com';
+$sites['www.gunnisontimes.com'] = 'gunnisontimes.com';
+$sites['prod.gunnisontimes.com'] = 'gunnisontimes.com';
+$sites['dev.gunnisontimes.com'] = 'gunnisontimes.com';
+$sites['photo.gunnisontimes.com'] = 'gunnisontimes.com';
+
+$sites['gunnisoncountrytimes.com'] = 'gunnisontimes.com';
+$sites['www.gunnisoncountrytimes.com'] = 'gunnisontimes.com';
+$sites['prod.gunnisoncountrytimes.com'] = 'gunnisontimes.com';
+$sites['dev.gunnisoncountrytimes.com'] = 'gunnisontimes.com';
+
+/* ouraynews.etypegoogle8.com */
+$sites['ouraynews.etypegoogle8.com'] = 'ouraynews.com';
+$sites['ouraynews.com'] = 'ouraynews.com';
+$sites['www.ouraynews.com'] = 'ouraynews.com';
+$sites['prod.ouraynews.com'] = 'ouraynews.com';
+$sites['dev.ouraynews.com'] = 'ouraynews.com';
+
+$sites['ouraycoloradonews.com'] = 'ouraynews.com';
+$sites['www.ouraycoloradonews.com'] = 'ouraynews.com';
+$sites['prod.ouraycoloradonews.com'] = 'ouraynews.com';
+$sites['dev.ouraycoloradonews.com'] = 'ouraynews.com';
+
+$sites['ouraycountyplaindealer.com'] = 'ouraynews.com';
+$sites['www.ouraycountyplaindealer.com'] = 'ouraynews.com';
+$sites['prod.ouraycountyplaindealer.com'] = 'ouraynews.com';
+$sites['dev.ouraycountyplaindealer.com'] = 'ouraynews.com';
+
+$sites['ourayplaindealer.com'] = 'ouraynews.com';
+$sites['www.ourayplaindealer.com'] = 'ouraynews.com';
+$sites['prod.ourayplaindealer.com'] = 'ouraynews.com';
+$sites['dev.ourayplaindealer.com'] = 'ouraynews.com';
+
+$sites['ridgewaycoloradonews.com'] = 'ouraynews.com';
+$sites['www.ridgewaycoloradonews.com'] = 'ouraynews.com';
+$sites['prod.ridgewaycoloradonews.com'] = 'ouraynews.com';
+$sites['dev.ridgewaycoloradonews.com'] = 'ouraynews.com';
+
+$sites['ridgewaynews.com'] = 'ouraynews.com';
+$sites['www.ridgewaynews.com'] = 'ouraynews.com';
+$sites['prod.ridgewaynews.com'] = 'ouraynews.com';
+$sites['dev.ridgewaynews.com'] = 'ouraynews.com';
+
+$sites['ridgewaysun.com'] = 'ouraynews.com';
+$sites['www.ridgewaysun.com'] = 'ouraynews.com';
+$sites['prod.ridgewaysun.com'] = 'ouraynews.com';
+$sites['dev.ridgewaysun.com'] = 'ouraynews.com';
+
+$sites['theridgewaysun.com'] = 'ouraynews.com';
+$sites['www.theridgewaysun.com'] = 'ouraynews.com';
+$sites['prod.theridgewaysun.com'] = 'ouraynews.com';
+$sites['dev.theridgewaysun.com'] = 'ouraynews.com';
