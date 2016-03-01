@@ -77,3 +77,28 @@ $sites['theridgewaysun.com'] = 'ouraynews.com';
 $sites['www.theridgewaysun.com'] = 'ouraynews.com';
 $sites['prod.theridgewaysun.com'] = 'ouraynews.com';
 $sites['dev.theridgewaysun.com'] = 'ouraynews.com';
+
+/* barbadosadvocate.etypegoogle8.com */
+$sites['barbadosadvocate.etypegoogle8.com'] = 'barbadosadvocate.com';
+$sites['barbadosadvocate.com'] = 'barbadosadvocate.com';
+$sites['www.barbadosadvocate.com'] = 'barbadosadvocate.com';
+$sites['prod.barbadosadvocate.com'] = 'barbadosadvocate.com';
+$sites['dev.barbadosadvocate.com'] = 'barbadosadvocate.com';
+
+$sites['henryettafree-lance.etypegoogle8.com'] = 'henryettafree-lance.com';
+$sites['henryettafree-lance.com'] = 'henryettafree-lance.com';
+$sites['www.henryettafree-lance.com'] = 'henryettafree-lance.com';
+$sites['prod.henryettafree-lance.com'] = 'henryettafree-lance.com';
+$sites['dev.henryettafree-lance.com'] = 'henryettafree-lance.com';
+
+$sites['yourokmulgee.etypegoogle8.com'] = 'yourokmulgee.com';
+$sites['yourokmulgee.com'] = 'yourokmulgee.com';
+$sites['www.yourokmulgee.com'] = 'yourokmulgee.com';
+$sites['prod.yourokmulgee.com'] = 'yourokmulgee.com';
+$sites['dev.yourokmulgee.com'] = 'yourokmulgee.com';
+
+$sites['lutchernews.etypegoogle8.com'] = 'lutchernews.com';
+$sites['lutchernews.com'] = 'lutchernews.com';
+$sites['www.lutchernews.com'] = 'lutchernews.com';
+$sites['prod.lutchernews.com'] = 'lutchernews.com';
+$sites['dev.lutchernews.com'] = 'lutchernews.com';
