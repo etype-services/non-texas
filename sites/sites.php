@@ -103,13 +103,18 @@ $sites['www.lutchernews.com'] = 'lutchernews.com';
 $sites['prod.lutchernews.com'] = 'lutchernews.com';
 $sites['dev.lutchernews.com'] = 'lutchernews.com';
 
+$sites['stjamesparishtoday.com'] = 'lutchernews.com';
+$sites['www.stjamesparishtoday.com'] = 'lutchernews.com';
+$sites['prod.stjamesparishtoday.com'] = 'lutchernews.com';
+$sites['dev.stjamesparishtoday.com'] = 'lutchernews.com';
+
 $sites['tecumsehchieftain.etypegoogle8.com'] = 'tecumsehchieftain.com';
 $sites['tecumsehchieftain.com'] = 'tecumsehchieftain.com';
 $sites['www.tecumsehchieftain.com'] = 'tecumsehchieftain.com';
 $sites['prod.tecumsehchieftain.com'] = 'tecumsehchieftain.com';
 $sites['dev.tecumsehchieftain.com'] = 'tecumsehchieftain.com';
 
-/* pawneerepublican.etypegoogle8.com */
+/* pawneerepublican.etypegoogle8.com */ 
 $sites['pawneerepublican.etypegoogle8.com'] = 'pawneerepublican.com';
 $sites['pawneerepublican.com'] = 'pawneerepublican.com';
 $sites['www.pawneerepublican.com'] = 'pawneerepublican.com';
