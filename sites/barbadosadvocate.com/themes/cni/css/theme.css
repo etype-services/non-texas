@@ -85,7 +85,7 @@ header {
 
 .site-logo img {
     width: 100%;
-    max-width: 513px;
+    max-width: 935px;
 }
 
 h1.site-name, h2.site-name {
@@ -468,15 +468,18 @@ article .field-image {
     min-height:33px;
     max-height: 85px;
     margin: 0;
+	background: #FF0000;
+
 }
 
 #main-menu ul.menu li a {
     display: block;
-    color: #ffffff;
+    color: #ffff00;
     padding: 0 12px;
     text-transform: uppercase;
     height: 33px;
     line-height: 33px;
+	background: #FF0000;
 }
 
 #main-menu ul.menu li a:hover {
@@ -486,14 +489,14 @@ article .field-image {
 }
 
 #main-menu ul.menu li a.active {
-    color: #222222;
+    color: #ffff00;
     background-color: #cccccc;
 }
 
 /* Custom Menu styling */
 
 #block-superfish-1 {
-    background-color: #007DBF;
+    background-color: #FF0000;
     height: 33px;
 }
 
@@ -1298,5 +1301,34 @@ blockquote {
 }
 
 #block-block-35 .block-inner .content {
+    padding:0;
+}
+
+/* AD BLOCKS 
+--------------------------------------------------------------------------*/
+#block-simpleads-ad-groups-1407 {
+    float: right;
+	margin-top:-5px;
+}
+
+#block-simpleads-ad-groups-1409 {
+    float: left;
+}
+
+#block-simpleads-ad-groups-1410 .block-inner {
+    padding: 0;
+    border: none;
+}
+
+#block-simpleads-ad-groups-1410 .block-inner .content {
+    padding:0;
+}
+
+#block-simpleads-ad-groups-1411 .block-inner {
+    padding: 0;
+    border: none;
+}
+
+#block-simpleads-ad-groups-1411 .block-inner .content {
     padding:0;
 }
