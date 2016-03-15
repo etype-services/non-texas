@@ -8,7 +8,7 @@
  * The base Zen theme is designed to be easily extended by its sub-themes. You
  * shouldn't modify this or any of the CSS or PHP files in the root zen/ folder.
  * See the online documentation for more information:
- *   https://drupal.org/documentation/theme/zen
+ *   http://drupal.org/node/193318
  */
 
 // Auto-rebuild the theme registry during theme development.
@@ -83,14 +83,82 @@ function zen_breadcrumb($variables) {
       }
 
       // Build the breadcrumb trail.
-      $output = '<nav class="breadcrumb" role="navigation">';
+      $output = '<div class="breadcrumb">';
       $output .= '<h2' . drupal_attributes($variables['title_attributes_array']) . '>' . $variables['title'] . '</h2>';
-      $output .= '<ol><li>' . implode($breadcrumb_separator . '</li><li>', $breadcrumb) . $trailing_separator . '</li></ol>';
-      $output .= '</nav>';
+      $output .= implode($breadcrumb_separator, $breadcrumb) . $trailing_separator;
+      $output .= '</div>';
     }
   }
 
   return $output;
+}
+
+/**
+ * Duplicate of theme_menu_local_tasks() but adds clearfix to tabs.
+ */
+function zen_menu_local_tasks(&$variables) {
+  $output = '';
+
+  if ($primary = drupal_render($variables['primary'])) {
+    $output .= '<h2 class="element-invisible">' . t('Primary tabs') . '</h2>';
+    $output .= '<ul class="tabs primary clearfix">' . $primary . '</ul>';
+  }
+  if ($secondary = drupal_render($variables['secondary'])) {
+    $output .= '<h2 class="element-invisible">' . t('Secondary tabs') . '</h2>';
+    $output .= '<ul class="tabs secondary clearfix">' . $secondary . '</ul>';
+  }
+
+  return $output;
+}
+
+/**
+ * Override or insert variables into theme_menu_local_task().
+ */
+function zen_preprocess_menu_local_task(&$variables) {
+  $link =& $variables['element']['#link'];
+
+  // If the link does not contain HTML already, check_plain() it now.
+  // After we set 'html'=TRUE the link will not be sanitized by l().
+  if (empty($link['localized_options']['html'])) {
+    $link['title'] = check_plain($link['title']);
+  }
+  $link['localized_options']['html'] = TRUE;
+  $link['title'] = '<span class="tab">' . $link['title'] . '</span>';
+}
+
+/**
+ * Adds conditional CSS from the .info file.
+ *
+ * Copy of conditional_styles_preprocess_html().
+ */
+function zen_add_conditional_styles() {
+  // Make a list of base themes and the current theme.
+  $themes = $GLOBALS['base_theme_info'];
+  $themes[] = $GLOBALS['theme_info'];
+  foreach (array_keys($themes) as $key) {
+    $theme_path = dirname($themes[$key]->filename) . '/';
+    if (isset($themes[$key]->info['stylesheets-conditional'])) {
+      foreach (array_keys($themes[$key]->info['stylesheets-conditional']) as $condition) {
+        foreach (array_keys($themes[$key]->info['stylesheets-conditional'][$condition]) as $media) {
+          foreach ($themes[$key]->info['stylesheets-conditional'][$condition][$media] as $stylesheet) {
+            // Add each conditional stylesheet.
+            drupal_add_css(
+              $theme_path . $stylesheet,
+              array(
+                'group' => CSS_THEME,
+                'browsers' => array(
+                  'IE' => $condition,
+                  '!IE' => FALSE,
+                ),
+                'weight' => 999,
+                'every_page' => TRUE,
+              )
+            );
+          }
+        }
+      }
+    }
+  }
 }
 
 /**
@@ -104,52 +172,21 @@ function zen_breadcrumb($variables) {
  *   this function to have consistent variables.
  */
 function zen_preprocess_html(&$variables, $hook) {
-  // Add variables and paths needed for HTML5 and responsive support.
-  $variables['base_path'] = base_path();
-  $variables['path_to_zen'] = drupal_get_path('theme', 'zen');
-  // Get settings for HTML5 and responsive support. array_filter() removes
-  // items from the array that have been disabled.
-  $html5_respond_meta = array_filter((array) theme_get_setting('zen_html5_respond_meta'));
-  $variables['add_respond_js']          = in_array('respond', $html5_respond_meta);
-  $variables['add_html5_shim']          = in_array('html5', $html5_respond_meta);
-  $variables['default_mobile_metatags'] = in_array('meta', $html5_respond_meta);
-
   // If the user is silly and enables Zen as the theme, add some styles.
   if ($GLOBALS['theme'] == 'zen') {
-    include_once './' . $variables['path_to_zen'] . '/zen-internals/template.zen.inc';
+    include_once './' . drupal_get_path('theme', 'zen') . '/zen-internals/template.zen.inc';
     _zen_preprocess_html($variables, $hook);
   }
-
-  // Attributes for html element.
-  $variables['html_attributes_array'] = array(
-    'lang' => $variables['language']->language,
-    'dir' => $variables['language']->dir,
-  );
-
-  // Send X-UA-Compatible HTTP header to force IE to use the most recent
-  // rendering engine.
-  // This also prevents the IE compatibility mode button to appear when using
-  // conditional classes on the html tag.
-  if (is_null(drupal_get_http_header('X-UA-Compatible'))) {
-    drupal_add_http_header('X-UA-Compatible', 'IE=edge');
+  elseif (!module_exists('conditional_styles')) {
+    zen_add_conditional_styles();
   }
 
-  $variables['skip_link_anchor'] = check_plain(theme_get_setting('zen_skip_link_anchor'));
-  $variables['skip_link_text']   = check_plain(theme_get_setting('zen_skip_link_text'));
+  $variables['jump_link_target'] = check_plain(theme_get_setting('zen_jump_link_target'));
+  $variables['jump_link_text'] = check_plain(theme_get_setting('zen_jump_link_text'));
 
   // Return early, so the maintenance page does not call any of the code below.
   if ($hook != 'html') {
     return;
-  }
-
-  // Serialize RDF Namespaces into an RDFa 1.1 prefix attribute.
-  if ($variables['rdf_namespaces']) {
-    $prefixes = array();
-    foreach (explode("\n  ", ltrim($variables['rdf_namespaces'])) as $namespace) {
-      // Remove xlmns: and ending quote and fix prefix formatting.
-      $prefixes[] = str_replace('="', ': ', substr($namespace, 6, -1));
-    }
-    $variables['rdf_namespaces'] = ' prefix="' . implode(' ', $prefixes) . '"';
   }
 
   // Classes for body element. Allows advanced theming based on context
@@ -181,68 +218,13 @@ function zen_preprocess_html(&$variables, $hook) {
         // Is this a Views page?
         $variables['classes_array'][] = 'page-views';
         break;
-      case 'page_manager_blog':
-      case 'page_manager_blog_user':
-      case 'page_manager_contact_site':
-      case 'page_manager_contact_user':
-      case 'page_manager_node_add':
-      case 'page_manager_node_edit':
-      case 'page_manager_node_view_page':
       case 'page_manager_page_execute':
-      case 'page_manager_poll':
-      case 'page_manager_search_page':
-      case 'page_manager_term_view_page':
-      case 'page_manager_user_edit_page':
-      case 'page_manager_user_view_page':
+      case 'page_manager_node_view':
+      case 'page_manager_contact_site':
         // Is this a Panels page?
         $variables['classes_array'][] = 'page-panels';
         break;
     }
-  }
-}
-
-/**
- * Override or insert variables into the html templates.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("html" in this case.)
- */
-function zen_process_html(&$variables, $hook) {
-  // Flatten out html_attributes.
-  $variables['html_attributes'] = drupal_attributes($variables['html_attributes_array']);
-}
-
-/**
- * Override or insert variables in the html_tag theme function.
- */
-function zen_process_html_tag(&$variables) {
-  $tag = &$variables['element'];
-
-  if ($tag['#tag'] == 'style' || $tag['#tag'] == 'script') {
-    // Remove redundant CDATA comments.
-    unset($tag['#value_prefix'], $tag['#value_suffix']);
-
-    // Remove redundant type attribute.
-    if (isset($tag['#attributes']['type']) && $tag['#attributes']['type'] !== 'text/ng-template') {
-      unset($tag['#attributes']['type']);
-    }
-
-    // Remove media="all" but leave others unaffected.
-    if (isset($tag['#attributes']['media']) && $tag['#attributes']['media'] === 'all') {
-      unset($tag['#attributes']['media']);
-    }
-  }
-}
-
-/**
- * Implement hook_html_head_alter().
- */
-function zen_html_head_alter(&$head) {
-  // Simplify the meta tag for character encoding.
-  if (isset($head['system_meta_content_type']['#attributes']['content'])) {
-    $head['system_meta_content_type']['#attributes'] = array('charset' => str_replace('text/html; charset=', '', $head['system_meta_content_type']['#attributes']['content']));
   }
 }
 
@@ -259,7 +241,7 @@ function zen_preprocess_page(&$variables, $hook) {
   $secondary_links = variable_get('menu_secondary_links_source', 'user-menu');
   if ($secondary_links) {
     $menus = function_exists('menu_get_menus') ? menu_get_menus() : menu_list_system_menus();
-    $variables['secondary_menu_heading'] = isset($menus[$secondary_links]) ? $menus[$secondary_links] : '';
+    $variables['secondary_menu_heading'] = $menus[$secondary_links];
   }
   else {
     $variables['secondary_menu_heading'] = '';
@@ -276,8 +258,6 @@ function zen_preprocess_page(&$variables, $hook) {
  */
 function zen_preprocess_maintenance_page(&$variables, $hook) {
   zen_preprocess_html($variables, $hook);
-  // There's nothing maintenance-related in zen_preprocess_page(). Yet.
-  //zen_preprocess_page($variables, $hook);
 }
 
 /**
@@ -289,7 +269,6 @@ function zen_preprocess_maintenance_page(&$variables, $hook) {
  *   The name of the template being rendered ("maintenance_page" in this case.)
  */
 function zen_process_maintenance_page(&$variables, $hook) {
-  zen_process_html($variables, $hook);
   // Ensure default regions get a variable. Theme authors often forget to remove
   // a deleted region's variable in maintenance-page.tpl.
   foreach (array('header', 'navigation', 'highlighted', 'help', 'content', 'sidebar_first', 'sidebar_second', 'footer', 'bottom') as $region) {
@@ -311,15 +290,6 @@ function zen_preprocess_node(&$variables, $hook) {
   // Add $unpublished variable.
   $variables['unpublished'] = (!$variables['status']) ? TRUE : FALSE;
 
-  // Set preview variable to FALSE if it doesn't exist.
-  $variables['preview'] = isset($variables['preview']) ? $variables['preview'] : FALSE;
-
-  // Add pubdate to submitted variable.
-  $variables['pubdate'] = '<time pubdate datetime="' . format_date($variables['node']->created, 'custom', 'c') . '">' . $variables['date'] . '</time>';
-  if ($variables['display_submitted']) {
-    $variables['submitted'] = t('Submitted by !username on !datetime', array('!username' => $variables['name'], '!datetime' => $variables['pubdate']));
-  }
-
   // Add a class for the view mode.
   if (!$variables['teaser']) {
     $variables['classes_array'][] = 'view-mode-' . $variables['view_mode'];
@@ -330,7 +300,6 @@ function zen_preprocess_node(&$variables, $hook) {
     $variables['classes_array'][] = 'node-by-viewer';
   }
 
-  $variables['title_attributes_array']['class'][] = 'node__title';
   $variables['title_attributes_array']['class'][] = 'node-title';
 }
 
@@ -348,10 +317,6 @@ function zen_preprocess_comment(&$variables, $hook) {
     $variables['title'] = '';
   }
 
-  // Add pubdate to submitted variable.
-  $variables['pubdate'] = '<time pubdate datetime="' . format_date($variables['comment']->created, 'custom', 'c') . '">' . $variables['created'] . '</time>';
-  $variables['submitted'] = t('!username replied on !datetime', array('!username' => $variables['author'], '!datetime' => $variables['pubdate']));
-
   // Zebra striping.
   if ($variables['id'] == 1) {
     $variables['classes_array'][] = 'first';
@@ -361,7 +326,6 @@ function zen_preprocess_comment(&$variables, $hook) {
   }
   $variables['classes_array'][] = $variables['zebra'];
 
-  $variables['title_attributes_array']['class'][] = 'comment__title';
   $variables['title_attributes_array']['class'][] = 'comment-title';
 }
 
@@ -381,15 +345,6 @@ function zen_preprocess_region(&$variables, $hook) {
     // Allow a region-specific template to override Zen's region--sidebar.
     array_unshift($variables['theme_hook_suggestions'], 'region__sidebar');
   }
-  // Use a template with no wrapper for the content region.
-  elseif ($variables['region'] == 'content') {
-    // Allow a region-specific template to override Zen's region--no-wrapper.
-    array_unshift($variables['theme_hook_suggestions'], 'region__no_wrapper');
-  }
-  // Add a SMACSS-style class for header region.
-  elseif ($variables['region'] == 'header') {
-    array_unshift($variables['classes_array'], 'header__region');
-  }
 }
 
 /**
@@ -401,11 +356,6 @@ function zen_preprocess_region(&$variables, $hook) {
  *   The name of the template being rendered ("block" in this case.)
  */
 function zen_preprocess_block(&$variables, $hook) {
-  // Use a template with no wrapper for the page's main content.
-  if ($variables['block_html_id'] == 'block-system-main') {
-    $variables['theme_hook_suggestions'][] = 'block__no_wrapper';
-  }
-
   // Classes describing the position of the block within the region.
   if ($variables['block_id'] == 1) {
     $variables['classes_array'][] = 'first';
@@ -416,68 +366,7 @@ function zen_preprocess_block(&$variables, $hook) {
   }
   $variables['classes_array'][] = $variables['block_zebra'];
 
-  $variables['title_attributes_array']['class'][] = 'block__title';
   $variables['title_attributes_array']['class'][] = 'block-title';
-
-  // Add Aria Roles via attributes.
-  switch ($variables['block']->module) {
-    case 'system':
-      switch ($variables['block']->delta) {
-        case 'main':
-          // Note: the "main" role goes in the page.tpl, not here.
-          break;
-        case 'help':
-        case 'powered-by':
-          $variables['attributes_array']['role'] = 'complementary';
-          break;
-        default:
-          // Any other "system" block is a menu block.
-          $variables['attributes_array']['role'] = 'navigation';
-          break;
-      }
-      break;
-    case 'menu':
-    case 'menu_block':
-    case 'blog':
-    case 'book':
-    case 'comment':
-    case 'forum':
-    case 'shortcut':
-    case 'statistics':
-      $variables['attributes_array']['role'] = 'navigation';
-      break;
-    case 'search':
-      $variables['attributes_array']['role'] = 'search';
-      break;
-    case 'help':
-    case 'aggregator':
-    case 'locale':
-    case 'poll':
-    case 'profile':
-      $variables['attributes_array']['role'] = 'complementary';
-      break;
-    case 'node':
-      switch ($variables['block']->delta) {
-        case 'syndicate':
-          $variables['attributes_array']['role'] = 'complementary';
-          break;
-        case 'recent':
-          $variables['attributes_array']['role'] = 'navigation';
-          break;
-      }
-      break;
-    case 'user':
-      switch ($variables['block']->delta) {
-        case 'login':
-          $variables['attributes_array']['role'] = 'form';
-          break;
-        case 'new':
-        case 'online':
-          $variables['attributes_array']['role'] = 'complementary';
-          break;
-      }
-      break;
-  }
 }
 
 /**
@@ -490,7 +379,7 @@ function zen_preprocess_block(&$variables, $hook) {
  */
 function zen_process_block(&$variables, $hook) {
   // Drupal 7 should use a $title variable instead of $block->subject.
-  $variables['title'] = isset($variables['block']->subject) ? $variables['block']->subject : '';
+  $variables['title'] = $variables['block']->subject;
 }
 
 /**
@@ -530,8 +419,7 @@ function zen_form_node_form_alter(&$form, &$form_state, $form_id) {
     if (strpos($item, 'field_') === 0) {
       if (!empty($form[$item]['#attributes']['class'])) {
         foreach ($form[$item]['#attributes']['class'] as &$class) {
-          // Core bug: the field-type-text-with-summary class is used as a JS hook.
-          if ($class != 'field-type-text-with-summary' && strpos($class, 'field-type-') === 0 || strpos($class, 'field-name-') === 0) {
+          if (strpos($class, 'field-type-') === 0 || strpos($class, 'field-name-') === 0) {
             // Make the class different from that used in theme_field().
             $class = 'form-' . $class;
           }
@@ -539,198 +427,4 @@ function zen_form_node_form_alter(&$form, &$form_state, $form_id) {
       }
     }
   }
-}
-
-/**
- * Returns HTML for primary and secondary local tasks.
- *
- * @ingroup themeable
- */
-function zen_menu_local_tasks(&$variables) {
-  $output = '';
-
-  // Add theme hook suggestions for tab type.
-  foreach (array('primary', 'secondary') as $type) {
-    if (!empty($variables[$type])) {
-      foreach (array_keys($variables[$type]) as $key) {
-        if (isset($variables[$type][$key]['#theme']) && ($variables[$type][$key]['#theme'] == 'menu_local_task' || is_array($variables[$type][$key]['#theme']) && in_array('menu_local_task', $variables[$type][$key]['#theme']))) {
-          $variables[$type][$key]['#theme'] = array('menu_local_task__' . $type, 'menu_local_task');
-        }
-      }
-    }
-  }
-
-  if (!empty($variables['primary'])) {
-    $variables['primary']['#prefix'] = '<h2 class="element-invisible">' . t('Primary tabs') . '</h2>';
-    $variables['primary']['#prefix'] .= '<ul class="tabs-primary tabs primary">';
-    $variables['primary']['#suffix'] = '</ul>';
-    $output .= drupal_render($variables['primary']);
-  }
-  if (!empty($variables['secondary'])) {
-    $variables['secondary']['#prefix'] = '<h2 class="element-invisible">' . t('Secondary tabs') . '</h2>';
-    $variables['secondary']['#prefix'] .= '<ul class="tabs-secondary tabs secondary">';
-    $variables['secondary']['#suffix'] = '</ul>';
-    $output .= drupal_render($variables['secondary']);
-  }
-
-  return $output;
-}
-
-/**
- * Returns HTML for a single local task link.
- *
- * @ingroup themeable
- */
-function zen_menu_local_task($variables) {
-  $type = $class = FALSE;
-
-  $link = $variables['element']['#link'];
-  $link_text = $link['title'];
-
-  // Check for tab type set in zen_menu_local_tasks().
-  if (is_array($variables['element']['#theme'])) {
-    $type = in_array('menu_local_task__secondary', $variables['element']['#theme']) ? 'tabs-secondary' : 'tabs-primary';
-  }
-
-  // Add SMACSS-style class names.
-  if ($type) {
-    $link['localized_options']['attributes']['class'][] = $type . '__tab-link';
-    $class = $type . '__tab';
-  }
-
-  if (!empty($variables['element']['#active'])) {
-    // Add text to indicate active tab for non-visual users.
-    $active = ' <span class="element-invisible">' . t('(active tab)') . '</span>';
-
-    // If the link does not contain HTML already, check_plain() it now.
-    // After we set 'html'=TRUE the link will not be sanitized by l().
-    if (empty($link['localized_options']['html'])) {
-      $link['title'] = check_plain($link['title']);
-    }
-    $link['localized_options']['html'] = TRUE;
-    $link_text = t('!local-task-title!active', array('!local-task-title' => $link['title'], '!active' => $active));
-
-    if (!$type) {
-      $class = 'active';
-    }
-    else {
-      $link['localized_options']['attributes']['class'][] = 'is-active';
-      $class .= ' is-active';
-    }
-  }
-
-  return '<li' . ($class ? ' class="' . $class . '"' : '') . '>' . l($link_text, $link['href'], $link['localized_options']) . "</li>\n";
-}
-
-/**
- * Implements hook_preprocess_menu_link().
- */
-function zen_preprocess_menu_link(&$variables, $hook) {
-  // Normalize menu item classes to be an array.
-  if (empty($variables['element']['#attributes']['class'])) {
-    $variables['element']['#attributes']['class'] = array();
-  }
-  $menu_item_classes =& $variables['element']['#attributes']['class'];
-  if (!is_array($menu_item_classes)) {
-    $menu_item_classes = array($menu_item_classes);
-  }
-
-  // Normalize menu link classes to be an array.
-  if (empty($variables['element']['#localized_options']['attributes']['class'])) {
-    $variables['element']['#localized_options']['attributes']['class'] = array();
-  }
-  $menu_link_classes =& $variables['element']['#localized_options']['attributes']['class'];
-  if (!is_array($menu_link_classes)) {
-    $menu_link_classes = array($menu_link_classes);
-  }
-
-  // Add BEM-style classes to the menu item classes.
-  $extra_classes = array('menu__item');
-  foreach ($menu_item_classes as $key => $class) {
-    switch ($class) {
-      // Menu module classes.
-      case 'expanded':
-      case 'collapsed':
-      case 'leaf':
-      case 'active':
-      // Menu block module classes.
-      case 'active-trail':
-        $extra_classes[] = 'is-' . $class;
-        break;
-      case 'has-children':
-        $extra_classes[] = 'is-parent';
-        break;
-    }
-  }
-  $menu_item_classes = array_merge($extra_classes, $menu_item_classes);
-
-  // Add BEM-style classes to the menu link classes.
-  $extra_classes = array('menu__link');
-  if (empty($menu_link_classes)) {
-    $menu_link_classes = array();
-  }
-  else {
-    foreach ($menu_link_classes as $key => $class) {
-      switch ($class) {
-        case 'active':
-        case 'active-trail':
-          $extra_classes[] = 'is-' . $class;
-          break;
-      }
-    }
-  }
-  $menu_link_classes = array_merge($extra_classes, $menu_link_classes);
-}
-
-/**
- * Returns HTML for status and/or error messages, grouped by type.
- */
-function zen_status_messages($variables) {
-  $display = $variables['display'];
-  $output = '';
-
-  $status_heading = array(
-    'status' => t('Status message'),
-    'error' => t('Error message'),
-    'warning' => t('Warning message'),
-  );
-  foreach (drupal_get_messages($display) as $type => $messages) {
-    $output .= "<div class=\"messages--$type messages $type\">\n";
-    if (!empty($status_heading[$type])) {
-      $output .= '<h2 class="element-invisible">' . $status_heading[$type] . "</h2>\n";
-    }
-    if (count($messages) > 1) {
-      $output .= " <ul class=\"messages__list\">\n";
-      foreach ($messages as $message) {
-        $output .= '  <li class="messages__item">' . $message . "</li>\n";
-      }
-      $output .= " </ul>\n";
-    }
-    else {
-      $output .= reset($messages);
-    }
-    $output .= "</div>\n";
-  }
-  return $output;
-}
-
-/**
- * Returns HTML for a marker for new or updated content.
- */
-function zen_mark($variables) {
-  $type = $variables['type'];
-
-  if ($type == MARK_NEW) {
-    return ' <mark class="new">' . t('new') . '</mark>';
-  }
-  elseif ($type == MARK_UPDATED) {
-    return ' <mark class="updated">' . t('updated') . '</mark>';
-  }
-}
-
-/**
- * Alters the default Panels render callback so it removes the panel separator.
- */
-function zen_panels_default_style_render_region($variables) {
-  return implode('', $variables['panes']);
 }
