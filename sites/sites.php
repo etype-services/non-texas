@@ -125,3 +125,10 @@ $sites['pawneenews.com'] = 'pawneerepublican.com';
 $sites['www.pawneenews.com'] = 'pawneerepublican.com';
 $sites['prod.pawneenews.com'] = 'pawneerepublican.com';
 $sites['dev.pawneenews.com'] = 'pawneerepublican.com';
+
+/* beacononlinenews.etypegoogle8.com */
+$sites['beacononlinenews.etypegoogle8.com'] = 'beacononlinenews.com';
+$sites['beacononlinenews.com'] = 'beacononlinenews.com';
+$sites['www.beacononlinenews.com'] = 'beacononlinenews.com';
+$sites['prod.beacononlinenews.com'] = 'beacononlinenews.com';
+$sites['dev.beacononlinenews.com'] = 'beacononlinenews.com';
