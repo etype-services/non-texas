@@ -78,6 +78,12 @@
         margin-left: 180px;
     }
 
+    /* set ad width for block under slideshow */
+    #block-simpleads-ad-groups-1408 .content {
+        width: 468px;
+    }
+
+
 }
 
 /* desktop browsers */
@@ -241,15 +247,9 @@
     }
 
     /* Hide some DFP ads on non full-size browsers */
-    #block-dfp-cni-fernandinaleaderboard, #block-dfp-cni-whitebanner, #dfp-ad-cni_fernandinafooter {
+    #block-simpleads-ad-groups-1408 {
         display: none;
         visibility: hidden;
-    }
-
-    /* show mobile ad on smaller windows */
-    #block-dfp-cni-fernandinamobile {
-        display: block;
-        visibility: visible;
     }
 
     .region-headerad {
