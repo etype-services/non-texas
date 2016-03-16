@@ -675,6 +675,7 @@ article .field-image {
     float: left;
     margin: 0 20px 0 0;
     background: url(../images/image-background.png);
+    width: initial;
 }
 
 .node-teaser .node-content-wrapper .field-type-image {
