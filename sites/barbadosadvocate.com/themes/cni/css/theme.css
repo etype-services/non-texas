@@ -154,6 +154,11 @@ h3.site-slogan {
     color: #ffffff;
 }
 
+.view-slideshow .views_slideshow_main .image-field-caption {
+    display: none;
+    visibility: hidden;
+}
+
 /* Slideshow controls */
 
 .view-slideshow .views-slideshow-controls-bottom .views-field-field-image img, .view-slideshow .views-slideshow-controls-bottom .views-field-field-video img {
