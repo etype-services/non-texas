@@ -81,6 +81,7 @@
     /* set ad width for block under slideshow */
     #block-simpleads-ad-groups-1408 .content {
         width: 468px;
+        margin: 0 auto;
     }
 
 
