@@ -3,7 +3,7 @@
 
 /* Sidebars Split */
 
-.sidebars-split .main-inner, .sidebars-split .first-sidebar,  {
+.sidebars-split .main-inner, .sidebars-split .first-sidebar {
 	float: left;
 }
 
@@ -23,7 +23,7 @@
 
 /* Sidebars Both Second */
 
-.sidebars-both-second .first-sidebar, sidebars-both-second .main-inner, .sidebars-both-second .second-sidebar  {
+.sidebars-both-second .first-sidebar, .sidebars-both-second .main-inner, .sidebars-both-second .second-sidebar  {
 	float: right;
 }
 
@@ -375,12 +375,10 @@ blockquote {
   margin: 20px 0;
   padding-left: 58px;
   color: #666666;
-  background: url(../images/icons_48/openquote.png) top left no-repeat;
 } 
 
 blockquote p {
   padding-right: 50px;
-  background:  url(../images/icons_48/closequote.png) bottom right no-repeat;
 } 
 
 pre {
