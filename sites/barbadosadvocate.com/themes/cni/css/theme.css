@@ -154,7 +154,7 @@ h3.site-slogan {
     color: #ffffff;
 }
 
-.view-slideshow .views_slideshow_main .image-field-caption {
+.view-slideshow .image-field-caption {
     display: none;
     visibility: hidden;
 }
