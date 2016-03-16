@@ -216,7 +216,6 @@ function galleria_get_library_file() {
 
   // Search for library file
   $libpath = libraries_get_path('galleria');
-  echo $libpath;
 
   // Seach for minimized files first.
   // Sort the found files to use the newest version if there's more than one.
