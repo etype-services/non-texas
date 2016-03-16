@@ -300,6 +300,11 @@ h2.node-title{}
 
 #block-menu-menu-secondary-menu{float:right;display:block;clear:both;text-align:right}
 
+/* set ad width for block under slideshow */
+#block-simpleads-ad-groups-1408 .content {
+    width: 468px;
+}
+
 #block-simpleads-ad-groups-12, #block-simpleads-ad-groups-15{background:transparent;margin-left:-10px;}
 
 #block-simpleads-ad-groups-12 img, #block-simpleads-ad-groups-15 img{width:290px;height:auto;margin-bottom:10px;}
