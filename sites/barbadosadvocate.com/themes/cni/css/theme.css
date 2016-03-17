@@ -669,15 +669,6 @@ article .field-image {
     margin-left: 180px;
 }
 
-.node-teaser .field-name-field-image img {
-    display: block;
-    padding: 10px;
-    float: left;
-    margin: 0 20px 0 0;
-    background: url(../images/image-background.png);
-    width: initial;
-}
-
 .node-teaser .node-content-wrapper .field-type-image {
 	display: none;
 	visibility: hidden;
@@ -693,6 +684,22 @@ article .field-image {
 
 .node-teaser .links, .node-teaser .content, .node-teaser p, .node-teaser .field, .node-teaser .field-items, .node-teaser .field-item {
     display: inline;
+}
+
+.node-teaser .field-image .field-name-field-image .field-items .field-item {
+    display: none;
+}
+
+.node-teaser .field-image .field-name-field-image .field-items .field-item:first-child {
+    display: block;
+}
+
+.node-teaser .field-image .field-name-field-image .field-items .field-item:first-child img {
+    display: block;
+    padding: 10px;
+    float: left;
+    margin: 0 20px 0 0;
+    background: url(../images/image-background.png);
 }
 
 /* COMMENTS
