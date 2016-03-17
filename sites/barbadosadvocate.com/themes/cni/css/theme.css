@@ -605,7 +605,7 @@ article .field-image {
 /* NODES
 --------------------------------------------------------------------------*/
 
-.node .field-name-field-image img {
+.node-article .field-name-field-image img {
     display: block;
     margin-top: 0;
     margin-left: 0;
