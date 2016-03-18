@@ -358,7 +358,9 @@ min-width:212px!important;
 }
 
 /* hide captions on home page */
-.front .block-views .image-field-caption {
+.front .block-views .image-field-caption,
+.node-teaser .field-item .image-field-caption
+{
     display: none;
     visibility: hidden;
 }
