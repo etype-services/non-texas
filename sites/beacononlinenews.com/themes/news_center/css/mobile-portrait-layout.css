@@ -150,7 +150,7 @@ a.back-to-top:hover, a.back-to-top:active{background:url("../images/up.png") no-
 
 #block-views-articles-images-block{clear:both;width:100%;}
 
-#block-views-featured-article-block .views-row img{max-width:212px;width:40%;max-height:160px;height:auto;}
+#block-views-featured-article-block .views-row img{width:100px;height:auto;}
 
 #block-views-articles-images-block .views-row img{height:auto;width:85px;}
 
