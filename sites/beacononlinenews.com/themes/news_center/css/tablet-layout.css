@@ -266,7 +266,7 @@ body.node-type-article .node-article .field-name-body{padding-top:100px;clear:no
 
 body.node-type-article .node .submitted{border-bottom:1px solid #CCCCCC;color:#777777;margin-bottom:21px;margin-top:3px;}
 
-#block-widgets-s-addthis-share{float:right;margin-right:4px;margin-top:75px;/*margin-top:40px;*/position:absolute;left:437px;}
+#block-widgets-s-addthis-share{float:left;}
 
 #block-widgets-s-addthis-share div.widgets-element-horizontal{float:left;padding:0 11px;}
 

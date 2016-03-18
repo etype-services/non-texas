@@ -813,11 +813,7 @@ body.node-type-article .node .submitted {
 }
 
 #block-widgets-s-addthis-share {
-    float: right;
-    margin-right: 4px;
-    margin-top: 40px;
-    position: absolute;
-    left: 437px;
+    float: left;
 }
 
 #block-widgets-s-addthis-share div.widgets-element-horizontal {

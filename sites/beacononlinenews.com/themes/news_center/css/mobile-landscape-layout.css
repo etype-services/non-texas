@@ -250,7 +250,7 @@ body.node-type-article .node .content{padding-top:0;}
 
 body.node-type-article .node .submitted{border-bottom:1px solid #CCCCCC;color:#777777;margin-bottom:21px;margin-top:3px;}
 
-#block-widgets-s-addthis-share{float:right;margin-right:4px;margin-top:36px;position:absolute;left:398px;}
+#block-widgets-s-addthis-share{float:left;}
 
 #block-widgets-s-addthis-share div.widgets-element-horizontal{float:left;padding:4px 6px;}
 
