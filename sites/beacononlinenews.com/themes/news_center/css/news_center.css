@@ -364,3 +364,7 @@ min-width:212px!important;
     display: none;
     visibility: hidden;
 }
+
+.page-node .node-article .image-field-caption {
+    float: left;
+}
