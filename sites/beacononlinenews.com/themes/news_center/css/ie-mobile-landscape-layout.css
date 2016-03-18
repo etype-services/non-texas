@@ -752,7 +752,7 @@ body.node-type-article .node .submitted {
 }
 
 #block-widgets-s-addthis-share {
-    float: right;
+    float: left;
 }
 
 #block-widgets-s-addthis-share div.widgets-element-horizontal {
