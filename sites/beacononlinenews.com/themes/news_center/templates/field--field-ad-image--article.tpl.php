@@ -1,7 +1,5 @@
 <?php
-global $node;
-//$node = node_load($nid);
-var_dump($node);
+var_dump($items);
 // $field = field_get_items('node', $node, 'field_ad_image');
 //$output = field_view_value('node', $node, 'field_ad_image', $image[0]);
 ?>
