@@ -3,4 +3,4 @@
 // $field = field_get_items('node', $node, 'field_ad_image');
 //$output = field_view_value('node', $node, 'field_ad_image', $image[0]);
 ?>
-<div class="field_ad_image"><a href=""><?php print render($content['field_image']); ?></a></div>
+<div class="field_ad_image"><a href=""><?php print render($content['field_ad_image']); ?></a></div>
