@@ -96,7 +96,7 @@
 
       <?php print $user_picture; ?>
 
-      <?php var_dump($content); ?>
+      <?php $output = field_view_field('node', $node, 'field_ad_image'); echo $output; ?>
 
       <?php print render($title_prefix); ?>
       <?php if (!$page && $title): ?>
