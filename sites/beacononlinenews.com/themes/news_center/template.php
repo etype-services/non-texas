@@ -87,7 +87,7 @@ function STARTERKIT_preprocess_html(&$variables, $hook) {
  */
 
 function news_center_preprocess_page(&$variables, $hook) {
-  if (isset($variables['node'])) {
+  if ((isset($variables['node'])) && (!empty($variables['node']->nid))) {
     $node = $variables['node'];
   	$arr = array();
   	$ad = field_get_items('node', $node, 'field_ad_image');
