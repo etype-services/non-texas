@@ -1,5 +1,6 @@
 <?php
-global $node;
+global $nid;
+$node = node_load($nid);
 //$field = field_get_items('node', $node, 'field_ad_image');
 //$output = field_view_value('node', $node, 'field_ad_image', $image[0]);
 ?>
