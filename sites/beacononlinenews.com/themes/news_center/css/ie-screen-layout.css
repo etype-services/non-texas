@@ -678,7 +678,7 @@ body.page-taxonomy-term .node-teaser .submitted {
 }
 
 .field_ad_image .field_ad_image_inner {
-    margin: 0 auto 0;
+    margin: 0 auto;
     width: 468px;
     height: 60px;
 }

@@ -863,7 +863,7 @@ body.page-taxonomy-term .node-article.node-teaser img {
     clear: none;
     float: left;
     margin-left: 20px;
-    margin-right: 0px;
+    margin-right: 0;
     width: 364px;
 }
 
@@ -879,7 +879,7 @@ body.page-taxonomy-term .node-article.node-teaser img {
 }
 
 .field_ad_image .field_ad_image_inner {
-    margin: 0 auto 0;
+    margin: 0 auto;
     width: 468px;
     height: 60px;
 }
