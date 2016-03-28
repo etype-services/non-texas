@@ -96,7 +96,7 @@ function news_center_preprocess_page(&$variables, $hook) {
       $arr['img_src'] = file_create_url($ad[0]['uri']);
       $url = field_get_items('node', $variables['node'], 'field_ad_url');
       $arr['img_url'] = $url[0]['safe_value'];
-      $variables['node_ad'] = theme_render_template('sites/test.etypegoogle8.com/themes/news_center/templates/field--field-ad-image--article.tpl.php', $arr);
+      $variables['node_ad'] = theme_render_template('sites/beacononlinenews.com/themes/news_center/templates/field--field-ad-image--article.tpl.php', $arr);
     }
   }
 }
