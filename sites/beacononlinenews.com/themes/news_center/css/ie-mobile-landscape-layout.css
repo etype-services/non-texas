@@ -813,12 +813,13 @@ body.page-taxonomy-term .node-article.node-teaser img {
 
 /* node ad */
 .field_ad_image {
+    margin-top: 0.5em;
     display: block;
     visibility: visible;
 }
 
 .field_ad_image .field_ad_image_inner {
-    margin: 0.5em auto 0;
+    margin: 0 auto 0;
     width: 468px;
     height: 60px;
 }
