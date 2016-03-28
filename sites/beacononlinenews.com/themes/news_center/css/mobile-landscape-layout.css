@@ -859,6 +859,7 @@ body.node-type-article #comments .node .content {
 }
 
 .field_ad_image p {
+    margin-bottom: 0;
     text-align: center;
 }
 

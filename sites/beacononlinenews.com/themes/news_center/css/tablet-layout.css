@@ -875,6 +875,7 @@ body.page-taxonomy-term .node-article.node-teaser img {
 }
 
 .field_ad_image p {
+    margin-bottom: 0;
     text-align: center;
 }
 
