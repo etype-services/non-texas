@@ -833,11 +833,11 @@ a img {
 }
 
 .field_ad_image p {
-    margin: 0 auto;
+    text-align: center;
 }
 
 .field_ad_image .field_ad_image_inner {
-    margin: 2em auto 0;
+    margin: 0.5em auto 0;
     width: 468px;
     height: 60px;
 }
