@@ -132,3 +132,15 @@ $sites['beacononlinenews.com'] = 'beacononlinenews.com';
 $sites['www.beacononlinenews.com'] = 'beacononlinenews.com';
 $sites['prod.beacononlinenews.com'] = 'beacononlinenews.com';
 $sites['dev.beacononlinenews.com'] = 'beacononlinenews.com';
+
+$sites['indyrepnews.etypegoogle8.com'] = 'indyrepnews.com';
+$sites['indyrepnews.com'] = 'indyrepnews.com';
+$sites['www.indyrepnews.com'] = 'indyrepnews.com';
+$sites['prod.indyrepnews.com'] = 'indyrepnews.com';
+$sites['dev.indyrepnews.com'] = 'indyrepnews.com';
+
+$sites['msgr.etypegoogle8.com'] = 'msgr.com';
+$sites['msgr.com'] = 'msgr.com';
+$sites['www.msgr.com'] = 'msgr.com';
+$sites['prod.msgr.com'] = 'msgr.com';
+$sites['dev.msgr.com'] = 'msgr.com';

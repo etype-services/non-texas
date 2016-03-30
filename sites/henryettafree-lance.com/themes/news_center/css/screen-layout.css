@@ -142,3 +142,6 @@ body.page-taxonomy-term .node-teaser .submitted{color:#777777;margin-bottom:10px
 .footer-inner .content .menu li a:hover{background:none;}
 .footer-inner ul.menu li{float:none;border-bottom:1px solid #505050;padding:3px 0 3px 11px;background:url("../images/arrow.png") no-repeat 4px 10px;}
 a img{max-width:100%;}
+
+/* to get cutline under photo on articles */
+body.node-type-article .node-article blockquote {float:left; max-width:400px;}
