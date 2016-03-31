@@ -144,3 +144,9 @@ $sites['msgr.com'] = 'msgr.com';
 $sites['www.msgr.com'] = 'msgr.com';
 $sites['prod.msgr.com'] = 'msgr.com';
 $sites['dev.msgr.com'] = 'msgr.com';
+
+$sites['myironcountynews.etypegoogle8.com'] = 'myironcountynews.com';
+$sites['myironcountynews.com'] = 'myironcountynews.com';
+$sites['www.myironcountynews.com'] = 'myironcountynews.com';
+$sites['prod.myironcountynews.com'] = 'myironcountynews.com';
+$sites['dev.myironcountynews.com'] = 'myironcountynews.com';
