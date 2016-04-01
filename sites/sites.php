@@ -150,3 +150,9 @@ $sites['myironcountynews.com'] = 'myironcountynews.com';
 $sites['www.myironcountynews.com'] = 'myironcountynews.com';
 $sites['prod.myironcountynews.com'] = 'myironcountynews.com';
 $sites['dev.myironcountynews.com'] = 'myironcountynews.com';
+
+$sites['fairburyjournalnews.etypegoogle8.com'] = 'fairburyjournalnews.com';
+$sites['fairburyjournalnews.com'] = 'fairburyjournalnews.com';
+$sites['www.fairburyjournalnews.com'] = 'fairburyjournalnews.com';
+$sites['prod.fairburyjournalnews.com'] = 'fairburyjournalnews.com';
+$sites['dev.fairburyjournalnews.com'] = 'fairburyjournalnews.com';
