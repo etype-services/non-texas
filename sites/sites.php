@@ -151,8 +151,19 @@ $sites['www.myironcountynews.com'] = 'myironcountynews.com';
 $sites['prod.myironcountynews.com'] = 'myironcountynews.com';
 $sites['dev.myironcountynews.com'] = 'myironcountynews.com';
 
+/* fairburyjournalnews.etypegoogle8.com */
 $sites['fairburyjournalnews.etypegoogle8.com'] = 'fairburyjournalnews.com';
 $sites['fairburyjournalnews.com'] = 'fairburyjournalnews.com';
 $sites['www.fairburyjournalnews.com'] = 'fairburyjournalnews.com';
 $sites['prod.fairburyjournalnews.com'] = 'fairburyjournalnews.com';
 $sites['dev.fairburyjournalnews.com'] = 'fairburyjournalnews.com';
+
+$sites['thefairburyjournal.com'] = 'fairburyjournalnews.com';
+$sites['www.thefairburyjournal.com'] = 'fairburyjournalnews.com';
+
+/* westessextribune.etypegoogle8.com */
+$sites['westessextribune.etypegoogle8.com'] = 'westessextribune.net';
+$sites['westessextribune.net'] = 'westessextribune.net';
+$sites['www.westessextribune.net'] = 'westessextribune.net';
+$sites['prod.westessextribune.net'] = 'westessextribune.net';
+$sites['dev.westessextribune.net'] = 'westessextribune.net';

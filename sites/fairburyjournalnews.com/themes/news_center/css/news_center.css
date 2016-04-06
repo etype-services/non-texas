@@ -345,3 +345,9 @@ h2.node-title{}
 #block-simpleads-ad-groups-50, #block-simpleads-ad-groups-52, #block-simpleads-ad-groups-15 {margin-left:-10px; margin-top:-5px; width: 300px; overflow: visible;}
 
 #block-block-23 {margin-left: -9px; padding: 0px;}
+
+/* hide captions on front and taxonomy page */
+.node-teaser .image-field-caption, .front .views-field-field-image .image-field-caption {
+	display: none;
+	visibility: hidden;
+}
