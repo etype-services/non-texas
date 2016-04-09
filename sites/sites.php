@@ -167,3 +167,9 @@ $sites['westessextribune.net'] = 'westessextribune.net';
 $sites['www.westessextribune.net'] = 'westessextribune.net';
 $sites['prod.westessextribune.net'] = 'westessextribune.net';
 $sites['dev.westessextribune.net'] = 'westessextribune.net';
+
+$sites['jcnews.etypegoogle8.com'] = 'jcnews.com';
+$sites['jcnews.com'] = 'jcnews.com';
+$sites['www.jcnews.com'] = 'jcnews.com';
+$sites['prod.jcnews.com'] = 'jcnews.com';
+$sites['dev.jcnews.com'] = 'jcnews.com';
