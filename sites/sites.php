@@ -173,3 +173,15 @@ $sites['jcnews.com'] = 'jcnews.com';
 $sites['www.jcnews.com'] = 'jcnews.com';
 $sites['prod.jcnews.com'] = 'jcnews.com';
 $sites['dev.jcnews.com'] = 'jcnews.com';
+
+$sites['mysanfordherald.etypegoogle8.com'] = 'mysanfordherald.com';
+$sites['mysanfordherald.com'] = 'mysanfordherald.com';
+$sites['www.mysanfordherald.com'] = 'mysanfordherald.com';
+$sites['prod.mysanfordherald.com'] = 'mysanfordherald.com';
+$sites['dev.mysanfordherald.com'] = 'mysanfordherald.com';
+
+$sites['lakeoconeenews.etypegoogle8.com'] = 'lakeoconeenews.us';
+$sites['lakeoconeenews.us'] = 'lakeoconeenews.us';
+$sites['www.lakeoconeenews.us'] = 'lakeoconeenews.us';
+$sites['prod.lakeoconeenews.us'] = 'lakeoconeenews.us';
+$sites['dev.lakeoconeenews.us'] = 'lakeoconeenews.us';
