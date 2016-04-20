@@ -191,3 +191,9 @@ $sites['plaqueminesgazette.com'] = 'plaqueminesgazette.com';
 $sites['www.plaqueminesgazette.com'] = 'plaqueminesgazette.com';
 $sites['prod.plaqueminesgazette.com'] = 'plaqueminesgazette.com';
 $sites['dev.plaqueminesgazette.com'] = 'plaqueminesgazette.com';
+
+$sites['thestbernardvoice.etypegoogle8.com'] = 'thestbernardvoice.com';
+$sites['thestbernardvoice.com'] = 'thestbernardvoice.com';
+$sites['www.thestbernardvoice.com'] = 'thestbernardvoice.com';
+$sites['prod.thestbernardvoice.com'] = 'thestbernardvoice.com';
+$sites['dev.thestbernardvoice.com'] = 'thestbernardvoice.com';
