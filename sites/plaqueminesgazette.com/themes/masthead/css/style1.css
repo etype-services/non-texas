@@ -426,8 +426,8 @@ h3.site-slogan {
 #main-menu ul.menu {
   display: block;
   height: 100%;
-  min-height: 40px;
-  max-height: 40px;
+  min-height: 30px;
+  max-height: 30px;
   margin: 0;
   background: #79001c;
 }
@@ -438,35 +438,20 @@ h3.site-slogan {
 
 #main-menu ul.menu li a {
   display: block;
-  height: 40px;
-  line-height: 40px;
+  height: 30px;
+  line-height: 30px;
   color: #ffebee;
   padding: 0 20px;
 }
 
-#main-menu ul.menu li.first a {
-  border-left: 0 solid #f9f9f9;	
-}
-
-#main-menu ul.menu li.last a {
-  border-right: 0 solid #dddddd;
-}
-
 #main-menu ul.menu li a:hover {
-  color: #333333;
-  height: 38px;
-  line-height: 38px;
-  border-top: 1px solid #dddddd;
-  text-decoration: none;
-  background: #eeeeee;
+  color: #ffffff;
+  background: #4c0012;
 }
 
 #main-menu ul.menu li a.active {
-  color: #333333;
-  height: 38px;
-  line-height: 38px;
-  border-top: 2px solid #920000;
-  text-decoration: none;
+  color: #ffffff;
+  background: #4c0012;
 }
 
 /* Main Menu Drop Down */
