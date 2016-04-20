@@ -140,10 +140,12 @@ a {
     text-decoration: underline;
 }
 
+/* added max-width to keep cutlines from cutting into article body */
 blockquote {
     margin: 1.5em;
     color: #666;
     font-style: italic;
+	max-width:400px;
 }
 
 strong, dfn {

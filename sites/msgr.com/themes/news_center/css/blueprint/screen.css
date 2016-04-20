@@ -54,7 +54,8 @@ a:focus, a:hover{color:#09f;}
 
 a{color:#06c;text-decoration:underline;}
 
-blockquote{margin:1.5em;color:#666;font-style:italic;}
+/* blockquote - added float:left, max-width:380px and changed margin from 1.5em to fix add-this widget covering caption */
+blockquote{margin:4.7em 1em -1.2em .5em;color:#666;font-style:italic;float:left;max-width:420px;}
 
 strong, dfn{font-weight:bold;}
 

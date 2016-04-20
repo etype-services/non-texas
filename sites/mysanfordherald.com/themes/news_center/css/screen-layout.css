@@ -58,7 +58,7 @@ body.front h1 {
 
 #logo {
     display: block;
-    margin-left: 170px;
+    margin-left: 0px;
     margin-top: 0px;
     min-height: 73px;
 }
@@ -228,7 +228,7 @@ body.front h1 {
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item {
     border: 1px solid #333333;
     height: 445px;
-    width: 690px;
+    width: 462px;
     border-bottom: none;
     overflow: hidden;
 }
@@ -243,7 +243,7 @@ body.front h1 {
     color: #FFFFFF;
     position: absolute;
     z-index: 200;
-    width: 690px;
+    width: 462px;
 }
 
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .slideshow-overlay a {
@@ -276,7 +276,7 @@ body.front h1 {
     display: block;
     padding: 12px;
     text-shadow: 1px 1px 1px #000000;
-    width: 680px;
+    width: 455px;
     z-index: 1;
 }
 
@@ -323,20 +323,20 @@ body.front h1 {
     bottom: -6px;
     height: 6px;
     position: absolute;
-    width: 698px;
+    width: 462px;
     z-index: 9;
 }
 
 .views_slideshow_cycle_main {
-    background: none repeat scroll 0 0 #333333;
+    background: #333333 none repeat scroll 0 0;
     height: 295px;
     padding-bottom: 160px;
-    width: 700px;
+    width: 463px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom {
     border: 1px solid #333333;
-    width: 698px;
+    width: 462px;
     border-top: none;
     height: 60px;
 }

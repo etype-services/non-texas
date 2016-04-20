@@ -185,3 +185,9 @@ $sites['lakeoconeenews.us'] = 'lakeoconeenews.us';
 $sites['www.lakeoconeenews.us'] = 'lakeoconeenews.us';
 $sites['prod.lakeoconeenews.us'] = 'lakeoconeenews.us';
 $sites['dev.lakeoconeenews.us'] = 'lakeoconeenews.us';
+
+$sites['plaqueminesgazette.etypegoogle8.com'] = 'plaqueminesgazette.com';
+$sites['plaqueminesgazette.com'] = 'plaqueminesgazette.com';
+$sites['www.plaqueminesgazette.com'] = 'plaqueminesgazette.com';
+$sites['prod.plaqueminesgazette.com'] = 'plaqueminesgazette.com';
+$sites['dev.plaqueminesgazette.com'] = 'plaqueminesgazette.com';
