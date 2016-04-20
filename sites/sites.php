@@ -197,3 +197,9 @@ $sites['thestbernardvoice.com'] = 'thestbernardvoice.com';
 $sites['www.thestbernardvoice.com'] = 'thestbernardvoice.com';
 $sites['prod.thestbernardvoice.com'] = 'thestbernardvoice.com';
 $sites['dev.thestbernardvoice.com'] = 'thestbernardvoice.com';
+
+$sites['timberlakesouthdakota.etypegoogle8.com'] = 'timberlakesouthdakota.com';
+$sites['timberlakesouthdakota.com'] = 'timberlakesouthdakota.com';
+$sites['www.timberlakesouthdakota.com'] = 'timberlakesouthdakota.com';
+$sites['prod.timberlakesouthdakota.com'] = 'timberlakesouthdakota.com';
+$sites['dev.timberlakesouthdakota.com'] = 'timberlakesouthdakota.com';
