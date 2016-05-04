@@ -24,7 +24,7 @@ body.front h1{display:none;}
 #block-multiblock-1{display:none;}
 .region-top-area{float:right;margin-right:15px;margin-top:5px;}
 #block-system-user-menu ul.menu, #block-shortcut-shortcuts ul.menu{margin-bottom:0;margin-right:0;padding:7px 7px 7px 23px;}
-#block-superfish-1, #superfish-1, .superfish-1{background:none repeat scroll 0 0 transparent}
+#block-superfish-1, #superfish-1, .superfish-1{background:none repeat scroll 0 0 transparent; padding-bottom:7px;}
 #block-superfish-1 ul{background:url("../images/nav_bg.gif") repeat-x scroll 0 0 transparent !important;}
 #block-superfish-1 ul li.first{margin-left:4px !important;}
 #block-superfish-1{margin-bottom:0;width:1040px;display:block;position:inherit;z-index:99;height:24px;clear:left;}
