@@ -201,6 +201,7 @@ $sites['www.thestbernardvoice.com'] = 'thestbernardvoice.com';
 $sites['prod.thestbernardvoice.com'] = 'thestbernardvoice.com';
 $sites['dev.thestbernardvoice.com'] = 'thestbernardvoice.com';
 
+/* timberlakesouthdakota.etypegoogle8.com */
 $sites['timberlakesouthdakota.etypegoogle8.com'] = 'timberlakesouthdakota.com';
 $sites['timberlakesouthdakota.com'] = 'timberlakesouthdakota.com';
 $sites['www.timberlakesouthdakota.com'] = 'timberlakesouthdakota.com';
@@ -209,3 +210,10 @@ $sites['dev.timberlakesouthdakota.com'] = 'timberlakesouthdakota.com';
 
 $sites['timberlaketopic.com'] = 'timberlakesouthdakota.com';
 $sites['www.timberlaketopic.com'] = 'timberlakesouthdakota.com';
+
+/* thekansascityglobe.etypegoogle8.com */
+$sites['thekansascityglobe.etypegoogle8.com'] = 'thekansascityglobe.com';
+$sites['thekansascityglobe.com'] = 'thekansascityglobe.com';
+$sites['www.thekansascityglobe.com'] = 'thekansascityglobe.com';
+$sites['prod.thekansascityglobe.com'] = 'thekansascityglobe.com';
+$sites['dev.thekansascityglobe.com'] = 'thekansascityglobe.com';
