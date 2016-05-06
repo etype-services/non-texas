@@ -217,3 +217,9 @@ $sites['thekansascityglobe.com'] = 'thekansascityglobe.com';
 $sites['www.thekansascityglobe.com'] = 'thekansascityglobe.com';
 $sites['prod.thekansascityglobe.com'] = 'thekansascityglobe.com';
 $sites['dev.thekansascityglobe.com'] = 'thekansascityglobe.com';
+
+$sites['auroranewsregister.etypegoogle8.com'] = 'auroranewsregister.com';
+$sites['auroranewsregister.com'] = 'auroranewsregister.com';
+$sites['www.auroranewsregister.com'] = 'auroranewsregister.com';
+$sites['prod.auroranewsregister.com'] = 'auroranewsregister.com';
+$sites['dev.auroranewsregister.com'] = 'auroranewsregister.com';
