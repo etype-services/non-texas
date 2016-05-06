@@ -140,10 +140,13 @@ a {
     text-decoration: underline;
 }
 
+/* added float:left and max-width to fix captions running into body copy */
 blockquote {
     margin: 1.5em;
     color: #666;
     font-style: italic;
+	float: left;
+	max-width: 395px;
 }
 
 strong, dfn {
