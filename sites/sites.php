@@ -206,3 +206,6 @@ $sites['timberlakesouthdakota.com'] = 'timberlakesouthdakota.com';
 $sites['www.timberlakesouthdakota.com'] = 'timberlakesouthdakota.com';
 $sites['prod.timberlakesouthdakota.com'] = 'timberlakesouthdakota.com';
 $sites['dev.timberlakesouthdakota.com'] = 'timberlakesouthdakota.com';
+
+$sites['timberlaketopic.com'] = 'timberlakesouthdakota.com';
+$sites['www.timberlaketopic.com'] = 'timberlakesouthdakota.com';
