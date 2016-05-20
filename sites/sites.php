@@ -171,3 +171,8 @@ $sites['www.auroranewsregister.com'] = 'auroranewsregister.com';
 $sites['hennesseyclipper.etypegoogle8.com'] = 'hennesseyclipper.com';
 $sites['hennesseyclipper.com'] = 'hennesseyclipper.com';
 $sites['www.hennesseyclipper.com'] = 'hennesseyclipper.com';
+
+/* douglasenterprise.etypegoogle8.com */
+$sites['douglasenterprise.etypegoogle8.com'] = 'douglasenterprise.net';
+$sites['douglasenterprise.net'] = 'douglasenterprise.net';
+$sites['www.douglasenterprise.net'] = 'douglasenterprise.net';
