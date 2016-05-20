@@ -117,7 +117,7 @@ a.back-to-top{display:none;}
 #block-views-last-viewed-block{float:left;margin-right:21px;width:220px;}
 body.node-type-article .node-article .field-name-field-image img{border:1px solid #CCCCCC;float:left;margin-bottom:15px;margin-right:10px;padding:3px;width:420px;height:auto;}
 body.node-type-article .node .submitted{border-bottom:1px solid #CCCCCC;color:#777777;margin-bottom:21px;margin-top:3px;}
-#block-widgets-s-addthis-share{float:right;margin-right:4px;margin-top:40px;position:absolute;left:443px;}
+#block-widgets-s-addthis-share{float:right;margin-right:4px;margin-top:10px;position:absolute;left:443px;}
 #block-widgets-s-addthis-share div.widgets-element-horizontal{float:left;padding:0 6px;}
 body.node-type-article h1{padding-top:16px;}
 body.page-taxonomy-term h2{font-size:1.7em;margin-bottom:5px;margin-top:-4px;padding-bottom:0;}
