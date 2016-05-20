@@ -148,27 +148,55 @@ function bones_form_system_theme_settings_alter(&$form, $form_state) {
 		
 	}
 
-// Misc Settings (Facebook, Twitter, etc.)	
-	
-  $form['advanced_settings']['misc_settings'] = array(
-    '#type' => 'fieldset',
-    '#title' => t('Misc Settings'),
-    '#collapsible' => TRUE,
-    '#collapsed' => FALSE,
-  );		
-	
-  $form['advanced_settings']['misc_settings']['twitter'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Twitter URL'),
-		'#size' => 10,
-    '#default_value' => theme_get_setting('twitter'),
-  );		
-	
-  $form['advanced_settings']['misc_settings']['facebook'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Facebook URL'),
-		'#size' => 10,
-    '#default_value' => theme_get_setting('facebook'),
-  );		
-	
+    // Misc Settings (Facebook, Twitter, etc.)
+
+    $form['advanced_settings']['misc_settings'] = array(
+        '#type' => 'fieldset',
+        '#title' => t('Misc Settings'),
+        '#collapsible' => TRUE,
+        '#collapsed' => FALSE,
+    );
+
+    $form['advanced_settings']['misc_settings']['twitter'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Twitter'),
+        '#size' => 10,
+        '#default_value' => theme_get_setting('twitter'),
+    );
+
+    $form['advanced_settings']['misc_settings']['twitter_widget_id'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Twitter Widget Id'),
+        '#size' => 10,
+        '#default_value' => theme_get_setting('twitter_widget_id'),
+    );
+
+    $form['advanced_settings']['misc_settings']['facebook'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Facebook'),
+        '#size' => 10,
+        '#default_value' => theme_get_setting('facebook'),
+    );
+
+    $form['advanced_settings']['misc_settings']['pinterest'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Pinterest'),
+        '#size' => 10,
+        '#default_value' => theme_get_setting('pinterest'),
+    );
+
+    $form['advanced_settings']['misc_settings']['instagram'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Instagram'),
+        '#size' => 10,
+        '#default_value' => theme_get_setting('instagram'),
+    );
+
+    $form['advanced_settings']['misc_settings']['e_edition'] = array(
+        '#type' => 'textfield',
+        '#title' => t('e-Edition'),
+        '#size' => 10,
+        '#default_value' => theme_get_setting('e_edition'),
+    );
+    
 }
