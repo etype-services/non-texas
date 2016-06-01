@@ -1473,7 +1473,7 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 /* IMAGE CAPTIONS */
 /* hide captions on home page */
 .front .view-id-slideshow .image-field-caption,
-.egion-preface-1 .views-field-field-image .image-field-caption {
+.region-preface-1 .views-field-field-image .image-field-caption {
     display: none;
     visibility: hidden;
 }
