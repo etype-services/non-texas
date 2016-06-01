@@ -149,3 +149,8 @@
 	text-align:center;
 	margin-top: 5px;
 }
+
+/* Remove cutlines from front page slideshow
+--------------------------------------------------------------------------*/
+
+#block-views-slideshow-block blockquote p {display:none;}
