@@ -348,6 +348,10 @@ h2.node-title{}
 
 #block-simpleads-ad-groups-42 {height:90px; width:728px;margin-left:-10px;margin-bottom:5px;}
 #block-simpleads-ad-groups-23 {height:90px; width:468px;margin-left:-10px;margin-bottom:5px;}
+.block-simpleads-ad-groups-43 {
+    max-width: 728px;
+    margin: 0 auto;
+}
 
 #block-views-breaking-news-block {display:block; width:728px; height: 60px; background-color:#FF0000; margin-left:-10px; margin-bottom: 8px; overflow:hidden;}
 #block-views-breaking-news-block a {color: #ffffff; font-size: 18px; line-height:24px; margin-left: 15px;}
