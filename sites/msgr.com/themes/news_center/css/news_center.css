@@ -362,3 +362,14 @@ h2.node-title{}
 	display: none;
 	visibility: hidden;
 }
+
+/* Business Directory */
+#block-views-business-directory-block {
+    float: left;
+    width: 634px;
+}
+
+#block-views-business-directory-block img {
+    margin-top: -20px;
+    padding: 0px
+}
