@@ -198,7 +198,7 @@ a.back-to-top:hover, a.back-to-top:active{background:url("../images/up.png") no-
 
 #block-block-4{padding:0;background:none;}
 
-#footer{background:none no-repeat scroll 0 0 #333333;border-top:1px solid #000000;color:#CCCCCC;font-size:0.9em;padding:19px 12px 12px;}
+#footer{background:none no-repeat scroll 0 0 #333333;border-top:1px solid #000000;color:#CCCCCC;font-size:0.9em;padding:19px 12px 50px;}
 
 .region-footer-first-column, .region-footer-second-column, .region-footer-third-column, .region-footer-fourth-column{float:none;width:100%;margin-right:0;}
 
