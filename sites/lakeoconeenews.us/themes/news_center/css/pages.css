@@ -114,4 +114,9 @@ ul.links li{padding:0 1em 0 0;}
     padding-bottom: 90px;
 }
 
-.region-bottom{}
+.region-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+}
