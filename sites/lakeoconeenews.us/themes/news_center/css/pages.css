@@ -110,6 +110,8 @@ ul.links li{padding:0 1em 0 0;}
 
 .region-sidebar-second .section{}
 
-.region-footer{}
+.region-footer{
+    padding-bottom: 90px;
+}
 
 .region-bottom{}

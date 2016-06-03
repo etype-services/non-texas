@@ -8,7 +8,7 @@ ul.menu li{float:left;height:auto!important;list-style:none outside none;margin:
 body.front h1{display:none;}
 #block-user-login{display:block;}
 #mobile-logo{display:none;}
-#logo{display:block;margin-left:18px;margin-top:0px;min-height:73px;}
+#logo{display:block;margin-left:18px;margin-top:0;min-height:73px;}
 #page-wrapper{max-width:1040px;min-width:1040px;width:100%;}
 .views-row{border-bottom:1px dashed #C5C5C5;padding-bottom:13px;padding-top:10px;}
 .field-content{color:#727272;font-size:11px;padding:5px 0;}
@@ -31,7 +31,7 @@ body.front h1{display:none;}
 #block-superfish-1 ul li{display:inline-block;float:none;font-weight:bold;margin-left:1px !important;padding:2px 0;text-transform:uppercase;width:auto;}
 #block-superfish-1 ul li a{color:#FFFFFF;display:block;font-weight:600;font-size:14px;height:22px;line-height:20px;margin-top:0;padding:0 15px;text-decoration:none;background:none repeat scroll 0 0 transparent;border:none;}
 .sf-menu.sf-style-default a{border-top:none !important;padding:0.75em 1em;line-height:normal!important;height:auto!important;padding-top:0px!important;}
-#block-superfish-1 ul li a.active, #block-menu-menu-news-categories ul li a:hover{background:none repeat scroll 0 0 transparent;height:30px
+#block-superfish-1 ul li a.active, #block-menu-menu-news-categories ul li a:hover{background:none repeat scroll 0 0 transparent;height:30px;
 color:#333333;padding-top:5px;}
 #block-superfish-1 a.active-trail .active li{background:none repeat scroll 0 0 #000033;color:#333333;padding-top:0px;padding-left:15px;}
 .image-show{background:none repeat scroll 0 0 #000000;color:#AAAAAA;cursor:default;font-size:0.8em;opacity:0.6;padding:4px 12px 4px 8px;position:absolute;right:0;top:7px;}
@@ -128,7 +128,7 @@ body.page-taxonomy-term .node-teaser .submitted{color:#777777;margin-bottom:10px
 .day{font-size:2.4em;margin-top:-7px;}
 .month{font-size:0.8em;margin-top:-5px;}
 .region-sidebar-second{clear:none;}
-.view-images-gallery .views-row{float:left;margin-top:0;padding-bottom:5px;width:100%;margin-right:21px;margin-top:0;width:220px;}
+.view-images-gallery .views-row{float:left;margin-top:0;padding-bottom:5px;margin-right:21px;margin-top:0;width:220px;}
 .view-images-gallery .views-row-3, .view-images-gallery .views-row-6, .view-images-gallery .views-row-9, .view-images-gallery .views-row-12, .view-images-gallery .views-row-15{margin-right:0;}
 .view-images-gallery .views-row-1, .view-images-gallery .views-row-4, .view-images-gallery .views-row-7, .view-images-gallery .views-row-10, .view-images-gallery .views-row-13{clear:both;}
 .view-images-gallery .views-row img{padding:3px;border:solid 1px #CCCCCC;height:auto;width:212px;}

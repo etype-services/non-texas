@@ -40,9 +40,9 @@ h2, h3, h4, h5, h6{color:#333333;}
 
 #block-superfish-1 ul li{background:none repeat scroll 0 0 #222222;border-top:1px dashed #CCCCCC;clear:both;display:inline-block;float:left;margin-left:0 !important;margin-top:0;padding:0;text-transform:uppercase;width:310px;}
 
-#block-superfish-1 ul li a{background:#000 url("../images/mobile_menu.png") no-repeat scroll 7px 8px transparent;color:#FFFFFF;display:block;font-weight:bold;height:30px;margin-top:0;padding:7px 15px 0 26px;text-decoration:none;-moz-transition:background-color 0.5s ease-out;-o-transition:background-color 0.5s ease-out;-webkit-transition:background-color 0.5s ease-out;transition:background-color 0.5s ease-out;}
+#block-superfish-1 ul li a{background:#000 url("../images/mobile_menu.png") no-repeat scroll 7px 8px;color:#FFFFFF;display:block;font-weight:bold;height:30px;margin-top:0;padding:7px 15px 0 26px;text-decoration:none;-moz-transition:background-color 0.5s ease-out;-o-transition:background-color 0.5s ease-out;-webkit-transition:background-color 0.5s ease-out;transition:background-color 0.5s ease-out;}
 
-#block-superfish-1 ul li a.active, #block-superfish-1 ul li a.active-trail, #block-superfish-1 ul li a:hover{color:#f2f2f2;background:#f2f2f2 url("../images/mobile_menu.png") no-repeat scroll 7px 8px transparent;}
+#block-superfish-1 ul li a.active, #block-superfish-1 ul li a.active-trail, #block-superfish-1 ul li a:hover{color:#f2f2f2;background:#f2f2f2 url("../images/mobile_menu.png") no-repeat scroll 7px 8px;}
 
 .image-show{background:none repeat scroll 0 0 #000000;color:#AAAAAA;cursor:default;font-size:0.8em;opacity:0.6;padding:4px 12px 4px 8px;position:absolute;right:0;top:7px;}
 
@@ -198,7 +198,7 @@ a.back-to-top:hover, a.back-to-top:active{background:url("../images/up.png") no-
 
 #block-block-4{padding:0;background:none;}
 
-#footer{background:none no-repeat scroll 0 0 #333333;border-top:1px solid #000000;color:#CCCCCC;font-size:0.9em;padding:19px 12px 12px;}
+#footer{background:none no-repeat scroll 0 0 #333333;border-top:1px solid #000000;color:#CCCCCC;font-size:0.9em;padding:19px 12px 50px;}
 
 .region-footer-first-column, .region-footer-second-column, .region-footer-third-column, .region-footer-fourth-column{float:none;width:100%;margin-right:0;}
 

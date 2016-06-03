@@ -224,7 +224,7 @@ a.back-to-top:hover, a.back-to-top:active{background:url("../images/up.png") no-
 
 #block-views-most-popular-today-block, #block-views-most-commented-block{clear:both;}
 
-#footer{background:none no-repeat scroll 0 0 #333333;border-top:1px solid #000000;color:#CCCCCC;font-size:0.9em;padding:19px 12px 12px;}
+#footer{background:none no-repeat scroll 0 0 #333333;border-top:1px solid #000000;color:#CCCCCC;font-size:0.9em;padding:19px 12px 75px;}
 
 .region-footer-first-column, .region-footer-second-column, .region-footer-third-column, .region-footer-fourth-column{float:left;margin-right:16px;width:220px;}
 
