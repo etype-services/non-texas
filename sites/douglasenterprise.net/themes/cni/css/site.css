@@ -153,4 +153,7 @@
 /* Remove cutlines from front page slideshow
 --------------------------------------------------------------------------*/
 
-#block-views-slideshow-block blockquote p {display:none;}
+#block-views-slideshow-block blockquote p, #block-views-frontpage-block-1 blockquote.image-field-caption {
+    display:none;
+    visibility: hidden;
+}
