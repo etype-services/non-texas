@@ -333,7 +333,9 @@ h2.node-title{}
 
 .views-row h4.field-content a{font-size:14px;color:#1156ad;}
 
-.image-ad a img{max-width:100%;}
+.block-simpleads img, .image-ad a img {
+    max-width: 100%;
+}
 
 #block-simpleads-ad-groups-31 img{width: 300px;}
 #block-simpleads-ad-groups-31{background:transparent;margin-left:-10px;}
