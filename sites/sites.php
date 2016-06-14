@@ -176,3 +176,8 @@ $sites['www.hennesseyclipper.com'] = 'hennesseyclipper.com';
 $sites['douglasenterprise.etypegoogle8.com'] = 'douglasenterprise.net';
 $sites['douglasenterprise.net'] = 'douglasenterprise.net';
 $sites['www.douglasenterprise.net'] = 'douglasenterprise.net';
+
+/* thebellevilletelescope.etypegoogle8.com */
+$sites['thebellevilletelescope.etypegoogle8.com'] = 'thebellevilletelescope.com';
+$sites['thebellevilletelescope.com'] = 'thebellevilletelescope.com';
+$sites['www.thebellevilletelescope.com'] = 'thebellevilletelescope.com';
