@@ -2,7 +2,7 @@
 #header{padding-top:8px;background:none;overflow:visible;width:1040px;clear:right;}
 ul.menu{margin:0;padding:0;}
 ul.menu li{float:left;height:auto!important;list-style:none outside none;margin:0;padding:0;}
-.content .menu li a{color:#FFF;text-decoration:none;padding:8px 10px 5px;font-size:14px;font-weight:600;text-transform:uppercase;border-right:1px solid #242424;}
+.content .menu li a{color:#FFF;text-decoration:none;padding:8px 10px 5px;font-size:14px;font-weight:600;text-transform:uppercase;}
 .content .menu li a:hover{background:none repeat scroll 0 0 #12AEFF;}
 .region-top-advertisement #block-menu-menu-secondary-menu{margin-top:7px;}
 body.front h1{display:none;}
@@ -31,7 +31,7 @@ body.front h1{display:none;}
 #block-superfish-1 ul li{display:inline-block;float:none;font-weight:bold;margin-left:4px !important;padding:12px 0;text-transform:uppercase;width:auto;border-right:1px solid #0D529D;}
 #block-superfish-1 ul li a{color:#FFFFFF;display:block;font-weight:600;font-size:14px;height:22px;line-height:20px;margin-top:0;padding:0 24px;text-decoration:none;background:none repeat scroll 0 0 transparent;}
 .sf-menu.sf-style-default a{border-top:none !important;padding:0.75em 1em;line-height:normal!important;height:auto!important;padding-top:0px!important;}
-#block-superfish-1 ul li a.active, #block-menu-menu-news-categories ul li a:hover{background:none repeat scroll 0 0 transparent;height:30px
+#block-superfish-1 ul li a.active, #block-menu-menu-news-categories ul li a:hover{background:none repeat scroll 0 0 transparent;height:30px;
 color:#333333;padding-top:5px;}
 #block-superfish-1 a.active-trail .active li{background:none repeat scroll 0 0 #000033;color:#333333;padding-top:0px;padding-left:15px;}
 .image-show{background:none repeat scroll 0 0 #000000;color:#AAAAAA;cursor:default;font-size:0.8em;opacity:0.6;padding:4px 12px 4px 8px;position:absolute;right:0;top:7px;}
