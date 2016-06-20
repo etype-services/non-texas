@@ -348,3 +348,5 @@ h2.node-title{}
 
 #block-views-videos-block {margin-left:-10px;}
 #block-fb-likebox-0 {margin-left:-10px;}
+
+#block-views-featured-article-block blockquote, #block-views-articles-images-block blockquote, #block-views-articles-categories-block-block blockquote, #block-views-articles-block-2-block blockquote, #block-views-articles-block-3-block blockquote {font-size: 0; margin: 0; visibility: hidden;}
