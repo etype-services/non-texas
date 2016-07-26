@@ -71,6 +71,7 @@ Drupal.behaviors.newscenterbox = {
         attach: function (context) {
             var wordCounts = {};
             var appendedone = 0;
+            var maxone = 15;
             $("#edit-submitted-up-to-15-words-4-weeks-only-25").keyup(function() {
                 var matches = this.value.match(/\b/g);
                 wordCounts[this.id] = matches ? matches.length / 2 : 0;
@@ -78,10 +79,16 @@ Drupal.behaviors.newscenterbox = {
                 $.each(wordCounts, function(k, v) {
                     finalCount += v;
                 });
-                if (finalCount >= 15) {
+                if (finalCount >= maxone) {
                     if (appendedone == 0) {
                         appendedone = 1;
-                        $("#webform-component-up-to-15-words-4-weeks-only-25 > label").append('. Max word count reached.');
+                        $("#webform-component-up-to-15-words-4-weeks-only-25 > label").append(' Max word count reached!');
+                    }
+
+                } else if (finalCount < maxone) {
+                    if (appendedone == 1) {
+                        $("#webform-component-up-to-15-words-4-weeks-only-25 > label").append('Up to 15 words, 4 weeks, only $25');
+                        appendedone = 0;
                     }
 
                 }
