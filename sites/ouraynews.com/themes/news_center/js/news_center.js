@@ -73,7 +73,8 @@ Drupal.behaviors.newscenterbox = {
             var appendedone = 0;
             var maxone = 15;
             var appendedtwo = 0;
-            var maxtwo = 35;
+            var maxtwo = 30;
+
             $("#edit-submitted-up-to-15-words-4-weeks-only-25").keyup(function() {
                 var matches = this.value.match(/\b/g);
                 wordCounts[this.id] = matches ? matches.length / 2 : 0;
