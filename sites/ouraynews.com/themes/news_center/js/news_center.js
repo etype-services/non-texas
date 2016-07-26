@@ -113,7 +113,7 @@ Drupal.behaviors.newscenterbox = {
                 } else if (finalCount <= maxtwo) {
                     if (appendedtwo == 1) {
                         $("#webform-component-up-to-30-words-4-weeks-only-35 > label").html('Up to 30 words, 4 weeks, only $35.');
-                        appendedone = 0;
+                        appendedtwo = 0;
                     }
 
                 }
