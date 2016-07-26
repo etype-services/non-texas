@@ -82,7 +82,7 @@ Drupal.behaviors.newscenterbox = {
                 if (finalCount >= maxone) {
                     if (appendedone == 0) {
                         appendedone = 1;
-                        $("#webform-component-up-to-15-words-4-weeks-only-25 > label").append(' Max word count reached!');
+                        $("#webform-component-up-to-15-words-4-weeks-only-25 > label").append(' Maximum word count reached.');
                     }
 
                 } else if (finalCount < maxone) {
