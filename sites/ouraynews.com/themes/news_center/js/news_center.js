@@ -72,6 +72,8 @@ Drupal.behaviors.newscenterbox = {
             var wordCounts = {};
             var appendedone = 0;
             var maxone = 15;
+            var appendedtwo = 0;
+            var maxtwo = 35;
             $("#edit-submitted-up-to-15-words-4-weeks-only-25").keyup(function() {
                 var matches = this.value.match(/\b/g);
                 wordCounts[this.id] = matches ? matches.length / 2 : 0;
@@ -88,6 +90,28 @@ Drupal.behaviors.newscenterbox = {
                 } else if (finalCount <= maxone) {
                     if (appendedone == 1) {
                         $("#webform-component-up-to-15-words-4-weeks-only-25 > label").html('Up to 15 words, 4 weeks, only $25.');
+                        appendedone = 0;
+                    }
+
+                }
+            }).keyup();
+
+            $("#edit-submitted-up-to-30-words-4-weeks-only-35").keyup(function() {
+                var matches = this.value.match(/\b/g);
+                wordCounts[this.id] = matches ? matches.length / 2 : 0;
+                var finalCount = 0;
+                $.each(wordCounts, function(k, v) {
+                    finalCount += v;
+                });
+                if (finalCount > maxtwo) {
+                    if (appendedtwo == 0) {
+                        appendedtwo = 1;
+                        $("#webform-component-up-to-30-words-4-weeks-only-35 > label").append(' Maximum word count exceeded!');
+                    }
+
+                } else if (finalCount <= maxtwo) {
+                    if (appendedtwo == 1) {
+                        $("#webform-component-up-to-30-words-4-weeks-only-35 > label").html('Up to 30 words, 4 weeks, only $35.');
                         appendedone = 0;
                     }
 
