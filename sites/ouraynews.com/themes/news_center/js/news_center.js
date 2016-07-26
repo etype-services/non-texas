@@ -87,7 +87,7 @@ Drupal.behaviors.newscenterbox = {
 
                 } else if (finalCount < maxone) {
                     if (appendedone == 1) {
-                        $("#webform-component-up-to-15-words-4-weeks-only-25 > label").append('Up to 15 words, 4 weeks, only $25');
+                        $("#webform-component-up-to-15-words-4-weeks-only-25 > label").html('Up to 15 words, 4 weeks, only $25.');
                         appendedone = 0;
                     }
 
