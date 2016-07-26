@@ -72,13 +72,18 @@ Drupal.behaviors.newscenterbox = {
             var wordCounts = {};
             $("#edit-submitted-up-to-15-words-4-weeks-only-25").keyup(function() {
                 var matches = this.value.match(/\b/g);
+                var ap = 0;
                 wordCounts[this.id] = matches ? matches.length / 2 : 0;
                 var finalCount = 0;
                 $.each(wordCounts, function(k, v) {
                     finalCount += v;
                 });
-                if (finalCount == 15) {
-                    $("#webform-component-up-to-15-words-4-weeks-only-25 > label").append(' Max word count reached');
+                if (finalCount >= 15) {
+                    if (ap == 0) {
+                        ap = 1;
+                        $("#webform-component-up-to-15-words-4-weeks-only-25 > label").append(' Max word count reached');
+                    }
+
                 }
             }).keyup();
         }
