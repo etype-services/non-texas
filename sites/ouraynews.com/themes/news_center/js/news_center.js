@@ -79,13 +79,13 @@ Drupal.behaviors.newscenterbox = {
                 $.each(wordCounts, function(k, v) {
                     finalCount += v;
                 });
-                if (finalCount >= maxone) {
+                if (finalCount > maxone) {
                     if (appendedone == 0) {
                         appendedone = 1;
-                        $("#webform-component-up-to-15-words-4-weeks-only-25 > label").append(' Maximum word count reached.');
+                        $("#webform-component-up-to-15-words-4-weeks-only-25 > label").append(' Maximum word count exceeded!');
                     }
 
-                } else if (finalCount < maxone) {
+                } else if (finalCount <= maxone) {
                     if (appendedone == 1) {
                         $("#webform-component-up-to-15-words-4-weeks-only-25 > label").html('Up to 15 words, 4 weeks, only $25.');
                         appendedone = 0;
