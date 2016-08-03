@@ -340,3 +340,11 @@ h2.node-title{}
 
 #block-block-17 {padding-bottom: 3px;}
 #block-block-18 {margin-left: -10px;}
+
+/* style for network ads */
+#block-block-20 img {width:300px; height:250px;}
+#block-block-20 {margin: 3px 0px 5px -11px; width:300px;}
+#block-block-19 img {width:728px; height:90px;}
+#block-block-19 {margin: 0px 0px 5px -3px; width: 728px;}
+#block-block-21 {text-align:center;}
+#block-block-22 {text-align:center;}
