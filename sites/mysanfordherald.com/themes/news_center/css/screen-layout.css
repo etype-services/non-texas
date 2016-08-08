@@ -59,7 +59,7 @@ body.front h1 {
 #logo {
     display: block;
     margin-left: 0px;
-    margin-top: 0px;
+    margin-top: 16px;
     min-height: 73px;
 }
 

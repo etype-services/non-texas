@@ -91,4 +91,10 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
 </body>
+<style>
+#block-block-17 .content{
+  float: right;
+  margin-top: 5px;
+  }
+</style>
 </html>
