@@ -188,3 +188,13 @@ $sites['nebraskalivingtimes.com'] = 'nebraskalivingtimes.com';
 $sites['www.nebraskalivingtimes.com'] = 'nebraskalivingtimes.com';
 $sites['nelivingtimes.com'] = 'nelivingtimes.com';
 $sites['www.nelivingtimes.com'] = 'nelivingtimes.com';
+
+/* clintondailynews.etypegoogle8.com */
+$sites['clintondailynews.etypegoogle8.com'] = 'clintondailynews.com';
+$sites['clintondailynews.com'] = 'clintondailynews.com';
+$sites['www.clintondailynews.com'] = 'clintondailynews.com';
+
+/* thejenatimes.etypegoogle8.com */
+$sites['thejenatimes.etypegoogle8.com'] = 'thejenatimes.net';
+$sites['thejenatimes.net'] = 'thejenatimes.net';
+$sites['www.thejenatimes.net'] = 'thejenatimes.net';
