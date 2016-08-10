@@ -197,3 +197,8 @@ $sites['www.clintondailynews.com'] = 'clintondailynews.com';
 $sites['thejenatimes.etypegoogle8.com'] = 'thejenatimes.net';
 $sites['thejenatimes.net'] = 'thejenatimes.net';
 $sites['www.thejenatimes.net'] = 'thejenatimes.net';
+
+/* stiglernews.etypegoogle8.com */
+$sites['stiglernews.etypegoogle8.com'] = 'stiglernews.com';
+$sites['stiglernews.com'] = 'stiglernews.com';
+$sites['www.stiglernews.com'] = 'stiglernews.com';
