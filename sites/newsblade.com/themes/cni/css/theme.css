@@ -313,6 +313,10 @@ article .field-image {
     border-top: 20px solid #252525;
 }
 
+.container_12 .postscript-wrapper .grid_3 {
+    width: 32% !important;
+}
+
 .postscript-wrapper .block-inner {
     padding: 0;
 }
@@ -324,7 +328,6 @@ article .field-image {
 
 .postscript-wrapper h3 {
     display: block;
-    margin-left: 20px;
     margin-bottom: 10px;
 }
 
@@ -332,6 +335,11 @@ article .field-image {
     padding-right: 5px;
     background: #333333;
     color: #999999;
+}
+
+#postscript .menu li {
+    padding: 3px 0;
+    list-style-type: none;
 }
 
 #postscript .item-list ul li {
