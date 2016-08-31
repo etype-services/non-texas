@@ -292,6 +292,10 @@ article .field-image {
     margin-bottom: 0;
 }
 
+.sidebar div:first-child .content {
+    padding: 0;
+}
+
 /* POSTSCRIPT 
 --------------------------------------------------------------------------*/
 
