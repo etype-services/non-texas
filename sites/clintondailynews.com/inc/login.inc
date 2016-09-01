@@ -113,7 +113,7 @@ function process() {
 			$outputEnder = "</array>";
 			 $pubview= $response12->GetPublicationIDResult;;
 			
-			$pre="ect";
+			$pre="cdn";
 			$canView[strtolower($pre)] = true;
 			
 			 $return = $this->buildOutput("KO", "Your subscription to Eastland County Today expired . Please contact the Helpdesk to renew your subscription", $canView,$pubview,$pre);
@@ -146,7 +146,7 @@ function process() {
 		
 
 		// setcookie("etypes[userdetail]",$encrypted_txt, time()+3600*24);
-			$pre="ect";
+			$pre="cdn";
 			$canView[strtolower($pre)] = true;
 			$return = $this->buildOutput("OK", "Success", $canView,$pubview,$pre,$userdetail,$dateexp);
 		}
