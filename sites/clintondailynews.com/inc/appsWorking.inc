@@ -102,7 +102,7 @@ function process() {
 			$pre="cdn";
 			$canView[strtolower($pre)] = true;
 			
-			 $return = $this->buildOutput("KO", "Your subscription to San Marcos Record expired . Please contact the Helpdesk to renew your subscription", $canView,$pubview,$pre);
+			 $return = $this->buildOutput("KO", "Your subscription to Clinton Daily News expired . Please contact the Helpdesk to renew your subscription", $canView,$pubview,$pre);
 
 		}
 		else {

@@ -91,7 +91,7 @@ function process() {
     $return = $this->buildOutput("KO", "User or password invalid. Please try again");
     }  else
      {
-	if($response12->GetPublicationIDResult== 450 )
+	if($response12->GetPublicationIDResult== 1811 )
     {
      
 		$param=array('UserName' =>"$username",'Password' =>"$Password");
@@ -116,7 +116,7 @@ function process() {
 			$pre="cdn";
 			$canView[strtolower($pre)] = true;
 			
-			 $return = $this->buildOutput("KO", "Your subscription to Eastland County Today expired . Please contact the Helpdesk to renew your subscription", $canView,$pubview,$pre);
+			 $return = $this->buildOutput("KO", "Your subscription to Clinton Daily News expired . Please contact the Helpdesk to renew your subscription", $canView,$pubview,$pre);
 
 		}
 		else {
