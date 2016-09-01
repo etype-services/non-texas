@@ -97,7 +97,7 @@ function process() {
 			$outputStarter = "<key>output</key><array>";
 			$outputBody = '';
 			$outputEnder = "</array>";
-			 $pubview= "1213";
+			 $pubview= "1811";
 			 
 			$pre="cdn";
 			$canView[strtolower($pre)] = true;
