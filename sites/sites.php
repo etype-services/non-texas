@@ -212,3 +212,8 @@ $sites['www.newsblade.com'] = 'newsblade.com';
 $sites['sequoyahcountytimes.etypegoogle8.com'] = 'sequoyahcountytimes.com';
 $sites['sequoyahcountytimes.com'] = 'sequoyahcountytimes.com';
 $sites['www.sequoyahcountytimes.com'] = 'sequoyahcountytimes.com';
+
+/* courier-record.etypegoogle8.com */
+$sites['courier-record.etypegoogle8.com'] = 'courier-record.com';
+$sites['courier-record.com'] = 'courier-record.com';
+$sites['www.courier-record.com'] = 'courier-record.com';
