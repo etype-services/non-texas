@@ -74,6 +74,7 @@ function _etype_social_content() {
   $facebook = theme_get_setting('facebook','cni');
   $twitter = theme_get_setting('twitter','cni');
   $pinterest = theme_get_setting('pinterest','cni');
+  $instagram = theme_get_setting('instagram','cni');
   if ( ! empty($facebook)) {
     $output .= '<li><a class="facebook" href="https://www.facebook.com/' . $facebook . '"></a></li>';
   }
@@ -83,7 +84,11 @@ function _etype_social_content() {
   if ( ! empty($pinterest)) {
     $output .= '<li><a class="pinterest" href="https://www.pinterest.com/' . $pinterest . '"></a></li>';
   }
+  if ( ! empty($instagram)) {
+    $output .= '<li><a class="instagram" href="https://instagram.com/' . $instagram . '"></a></li>';
+  }
   $output .= '</ul></div>';
+
   return $output;
 }
 
@@ -96,6 +101,8 @@ function _etype_follow_content() {
   $facebook = theme_get_setting('facebook','cni');
   $twitter = theme_get_setting('twitter','cni');
   $pinterest = theme_get_setting('pinterest','cni');
+  $instagram = theme_get_setting('instagram','cni');
+
   if ( ! empty($facebook)) {
     $output .= '<div class="facebook"><a href="https://www.facebook.com/' . $facebook . '">Like us on Facebook</a></div>';
   }
@@ -104,6 +111,9 @@ function _etype_follow_content() {
   }
   if ( ! empty($pinterest)) {
     $output .= '<div class="pinterest"><a href="https://www.pinterest.com/' . $pinterest . '">Follow us on Pinterest</a></div>';
+  }
+  if ( ! empty($instagram)) {
+    $output .= '<div class="instagram"><a href="https://www.instagram.com/' . $instagram . '">Follow us on Instagram</a></div>';
   }
   return $output;
 }
