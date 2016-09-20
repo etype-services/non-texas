@@ -149,3 +149,28 @@
 	text-align:center;
 	margin-top: 5px;
 }
+
+/* Nebraska Press Ads
+--------------------------------------------------------------------------*/
+
+#block-block-35 .block-inner {
+    padding: 0;
+	margin: 0;
+	border-style: none;
+    border-width: 0;
+	box-shadow: none;
+}
+
+#block-block-35 img {
+	max-width:100%;
+}
+
+#block-block-36 {
+	text-align:center;
+}
+
+#block-block-36 img {
+	max-width:100%;
+	margin-top:3px;
+}
+

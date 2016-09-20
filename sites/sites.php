@@ -207,6 +207,8 @@ $sites['www.stiglernews.com'] = 'stiglernews.com';
 $sites['newsblade.etypegoogle8.com'] = 'newsblade.com';
 $sites['newsblade.com'] = 'newsblade.com';
 $sites['www.newsblade.com'] = 'newsblade.com';
+$sites['newsblade.net'] = 'newsblade.com';
+$sites['www.newsblade.net'] = 'newsblade.com';
 
 /* sequoyahcountytimes.etypegoogle8.com */
 $sites['sequoyahcountytimes.etypegoogle8.com'] = 'sequoyahcountytimes.com';
