@@ -52,7 +52,7 @@ class apps{
 			if ($pub == "OK" || $pub == "ok") 
 			{	
 			$rsspath .= "/";
-			$rsspath.="obitlong";
+			$rsspath.="obitslong";
 			$rsspath .= ".xml";
 			echo "rsspath: ", $rsspath, "<br />";
 			header("Location:http://".$rsspath."");
