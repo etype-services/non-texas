@@ -54,7 +54,13 @@ a:focus, a:hover{color:#09f;}
 
 a{color:#06c;text-decoration:underline;}
 
-blockquote{margin:1.5em;color:#666;font-style:italic;}
+blockquote{    
+	color: #666;
+    float: left;
+    font-style: italic;
+    margin: 0.5em;
+    width: 425px;
+	}
 
 strong, dfn{font-weight:bold;}
 

@@ -224,3 +224,10 @@ $sites['www.courier-record.com'] = 'courier-record.com';
 $sites['marshallcountyjournal.etypegoogle8.com'] = 'marshallcountyjournal.etypegoogle8.com';
 $sites['marshallcountyjournal.com'] = 'marshallcountyjournal.etypegoogle8.com';
 $sites['www.marshallcountyjournal.com'] = 'marshallcountyjournal.etypegoogle8.com';
+
+/* thomastribune.etypegoogle8.com */
+$sites['thomastribune.etypegoogle8.com'] = 'thomastribune.etypegoogle8.com';
+$sites['thomastribune.com'] = 'thomastribune.etypegoogle8.com';
+$sites['www.thomastribune.com'] = 'thomastribune.etypegoogle8.com';
+
+
