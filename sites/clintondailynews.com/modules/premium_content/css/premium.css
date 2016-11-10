@@ -1,0 +1,4 @@
+.not-front.not-logged-in.page-node .node-content-wrapper ul.links .node-readmore {
+    display: none;
+    visibility: hidden;
+}

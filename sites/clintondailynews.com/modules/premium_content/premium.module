@@ -516,6 +516,7 @@ function premium_theme() {
  * Reformat the message body with a premium content message.
  */
 function theme_premium_body($arguments) {
+    drupal_add_css(drupal_get_path('module', 'premium') . '/css/premium.css');
     $node = $arguments['node'];
     node_build_content($node, 'teaser');
     $level = premium_level_load($node->premium);
