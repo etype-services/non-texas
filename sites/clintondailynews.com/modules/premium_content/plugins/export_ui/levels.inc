@@ -100,6 +100,7 @@ function premium_levels_ctools_export_ui_form(&$form, &$form_state) {
         '#options' => array(
             '0' => t('0'),
             '10' => t('10'),
+            '20' => t('20'),
             '50' => t('50'),
             '100' => t('100'),
         ),
