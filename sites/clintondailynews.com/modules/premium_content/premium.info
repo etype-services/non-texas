@@ -1,5 +1,6 @@
 name = eType Premium content
 description = Restrict access to premium content.
+package = eType Services Custom Modules
 core = 7.x
 dependencies[] = ctools
 configure = admin/structure/premium_levels
