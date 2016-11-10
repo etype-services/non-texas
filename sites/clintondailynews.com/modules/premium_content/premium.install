@@ -115,6 +115,7 @@ function premium_schema() {
                 'size' => 'small',
                 'not null' => TRUE,
                 'unsigned' => TRUE,
+                'default' => 0
             ),
         ),
         'primary key' => array('level_id'),

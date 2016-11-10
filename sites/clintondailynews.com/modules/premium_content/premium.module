@@ -221,6 +221,7 @@ function premium_default_premium_levels() {
     $preset->duration_unit = 'W';
     $preset->denied_message = t('Full text available to premium subscribers only.');
     $preset->denied_message_format = filter_fallback_format();
+    $preset->words = 0;
 
     $export['default'] = $preset;
 

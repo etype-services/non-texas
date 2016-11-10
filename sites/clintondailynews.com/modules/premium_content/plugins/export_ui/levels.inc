@@ -96,7 +96,7 @@ function premium_levels_ctools_export_ui_form(&$form, &$form_state) {
     $form['show_teaser']['words'] = array(
         '#type' => 'select',
         '#title' => t('Number of Words to Display'),
-        '#default_value' => 0,
+        '#default_value' => $level->words,
         '#options' => array(
             '0' => t('0'),
             '10' => t('10'),
