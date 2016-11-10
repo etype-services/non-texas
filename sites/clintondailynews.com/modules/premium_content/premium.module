@@ -534,10 +534,10 @@ function theme_premium_body($arguments) {
             $cut = '<p>';
             $tmp = strip_tags($text);
             $words = implode(" ", array_slice( explode(" ", $tmp), 0, $level->wordcount));
-            $cut .= $words . '...</p>';
+            $cut .= $words . ' ...</p>';
         } else {
             $cut = '';
         }
-        return '<div class="premium-message">' . $level->wordcount  . $cut . check_markup($denied_message, $denied_message_format) . '</div>';
+        return '<div class="premium-message">' . $cut . check_markup($denied_message, $denied_message_format) . '</div>';
     }
 }
