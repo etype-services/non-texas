@@ -88,6 +88,24 @@ function premium_levels_ctools_export_ui_form(&$form, &$form_state) {
     '#description' => t('When a visitor doesn\'t have access to an item at this level they will see this message instead of its full text'),
   );
 
+    $form['show_teaser'] = array(
+        '#type' => 'fieldset',
+        '#title' => t('Show Teaser Content on Denied Page'),
+    );
+
+    $form['show_teaser']['wordcount'] = array(
+        '#type' => 'select',
+        '#title' => t('Number of Words to Display'),
+        '#default_value' => $level->wordcount,
+        '#options' => array(
+            '0' => t('0'),
+            '10' => t('10'),
+            '20' => t('20'),
+            '50' => t('50'),
+            '100' => t('100'),
+        ),
+    );
+
   $form['buttons']['submit'] = array(
     '#type' => 'submit',
     '#value' => t('Save premium level'),

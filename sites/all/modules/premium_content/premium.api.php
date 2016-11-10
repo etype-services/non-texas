@@ -50,6 +50,7 @@ function hook_default_premium_levels() {
   $preset->duration_unit = 'W';
   $preset->denied_message = t('Full text available to special people only.');
   $preset->denied_message_format = FILTER_FORMAT_DEFAULT;
+  $preset->wordcount = 0;
 
   $export['my_level'] = $preset;
 
