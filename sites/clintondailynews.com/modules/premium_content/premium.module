@@ -526,7 +526,6 @@ function theme_premium_body($arguments) {
         $denied_message = variable_get('premium_message', t('Full text available to premium subscribers only.'));
         $denied_message_format = variable_get('premium_format');
     }
-    // Only display the premium message, if we actual have any content.
     if (!empty($node->content['body'])) {
         preg_match("/(?:\w+(?:\W+|$)){0, 50}/", $node->content['body'], $matches);
         return $matches[0] . '<div class="premium-message">' . check_markup($denied_message, $denied_message_format) . '</div>';
