@@ -533,10 +533,10 @@ function theme_premium_body($arguments) {
         if ($level->wordcount > 0) {
             $cut = '<p>';
             $cut .= strip_tags(preg_replace("/((\w+\W*){$level->wordcount}(\w+))(.*)/", '${1}', $text));
-            $cut .= ' ...</p>';
+            $cut .= '...</p>';
         } else {
             $cut = '';
         }
-        return '<div class="premium-message">' . $cut . check_markup($denied_message, $denied_message_format) . '</div>';
+        return '<div class="premium-message">' . $level->wordcount  . $cut . check_markup($denied_message, $denied_message_format) . '</div>';
     }
 }
