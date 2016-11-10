@@ -530,7 +530,13 @@ function theme_premium_body($arguments) {
 
     if (!empty($node->content['body'])) {
         $text = $node->content['body']['#object']->body['und'][0]['value'];
-        $cut = strip_tags(substr($text, 0, 100));
-        return $level->wordcount .'<div class="premium-message"><p>' . $cut . '...</p>' . check_markup($denied_message, $denied_message_format) . '</div>';
+        if ($level->wordcount > 0) {
+            $cut = '<p>';
+            $cut = strip_tags(str_word_count($text, $level->wordcount));
+            $cut .= ' ...</p>';
+        } else {
+            $cut = '';
+        }
+        return '<div class="premium-message">' . $cut . check_markup($denied_message, $denied_message_format) . '</div>';
     }
 }
