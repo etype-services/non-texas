@@ -361,7 +361,7 @@ function premium_update_6004(&$sandbox) {
 }
 
 /**
- * Rename protection to protection.
+ * Add wordcount field.
  */
 function premium_update_7000(&$sandbox) {
     $ret = array();
