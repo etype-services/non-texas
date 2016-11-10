@@ -534,7 +534,12 @@ function theme_premium_body($arguments) {
             $cut = '<p>';
             $tmp = strip_tags($text);
             $words = implode(" ", array_slice( explode(" ", $tmp), 0, $level->wordcount));
-            $cut .= $words . ' ...</p>';
+            if (preg_match("/[.!?,;:]$/", $words)) {
+                $cut .= $words;
+            } else {
+                $cut .= $words . ' ...';
+            }
+            $cut .= '</p>';
         } else {
             $cut = '';
         }
