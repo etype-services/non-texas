@@ -1033,3 +1033,8 @@ ul.quicktabs-tabs.quicktabs-style-nostyle li.active a {
   font-weight: normal;
   font-size: 12px;
 }
+
+/* PREMIUM CONTENT */
+.node-teaser .premium-message p {
+    display: block;
+}
