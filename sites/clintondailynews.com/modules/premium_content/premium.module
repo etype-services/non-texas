@@ -529,7 +529,9 @@ function theme_premium_body($arguments) {
 
     if (!empty($node->content['body'])) {
         $text = $node->content['body']['#object']->body['und'][0]['value'];
-        preg_match("/(?:\w+(?:\W+|$)){0, 50}/", $text, $matches);
-        return '<div class="premium-message">' . $matches[0] . '</p>' . check_markup($denied_message, $denied_message_format) . '</div>';
+        //preg_match("/(?:\w+(?:\W+|$)){0, 50}/", $text, $matches);
+        //implode(' ', array_slice(explode(' ', $text), 0, 50));
+      $cut = substr($text, 0, 60);
+        return '<div class="premium-message">' . $cut . '</p>' . check_markup($denied_message, $denied_message_format) . '</div>';
     }
 }
