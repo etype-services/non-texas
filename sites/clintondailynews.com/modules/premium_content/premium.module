@@ -529,7 +529,7 @@ function theme_premium_body($arguments) {
 
     if (!empty($node->content['body'])) {
         $text = $node->content['body']['#object']->body['und'][0]['value'];
-        $cut = strip_tags(substr($text, 0, 60));
+        $cut = strip_tags(substr($text, 0, 100));
         return '<div class="premium-message"><p>' . $cut . '...</p>' . check_markup($denied_message, $denied_message_format) . '</div>';
     }
 }
