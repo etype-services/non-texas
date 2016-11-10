@@ -532,7 +532,7 @@ function theme_premium_body($arguments) {
         $text = $node->content['body']['#object']->body['und'][0]['value'];
         if ($level->wordcount > 0) {
             $cut = '<p>';
-            $cut = strip_tags(str_word_count($text, $level->wordcount));
+            $cut .= preg_replace("/((\w+\W*){$level->wordcount}(\w+))(.*)/", '${1}', $level->wordcount); ;
             $cut .= ' ...</p>';
         } else {
             $cut = '';
