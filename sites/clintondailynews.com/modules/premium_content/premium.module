@@ -531,7 +531,7 @@ function theme_premium_body($arguments) {
         $text = $node->content['body']['#object']->body['und'][0]['value'];
         //preg_match("/(?:\w+(?:\W+|$)){0, 50}/", $text, $matches);
         //implode(' ', array_slice(explode(' ', $text), 0, 50));
-      $cut = substr($text, 0, 60);
-        return '<div class="premium-message">' . $cut . '...</p>' . check_markup($denied_message, $denied_message_format) . '</div>';
+        $cut = strip_tags(substr($text, 0, 60));
+        return '<div class="premium-message"><p>' . $cut . '...</p>' . check_markup($denied_message, $denied_message_format) . '</div>';
     }
 }
