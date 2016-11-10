@@ -221,7 +221,7 @@ function premium_default_premium_levels() {
     $preset->duration_unit = 'W';
     $preset->denied_message = t('Full text available to premium subscribers only.');
     $preset->denied_message_format = filter_fallback_format();
-    $preset->words = 0;
+    $preset->wordcount = 0;
 
     $export['default'] = $preset;
 
@@ -531,6 +531,6 @@ function theme_premium_body($arguments) {
     if (!empty($node->content['body'])) {
         $text = $node->content['body']['#object']->body['und'][0]['value'];
         $cut = strip_tags(substr($text, 0, 100));
-        return $level->words .'<div class="premium-message"><p>' . $cut . '...</p>' . check_markup($denied_message, $denied_message_format) . '</div>';
+        return $level->wordcount .'<div class="premium-message"><p>' . $cut . '...</p>' . check_markup($denied_message, $denied_message_format) . '</div>';
     }
 }

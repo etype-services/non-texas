@@ -109,7 +109,7 @@ function premium_schema() {
                 'not null' => TRUE,
                 'default' => '',
             ),
-            'words' => array(
+            'wordcount' => array(
                 'description' => 'Number of texaser words to display.',
                 'type' => 'int',
                 'size' => 'small',
@@ -358,4 +358,24 @@ function premium_update_6004(&$sandbox) {
     // nothing or a translated string indicating the update ran successfully.
     // See http://drupal.org/node/224333#update_sql.
     return t('Updated the column named protection_type to protection_type.');
+}
+
+/**
+ * Rename protection to protection.
+ */
+function premium_update_7000(&$sandbox) {
+    $ret = array();
+
+    db_add_field('premium_levels', 'wordcount', array(
+        'description' => 'Number of texaser words to display.',
+        'type' => 'int',
+        'size' => 'small',
+        'not null' => TRUE,
+        'unsigned' => TRUE,
+        'default' => 0
+    ));
+    // hook_update_N() no longer returns a $ret array. Instead, return
+    // nothing or a translated string indicating the update ran successfully.
+    // See http://drupal.org/node/224333#update_sql.
+    return t('Added wordcount field.');
 }

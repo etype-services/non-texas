@@ -8,7 +8,7 @@ files[] = premium.test
 ; Updated for eType Services
 
 ; Information added by drupal.org packaging script on 2012-03-10
-version = "7.x-1.0-beta2"
+version = "7.x-1.0-beta3"
 core = "7.x"
 project = "etype_premium_content"
 datestamp = "1331338857"

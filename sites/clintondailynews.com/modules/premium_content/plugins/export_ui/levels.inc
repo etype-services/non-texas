@@ -93,10 +93,10 @@ function premium_levels_ctools_export_ui_form(&$form, &$form_state) {
         '#title' => t('Show Teaser Content on Denied Page'),
     );
 
-    $form['show_teaser']['words'] = array(
+    $form['show_teaser']['wordcount'] = array(
         '#type' => 'select',
         '#title' => t('Number of Words to Display'),
-        '#default_value' => $level->words,
+        '#default_value' => $level->wordcount,
         '#options' => array(
             '0' => t('0'),
             '10' => t('10'),
