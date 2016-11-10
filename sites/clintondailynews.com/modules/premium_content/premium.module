@@ -527,6 +527,8 @@ function theme_premium_body($arguments) {
         $denied_message_format = variable_get('premium_format');
     }
 
+  echo $node->content['body']['und'][0]['value'];
+  exit;
     if (!empty($node->content['body'])) {
         preg_match("/(?:\w+(?:\W+|$)){0, 50}/", $node->content['body']['und'][0]['value'], $matches);
         return '<div class="premium-message">' . $matches[0] . check_markup($denied_message, $denied_message_format) . '</div>';
