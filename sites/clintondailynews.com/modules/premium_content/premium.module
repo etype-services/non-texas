@@ -528,6 +528,6 @@ function theme_premium_body($arguments) {
     }
     if (!empty($node->content['body'])) {
         preg_match("/(?:\w+(?:\W+|$)){0, 50}/", $node->content['body'], $matches);
-        return $matches[0] . '<div class="premium-message">' . check_markup($denied_message, $denied_message_format) . '</div>';
+        return '<div class="premium-message">' . $matches[0] . check_markup($denied_message, $denied_message_format) . '</div>';
     }
 }
