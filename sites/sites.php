@@ -79,7 +79,7 @@ $sites['tecumsehchieftain.etypegoogle8.com'] = 'tecumsehchieftain.com';
 $sites['tecumsehchieftain.com'] = 'tecumsehchieftain.com';
 $sites['www.tecumsehchieftain.com'] = 'tecumsehchieftain.com';
 
-/* pawneerepublican.etypegoogle8.com */ 
+/* pawneerepublican.etypegoogle8.com */
 $sites['pawneerepublican.etypegoogle8.com'] = 'pawneerepublican.com';
 $sites['pawneerepublican.com'] = 'pawneerepublican.com';
 $sites['www.pawneerepublican.com'] = 'pawneerepublican.com';
@@ -104,7 +104,7 @@ $sites['myironcountynews.etypegoogle8.com'] = 'myironcountynews.com';
 $sites['myironcountynews.com'] = 'myironcountynews.com';
 $sites['www.myironcountynews.com'] = 'myironcountynews.com';
 
-/* fairburyjournalnews.etypegoogle8.com 
+/* fairburyjournalnews.etypegoogle8.com
 $sites['fairburyjournalnews.etypegoogle8.com'] = 'fairburyjournalnews.com';
 $sites['fairburyjournalnews.com'] = 'fairburyjournalnews.com';
 $sites['www.fairburyjournalnews.com'] = 'fairburyjournalnews.com';
@@ -207,6 +207,8 @@ $sites['www.stiglernews.com'] = 'stiglernews.com';
 $sites['newsblade.etypegoogle8.com'] = 'newsblade.com';
 $sites['newsblade.com'] = 'newsblade.com';
 $sites['www.newsblade.com'] = 'newsblade.com';
+$sites['newsblade.net'] = 'newsblade.com';
+$sites['www.newsblade.net'] = 'newsblade.com';
 
 /* sequoyahcountytimes.etypegoogle8.com */
 $sites['sequoyahcountytimes.etypegoogle8.com'] = 'sequoyahcountytimes.com';
@@ -218,5 +220,19 @@ $sites['courier-record.etypegoogle8.com'] = 'courier-record.com';
 $sites['courier-record.com'] = 'courier-record.com';
 $sites['www.courier-record.com'] = 'courier-record.com';
 
+<<<<<<< HEAD
 /* eyeonla.etypegoogle8.com */
 $sites['eyeonla.etypegoogle8.com'] = 'eyeonla.etypegoogle8.com';
+=======
+/* marshallcountyjournal.etypegoogle8.com */
+$sites['marshallcountyjournal.etypegoogle8.com'] = 'marshallcountyjournal.etypegoogle8.com';
+$sites['marshallcountyjournal.com'] = 'marshallcountyjournal.etypegoogle8.com';
+$sites['www.marshallcountyjournal.com'] = 'marshallcountyjournal.etypegoogle8.com';
+
+/* thomastribune.etypegoogle8.com */
+$sites['thomastribune.etypegoogle8.com'] = 'thomastribune.etypegoogle8.com';
+$sites['thomastribune.com'] = 'thomastribune.etypegoogle8.com';
+$sites['www.thomastribune.com'] = 'thomastribune.etypegoogle8.com';
+
+
+>>>>>>> master

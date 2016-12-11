@@ -176,6 +176,18 @@ h3.site-slogan {
     margin-right: 0;
 }
 
+.view .pager {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.7em;
+}
+
+/* IMAGE FIELD CAPTION
+--------------------------------------------------------------------------*/
+.view blockquote.image-field-caption, .node-teaser blockquote.image-field-caption {
+    display: none;
+    visibility: hidden;
+}
+
 /* PREFACE 
 --------------------------------------------------------------------------*/
 

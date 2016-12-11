@@ -145,7 +145,7 @@ function premium_form_node_type_form_alter(&$form, &$form_state) {
         '#type' => 'select',
         '#title' => t('Default premium content level'),
         '#default_value' => variable_get("premium_{$node_type}", 0),
-        '#options' => array(0 => t('None')) + premium_level_option_list(),
+        '#options' => premium_level_option_list(),
     );
 }
 
@@ -176,7 +176,7 @@ function premium_form_alter(&$form, $form_state, $form_id) {
                 '#type' => 'select',
                 '#title' => t('Premium content level'),
                 '#default_value' => $default,
-                '#options' => array(0 => t('None')) + premium_level_option_list(),
+                '#options' => premium_level_option_list(),
             );
         }
     }
@@ -221,6 +221,7 @@ function premium_default_premium_levels() {
     $preset->duration_unit = 'W';
     $preset->denied_message = t('Full text available to premium subscribers only.');
     $preset->denied_message_format = filter_fallback_format();
+    $preset->wordcount = 0;
 
     $export['default'] = $preset;
 
@@ -515,6 +516,7 @@ function premium_theme() {
  * Reformat the message body with a premium content message.
  */
 function theme_premium_body($arguments) {
+    drupal_add_css(drupal_get_path('module', 'premium') . '/css/premium.css');
     $node = $arguments['node'];
     node_build_content($node, 'teaser');
     $level = premium_level_load($node->premium);
@@ -526,8 +528,22 @@ function theme_premium_body($arguments) {
         $denied_message = variable_get('premium_message', t('Full text available to premium subscribers only.'));
         $denied_message_format = variable_get('premium_format');
     }
-    // Only display the premium message, if we actual have any content.
+
     if (!empty($node->content['body'])) {
-        return '<div class="premium-message">' . check_markup($denied_message, $denied_message_format) . '</div>';
+        $text = $node->content['body']['#object']->body['und'][0]['value'];
+        if ($level->wordcount > 0) {
+            $cut = '<p>';
+            $tmp = strip_tags($text);
+            $words = implode(" ", array_slice( explode(" ", $tmp), 0, $level->wordcount));
+            if (preg_match("/[.!?,;:]$/", $words)) {
+                $cut .= $words;
+            } else {
+                $cut .= $words . ' ...';
+            }
+            $cut .= '</p>';
+        } else {
+            $cut = '';
+        }
+        return '<div class="premium-message">' . $cut . check_markup($denied_message, $denied_message_format) . '</div>';
     }
 }
