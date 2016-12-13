@@ -830,31 +830,10 @@ function webform_get_submissions_load($pager_query) {
   }
 
   // Query the required submission data.
-<<<<<<< HEAD
-  $query = db_select('webform_submissions', 's');
-  $query->leftJoin('users', 'u', 'u.uid = s.uid');
-  $query
-    ->fields('s')
-    ->fields('u', array('name'))
-    ->condition('s.sid', $sids, 'IN');
-
-  $submissions = $query->execute()->fetchAllAssoc('sid');
-
-  foreach ($submissions as $sid => $submission) {
-    $submissions[$sid]->data = array();
-  }
-
-  // Query the required submission data.
-  $query = db_select('webform_submitted_data', 'sd');
-  $query
-    ->fields('sd', array('sid', 'cid', 'no', 'data'))
-    ->condition('sd.sid', array_keys($submissions), 'IN')
-=======
   $query = db_select('webform_submitted_data', 'sd');
   $query
     ->addTag('webform_get_submissions_data')
     ->fields('sd', array('sid', 'cid', 'no', 'data'))
->>>>>>> master
     ->orderBy('sd.sid', 'ASC')
     ->orderBy('sd.cid', 'ASC')
     ->orderBy('sd.no', 'ASC');
@@ -875,20 +854,11 @@ function webform_get_submissions_load($pager_query) {
     $query->condition('sd.nid', $nid);
   }
 
-<<<<<<< HEAD
-  if ($submissions) {
-    $result = $query->execute();
-    // Convert the queried rows into submission data.
-    foreach ($result as $row) {
-      $submissions[$row->sid]->data[$row->cid]['value'][$row->no] = $row->data;
-    }
-=======
   $result = $query->execute();
 
   // Convert the queried rows into submission data.
   foreach ($result as $row) {
     $submissions[$row->sid]->data[$row->cid][$row->no] = $row->data;
->>>>>>> master
   }
 
   foreach (module_implements('webform_submission_load') as $module) {
