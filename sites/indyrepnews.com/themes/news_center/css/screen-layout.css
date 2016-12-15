@@ -28,7 +28,7 @@ body.front h1{display:none;}
 #block-superfish-1 ul li.first{margin-left:4px !important;}
 #block-superfish-1{margin-bottom:0;width:1040px;display:block;position:inherit;z-index:99;height:24px;clear:left;}
 #block-superfish-1 ul li{display:inline-block;float:none;font-weight:bold;margin-left:4px !important;padding:12px 0;text-transform:uppercase;width:auto;border-right:1px solid #003366;}
-#block-superfish-1 ul li a{color:#FFFFFF;display:block;font-weight:600;font-size:14px;height:22px;line-height:20px;margin-top:0;padding:0 18px;text-decoration:none;background:none repeat scroll 0 0 transparent;}
+#block-superfish-1 ul li a{color:#FFFFFF;display:block;font-weight:600;font-size:14px;height:22px;line-height:20px;margin-top:0;padding:0 15px;text-decoration:none;background:none repeat scroll 0 0 transparent;}
 .sf-menu.sf-style-default a{border-top:none !important;padding:0.75em 1em;line-height:normal!important;height:auto!important;padding-top:0px!important;}
 #block-superfish-1 ul li a.active, #block-menu-menu-news-categories ul li a:hover{background:none repeat scroll 0 0 transparent;height:30px
 color:#333333;padding-top:5px;}
