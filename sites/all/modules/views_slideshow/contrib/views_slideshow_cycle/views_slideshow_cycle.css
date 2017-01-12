@@ -15,7 +15,7 @@
 
 .views_slideshow_pager_numbered div, .views_slideshow_pager_thumbnails div {
   display: inline;
-  padding-left: 10px;
+  /*padding-left: 10px;*/
 }
 
 .views_slideshow_cycle_pager.thumbnails a.activeSlide img {
