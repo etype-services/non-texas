@@ -26,19 +26,13 @@ body.front h1{
 	display: none;
 }
 
-#mobile-logo {
-    display: block;
-    float: left;
-    margin-bottom: 9px;
-    margin-left: 13px;
-    padding-top: 13px;
-    text-align: center;
+#logo {
+    margin-top: 10px;
+    width: 100%;
 }
 
-#logo {
-    margin-left: 0;
-    margin-top: 10px;
-	display: none;
+#logo img {
+    max-width: 700px;
 }
 
 #page-wrapper {
@@ -196,7 +190,7 @@ body.front h1{
     bottom: 0;
     color: #FFFFFF;
     position: absolute;
-    top: auto;
+    top: 296;
     width: 745px;
     z-index: 200;
 }
@@ -293,18 +287,19 @@ body.front h1{
 
 .views_slideshow_cycle_main {
     background: none repeat scroll 0 0 #333333;
-    height: 295px;    
+    height: 525px;    
     width: 747px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom {
-    border: 1px solid #333333;
+    border: none;
     height: 60px;
     margin-top: 0;
-    position: relative;
-    right: 0;
+    position: absolute;
+    left: 82px;
     width: 745px;
-    z-index: 0;
+    z-index: 200;
+		top: 684px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
@@ -333,13 +328,13 @@ body.front h1{
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item .views-field-field-image img {
     height: auto;
     margin-left: 23px;
-    width: auto;
+    width: 745px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item img {
     height: auto;
     margin-left: 0;
-    width: auto;
+    width: 745px;
 }
 
 #views_slideshow_pager_field_item_bottom_home_page-block_4 .views-field-field-image .views-content-field-image {
