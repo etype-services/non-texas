@@ -300,15 +300,9 @@ h2.node-title{}
 
 #block-menu-menu-secondary-menu{float:right;display:block;clear:both;text-align:right}
 
-#block-simpleads-ad-groups-12, #block-simpleads-ad-groups-15, #block-simpleads-ad-groups-49, #block-simpleads-ad-groups-52, #block-simpleads-ad-groups-53, #block-simpleads-ad-groups-54, #block-simpleads-ad-groups-59  {background:transparent;margin-left:-10px;}
-
-#block-simpleads-ad-groups-12 img, #block-simpleads-ad-groups-15 img, #block-simpleads-ad-groups-49 img, #block-simpleads-ad-groups-52 img, #block-simpleads-ad-groups-53 img, #block-simpleads-ad-groups-54 img, #block-simpleads-ad-groups-59 img {width:290px;height:auto;margin-bottom:10px;}
-
 .calendar-calendar{margin-top:-20px;}
 
 #block-views-calendar-block-2, #block-poll-recent{background:#E5ECF9;padding:3px;border:1px solid #ddd;}
-
-#block-simpleads-ad-groups-56 img{max-width:99%;height:auto;float:left;margin-right:7px;}
 
 #photowithcaption{max-width:440px;float:left;}
 
@@ -322,19 +316,29 @@ h2.node-title{}
 
 .page-taxonomy #capption{display:none;}
 
-#block-simpleads-ad-groups-24{margin-left:-10px;}
-
-#block-simpleads-ad-groups-25, #block-simpleads-ad-groups-26, #block-simpleads-ad-groups-28{margin-left:-10px;margin-top:-17px;}
-
 #block-block-9{margin-left:-10px;margin-top:-17px;}
 
-#block-simpleads-ad-groups-57 img{width:218px;height:100px;float:left;margin-right:15px;margin-bottom:20px;margin-top:15px;}
-#block-simpleads-ad-groups-51 img{width:728px;height:90px;float:left;margin-right:10px;margin-bottom:20px;}
+#block-block-14{margin-left:-10px;margin-top:-17px;}
 
 .views-row h4.field-content a{font-size:14px;color:#1156ad;}
 
 .image-ad a img{max-width:100%;}
 
+/* former simplead styling */
+/* 
+#block-simpleads-ad-groups-12, #block-simpleads-ad-groups-15, #block-simpleads-ad-groups-49, #block-simpleads-ad-groups-52, #block-simpleads-ad-groups-53, #block-simpleads-ad-groups-54, #block-simpleads-ad-groups-59  {background:transparent;margin-left:-10px;}
+#block-simpleads-ad-groups-56 img{max-width:99%;height:auto;float:left;margin-right:7px;}
+
+
+#block-simpleads-ad-groups-12 img, #block-simpleads-ad-groups-15 img, #block-simpleads-ad-groups-49 img, #block-simpleads-ad-groups-52 img, #block-simpleads-ad-groups-53 img, #block-simpleads-ad-groups-54 img, #block-simpleads-ad-groups-59 img {width:290px;height:auto;margin-bottom:10px;}
+
+#block-simpleads-ad-groups-24{margin-left:-10px;}
+
+#block-simpleads-ad-groups-25, #block-simpleads-ad-groups-26, #block-simpleads-ad-groups-28{margin-left:-10px;margin-top:-17px;}
+
+
+#block-simpleads-ad-groups-57 img{width:218px;height:100px;float:left;margin-right:15px;margin-bottom:20px;margin-top:15px;}
+#block-simpleads-ad-groups-51 img{width:728px;height:90px;float:left;margin-right:10px;margin-bottom:20px;}
 #block-simpleads-ad-groups-31 img{width: 300px;}
 #block-simpleads-ad-groups-31{background:transparent;margin-left:-10px;}
 
@@ -344,11 +348,26 @@ h2.node-title{}
 #block-simpleads-ad-groups-58 img{width: 135px; height: 160px; float: left; display: block; clear:none; margin-left: 10px;margin-right: 5px; margin-top:10px;}
 #block-simpleads-ad-groups-58 {margin-left:-20px; margin-top:-5px; width: 300px; overflow: visible;}
 
-#block-block-14{margin-left:-10px;margin-top:-17px;}
-
 #block-simpleads-ad-groups-65 img{width: 468px; height: 90px; float: left; display: block; clear:none; margin: 10px 10px;}
 #block-simpleads-ad-groups-66 img{width: 468px; height: 90px; float: right; display: block; clear:none; margin: 10px 10px;}
 
 #block-simpleads-ad-groups-62, #block-simpleads-ad-groups-63, #block-simpleads-ad-groups-64, #block-simpleads-ad-groups-67, #block-simpleads-ad-groups-68 {background:transparent;margin-left:-10px; width:300px;}
 
 #block-simpleads-ad-groups-62 img, #block-simpleads-ad-groups-63 img, #block-simpleads-ad-groups-64 img, #block-simpleads-ad-groups-67 img, #block-simpleads-ad-groups-68 img {width:300px;height:250px;margin-bottom:10px;}
+*/
+
+/* general simpleads styling */
+
+.simpleads-container img {
+	max-width:100%;
+	}
+
+.region-second-sidebar .block-simpleads {
+	padding:0px;
+	margin-bottom:5px;
+	}
+	
+.region-header .block-simpleads {
+	float: right;
+	}
+	

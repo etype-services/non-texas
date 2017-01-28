@@ -843,31 +843,33 @@ h2.node-title {
 #block-menu-menu-secondary-menu li {display:inline; height: 20px; padding: 0px; margin-bottom:-10px;}
 #block-menu-menu-secondary-menu {float: right; display:block; clear:both; width: 100%; text-align: right}
 
-#block-simpleads-ad-groups-12, #block-simpleads-ad-groups-15, #block-simpleads-ad-groups-25 {background: transparent; width:300px;}
-#block-simpleads-ad-groups-12 img, #block-simpleads-ad-groups-15 img, #block-simpleads-ad-groups-25 img {margin-bottom: 10px;}
-
 .calendar-calendar {margin-top:-20px;}
 
 #block-views-calendar-block-2, #block-poll-recent {background: #E5ECF9; padding: 3px; border: 1px solid #ddd;}
-#block-simpleads-ad-groups-13 img, #block-simpleads-ad-groups-24 img {max-width: 99%; height:auto;}
 .field-name-field-mugshot {float: left; margin-right: 10px;}
 
 .page-taxonomy-term .field-name-field-mugshot {width: 100px; height: auto; float: left;}
 
 #block-block-5 {width: 140px; float: left; margin-left: -10px; clear:none;}
+
+/* old simplead styling, commented out Jan 2017 during move to centralize themes */
+/* 
+#block-simpleads-ad-groups-12, #block-simpleads-ad-groups-15, #block-simpleads-ad-groups-25 {background: transparent; width:300px;}
+#block-simpleads-ad-groups-12 img, #block-simpleads-ad-groups-15 img, #block-simpleads-ad-groups-25 img {margin-bottom: 10px;}
+#block-simpleads-ad-groups-13 img, #block-simpleads-ad-groups-24 img {max-width: 99%; height:auto;}
 #block-simpleads-ad-groups-26 {width: 468px; margin-left: 0;clear:none;}
 #block-simpleads-ad-groups-26 img {width: 468px;}
 #block-simpleads-ad-groups-27 {float: left; width: 220px; margin-left: 35px;clear:none;}
 #block-simpleads-ad-groups-27 img {width: 220px; height: auto;}
-
 #block-simpleads-ad-groups-23 {float: left; clear:none;}
+*/
 
 /* ad styles added 7/6/2015 */
 #block-block-11 {margin-left: -12px;}
 #block-block-16 {margin-left: -3px; padding:0px;}
 
 /* more ad styles Oct 2015 */
-.simplead-container img {
+.simpleads-container img {
     width: 100%;
 }
 
@@ -888,3 +890,32 @@ h2.node-title {
     }
 }
 
+/* general simpleads styling Jan 2017*/
+
+.region-header .block-simpleads {
+	float: left;
+	padding-right:5px;
+	background:#fff;
+	}
+	
+.region-header .block-simpleads img {
+	margin-right: 10px;
+	}
+	
+.region-slideshow .block-simpleads {
+	margin-left: -11px;
+	}
+	
+.region-sidebar-second .block-simpleads {
+	padding:0px;
+	margin-bottom:5px;
+	}
+
+.region-sidebar-second .block-simpleads img {
+	margin-right:7px;
+	}
+
+.region-bottom .block-simpleads {
+	text-align:center;
+	margin-top:10px;
+	}
