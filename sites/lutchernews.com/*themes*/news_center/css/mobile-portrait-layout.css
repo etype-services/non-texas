@@ -36,7 +36,7 @@ h2, h3, h4, h5, h6{color:#333333;}
 
 #block-superfish-1{margin-bottom:0;width:310px;height:30px}
 
-#block-superfish-1 ul{margin-bottom:0;margin-right:0;margin-top:-6px;padding-left:0;}
+#block-superfish-1 ul{margin-bottom:0;margin-right:0;margin-top:-6px;padding-left:0; background-color:#333333}
 
 #block-superfish-1 ul li{background:none repeat scroll 0 0 #222222;border-top:1px dashed #CCCCCC;clear:both;display:inline-block;float:left;margin-left:0 !important;margin-top:0;padding:0;text-transform:uppercase;width:310px;}
 
