@@ -265,8 +265,8 @@ body.front h1 {
 	color: #CCCCCC;
 }
 
-#views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .views-field-title {    
-    display: block;   
+#views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .views-field-title {
+    display: block;
     z-index: 1;
 }
 
@@ -280,7 +280,7 @@ body.front h1 {
 }
 
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .views-field-title h2 a {
-   text-decoration: none;   
+   text-decoration: none;
    text-shadow: 1px 1px 1px #000000;
    color: #FFFFFF;
    width: 441px;
@@ -300,8 +300,8 @@ body.front h1 {
     display: block;
     font-size: 0.8em;
     margin-left: 10px;
-    padding-left: 20px; 
-	float: left;	
+    padding-left: 20px;
+	float: left;
 	margin-right: 10px;
 }
 
@@ -318,15 +318,15 @@ body.front h1 {
 }
 
 #views_slideshow_cycle_main_home_page-block .views-field-created{
-    background: url("../images/date.png") no-repeat scroll 0 0 transparent;   
+    background: url("../images/date.png") no-repeat scroll 0 0 transparent;
 }
 
 #views_slideshow_cycle_main_home_page-block .views-field-term-node-tid{
-    background: url("../images/tag.png") no-repeat scroll 0 0 transparent;    
+    background: url("../images/tag.png") no-repeat scroll 0 0 transparent;
 }
 
 #views_slideshow_cycle_main_home_page-block .views-field-name{
-	background: url("../images/author.png") no-repeat scroll 0 0 transparent;   
+	background: url("../images/author.png") no-repeat scroll 0 0 transparent;
 }
 
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame{
@@ -843,4 +843,22 @@ body.page-taxonomy-term .node-teaser .submitted {
 
 a img {
     max-width: 100%;
+}
+
+/* IMAGE FIELD CAPTION
+--------------------------------------------------------------------------*/
+.view blockquote.image-field-caption, .node-teaser blockquote.image-field-caption {
+    display: none;
+    visibility: hidden;
+}
+
+.page-node .node-article .content .field-type-image blockquote.image-field-caption {
+    float: left;
+    max-width: 380px;
+    margin: 5px 0 0;
+}
+
+blockquote.image-field-caption p {
+    line-height: 1.5em;
+    margin: 0 0 0.6em;
 }
