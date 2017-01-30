@@ -11,14 +11,21 @@ function fredtwentytwo_form_system_theme_settings_alter(&$form, &$form_state) {
 
     // Create the form using Forms API: http://api.drupal.org/api/7
 
-    $form['nav_color'] = array(
+    $form['misc_settings'] = array(
+        '#type' => 'fieldset',
+        '#title' => t('eType Settings'),
+        '#collapsible' => TRUE,
+        '#collapsed' => FALSE,
+    );
+
+    $form['misc_settings']['nav_color'] = array(
         '#type' => 'textfield',
         '#title' => t('Navigation Color'),
         '#size' => 20,
         '#default_value' => theme_get_setting('nav_color'),
     );
 
-    $form['body_background'] = array(
+    $form['misc_settings']['body_background'] = array(
         '#type' => 'textfield',
         '#title' => t('Body Background'),
         '#size' => 20,
