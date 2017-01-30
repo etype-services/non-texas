@@ -1,7 +1,7 @@
 
 screenshot  = screenshot.png
-name        = News Center - Fully Responsive Premium Drupal 7.x Theme v 1.1
-description = Premium theme for building responsive <strong>Newspapers sites</strong> for Drupal 7.x.  
+name        = Lake Oconee News
+description = Custom Theme
 
 core        = 7.x
 base theme  = zen
