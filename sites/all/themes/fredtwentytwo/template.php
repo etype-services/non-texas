@@ -70,6 +70,24 @@
 
 function fredtwentytwo_preprocess_html(&$variables, $hook) {
 
+    /* add site-specific css */
+    $base_path = base_path();
+    $conf_path = conf_path();
+    $site_css = $base_path . $conf_path . '/local.css';
+
+    if (file_exists($_SERVER['DOCUMENT_ROOT'] . $site_css)) {
+        drupal_add_css(
+            $site_css,
+            array(
+                'type' => 'file',
+                'media' => 'all',
+                'preprocess' => FALSE,
+                'every_page' => TRUE,
+                'weight' => 999,
+                'group' => CSS_THEME
+            )
+        );
+    }
 
     $nav_color = theme_get_setting('nav_color');
     if (!empty($nav_color)) {
