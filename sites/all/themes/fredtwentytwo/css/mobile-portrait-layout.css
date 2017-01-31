@@ -19,6 +19,15 @@ h2, h3, h4, h5, h6 {
     padding-top: 6px;
 }
 
+.content .menu li a {
+    text-decoration: none;
+    padding: 8px 10px 5px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-right: 1px solid #242424;
+}
+
 .messages.error {
     display: none;
 }
