@@ -293,6 +293,11 @@ body.front h1 {
     top: 464px;
 }
 
+.view-id-home_page .views-slideshow-controls-bottom #widget_pager_bottom_home_page-block {
+    width: 676px;
+    margin: 0 12px;
+}
+
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
     display: inline-block;
     margin-right: -3px;
