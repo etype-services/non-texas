@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .node{}
 
 .preview .node{}
@@ -29,3 +30,60 @@ h2.node-title{}
 .node .content{}
 
 .node ul.links{}
+=======
+.node {
+}
+
+.preview .node {
+}
+
+.node-promoted {
+}
+
+.node-sticky {
+}
+
+.node-unpublished {
+}
+
+.node-unpublished div.unpublished,
+.comment-unpublished div.unpublished {
+    height: 0;
+    overflow: visible;
+    color: #d8d8d8;
+    font-size: 75px;
+    line-height: 1;
+    font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.node-by-viewer {
+}
+
+.node-teaser {
+}
+
+.node-page {
+}
+
+.node-article {
+}
+
+h2.node-title {
+}
+
+.node .user-picture {
+}
+
+.node .submitted {
+}
+
+.node .content {
+}
+
+.node ul.links {
+}
+>>>>>>> b46b0de05b11cc12bf4a3aa6d777e120e22ebb25

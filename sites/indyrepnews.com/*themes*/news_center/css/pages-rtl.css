@@ -3,18 +3,34 @@
  * RTL companion for the pages.css file.
  */
 
+<<<<<<< HEAD
 
 /*
  * Header
  */
 #logo /* Wrapping link for logo */ {
   float: right;
+=======
+/*
+ * Header
+ */
+#logo /* Wrapping link for logo */
+{
+    float: right;
+>>>>>>> b46b0de05b11cc12bf4a3aa6d777e120e22ebb25
 }
 
 /*
  * Content
  */
+<<<<<<< HEAD
 ul.links li /* List of links */ {
   display: inline-block; /* Bug in Safari causes display: inline to fail. */
   padding: 0 0 0 1em;
+=======
+ul.links li /* List of links */
+{
+    display: inline-block; /* Bug in Safari causes display: inline to fail. */
+    padding: 0 0 0 1em;
+>>>>>>> b46b0de05b11cc12bf4a3aa6d777e120e22ebb25
 }
