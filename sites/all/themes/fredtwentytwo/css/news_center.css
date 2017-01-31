@@ -35,14 +35,14 @@ img {
     clear: both;
 }
 
-.region-top-area {
+/*.region-top-area {
     background: none repeat scroll 0 0 #FFFFFF;
     border: 0 solid #000000;
     float: right;
     height: 88px;
     margin-bottom: 8px;
     margin-right: 12px;
-}
+}*/
 
 .region-top-area .block {
     float: left;
