@@ -202,6 +202,10 @@ h2, h3, h4, h5, h6 {
     top: 7px;
 }
 
+#views_slideshow_cycle_main_home_page-block {
+    position: relative;
+}
+
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item {
     border: 1px solid #333333;
     height: 305px;
@@ -316,18 +320,25 @@ h2, h3, h4, h5, h6 {
 .views_slideshow_cycle_main {
     background: none repeat scroll 0 0 #333333;
     height: 490px;
-    width: 301px;
+    width: 320px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom {
     height: 60px;
     margin-top: 0;
     left: 0;
-    width: 300px;
+    width: 320px;
     z-index: 500;
     position: absolute;
     top: 430px;
     overflow: hidden;
+}
+
+#widget_pager_bottom_home_page-block {
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item img {
