@@ -731,12 +731,12 @@ h2.node-title {
     margin-bottom: 10px;
 }
 
-#block-menu-menu-secondary-menu {
+/*#block-menu-menu-secondary-menu {
     float: right;
     display: block;
     clear: both;
     text-align: right
-}
+}*/
 
 .calendar-calendar {
     margin-top: -20px;
