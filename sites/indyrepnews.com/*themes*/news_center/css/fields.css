@@ -1,46 +1,3 @@
-<<<<<<< HEAD
-.field{}
-
-.field-type-text{}
-
-.field-type-text-long{}
-
-.field-type-text-with-summary{}
-
-.field-type-image{}
-
-.field-type-file{}
-
-.field-type-taxonomy-term-reference{}
-
-.field-type-number-integer{}
-
-.field-type-number-decimal{}
-
-.field-type-number-float{}
-
-.field-type-list-text{}
-
-.field-type-list-boolean{}
-
-.field-type-list-integer{}
-
-.field-type-list-float{}
-
-.field-type-datetime{}
-
-.field-type-node-reference{}
-
-.field-type-user-reference{}
-
-.field-name-body{}
-
-.field-name-field-image{}
-
-.field-name-field-tags{}
-
-.field-name-field-FIELDNAME{}
-=======
 .field {
 }
 
@@ -103,4 +60,3 @@
 
 .field-name-field-FIELDNAME {
 }
->>>>>>> b46b0de05b11cc12bf4a3aa6d777e120e22ebb25

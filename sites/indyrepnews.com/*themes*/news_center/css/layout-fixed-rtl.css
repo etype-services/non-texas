@@ -3,35 +3,11 @@
  * RTL companion for the layout-fixed.css file.
  */
 
-<<<<<<< HEAD
-
-=======
->>>>>>> b46b0de05b11cc12bf4a3aa6d777e120e22ebb25
 /*
  * Content
  */
 #content,
 .no-sidebars #content {
-<<<<<<< HEAD
-  float: right;
-  margin-left: -960px; /* Negative value of #content's width + right margin. */
-  margin-right: 0;
-}
-
-.sidebar-first #content {
-  margin-left: -960px; /* Negative value of #content's width + right margin. */
-  margin-right: 200px; /* The width of .region-sidebar-first. */
-}
-
-.sidebar-second #content {
-  margin-left: -760px; /* Negative value of #content's width + right margin. */
-  margin-right: 0;
-}
-
-.two-sidebars #content {
-  margin-left: -760px; /* Negative value of #content's width + right margin. */
-  margin-right: 200px; /* The width of .region-sidebar-first */
-=======
     float: right;
     margin-left: -960px; /* Negative value of #content's width + right margin. */
     margin-right: 0;
@@ -50,37 +26,21 @@
 .two-sidebars #content {
     margin-left: -760px; /* Negative value of #content's width + right margin. */
     margin-right: 200px; /* The width of .region-sidebar-first */
->>>>>>> b46b0de05b11cc12bf4a3aa6d777e120e22ebb25
 }
 
 /*
  * Navigation
  */
 #navigation {
-<<<<<<< HEAD
-  float: right;
-  margin-left: -100%; /* Negative value of #navigation's width + right margin. */
-  margin-right: 0;
-=======
     float: right;
     margin-left: -100%; /* Negative value of #navigation's width + right margin. */
     margin-right: 0;
->>>>>>> b46b0de05b11cc12bf4a3aa6d777e120e22ebb25
 }
 
 /*
  * First sidebar
  */
 .region-sidebar-first {
-<<<<<<< HEAD
-  float: right;
-  margin-left: -200px; /* Negative value of .region-sidebar-first's width + right margin. */
-  margin-right: 0;
-}
-
-.region-sidebar-first .section {
-  margin: 0 0 0 20px;
-=======
     float: right;
     margin-left: -200px; /* Negative value of .region-sidebar-first's width + right margin. */
     margin-right: 0;
@@ -88,22 +48,12 @@
 
 .region-sidebar-first .section {
     margin: 0 0 0 20px;
->>>>>>> b46b0de05b11cc12bf4a3aa6d777e120e22ebb25
 }
 
 /*
  * Second sidebar
  */
 .region-sidebar-second {
-<<<<<<< HEAD
-  float: right;
-  margin-left: -960px; /* Negative value of .region-sidebar-second's width + right margin. */
-  margin-right: 760px; /* Width of content + sidebar-first. */
-}
-
-.region-sidebar-second .section {
-  margin: 0 20px 0 0;
-=======
     float: right;
     margin-left: -960px; /* Negative value of .region-sidebar-second's width + right margin. */
     margin-right: 760px; /* Width of content + sidebar-first. */
@@ -111,5 +61,4 @@
 
 .region-sidebar-second .section {
     margin: 0 20px 0 0;
->>>>>>> b46b0de05b11cc12bf4a3aa6d777e120e22ebb25
 }

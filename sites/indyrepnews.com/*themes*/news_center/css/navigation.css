@@ -1,26 +1,3 @@
-<<<<<<< HEAD
-li a.active{color:#000;}
-
-#navigation{}
-
-#navigation ul.links,
-
-#navigation .content ul{margin:0;padding:0;text-align:left;}
-
-#navigation ul.links li,
-
-#navigation .content li{float:left;padding:0 10px 0 0;}
-
-.region-navigation{}
-
-#main-menu{}
-
-#secondary-menu{float:right;}
-
-.block-menu{}
-
-.block-menu-block{}
-=======
 li a.active {
     color: #000;
 }
@@ -56,4 +33,3 @@ li a.active {
 
 .block-menu-block {
 }
->>>>>>> b46b0de05b11cc12bf4a3aa6d777e120e22ebb25
