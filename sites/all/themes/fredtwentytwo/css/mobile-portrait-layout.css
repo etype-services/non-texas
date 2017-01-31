@@ -147,7 +147,7 @@ h2, h3, h4, h5, h6 {
 #block-superfish-1 ul {
     margin-bottom: 0;
     margin-right: 0;
-    margin-top: -6px;
+    margin-top: 0;
     padding-left: 0;
     background-color: #333333
 }
@@ -349,9 +349,9 @@ h2, h3, h4, h5, h6 {
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
     display: inline-block;
-    margin-right: -6px;
+    margin-right: 0;
     overflow: hidden;
-    padding: 0 4px 0 5px;
+    padding: 0;
     opacity: 0.4;
 }
 
