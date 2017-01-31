@@ -70,6 +70,15 @@ h2, h3, h4, h5, h6 {
     width: 300px;
 }
 
+#region-top-area {
+    background: none;
+    border: none;
+    float: none;
+    height: auto;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
 .sidebar-second #content {
     float: none;
     margin-left: 0;
