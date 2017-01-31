@@ -287,7 +287,7 @@ body.front h1 {
 
 .view-id-home_page .views-slideshow-controls-bottom {
     top: 454px;
-    left: 50px;
+    left: 0;
     width: 480px;
     display: flex;
     justify-content: space-around;
