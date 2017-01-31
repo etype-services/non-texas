@@ -321,7 +321,7 @@ body.front h1 {
 }
 
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame {
-    height: 295px !important;
+    height: 456px !important;
 }
 
 .bottom-shadow {
@@ -331,7 +331,7 @@ body.front h1 {
 
 .views_slideshow_cycle_main {
     background: none repeat scroll 0 0 #333333;
-    height: 295px;
+    height: 456px;
     padding-bottom: 0;
     width: 462px;
 }
@@ -342,7 +342,7 @@ body.front h1 {
     border-top: none;
     height: 60px;
     left: 30px;
-    top: 200px;
+    top: 395px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
