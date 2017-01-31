@@ -331,7 +331,7 @@ body.front h1 {
 
 .views_slideshow_cycle_main {
     background: none repeat scroll 0 0 #333333;
-    height: 575px;
+    height: 295px;
     padding-bottom: 0;
     width: 462px;
 }
@@ -342,7 +342,7 @@ body.front h1 {
     border-top: none;
     height: 60px;
     left: 30px;
-    top: 515px;
+    top: 200px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
