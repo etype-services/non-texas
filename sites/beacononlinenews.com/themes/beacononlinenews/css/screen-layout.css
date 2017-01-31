@@ -331,18 +331,19 @@ body.front h1 {
 
 .views_slideshow_cycle_main {
     background: none repeat scroll 0 0 #333333;
-    height: 456px;
+    height: 480px;
     padding-bottom: 0;
-    width: 462px;
+    width: 692px;
+    position: relative;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom {
     border: none;
-    width: 428px;
+    width: 692px;
     border-top: none;
     height: 60px;
-    left: 30px;
-    top: 395px;
+    left: 0;
+    top: 420px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
