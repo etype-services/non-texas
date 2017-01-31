@@ -103,6 +103,20 @@ function fredtwentytwo_preprocess_html(&$variables, $hook) {
         );
     }
 
+    $nav_color = theme_get_setting('body_background');
+    if (!empty($body_background)) {
+        drupal_add_css(
+            'body {background: '. $body_background .' !important;}',
+            array(
+                'group' => CSS_THEME,
+                'type' => 'inline',
+                'media' => 'screen',
+                'preprocess' => FALSE,
+                'weight' => '9999',
+            )
+        );
+    }
+
   // The body tag's classes are controlled by the $classes_array variable. To
   // remove a class from $classes_array, use array_diff().
   //$variables['classes_array'] = array_diff($variables['classes_array'], array('class-to-remove'));
