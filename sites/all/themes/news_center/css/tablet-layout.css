@@ -684,21 +684,6 @@ a.back-to-top:hover, a.back-to-top:active {
     background: none;
 }
 
-#block-views-most-popular-today-block, #block-views-most-popular-all-time-block, #block-views-most-commented-block, #block-views-top-rated-articles-block {
-    clear: none;
-    float: left;
-    margin-right: 20px;
-    width: 344px;
-}
-
-#block-views-most-popular-all-time-block, #block-views-top-rated-articles-block {
-    margin-right: 0;
-}
-
-#block-views-most-popular-today-block, #block-views-most-commented-block {
-    clear: both;
-}
-
 /* Footer: Region "First Column" */
 
 #footer {
