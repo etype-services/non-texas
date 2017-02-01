@@ -5,3 +5,55 @@
         margin: 2em auto;
     }
 }
+
+
+
+/* wider screens */
+@media only screen and (max-width: 420px) {
+    /* Main Menu Styles */
+
+    #block-superfish-1 {
+        margin-bottom: 0;
+        height: 30px;
+    }
+
+    #block-superfish-1 ul li {
+        background: none repeat scroll 0 0 #222222;
+        border-top: 1px dashed #CCCCCC;
+        text-transform: uppercase;
+    }
+
+    #block-superfish-1 ul li a {
+        background: url("../images/mobile_menu.png") no-repeat scroll 7px 8px transparent;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    #block-superfish-1 ul li:first-child {
+        display: inline-block;
+    }
+
+    #block-superfish-1 ul li:not(:first-child) a.active,
+    #block-superfish-1 ul li:not(:first-child) a.active-trail,
+    #block-superfish-1 ul li:not(:first-child) a:hover {
+        color: #333333;
+    }
+
+    #block-superfish-1 ul li:first-child a {
+        display: block;
+        background: url("../images/select-icons.png") no-repeat 0 5px;
+        cursor: pointer;
+    }
+
+    #block-superfish-1 ul li:not(:first-child) {
+        display: none;
+    }
+
+    #block-superfish-1 ul li:not(:first-child) a.active,
+    #block-superfish-1 ul li:not(:first-child) a.active-trail,
+    #block-superfish-1 ul li:not(:first-child) a:hover {
+        background: url("../images/mobile_menu_hover.png") no-repeat scroll 7px 8px #ffffff;
+    }
+
+}
