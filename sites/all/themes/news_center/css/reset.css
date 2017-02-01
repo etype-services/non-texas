@@ -64,6 +64,5 @@ ul.menu li a {
 }
 
 ul li.leaf {
-    list-style-image: none;
-    list-style-type: none;
+    list-style: none;
 }
