@@ -1,1 +1,63 @@
-/* blank for any reset css */
+/* reset css */
+
+body {
+    font-size: 75%;
+    color: #222;
+    background: #fff;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: #111;
+}
+
+a:focus, a:hover {
+    color: #09f;
+}
+
+a {
+    color: #06c;
+    text-decoration: underline;
+}
+
+.clearfix:after, .container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.clearfix, .container {
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+.caps {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    font-size: 1.2em;
+    line-height: 1%;
+    font-weight: bold;
+    padding: 0 2px;
+}
+
+/* menus */
+ul.menu {
+    list-style: none;
+}
+
+ul.menu li {
+    float: left;
+}
+
+ul.menu li a {
+    text-decoration: none;
+}
+
