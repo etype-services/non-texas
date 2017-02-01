@@ -6,10 +6,8 @@ description = Custom theme built on News Center.
 core        = 7.x
 base theme  = zen
 
-stylesheets[screen,projection][] = css/blueprint/screen.css
 stylesheets[all][]        = css/reset.css
 stylesheets[all][]        = css/wireframes.css
-
 stylesheets[print][]      = css/blueprint/print.css
 
 scripts[] = js/news_center.js
