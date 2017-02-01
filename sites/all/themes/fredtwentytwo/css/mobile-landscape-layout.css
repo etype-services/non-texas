@@ -54,7 +54,7 @@ body.front h1 {
     float: none;
     margin-left: 0;
     margin-right: 0;
-    margin-top: -40px !important;
+    margin-top: 0 !important;
     padding: 15px 0 0;
     position: relative;
     width: 100%;
@@ -364,7 +364,6 @@ body.front h1 {
     margin-right: 20px;
     margin-top: 0;
     padding-bottom: 5px;
-    width: 220px;
 }
 
 #block-views-articles-categories-block-block .content,
