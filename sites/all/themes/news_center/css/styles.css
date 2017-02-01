@@ -3,5 +3,14 @@
 }
 
 #page {
-    margin: 1em;
+    margin: 2em;
+}
+
+/* logo */
+#logo {
+    width: 100%;
+}
+
+#logo img {
+    width: 100%;
 }

@@ -1,4 +1,4 @@
-/* reset css */
+/* reset css -- base styles for the theme */
 
 body {
     font-size: 75%;
@@ -51,6 +51,8 @@ a {
 /* menus */
 ul.menu {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 ul.menu li {
@@ -61,3 +63,7 @@ ul.menu li a {
     text-decoration: none;
 }
 
+ul li.leaf {
+    list-style-image: none;
+    list-style-type: none;
+}
