@@ -658,12 +658,8 @@ a.back-to-top:hover, a.back-to-top:active {
 
 .region-footer-first-column, .region-footer-second-column, .region-footer-third-column, .region-footer-fourth-column {
     float: left;
-    margin-right: 16px;
-    width: 220px;
-}
-
-.region-footer-second-column, .region-footer-fourth-column {
-    margin-right: 0;
+    margin-right: 1em;
+    width: 23%;
 }
 
 .region-footer-fourth-column {

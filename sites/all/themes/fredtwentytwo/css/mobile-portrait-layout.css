@@ -335,13 +335,6 @@ h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
-#widget_pager_bottom_home_page-block {
-    width: 310px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 5px;
-}
-
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item img {
     height: auto;
     margin-left: 0;
@@ -655,6 +648,10 @@ a.back-to-top:hover, a.back-to-top:active {
     padding: 19px 12px 12px;
 }
 
+.region-footer .block-simpleads .last {
+    margin-bottom: 1em;
+}
+
 .region-footer-first-column, .region-footer-second-column, .region-footer-third-column, .region-footer-fourth-column {
     float: none;
     width: 100%;
@@ -664,6 +661,13 @@ a.back-to-top:hover, a.back-to-top:active {
 .region-footer-fourth-column {
     clear: both;
     margin-right: 0;
+}
+
+.region-footer-first-column h2.block-title, .region-footer-second-column h2.block-title, .region-footer-third-column h2.block-title, .region-footer-fourth-column h2.block-title {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    min-height: 50px;
 }
 
 .block-simplenews {
