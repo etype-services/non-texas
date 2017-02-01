@@ -167,7 +167,7 @@ body.front h1 {
 }
 
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item {
-    border: 1px solid #333333;
+    border: none;
     height: 445px;
     width: 462px;
     border-bottom: none;

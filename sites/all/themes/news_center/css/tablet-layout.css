@@ -177,7 +177,7 @@ body.front h1 {
 }
 
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item {
-    border: 1px solid #333333;
+    border: none;
     height: 295px;
     width: 748px;
     border-bottom: none;
@@ -285,7 +285,7 @@ body.front h1 {
 
 .views_slideshow_cycle_main {
     background: none repeat scroll 0 0 #333333;
-    height: 525px;
+    height: 540px;
     width: 748px;
 }
 
@@ -301,7 +301,7 @@ body.front h1 {
     left: 0;
     width: 748px;
     z-index: 200;
-    top: 464px;
+    top: 505px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
