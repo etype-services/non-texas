@@ -505,6 +505,8 @@ img {
     margin-bottom: 12px;
     padding-bottom: 12px;
     padding-left: 51px;
+    clear: left;
+    height: 38px;
 }
 
 #block-views-most-popular-all-time-block .views-row-last {
