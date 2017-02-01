@@ -79,10 +79,9 @@ body.front h1 {
     display: none;
 }
 
-.region-top-area {
-    float: right;
-    margin-right: 15px;
-    margin-top: 5px;
+.region-top-area .simplead-container {
+    float: left;
+    margin-right: 1em;
 }
 
 #block-system-user-menu ul.menu, #block-shortcut-shortcuts ul.menu {
