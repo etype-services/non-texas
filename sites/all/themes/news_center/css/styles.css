@@ -3,7 +3,17 @@
 }
 
 #page {
-    margin: 2em;
+    margin: 0 1em;
+}
+
+.region {
+    margin: 1em 0;
+}
+
+/* HEADER */
+
+#header {
+    margin-top: 1em;
 }
 
 /* logo */
@@ -13,4 +23,17 @@
 
 #logo img {
     width: 100%;
+}
+
+/* hide top search form */
+#block-multiblock-1 {
+    display: none;
+}
+
+/* SIMPLE ADS */
+
+/* line up ads */
+.block-simpleads .adslist > div > div {
+    display: flex;
+    justify-content: space-around;
 }
