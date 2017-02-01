@@ -369,6 +369,7 @@ body.front h1 {
  * Articles Blocks
  */
 
+<<<<<<< HEAD
 #block-views-articles-categories-block-block, #block-views-articles-block-2-block, #block-views-articles-block-3-block, #block-views-articles-block-4-block, #block-views-articles-block-5-block, #block-views-articles-block-6-block {
     float: left;
     margin-right: 20px;
@@ -376,6 +377,8 @@ body.front h1 {
     padding-bottom: 5px;
 }
 
+=======
+>>>>>>> bc3697730c4a3db5142269616971a4720345c63f
 #block-views-articles-categories-block-block .content,
 #block-views-articles-block-2-block .content,
 #block-views-articles-block-4-block .content,

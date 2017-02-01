@@ -345,7 +345,11 @@ body.front h1 {
  * Articles Blocks
  */
 
+<<<<<<< HEAD
 .region-content0 .block.odd {
+=======
+.region-content0 .block.even {
+>>>>>>> bc3697730c4a3db5142269616971a4720345c63f
     width: 462px;
     float: left;
 }

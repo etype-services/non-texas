@@ -353,6 +353,7 @@ body.front h1 {
     clear: both;
 }
 
+<<<<<<< HEAD
 #block-views-articles-categories-block-block, #block-views-articles-block-2-block, #block-views-articles-block-3-block, #block-views-articles-block-4-block, #block-views-articles-block-5-block, #block-views-articles-block-6-block {
     float: left;
     margin-right: 20px !important;
@@ -361,6 +362,8 @@ body.front h1 {
     width: 236px;
 }
 
+=======
+>>>>>>> bc3697730c4a3db5142269616971a4720345c63f
 #block-views-articles-categories-block-block .content,
 #block-views-articles-block-2-block .content,
 #block-views-articles-block-4-block .content,
@@ -388,6 +391,7 @@ body.front h1 {
     margin-right: 0 !important;
 }
 
+<<<<<<< HEAD
 #block-views-articles-categories-block-block, #block-views-articles-block-3-block, #block-views-articles-block-5-block {
     clear: none;
     margin-right: 20px !important;
@@ -406,6 +410,8 @@ body.front h1 {
     margin-right: 0;
 }
 
+=======
+>>>>>>> bc3697730c4a3db5142269616971a4720345c63f
 #block-views-articles-categories-block-block .views-field-totalcount .value, #block-views-articles-block-2-block .views-field-totalcount .value, #block-views-articles-block-3-block .views-field-totalcount .value, #block-views-articles-block-4-block .views-field-totalcount .value, #block-views-articles-block-5-block .views-field-totalcount .value, #block-views-articles-block-6-block .views-field-totalcount .value {
     font-size: 27px;
     letter-spacing: -3px;
@@ -442,6 +448,7 @@ body.front h1 {
     margin-right: 0 !important;
 }
 
+<<<<<<< HEAD
 #block-views-featured-article-block {
     float: left;
     margin-right: 20px;
@@ -458,6 +465,8 @@ body.front h1 {
     width: 364px;
 }
 
+=======
+>>>>>>> bc3697730c4a3db5142269616971a4720345c63f
 .view-footer {
     width: 100%;
 }

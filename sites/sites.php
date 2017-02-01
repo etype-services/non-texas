@@ -1,4 +1,5 @@
 <?php
+$sites['test.etypegoogle8.com'] = 'ouraynews.com';
 
 $sites['prairiepress.etypegoogle8.com'] = 'prairiepress.net';
 $sites['prairiepress.net'] = 'prairiepress.net';

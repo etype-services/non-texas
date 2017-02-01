@@ -849,6 +849,7 @@ h2.node-title {
     clear: none;
 }
 
+<<<<<<< HEAD
 /* old simplead styling, commented out Jan 2017 during move to centralize themes */
 /* 
 #block-simpleads-ad-groups-12, #block-simpleads-ad-groups-15, #block-simpleads-ad-groups-25 {background: transparent; width:300px;}
@@ -861,6 +862,8 @@ h2.node-title {
 #block-simpleads-ad-groups-23 {float: left; clear:none;}
 */
 
+=======
+>>>>>>> bc3697730c4a3db5142269616971a4720345c63f
 /* ad styles added 7/6/2015 */
 #block-block-11 {
     margin-left: -12px;
@@ -894,6 +897,7 @@ h2.node-title {
 }
 
 /* general simpleads styling Jan 2017*/
+<<<<<<< HEAD
 
 .region-header .block-simpleads {
     float: left;
@@ -907,6 +911,11 @@ h2.node-title {
 
 .region-slideshow .block-simpleads {
     margin-left: -11px;
+=======
+.region-header .block-simpleads {
+    float: left;
+    padding-right: 5px;
+>>>>>>> bc3697730c4a3db5142269616971a4720345c63f
 }
 
 .region-sidebar-second .block-simpleads {
