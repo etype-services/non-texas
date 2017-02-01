@@ -19,6 +19,7 @@
 
     #block-superfish-1 ul li {
         background: #222222;
+        position: relative;
     }
 
     #block-superfish-1 ul li a {
@@ -28,6 +29,7 @@
         text-decoration: none;
         text-transform: uppercase;
         padding-left: 3em;
+        border: none;
     }
 
     #block-superfish-1 ul li:first-child {
