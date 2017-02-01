@@ -656,6 +656,10 @@ a.back-to-top:hover, a.back-to-top:active {
     padding: 19px 12px 12px;
 }
 
+.region-footer .block-simpleads .last {
+    margin-bottom: 1em;
+}
+
 .region-footer-first-column, .region-footer-second-column, .region-footer-third-column, .region-footer-fourth-column {
     float: left;
     margin-right: 1em;
@@ -665,6 +669,10 @@ a.back-to-top:hover, a.back-to-top:active {
 .region-footer-fourth-column {
     margin-right: 0;
     clear: none;
+}
+
+.region-footer-first-column h2.block-title, .region-footer-second-column h2.block-title, .region-footer-third-column h2.block-title, .region-footer-fourth-column h2.block-title {
+    min-height: 50px;
 }
 
 .block-simplenews {
