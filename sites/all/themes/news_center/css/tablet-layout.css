@@ -353,14 +353,6 @@ body.front h1 {
     clear: both;
 }
 
-#block-views-articles-categories-block-block, #block-views-articles-block-2-block, #block-views-articles-block-3-block, #block-views-articles-block-4-block, #block-views-articles-block-5-block, #block-views-articles-block-6-block {
-    float: left;
-    margin-right: 20px !important;
-    margin-top: 0;
-    padding-bottom: 5px;
-    width: 236px;
-}
-
 #block-views-articles-categories-block-block .content,
 #block-views-articles-block-2-block .content,
 #block-views-articles-block-4-block .content,
@@ -386,24 +378,6 @@ body.front h1 {
 
 .region-content0 .block.odd {
     margin-right: 0 !important;
-}
-
-#block-views-articles-categories-block-block, #block-views-articles-block-3-block, #block-views-articles-block-5-block {
-    clear: none;
-    margin-right: 20px !important;
-}
-
-#block-views-articles-block-2-block, #block-views-articles-block-4-block, #block-views-articles-block-6-block {
-    margin-right: 20px;
-}
-
-#block-views-articles-categories-block-block, #block-views-articles-block-4-block {
-    clear: both;
-    margin-right: 20px !important;
-}
-
-#block-views-articles-block-3-block, #block-views-articles-block-6-block {
-    margin-right: 0;
 }
 
 #block-views-articles-categories-block-block .views-field-totalcount .value, #block-views-articles-block-2-block .views-field-totalcount .value, #block-views-articles-block-3-block .views-field-totalcount .value, #block-views-articles-block-4-block .views-field-totalcount .value, #block-views-articles-block-5-block .views-field-totalcount .value, #block-views-articles-block-6-block .views-field-totalcount .value {
@@ -440,22 +414,6 @@ body.front h1 {
 
 #block-views-articles-block-3-block, #block-views-articles-block-6-block {
     margin-right: 0 !important;
-}
-
-#block-views-featured-article-block {
-    float: left;
-    margin-right: 20px;
-    margin-top: 0;
-    padding-bottom: 6px;
-    width: 364px;
-}
-
-#block-views-most-popular-block {
-    clear: none;
-    float: left;
-    margin-left: 20px;
-    margin-right: 0;
-    width: 364px;
 }
 
 .view-footer {

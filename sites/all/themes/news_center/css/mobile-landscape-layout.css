@@ -369,13 +369,6 @@ body.front h1 {
  * Articles Blocks
  */
 
-#block-views-articles-categories-block-block, #block-views-articles-block-2-block, #block-views-articles-block-3-block, #block-views-articles-block-4-block, #block-views-articles-block-5-block, #block-views-articles-block-6-block {
-    float: left;
-    margin-right: 20px;
-    margin-top: 0;
-    padding-bottom: 5px;
-}
-
 #block-views-articles-categories-block-block .content,
 #block-views-articles-block-2-block .content,
 #block-views-articles-block-4-block .content,
