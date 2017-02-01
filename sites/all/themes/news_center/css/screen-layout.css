@@ -336,7 +336,7 @@ body.front h1 {
 }
 
 #block-views-top-news-block {
-    width: 225px;
+    width: 236px;
     float: left;
     margin-left: 12px;
 }
@@ -351,8 +351,10 @@ body.front h1 {
 }
 
 .region-content0 .block.even {
-    width: 286px;
+    width: 236px;
     float: left;
+    margin-left: 12px;
+
 }
 
 #block-views-articles-categories-block-block .content,
