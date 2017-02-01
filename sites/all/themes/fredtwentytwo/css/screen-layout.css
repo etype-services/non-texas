@@ -30,6 +30,10 @@ ul.menu li {
     margin-top: 7px;
 }
 
+#block-menu-menu-secondary-menu {
+    float: right;
+}
+
 body.front h1 {
     display: none;
 }
