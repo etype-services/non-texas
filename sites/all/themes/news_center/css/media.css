@@ -63,4 +63,8 @@
         background: url("../images/mobile_menu.png") no-repeat 7px 8px transparent;
     }
 
+    #block-superfish-1 ul li lu li:not(:first-child) {
+        display: block;
+    }
+
 }
