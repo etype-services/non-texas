@@ -50,7 +50,5 @@
 	  <?php endif; ?>
 	  
 	<?php endforeach; ?>
-	
-	<div class="bottom-shadow">
-	</div>	
+
 </div>
