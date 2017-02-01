@@ -20,6 +20,7 @@
     #block-superfish-1 ul li {
         background: #222222;
         position: relative;
+        width: 100%;
     }
 
     #block-superfish-1 ul li a {

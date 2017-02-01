@@ -68,3 +68,8 @@ ul li.leaf {
     list-style: none;
     padding: 0 0 0.3em 0.2em;
 }
+
+/* reset superfish styles */
+.sf-menu.sf-style-default {
+    float: none;
+}
