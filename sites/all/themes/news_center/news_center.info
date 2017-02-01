@@ -8,13 +8,14 @@ base theme  = zen
 
 stylesheets[all][]        = css/reset.css
 stylesheets[all][]        = css/styles.css
+stylesheets[all][]        = css/simpleads.css
 stylesheets[all][]        = css/media.css
 stylesheets[all][]        = css/wireframes.css
 stylesheets[print][]      = css/print.css
 
 scripts[] = js/news_center.js
 
-regions[top_advertisement]           = Top Advertisement
+regions[top_advertisement] = Top Advertisement
 regions[help]           = Help
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
