@@ -248,17 +248,6 @@ img {
 }
 
 /* Content Areas General Styles */
-.region-content0 .block.odd {
-    width: 50%;
-    float: left;
-}
-
-.region-content0 .block.even {
-    width: 48%;
-    float: left;
-    padding-left: 2%;
-}
-
 .region-content0 .block, .region-content1 .block, .region-content2 .block {
     color: #666666;
     font-size: 0.85em;

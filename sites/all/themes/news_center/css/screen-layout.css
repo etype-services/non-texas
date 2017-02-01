@@ -217,7 +217,7 @@ body.front h1 {
     display: block;
     padding: 12px;
     text-shadow: 1px 1px 1px #000000;
-    width: 462px;
+    width: 438px;
     z-index: 1;
 }
 
@@ -345,12 +345,14 @@ body.front h1 {
  * Articles Blocks
  */
 
-#block-views-articles-categories-block-block, #block-views-articles-block-2-block, #block-views-articles-block-3-block, #block-views-articles-block-4-block, #block-views-articles-block-5-block, #block-views-articles-block-6-block {
+.region-content0 .block.odd {
+    width: 462px;
     float: left;
-    margin-right: 21px;
-    margin-top: 0;
-    padding-bottom: 5px;
-    width: 220px;
+}
+
+.region-content0 .block.even {
+    width: 286px;
+    float: left;
 }
 
 #block-views-articles-categories-block-block .content,
@@ -359,7 +361,6 @@ body.front h1 {
 #block-views-articles-block-5-block .content {
     border-right: 1px solid #EEEEEE;
     padding-right: 10px;
-    width: 220px;
 }
 
 #block-views-most-popular-block .views-row-5, #block-views-most-popular-block .views-row-6 {
