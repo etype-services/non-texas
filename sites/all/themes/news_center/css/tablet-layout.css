@@ -71,6 +71,11 @@ body.front h1 {
     margin-left: 0;
 }
 
+.region-top-area .simplead-container {
+    float: left;
+    margin-right: 1em;
+}
+
 /* Top Search Form */
 
 #block-multiblock-1 {
