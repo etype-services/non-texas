@@ -17,7 +17,7 @@ a:focus, a:hover {
 }
 
 a {
-    color: #06c;
+    color: #222;
     text-decoration: underline;
 }
 
@@ -66,4 +66,5 @@ ul.menu li a {
 
 ul li.leaf {
     list-style: none;
+    padding: 0 0 0.3em 0.2em;
 }
