@@ -220,10 +220,6 @@ $sites['courier-record.etypegoogle8.com'] = 'courier-record.com';
 $sites['courier-record.com'] = 'courier-record.com';
 $sites['www.courier-record.com'] = 'courier-record.com';
 
-
-/* eyeonla.etypegoogle8.com */
-$sites['eyeonla.etypegoogle8.com'] = 'eyeonla.etypegoogle8.com';
-
 /* marshallcountyjournal.etypegoogle8.com */
 $sites['marshallcountyjournal.etypegoogle8.com'] = 'marshallcountyjournal.etypegoogle8.com';
 $sites['marshallcountyjournal.com'] = 'marshallcountyjournal.etypegoogle8.com';
@@ -233,3 +229,5 @@ $sites['www.marshallcountyjournal.com'] = 'marshallcountyjournal.etypegoogle8.co
 $sites['thomastribune.etypegoogle8.com'] = 'thomastribune.etypegoogle8.com';
 $sites['thomastribune.com'] = 'thomastribune.etypegoogle8.com';
 $sites['www.thomastribune.com'] = 'thomastribune.etypegoogle8.com';
+
+
