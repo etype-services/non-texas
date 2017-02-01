@@ -18,20 +18,20 @@
     }
 
     #block-superfish-1 ul li {
-        background: none repeat scroll 0 0 #222222;
-        border-top: 1px dashed #CCCCCC;
-        text-transform: uppercase;
+        background: #222222;
     }
 
     #block-superfish-1 ul li a {
-        background: url("../images/mobile_menu.png") no-repeat scroll 7px 8px transparent;
+        background: url("../images/mobile_menu.png") no-repeat 7px 8px transparent;
         color: #fff;
         font-weight: bold;
         text-decoration: none;
+        text-transform: uppercase;
+        padding-left: 3em;
     }
 
     #block-superfish-1 ul li:first-child {
-        display: inline-block;
+        display: block;
     }
 
     #block-superfish-1 ul li:not(:first-child) a.active,
@@ -53,7 +53,7 @@
     #block-superfish-1 ul li:not(:first-child) a.active,
     #block-superfish-1 ul li:not(:first-child) a.active-trail,
     #block-superfish-1 ul li:not(:first-child) a:hover {
-        background: url("../images/mobile_menu_hover.png") no-repeat scroll 7px 8px #ffffff;
+        background: url("../images/mobile_menu_hover.png") no-repeat 7px 8px #ffffff;
     }
 
 }
