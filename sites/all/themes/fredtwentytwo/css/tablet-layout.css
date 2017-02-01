@@ -716,20 +716,6 @@ a.back-to-top:hover, a.back-to-top:active {
     padding: 19px 12px 12px;
 }
 
-.region-footer-first-column, .region-footer-second-column, .region-footer-third-column, .region-footer-fourth-column {
-    float: left;
-    margin-right: 16px;
-    width: 364px;
-}
-
-.region-footer-second-column, .region-footer-fourth-column {
-    margin-right: 0;
-}
-
-.region-footer-fourth-column {
-    margin-right: 0;
-}
-
 .block-simplenews {
     float: left;
     margin-bottom: 35px;

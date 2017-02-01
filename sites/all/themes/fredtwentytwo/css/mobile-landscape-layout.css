@@ -655,7 +655,7 @@ a.back-to-top:hover, a.back-to-top:active {
     padding: 19px 12px 12px;
 }
 
-.region-footer .block-simpleads .last {
+.region-footer .block-simpleads.last {
     margin-bottom: 1em;
 }
 
@@ -671,7 +671,7 @@ a.back-to-top:hover, a.back-to-top:active {
 }
 
 .region-footer-first-column h2.block-title, .region-footer-second-column h2.block-title, .region-footer-third-column h2.block-title, .region-footer-fourth-column h2.block-title {
-    min-height: 50px;
+    min-height: 63px;
 }
 
 .block-simplenews {
