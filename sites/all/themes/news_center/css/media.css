@@ -79,7 +79,7 @@
         margin-bottom: 1em;
     }
 
-    #views_slideshow_cycle_main_home_page-block {
+    #views-home-page .skin-default {
         position: relative;
     }
 
@@ -126,12 +126,9 @@
 
     #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .views-field-title h2 a {
         color: #FFFFFF;
-        display: block;
         height: 97px;
-        overflow: hidden;
         text-decoration: none;
         text-shadow: 1px 1px 1px #000000;
-        width: 100%;
     }
 
     #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .views-field-body-1 {
