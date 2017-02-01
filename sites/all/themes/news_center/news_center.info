@@ -7,6 +7,7 @@ core        = 7.x
 base theme  = zen
 
 stylesheets[all][]        = css/reset.css
+stylesheets[all][]        = css/styles.css
 stylesheets[all][]        = css/media.css
 stylesheets[all][]        = css/wireframes.css
 stylesheets[print][]      = css/print.css
