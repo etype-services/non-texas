@@ -58,6 +58,11 @@
         background: url("../images/mobile_menu_hover.png") no-repeat 7px 8px #ffffff;
     }
 
+    #block-superfish-1 ul li ul li {
+        display: block;
+        width: 100%;
+    }
+
     /* no hamburger on sub-menus */
     #block-superfish-1 ul li ul li:first-child a {
         background: url("../images/mobile_menu.png") no-repeat 7px 8px transparent;
