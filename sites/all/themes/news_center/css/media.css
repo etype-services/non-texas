@@ -44,11 +44,10 @@
     }
 
     #block-superfish-1 ul li:first-child a {
-        display: block;
         background: url("../images/select-icons.png") no-repeat 0 5px;
-        cursor: pointer;
     }
 
+    /* all other menu items collapsed at first */
     #block-superfish-1 ul li:not(:first-child) {
         display: none;
     }
@@ -57,6 +56,11 @@
     #block-superfish-1 ul li:not(:first-child) a.active-trail,
     #block-superfish-1 ul li:not(:first-child) a:hover {
         background: url("../images/mobile_menu_hover.png") no-repeat 7px 8px #ffffff;
+    }
+
+    /* no hamburger on sub-menus */
+    #block-superfish-1 ul li ul li:first-child a {
+        background: url("../images/mobile_menu.png") no-repeat 7px 8px transparent;
     }
 
 }
