@@ -542,13 +542,6 @@ a.back-to-top {
     text-align: center;
 }
 
-#block-views-most-popular-today-block, #block-views-most-popular-all-time-block, #block-views-most-commented-block, #block-views-top-rated-articles-block {
-    clear: none;
-    float: left;
-    margin-right: 20px;
-    width: 92%;
-}
-
 #block-views-ads-sidebar-block-block .view-content a {
     font-size: 0.9em;
     text-align: left !important;
