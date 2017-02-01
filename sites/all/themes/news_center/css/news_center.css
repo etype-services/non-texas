@@ -44,6 +44,11 @@ img {
     padding: 5px;
 }
 
+.region-top-area .simplead-container {
+    float: left;
+    margin-right: 1em;
+}
+
 #content .region {
     clear: both;
     margin-bottom: 0;
