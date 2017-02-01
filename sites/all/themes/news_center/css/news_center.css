@@ -253,7 +253,7 @@ img {
     float: left;
 }
 
-region-content0 .block.even {
+.region-content0 .block.even {
     width: 48%;
     float: left;
     padding-left: 2%;
