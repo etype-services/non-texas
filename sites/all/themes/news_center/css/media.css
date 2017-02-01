@@ -192,7 +192,7 @@
         width: 100%;
         z-index: 500;
         position: absolute;
-        top: 430px;
+        bottom: 5px;
         overflow: hidden;
     }
 
@@ -200,6 +200,13 @@
         height: auto;
         margin-left: 0;
         width: 73px;
+    }
+
+    #widget_pager_bottom_home_page-block {
+        width: 470px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5px;
     }
 
     .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
