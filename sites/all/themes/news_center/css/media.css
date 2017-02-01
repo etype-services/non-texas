@@ -72,22 +72,9 @@
         display: block;
     }
 
-    /* SlideShow Block Styles */
+    /* SlideShow Block */
     #block-views-home-page-block {
-        position: relative;
         margin-bottom: 1em;
-    }
-
-    .image-show {
-        background: none repeat scroll 0 0 #000000;
-        color: #AAAAAA;
-        cursor: default;
-        font-size: 0.8em;
-        opacity: 0.6;
-        padding: 4px 12px 4px 8px;
-        position: absolute;
-        right: 0;
-        top: 7px;
     }
 
     #views_slideshow_cycle_main_home_page-block {
@@ -96,9 +83,7 @@
 
     #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item {
         border: none;
-        height: 305px;
-        width: 320px;
-        border-bottom: none;
+        width: 100%;
         overflow: hidden;
     }
 
@@ -108,7 +93,7 @@
         position: absolute;
         top: 250px;
         left: 0;
-        width: 320px;
+        width: 100%;
         z-index: 200;
     }
 
@@ -144,7 +129,7 @@
         overflow: hidden;
         text-decoration: none;
         text-shadow: 1px 1px 1px #000000;
-        width: 278px;
+        width: 100%;
     }
 
     #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .views-field-body-1 {
@@ -152,7 +137,6 @@
         display: none;
         padding: 12px;
         text-shadow: 1px 1px 1px #000000;
-        width: 433px;
         z-index: 1;
     }
 
@@ -198,14 +182,14 @@
     .views_slideshow_cycle_main {
         background: none repeat scroll 0 0 #333333;
         height: 490px;
-        width: 320px;
+        width: 100%;
     }
 
     .view-id-home_page .views-slideshow-controls-bottom {
         height: 60px;
         margin-top: 0;
         left: 0;
-        width: 320px;
+        width: 100%;
         z-index: 500;
         position: absolute;
         top: 430px;
@@ -227,7 +211,7 @@
     }
 
     .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item.active, .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item:hover {
-        background: none repeat scroll 0 0 #333333;
+        background: none repeat 0 0 #333333;
         opacity: 1;
     }
 
@@ -253,7 +237,7 @@
     #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item .views-field-field-image img {
         height: auto;
         margin-left: 0;
-        width: 381px;
+        width: 100%;
     }
 
 }
