@@ -7,25 +7,8 @@
 }
 
 
-
-/* wider screens */
-@media only screen and (max-width: 420px) {
-
-    /* slideshow */
-    #views_slideshow_cycle_main_home_page-block,
-    #block-views-home-page-block .skin-default,
-    #block-views-home-page-block .views_slideshow_cycle_main,
-    #block-views-home-page-block #widget_pager_bottom_home_page-block,
-    #block-views-home-page-block .views-slideshow-controls-bottom,
-    #block-views-home-page-block .views_slideshow_cycle_main .views-field.views-field-field-image img {
-        width: 320px;
-    }
-
-    .views_slideshow_cycle_main {
-        height: 490px;
-        margin: 0 auto;
-    }
-
+/* this is the menu breaking point */
+@media only screen and (max-width: 700px) {
     /* Main Menu Styles */
 
     #block-superfish-1 {
@@ -86,6 +69,25 @@
 
     #block-superfish-1 ul li lu li:not(:first-child) {
         display: block;
+    }
+
+}
+
+/* smaller screens */
+@media only screen and (max-width: 420px) {
+
+    /* slideshow */
+    #views_slideshow_cycle_main_home_page-block,
+    #block-views-home-page-block .skin-default,
+    #block-views-home-page-block .views_slideshow_cycle_main,
+    #block-views-home-page-block #widget_pager_bottom_home_page-block,
+    #block-views-home-page-block .views-slideshow-controls-bottom,
+    #block-views-home-page-block .views_slideshow_cycle_main .views-field.views-field-field-image img {
+        width: 320px;
+    }
+
+    .views_slideshow_cycle_main {
+        height: 400px;
     }
 
 }
