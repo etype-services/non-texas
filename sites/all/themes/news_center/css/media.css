@@ -12,6 +12,7 @@
 @media only screen and (max-width: 420px) {
 
     /* slideshow */
+    views_slideshow_cycle_main_home_page-block,
     #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .slideshow-overlay,
     .views_slideshow_cycle_main,
     #widget_pager_bottom_home_page-block,

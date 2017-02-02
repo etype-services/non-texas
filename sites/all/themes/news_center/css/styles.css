@@ -280,6 +280,11 @@ blockquote.image-field-caption p {
 
 #footer ul li {
     margin: 0;
+    padding: 0.2em 0.5em 0 0;
+}
+
+#footer ul li ul.menu {
+    padding: 0.2em 0.5em 0 0;
 }
 
 #footer a {
