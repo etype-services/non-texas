@@ -17,9 +17,8 @@
     }
 
     #page {
-        margin: 0 auto ;
+        margin: 0 auto;
     }
-
     /* user menu to the right and make some space */
     #block-menu-menu-secondary-menu {
         float: right;
