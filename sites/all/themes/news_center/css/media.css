@@ -77,13 +77,25 @@
 
     .region-content0 .block.odd {
         width: 462px;
-        margin-right: 5%;
     }
 
     .region-content0 .block.even {
-        width: 20%;
+        width: 22%;
         flex-grow: 1;
+        margin-left: 1em;
     }
+
+    /* ad formatting in region-content2 */
+    .region-content2 .block-simpleads > div > div > div >div  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .region-content2 .simplead-container {
+        width: 48%;
+    }
+
 
     /* slideshow */
     #views_slideshow_cycle_main_home_page-block,
@@ -104,8 +116,7 @@
         width: 710px;
     }
 
-    /* Main Menu Styles */
-
+    /* Main Menu */
     #block-superfish-1, #superfish-1, .superfish-1 {
         background: #000;
     }
