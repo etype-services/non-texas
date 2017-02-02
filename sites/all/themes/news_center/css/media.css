@@ -65,6 +65,24 @@
 
     .region-slideshow  #block-views-top-news-block {
         width: 22%;
+        flex-grow: 1;
+        margin-left: 1em;
+    }
+
+    .region-content0 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .region-content0 .block.odd {
+        flex-grow: 1;
+        width: 54%;
+        margin-right: 5%;
+    }
+
+    .region-content0 .block.even {
+        width: 235px;
     }
 
     /* slideshow */
