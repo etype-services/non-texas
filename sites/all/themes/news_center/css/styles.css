@@ -118,12 +118,12 @@ blockquote.image-field-caption p {
     overflow: hidden;
 }
 
-#views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .slideshow-overlay a {
+#views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame a {
     color: #CCCCCC;
 }
 
-#views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .slideshow-overlay .views-field-field-rate,
-#views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .slideshow-overlay .views-field-comment-count {
+#views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .views-field-field-rate,
+#views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .views-field-comment-count {
     display: none;
     visibility: hidden;
 }

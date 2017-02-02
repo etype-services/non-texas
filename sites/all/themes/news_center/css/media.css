@@ -8,9 +8,8 @@
 
 
 /* this is the menu breaking point */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     /* Main Menu Styles */
-
     #block-superfish-1 {
         margin-bottom: 0;
         height: 30px;
@@ -79,14 +78,31 @@
     #block-views-home-page-block .views-slideshow-controls-bottom,
     #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .views-field-title,
     #block-views-home-page-block .views_slideshow_cycle_main .views-field.views-field-field-image img {
+        width: 680px;
+    }
+
+    .views_slideshow_cycle_main {
+        height: 650px;
+    }
+}
+}
+
+@media only screen and (max-width: 700px) {
+
+    /* slideshow */
+    #views_slideshow_cycle_main_home_page-block,
+    #block-views-home-page-block .skin-default,
+    #block-views-home-page-block .views_slideshow_cycle_main,
+    #block-views-home-page-block #widget_pager_bottom_home_page-block,
+    #block-views-home-page-block .views-slideshow-controls-bottom,
+    #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .views-field-title,
+    #block-views-home-page-block .views_slideshow_cycle_main .views-field.views-field-field-image img {
         width: 580px;
     }
 
     .views_slideshow_cycle_main {
         height: 550px;
     }
-
-
 }
 
 
