@@ -23,6 +23,36 @@
         height: 30px;
     }
 
+    #header {
+        margin: 0;
+        clear: both;
+    }
+
+    #logo {
+        width: inherit;
+        margin: 0 1em;
+        display: block;
+    }
+
+    #main-wrapper {
+        margin: 0 1em;
+    }
+
+    #main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #main #content {
+        width: 68%;
+        margin-right: 2%;
+    }
+
+    #main .sidebar {
+        width: 30%;
+        margin: 0;
+    }
+
     /* slideshow */
     #views_slideshow_cycle_main_home_page-block,
     #block-views-home-page-block .skin-default,

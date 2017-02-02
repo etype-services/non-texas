@@ -84,7 +84,7 @@
             <?php print render($page['top_advertisement']); ?>
 
             <div id="header">
-                <div class="section clearfix">
+                <div class="section">
 
                     <?php if ($logo): ?>
                         <a href="<?php print $front_page; ?>"
@@ -125,8 +125,7 @@
             </div><!-- /.section, /#header -->
 
             <div id="main-wrapper">
-                <div id="main"
-                     class="clearfix<?php if ($main_menu || $page['navigation']) {
+                <div id="main" class="clearfix<?php if ($main_menu || $page['navigation']) {
                          print ' with-navigation';
                      } ?>">
 
