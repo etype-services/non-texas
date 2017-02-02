@@ -63,7 +63,7 @@
 }
 
 /*
- *  Article Styles
+ *  Views Blocks
  */
 
 .block-views .views-row {
@@ -108,6 +108,10 @@ h2.block-title {
 #block-views-most-popular-all-time-block .views-field-field-image {
     position: relative;
     top: -11px;
+}
+
+.views-field-field-video {
+    overflow: hidden;
 }
 
 
