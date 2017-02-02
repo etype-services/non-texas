@@ -6,6 +6,7 @@
         width: 959px;
         margin: 2em auto;
     }
+
 }
 
 /* desktop break */
@@ -91,10 +92,6 @@
 
     }
 
-
-}
-
-@media only screen and (max-width: 900px) and (min-width: 601px) {
 
 }
 
@@ -208,7 +205,6 @@
     .region-sidebar-second .simplead-container {
         width: 49%;
     }
-
 
 }
 
@@ -348,6 +344,11 @@
     }
 
     .region-content0 .block-views.odd, .region-content0 .block-views.even {
+        width: 100%;
+    }
+
+    #footer .region {
+        display: block;
         width: 100%;
     }
 

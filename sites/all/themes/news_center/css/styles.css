@@ -255,6 +255,16 @@ blockquote.image-field-caption p {
     padding: 1em;
 }
 
+#footer .region {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#footer .region-footer-closure {
+    width: 100%;
+}
+
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
     color: #ffffff;
 }
