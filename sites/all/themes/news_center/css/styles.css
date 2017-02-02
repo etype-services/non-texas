@@ -280,12 +280,16 @@ blockquote.image-field-caption p {
 #footer {
     background-color: #333333;
     border-top: 1px solid #000000;
-    color: #CCCCCC;
-    padding: 1em
+    color: #cccccc;
+    padding: 1em;
 }
 
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
     color: #ffffff;
+}
+
+#footer ul.menu {
+    display: block;
 }
 
 #footer ul li {
@@ -293,6 +297,6 @@ blockquote.image-field-caption p {
 }
 
 #footer a {
-    color: #fff;
+    color: #cccccc;
     text-decoration: underline;
 }
