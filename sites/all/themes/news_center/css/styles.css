@@ -110,6 +110,7 @@ blockquote.image-field-caption p {
 
 .view-home-page .skin-default {
     position: relative;
+    margin: 0 auto;
 }
 
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item {
