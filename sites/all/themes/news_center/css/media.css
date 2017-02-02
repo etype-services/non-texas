@@ -121,7 +121,9 @@
 
     /* Main Menu */
     #block-superfish-1, #superfish-1, .superfish-1 {
-        background: #000;
+        background: #000000;
+        display: flex;
+        justify-content: space-between;
     }
 
     #block-superfish-1 ul li:first-child {
@@ -136,8 +138,8 @@
 
     #block-superfish-1 ul li {
         float: none;
-        font-weight: bold;
-        margin: 0 15px;
+        margin: 0;
+        background: #000000;
     }
 
     #block-superfish-1 ul li a {
@@ -146,6 +148,7 @@
         text-decoration: none;
         line-height: 1.5em;
         text-transform: uppercase;
+        border-bottom: 1px solid black;
     }
 
     #block-superfish-1 ul li a.active, #block-superfish-1 ul li a:hover, #block-menu-menu-news-categories ul li a:hover {

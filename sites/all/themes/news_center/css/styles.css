@@ -30,6 +30,40 @@
     display: none;
 }
 
+/* search form  */
+#block-search-form
+{
+    background: #eeeeee;
+    margin-bottom: 19px;
+    padding: 3px;
+}
+
+#block-search-form .form-text {
+    margin-left: 6px;
+    padding: 7px 34px 7px 7px;
+    width: 80%;
+    color: #CCCCCC;
+}
+
+#block-search-form .form-text:focus {
+    color: #333333;
+}
+
+#block-search-form .form-actions {
+    margin-left: -31px;
+    margin-top: 8px;
+    position: absolute;
+    z-index: 10;
+}
+
+#block-search-form .form-submit {
+    background: url("../images/search.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    font-size: 0;
+    height: 30px;
+    width: 30px;
+}
+
 /*
  *  Article Styles
  */
