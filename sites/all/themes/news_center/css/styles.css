@@ -213,7 +213,6 @@ blockquote.image-field-caption p {
     height: 60px;
     margin-top: 0;
     left: 0;
-    width: 100%;
     z-index: 500;
     position: absolute;
     bottom: 0;
@@ -223,7 +222,6 @@ blockquote.image-field-caption p {
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item img {
     height: auto;
     margin-left: 0;
-    width: 73px;
 }
 
 #widget_pager_bottom_home_page-block {
