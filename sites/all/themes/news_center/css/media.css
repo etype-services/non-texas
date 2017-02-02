@@ -12,6 +12,10 @@
 /* desktop break */
 @media only screen and (min-width: 901px) {
 
+    body, #page {
+        margin: 0;
+    }
+
     /* slideshow */
     #views_slideshow_cycle_main_home_page-block,
     #block-views-home-page-block .skin-default,
@@ -95,7 +99,7 @@
 
 }
 
-/* this is the menu breaking point -- below this all one column */
+/* all one column */
 @media only screen and (max-width: 900px) {
     /* Main Menu Styles */
     #block-superfish-1 {
