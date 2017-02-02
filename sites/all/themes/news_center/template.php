@@ -103,7 +103,7 @@ function news_center_preprocess_html(&$variables, $hook) {
         );
     }
 
-    $nav_color = theme_get_setting('body_background');
+    $body_background = theme_get_setting('body_background');
     if (!empty($body_background)) {
         drupal_add_css(
             'body {background: '. $body_background .' !important;}',
