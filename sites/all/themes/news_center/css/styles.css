@@ -191,6 +191,7 @@ blockquote.image-field-caption p {
     padding: 12px;
     color: #ffffff;
     z-index: 1;
+    line-height: 1.3em;
 }
 
 #views_slideshow_cycle_main_home_page-block .views-field-comment-count, #views_slideshow_cycle_main_home_page-block .views-field-created, #views_slideshow_cycle_main_home_page-block .views-field-term-node-tid, #views_slideshow_cycle_main_home_page-block .views-field-name, #views_slideshow_cycle_main_home_page-block .views-field-field-rate {
