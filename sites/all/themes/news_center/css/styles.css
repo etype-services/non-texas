@@ -31,15 +31,6 @@
 }
 
 /*
- * CONTENT AREA BLOCKS
- *
- * These are the styles from the blocks located in the main content area
- * of the Page. It's recommended to use them all on the front page as
- * "Articles Dashboard" and in inner pages depending of their purpose.
- *
- */
-
-/*
  *  Article Styles
  */
 
@@ -73,7 +64,7 @@ h2.block-title {
     padding-bottom: 5px;
 }
 
-#main-content .block-views .views-field-field-image {
+.region-content0 .block-views .views-field-field-image {
     border: 1px solid #CCCCCC;
     margin-right: 10px;
     padding: 3px;
@@ -81,7 +72,8 @@ h2.block-title {
     position: relative;
     top: 0;
 }
-block-views-most-popular-all-time-block .views-field-field-image {
+
+#block-views-most-popular-all-time-block .views-field-field-image {
     position: relative;
     top: -11px;
 }
