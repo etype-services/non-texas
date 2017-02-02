@@ -15,8 +15,16 @@
     #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .slideshow-overlay,
     .views_slideshow_cycle_main,
     #widget_pager_bottom_home_page-block,
-    #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item {
+    #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item,
+
+
+    .views-field.views-field-field-image img{
         width: 320px;
+    }
+
+    .views_slideshow_cycle_main {
+        height: 490px;
+        margin: 0 auto;
     }
 
     /* Main Menu Styles */
