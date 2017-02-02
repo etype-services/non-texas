@@ -76,13 +76,13 @@
     }
 
     .region-content0 .block.odd {
-        flex-grow: 1;
-        width: 54%;
+        width: 462px;
         margin-right: 5%;
     }
 
     .region-content0 .block.even {
-        width: 235px;
+        width: 20%;
+        flex-grow: 1;
     }
 
     /* slideshow */
