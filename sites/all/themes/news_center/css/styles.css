@@ -83,26 +83,10 @@
 
 .block-views .views-row {
     clear: both;
-    margin-bottom: 16px;
-    min-height: 166px;
-    padding-bottom: 17px;
-}
-
-.block-views .views-row-first {
-    border-bottom: 1px dashed #CCCCCC;
-}
-
-.block-views .views-field-body-1 {
-    margin-top: 8px;
-}
-
-.block-views .views-row {
     border-bottom: 1px dashed #CCCCCC;
     clear: both;
     margin-bottom: 10px;
-    min-height: 62px;
     padding-bottom: 10px;
-    padding-left: 71px;
 }
 
 .block-views .views-field-body-1 {
