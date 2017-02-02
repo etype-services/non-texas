@@ -44,13 +44,23 @@
     }
 
     #main #content {
-        width: 68%;
+        width: 63%;
         margin-right: 2%;
     }
 
     #main .sidebar {
-        width: 30%;
+        width: 35%;
         margin: 0;
+    }
+
+    .region-slideshow {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .region-slideshow .block-simpleads {
+        width: 100%;
     }
 
     /* slideshow */
@@ -65,7 +75,7 @@
     }
 
     .views_slideshow_cycle_main {
-        height: 475px;
+        height: 575px;
     }
 
     #content {

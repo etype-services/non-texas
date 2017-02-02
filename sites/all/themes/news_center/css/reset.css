@@ -96,7 +96,7 @@ ul.menu li a {
     text-decoration: none;
 }
 
-ul li.leaf {
+ul li.leaf, ul li.expanded {
     list-style: none;
     padding: 0 0 0.3em 0.2em;
 }
