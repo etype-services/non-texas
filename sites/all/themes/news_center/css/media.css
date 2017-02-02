@@ -16,6 +16,13 @@
         margin: 0;
     }
 
+    /* user menu to the right and make some space */
+    #block-menu-menu-secondary-menu {
+        float: right;
+        margin-right: 1em;
+        height: 30px;
+    }
+
     /* slideshow */
     #views_slideshow_cycle_main_home_page-block,
     #block-views-home-page-block .skin-default,
