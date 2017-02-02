@@ -189,7 +189,7 @@ blockquote.image-field-caption p {
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .views-field-body-1 {
     clear: both;
     padding: 12px;
-    color: #ffffff
+    color: #ffffff;
     z-index: 1;
 }
 
