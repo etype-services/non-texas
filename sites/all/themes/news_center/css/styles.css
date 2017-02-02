@@ -278,9 +278,12 @@ blockquote.image-field-caption p {
 
 /* FOOTER */
 #footer {
-    background: none no-repeat scroll 0 0 #333333;
+    background-color: #333333;
     border-top: 1px solid #000000;
     color: #CCCCCC;
-    font-size: 0.8em;
-    padding: 19px 12px 12px;
+    padding: 1em
+}
+
+#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
+    color: #ffffff;
 }
