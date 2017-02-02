@@ -6,7 +6,7 @@
     }
 }
 
-@media only screen and (max-width: 958px) {
+@media only screen and (min-width: 801px) {
 
     /* slideshow */
     #views_slideshow_cycle_main_home_page-block,
@@ -16,12 +16,78 @@
     #block-views-home-page-block .views-slideshow-controls-bottom,
     #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .views-field-title,
     #block-views-home-page-block .views_slideshow_cycle_main .views-field.views-field-field-image img {
-        width: 400px;
+        width: 462px;
     }
 
     .views_slideshow_cycle_main {
-        height: 450px;
+        height: 475px;
     }
+
+    #content {
+        width: 710px;
+    }
+
+    /* Main Menu Styles */
+
+    #block-superfish-1, #superfish-1, .superfish-1 {
+        background: #000;
+    }
+
+    #block-superfish-1 ul li:first-child {
+        display: none;
+    }
+
+    #block-superfish-1 ul li.first {
+        margin-left: 4px !important;
+    }
+
+    #block-superfish-1 {
+        margin-bottom: 0;
+        width: 1040px;
+        display: block;
+        position: inherit;
+        z-index: 99;
+    }
+
+    #block-superfish-1 ul li {
+        display: inline-block;
+        float: none;
+        font-weight: bold;
+        height: 27px;
+        margin-left: 4px !important;
+        margin-top: 2px;
+        padding: 0;
+        text-transform: uppercase;
+        width: auto;
+    }
+
+    #block-superfish-1 ul li a {
+        color: #FFFFFF;
+        display: block;
+        font-weight: bold;
+        height: 21px;
+        margin-top: 0;
+        padding: 5px 15px 0;
+        text-decoration: none;
+        background: #000;
+        line-height: 15px;
+    }
+
+    #block-superfish-1 ul li a.active, #block-superfish-1 ul li a:hover, #block-menu-menu-news-categories ul li a:hover {
+        background: none repeat 0 0 #FFFFFF;
+        height: 21px;
+        color: #333333;
+        padding-top: 5px;
+    }
+
+    #block-superfish-1 a.active-trail .active li {
+        background: none repeat 0 0 #000033;
+        color: #333333;
+        padding-top: 0;
+        padding-left: 15px;
+
+    }
+
 
 }
 
