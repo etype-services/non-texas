@@ -92,12 +92,21 @@
                        title="<?php print t('Home'); ?>" rel="home"
                        id="logo"><img src="<?php print $logo; ?>"
                                       alt="<?php print t('Home'); ?>"/></a>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 88e63d3c890a8a731b005604e419e43fc3a28553
                    <!-- remove mobile logo because main logo now resizes and mobile is producing a second banner -->
                    <!-- <a href="<?php print $front_page; ?>"
                        title="<?php print t('Home'); ?>" rel="home"
                        id="mobile-logo"><img
                                 src="<?php print $base_path; ?><?php print $directory; ?>/logo_mobile.png"
                                 alt="<?php print t('Home'); ?>"/></a> -->
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> bc3697730c4a3db5142269616971a4720345c63f
+>>>>>>> 88e63d3c890a8a731b005604e419e43fc3a28553
                 <?php endif; ?>
 
                 <?php if ($site_name || $site_slogan): ?>

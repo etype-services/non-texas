@@ -92,7 +92,7 @@ function news_center_preprocess_html(&$variables, $hook) {
     $nav_color = theme_get_setting('nav_color');
     if (!empty($nav_color)) {
         drupal_add_css(
-            '#block-superfish-1 ul {background: '. $nav_color .' !important;}',
+            '#block-superfish-1 {background: '. $nav_color .' !important;}',
             array(
                 'group' => CSS_THEME,
                 'type' => 'inline',

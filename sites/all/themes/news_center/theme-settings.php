@@ -25,6 +25,13 @@ function news_center_form_system_theme_settings_alter(&$form, &$form_state) {
         '#default_value' => theme_get_setting('nav_color'),
     );
 
+    $form['misc_settings']['body_background'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Body Background'),
+        '#size' => 20,
+        '#default_value' => theme_get_setting('body_background'),
+    );
+
     // Remove some of the base theme's settings.
     unset($form['themedev']['zen_layout']); // We don't need to select the layout stylesheet.
 
