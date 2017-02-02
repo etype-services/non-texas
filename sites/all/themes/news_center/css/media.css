@@ -191,7 +191,7 @@
         width: 100%;
         z-index: 500;
         position: absolute;
-        bottom: 5px;
+        bottom: 0;
         overflow: hidden;
     }
 
@@ -205,7 +205,6 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin: 0 5px;
     }
 
     .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
@@ -223,13 +222,7 @@
 
     .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item .views-field-field-image .views-content-field-image {
         border-right: 1px solid #333333;
-        height: 37px;
         overflow: hidden;
-        width: 50px;
-    }
-
-    #views_slideshow_pager_field_item_bottom_home_page-block_4 .views-field-field-image .views-content-field-image {
-        width: 51px;
     }
 
     #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item .views-field-field-image {
