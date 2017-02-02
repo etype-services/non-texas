@@ -105,6 +105,16 @@
         width: 48%;
     }
 
+    /* sidebar */
+    .region-sidebar-second .block {
+        padding: 6px;
+        border: 1px solid #ccc;
+    }
+
+    .region-sidebar-second .block-simpleads {
+        padding: 0;
+        border: none;
+    }
 
     /* slideshow */
     #views_slideshow_cycle_main_home_page-block,
