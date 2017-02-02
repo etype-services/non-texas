@@ -38,6 +38,10 @@ a.back-to-top {
     margin-top: 10px;
 }
 
+p {
+    line-height: 1.5;
+}
+
 hr {
     background: #ddd;
     color: #ddd;
