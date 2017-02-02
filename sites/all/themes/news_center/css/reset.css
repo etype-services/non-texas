@@ -9,7 +9,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
-    color: #111;
+    line-height: 1.3em;
+    color: #333333;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial,Verdana, sans-serif;
 }
 
 a:focus, a:hover {
