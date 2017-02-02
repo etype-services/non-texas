@@ -26,6 +26,10 @@
         height: 30px;
     }
 
+    .region-header {
+        margin: 0;
+    }
+
     #header {
         margin: 0;
         clear: both;
@@ -38,7 +42,7 @@
     }
 
     #main-wrapper {
-        margin: 0 1em;
+        margin: 0;
     }
 
     #main {
@@ -64,6 +68,7 @@
 
     .region-slideshow .block-simpleads {
         width: 100%;
+        margin: 1em 0;
     }
 
     .region-slideshow  #block-views-top-news-block {
