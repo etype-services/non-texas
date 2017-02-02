@@ -122,7 +122,7 @@
     }
 
     /* jump back block */
-    .region-sidebar-second .block-block-4 {
+    .region-sidebar-second #block-block-4 {
         display: none;
         visibility: hidden;
     }
