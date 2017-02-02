@@ -30,6 +30,169 @@
     display: none;
 }
 
+/* Content Areas General Styles */
+.region-content0 .block, .region-content1 .block, .region-content2 .block {
+    color: #666666;
+    font-size: 0.85em;
+}
+
+.region-content0 h2.block-title, .region-content1 h2.block-title, .region-content2 h2.block-title {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 1.65em;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.region-content0 .block-views img, .region-content1 .block-views img, .region-content2 .block-views img {
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin-bottom: 6px;
+    margin-right: 10px;
+    padding: 3px;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.region-content0 .block-views img:hover, .region-content1 .block-views img:hover, .region-content2 .block-views img:hover {
+    background: none repeat scroll 0 0 #EEEEEE;
+}
+
+.region-content0 .block-views h3, .region-content1 .block-views h3, .region-content2 .block-views h3 {
+    margin-bottom: 4px;
+}
+
+.region-content0 .block-views h4, .region-content1 .block-views h4, .region-content2 .block-views h4 {
+    font-size: 1.3em;
+    margin-bottom: 7px;
+}
+
+/*
+ * CONTENT AREA BLOCKS
+ *
+ * These are the styles from the blocks located in the main content area
+ * of the Page. It's recommended to use them all on the front page as
+ * "Articles Dashboard" and in inner pages depending of their purpose.
+ *
+ */
+
+/*
+ * Featured Article Styles
+ */
+
+#block-views-featured-article-block .views-row {
+    clear: both;
+    margin-bottom: 16px;
+    min-height: 166px;
+    padding-bottom: 17px;
+}
+
+#block-views-featured-article-block .views-row-first {
+    border-bottom: 1px dashed #CCCCCC;
+}
+
+#block-views-featured-article-block .views-field-body-1 {
+    margin-top: 8px;
+}
+
+/*
+ * Last Week Most Popular Styles
+ */
+
+#block-views-most-popular-block .views-row-last {
+    border-bottom: none !important;
+}
+
+/*
+ * Articles Blocks Styles
+ */
+
+#block-views-articles-block-3-block, #block-views-articles-block-6-block {
+    margin-right: 0;
+}
+
+#block-views-articles-categories-block-block .attachment .views-row,
+#block-views-articles-block-2-block .attachment .views-row,
+#block-views-articles-block-3-block .attachment .views-row,
+#block-views-articles-block-4-block .attachment .views-row,
+#block-views-articles-block-5-block .attachment .views-row,
+#block-views-articles-block-6-block .attachment .views-row,
+#block-views-most-popular-block .views-row {
+    border-bottom: 1px dashed #CCCCCC;
+    clear: both;
+    margin-bottom: 10px;
+    min-height: 62px;
+    padding-bottom: 10px;
+    padding-left: 71px;
+}
+
+#block-views-articles-categories-block-block .attachment img,
+#block-views-articles-block-2-block .attachment img,
+#block-views-articles-block-3-block .attachment img,
+#block-views-articles-block-4-block .attachment img,
+#block-views-articles-block-5-block .attachment img,
+#block-views-articles-block-6-block .attachment img,
+#block-views-most-popular-block img {
+    margin-left: -71px;
+}
+
+#block-views-articles-categories-block-block .views-field-body-1,
+#block-views-articles-block-2-block .views-field-body-1,
+#block-views-articles-block-3-block .views-field-body-1,
+#block-views-articles-block-4-block .views-field-body-1,
+#block-views-articles-block-5-block .views-field-body-1,
+#block-views-articles-block-6-block .views-field-body-1 {
+    border-bottom: 1px dashed #CCCCCC;
+    margin-bottom: 9px;
+    margin-top: 8px;
+    padding-bottom: 17px;
+}
+
+#block-views-articles-categories-block-block .view-footer,
+#block-views-articles-block-2-block .view-footer,
+#block-views-articles-block-3-block .view-footer,
+#block-views-articles-block-4-block .view-footer,
+#block-views-articles-block-5-block .view-footer,
+#block-views-articles-block-6-block .view-footer {
+    padding-bottom: 0;
+    padding-right: 7px;
+    padding-top: 0;
+    text-align: right;
+}
+
+/*
+ * Articles Images Block
+ */
+
+#block-views-articles-images-block img {
+    float: none;
+}
+
+#block-views-articles-images-block .views-row-5, #block-views-articles-images-block .views-row-10, #block-views-articles-images-block .views-row-15, #block-views-articles-images-block .views-row-20 {
+    margin-right: 0px;
+}
+
+#block-views-articles-images-block .views-field-field-image {
+    height: 111px;
+}
+
+#block-views-articles-images-block .views-field-title {
+    background: none repeat scroll 0 0 #000000;
+    margin-left: 4px;
+    margin-top: -64px;
+    opacity: 0.6;
+    padding: 0 3px 3px;
+    position: absolute;
+    width: 119px;
+    display: none;
+}
+
+#block-views-articles-images-block .views-field-title a {
+    color: #FFFFFF;
+}
+
+
 /* IMAGE FIELD CAPTION */
 .view blockquote.image-field-caption, .node-teaser blockquote.image-field-caption {
     display: none;
