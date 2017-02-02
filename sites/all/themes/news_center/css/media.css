@@ -63,6 +63,10 @@
         width: 100%;
     }
 
+    .region-slideshow  #block-views-top-news-block {
+        width: 22%;
+    }
+
     /* slideshow */
     #views_slideshow_cycle_main_home_page-block,
     #block-views-home-page-block .skin-default,
