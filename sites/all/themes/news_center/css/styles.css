@@ -36,13 +36,12 @@
     background: #eeeeee;
     margin-bottom: 19px;
     padding: 3px;
+    position: relative;
 }
 
 #block-search-form .form-text {
-    margin-left: 6px;
-    padding: 7px 34px 7px 7px;
-    width: 80%;
-    color: #CCCCCC;
+    padding: 7px;
+    width: 92%;
 }
 
 #block-search-form .form-text:focus {
@@ -50,10 +49,9 @@
 }
 
 #block-search-form .form-actions {
-    margin-left: -31px;
-    margin-top: 8px;
     position: absolute;
-    z-index: 10;
+    top: 4px;
+    right: 4px;
 }
 
 #block-search-form .form-submit {
