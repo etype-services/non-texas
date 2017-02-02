@@ -73,6 +73,25 @@
 
 }
 
+
+@media only screen and (max-width: 600px) {
+
+    /* slideshow */
+    #views_slideshow_cycle_main_home_page-block,
+    #block-views-home-page-block .skin-default,
+    #block-views-home-page-block .views_slideshow_cycle_main,
+    #block-views-home-page-block #widget_pager_bottom_home_page-block,
+    #block-views-home-page-block .views-slideshow-controls-bottom,
+    #block-views-home-page-block .views_slideshow_cycle_main .views-field.views-field-field-image img {
+        width: 400px;
+    }
+
+    .views_slideshow_cycle_main {
+        height: 450px;
+    }
+
+}
+
 /* smaller screens */
 @media only screen and (max-width: 420px) {
 
