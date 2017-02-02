@@ -6,7 +6,7 @@
     }
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 901px) {
 
     /* slideshow */
     #views_slideshow_cycle_main_home_page-block,
@@ -92,6 +92,101 @@
 }
 
 /* this is the menu breaking point */
+@media only screen and (max-width: 900px) {
+    /* Main Menu Styles */
+    #block-superfish-1 {
+        margin-bottom: 0;
+        height: 30px;
+    }
+
+    #block-superfish-1 ul li {
+        background: #222222;
+        position: relative;
+        width: 100%;
+    }
+
+    #block-superfish-1 ul li a {
+        background: url("../images/mobile_menu.png") no-repeat 7px 8px transparent;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-left: 3em;
+        border: none;
+    }
+
+    #block-superfish-1 ul li:first-child {
+        display: block;
+    }
+
+    #block-superfish-1 ul li:not(:first-child) a.active,
+    #block-superfish-1 ul li:not(:first-child) a.active-trail,
+    #block-superfish-1 ul li:not(:first-child) a:hover {
+        color: #333333;
+    }
+
+    #block-superfish-1 ul li:first-child a {
+        background: url("../images/select-icons.png") no-repeat 0 5px;
+    }
+
+    /* all other menu items collapsed at first */
+    #block-superfish-1 ul li:not(:first-child) {
+        display: none;
+    }
+
+    #block-superfish-1 ul li:not(:first-child) a.active,
+    #block-superfish-1 ul li:not(:first-child) a.active-trail,
+    #block-superfish-1 ul li:not(:first-child) a:hover {
+        background: url("../images/mobile_menu_hover.png") no-repeat 7px 8px #ffffff;
+    }
+
+    #block-superfish-1 ul li ul li {
+        display: block;
+        width: 100%;
+    }
+
+    /* no hamburger on sub-menus */
+    #block-superfish-1 ul li ul li:first-child a {
+        background: url("../images/mobile_menu.png") no-repeat 7px 8px transparent;
+    }
+
+    #block-superfish-1 ul li lu li:not(:first-child) {
+        display: block;
+    }
+
+    /* slideshow */
+    #views_slideshow_cycle_main_home_page-block,
+    #block-views-home-page-block .skin-default,
+    #block-views-home-page-block .views_slideshow_cycle_main,
+    #block-views-home-page-block #widget_pager_bottom_home_page-block,
+    #block-views-home-page-block .views-slideshow-controls-bottom,
+    #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .views-field-title,
+    #block-views-home-page-block .views_slideshow_cycle_main .views-field.views-field-field-image img {
+        width: 680px;
+    }
+
+    .views_slideshow_cycle_main {
+        height: 650px;
+    }
+
+    .region-content0 {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .region-content0 .block-views.odd {
+        width: 47%;
+        margin-right: 3%;
+    }
+
+    .region-content0 .block-views.even {
+        width: 47%;
+        margin-left: 3%;
+    }
+
+}
+
 @media only screen and (max-width: 800px) {
     /* Main Menu Styles */
     #block-superfish-1 {
@@ -206,7 +301,6 @@
 
 }
 
-
 @media only screen and (max-width: 600px) {
 
     /* slideshow */
@@ -234,7 +328,6 @@
 
 }
 
-/* smaller screens */
 @media only screen and (max-width: 420px) {
 
     /* slideshow */

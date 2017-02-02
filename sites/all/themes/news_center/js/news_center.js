@@ -83,7 +83,7 @@ Drupal.behaviors.newscenterbox = {
         
     		$(window).resize(function(){
     			var w = $(window).width();
-				if (w > 800) {
+				if (w > 900) {
 					$('#block-superfish-1 ul li:not(:first-child)').css("display", "block").show();
   				} else {
   					$('#block-superfish-1 ul li:first-child a').text('Show Menu');
