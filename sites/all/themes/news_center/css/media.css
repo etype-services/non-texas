@@ -320,6 +320,12 @@
         height: 550px;
     }
 
+    /* footer one column */
+    #footer .region {
+        display: block;
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -344,11 +350,6 @@
     }
 
     .region-content0 .block-views.odd, .region-content0 .block-views.even {
-        width: 100%;
-    }
-
-    #footer .region {
-        display: block;
         width: 100%;
     }
 
