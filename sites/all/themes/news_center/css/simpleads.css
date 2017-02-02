@@ -1,7 +1,7 @@
 /* SIMPLE ADS */
 
 /* line up ads */
-.block-simpleads .adslist > div > div {
+.header .block-simpleads .adslist > div > div {
     display: flex;
     justify-content: space-around;
     align-items: center;
