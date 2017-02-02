@@ -12,8 +12,12 @@
 /* desktop break */
 @media only screen and (min-width: 901px) {
 
-    body, #page {
+    body {
         margin: 0;
+    }
+
+    #page {
+        margin: 0 auto ;
     }
 
     /* user menu to the right and make some space */
