@@ -53,6 +53,11 @@ hr {
     border: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .clearfix:after, .container:after {
     content: "\0020";
     display: block;

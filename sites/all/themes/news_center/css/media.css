@@ -176,7 +176,10 @@
 
     }
 
-
+    a.back-to-top {
+        display: none;
+        visibility: hidden;
+    }
 }
 
 /* all one column */
