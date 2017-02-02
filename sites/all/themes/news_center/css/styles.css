@@ -46,7 +46,6 @@
 .block-views .views-row {
     clear: both;
     border-bottom: 1px dashed #CCCCCC;
-    clear: both;
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
@@ -74,9 +73,8 @@ h2.block-title {
     padding-bottom: 5px;
 }
 
-.block-views img {
+.block-views .views-field-field-image {
     border: 1px solid #CCCCCC;
-    float: left;
     margin-bottom: 6px;
     margin-right: 10px;
     padding: 3px;
