@@ -287,3 +287,12 @@ blockquote.image-field-caption p {
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
     color: #ffffff;
 }
+
+#footer ul li {
+    margin: 0;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: underline;
+}
