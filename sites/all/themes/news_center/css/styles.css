@@ -73,11 +73,15 @@ h2.block-title {
     padding-bottom: 5px;
 }
 
-.block-views .views-field-field-image {
+#main-content .block-views .views-field-field-image {
     border: 1px solid #CCCCCC;
     margin-right: 10px;
     padding: 3px;
     float: left;
+    position: relative;
+    top: 0;
+}
+block-views-most-popular-all-time-block .views-field-field-image {
     position: relative;
     top: -11px;
 }
@@ -270,4 +274,13 @@ blockquote.image-field-caption p {
     height: auto;
     margin-left: 0;
     width: 100%;
+}
+
+/* FOOTER */
+#footer {
+    background: none no-repeat scroll 0 0 #333333;
+    border-top: 1px solid #000000;
+    color: #CCCCCC;
+    font-size: 0.8em;
+    padding: 19px 12px 12px;
 }
