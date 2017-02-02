@@ -1,11 +1,14 @@
 /* wider screens */
 @media only screen and (min-width: 959px) {
+
+    /* cap page width */
     #page {
         width: 959px;
         margin: 2em auto;
     }
 }
 
+/* desktop break */
 @media only screen and (min-width: 901px) {
 
     /* slideshow */
@@ -91,7 +94,11 @@
 
 }
 
-/* this is the menu breaking point */
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+
+}
+
+/* this is the menu breaking point -- below this all one column */
 @media only screen and (max-width: 900px) {
     /* Main Menu Styles */
     #block-superfish-1 {
@@ -169,6 +176,7 @@
         height: 650px;
     }
 
+    /* bottom content blocks two wide in main column */
     .region-content0 {
         display: flex;
         justify-content: flex-start;
@@ -183,6 +191,17 @@
     .region-content0 .block-views.even {
         width: 47%;
         margin-left: 3%;
+    }
+
+    /* ad formatting in region-content2 */
+    #ad_groups_33 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #ad_groups_33 .simplead-container {
+        width: 31%;
     }
 
 }
