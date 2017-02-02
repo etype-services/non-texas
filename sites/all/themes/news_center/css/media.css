@@ -103,6 +103,22 @@
     .views_slideshow_cycle_main {
         height: 550px;
     }
+
+    .region-content0 {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .region-content0 .block-views.odd {
+        width: 47%;
+        margin-right: 3%;
+    }
+
+    .region-content0 .block-views.even {
+        width: 47%;
+        margin-left: 3%;
+    }
 }
 
 
@@ -121,6 +137,14 @@
 
     .views_slideshow_cycle_main {
         height: 450px;
+    }
+
+    .region-content0 {
+        display: block;
+    }
+
+    .region-content0 .block-views.odd, .region-content0 .block-views.even {
+        width: 100%;
     }
 
 }

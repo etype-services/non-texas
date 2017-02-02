@@ -193,10 +193,6 @@ blockquote.image-field-caption p {
     background: url("../images/author.png") no-repeat scroll 0 0 transparent;
 }
 
-#views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame {
-    height: 295px !important;
-}
-
 .views_slideshow_cycle_main {
     background: none repeat scroll 0 0 #333333;
 }
