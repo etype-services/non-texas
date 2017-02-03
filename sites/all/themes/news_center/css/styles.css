@@ -137,7 +137,7 @@ h2.block-title {
     width: 47%;
 }
 
-block-views-articles-images-block .views-row-last {
+#block-views-articles-images-block .views-row-last {
     border-bottom: 1px dashed #cccccc;
 }
 
