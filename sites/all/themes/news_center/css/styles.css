@@ -63,6 +63,13 @@
     width: 30px;
 }
 
+/* regions */
+
+.region-top-area {
+    display: flex;
+    justify-content: space-between;
+}
+
 /*
  *  Views Blocks
  */
