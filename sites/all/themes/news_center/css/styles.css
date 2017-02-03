@@ -130,6 +130,7 @@ h2.block-title {
 /* Photos Article Block */
 #block-views-articles-images-block {
     width: 100%;
+    margin: 0;
 }
 
 #block-views-articles-images-block .view-content {

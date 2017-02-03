@@ -65,6 +65,8 @@
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 0;
+        background-color: rgba(204, 204, 204, 0.15);
+        padding: 1em;
     }
 
     .region-slideshow .block-simpleads {
@@ -85,13 +87,18 @@
     }
 
     .region-content0 .block.odd {
-        width: 462px;
+        width: 442px;
+        padding: 10px;
+        margin: 0 9px 9px 0;
+        border: 1px solid #ccc;
     }
 
     .region-content0 .block.even {
-        width: 22%;
+        width: 20%;
         flex-grow: 1;
-        margin-left: 1em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin: 0 0 10px 0;
     }
 
     /* ad formatting in region-content2 */
