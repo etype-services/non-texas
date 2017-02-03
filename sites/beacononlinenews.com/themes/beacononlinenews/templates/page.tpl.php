@@ -141,7 +141,7 @@
 
             <?php print render($page['slideshow']); ?>
             
-            <?php print($variables['node_ad']); ?>
+            <?php print($variables['field_ad_image']); ?>
 
             <a id="main-content"></a>
 
