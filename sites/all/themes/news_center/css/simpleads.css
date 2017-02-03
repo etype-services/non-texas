@@ -18,7 +18,7 @@
     overflow: hidden;
 }
 
-.region-content2 .block-simpleads > div > div > div > div {
+.region-content2 .block-simpleads > div > div > div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -39,7 +39,7 @@
     }
 
     /* ad formatting in region-content2 */
-    .region-content2 .block-simpleads > div > div > div > div {
+    .region-content2 .block-simpleads > div > div > div {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
