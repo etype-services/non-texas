@@ -113,6 +113,11 @@ h2.block-title {
     top: 0;
 }
 
+/* this block has larger thumbs */
+#block-views-most-popular-block {
+    min-height: 70px;
+}
+
 #block-views-most-popular-all-time-block .views-field-field-image {
     position: relative;
     top: -11px;
