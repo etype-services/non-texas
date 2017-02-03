@@ -127,7 +127,7 @@ h2.block-title {
     width: 100%;
 }
 
-#block-views-articles-images-block .views-content {
+#block-views-articles-images-block .view-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
