@@ -114,7 +114,7 @@ h2.block-title {
 }
 
 /* this block has larger thumbs */
-#block-views-most-popular-block {
+#block-views-most-popular-block .views-row {
     min-height: 70px;
 }
 
