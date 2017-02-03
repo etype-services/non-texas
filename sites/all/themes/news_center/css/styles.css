@@ -122,6 +122,20 @@ h2.block-title {
     overflow: hidden;
 }
 
+/* Photos Article Block */
+#block-views-articles-images-block {
+    width: 100%;
+}
+
+#block-views-articles-images-block .views-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#block-views-articles-images-block .views-row {
+    width: 47%;
+}
 
 /* IMAGE FIELD CAPTION */
 .view blockquote.image-field-caption, .node-teaser blockquote.image-field-caption {
