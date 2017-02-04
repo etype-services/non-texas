@@ -243,7 +243,7 @@ body.front h1 {
 
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .slideshow-overlay {
     background: url("../images/overlay.png") repeat-x scroll 0 bottom transparent;
-    bottom: 0;
+    top: 312px;
     color: #FFFFFF;
     position: absolute;
     z-index: 200;
