@@ -189,7 +189,7 @@ body.front h1 {
 }
 
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item {
-    border: 1px solid #333333;
+    border: none;
     height: 295px;
     width: 748px;
     border-bottom: none;
@@ -341,8 +341,8 @@ body.front h1 {
 
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item .views-field-field-image img {
     height: auto;
-    margin-left: 24px;
-    width: 745px;
+    margin-left: 0;
+    width: 748px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item img {
