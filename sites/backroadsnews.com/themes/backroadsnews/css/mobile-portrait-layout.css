@@ -153,6 +153,12 @@ h2, h3, h4, h5, h6 {
     background: #f2f2f2 url("../images/mobile_menu.png") no-repeat scroll 7px 8px transparent;
 }
 
+/* SlideShow Block Styles */
+#block-views-home-page-block {
+    position: relative;
+    margin-bottom: 1em;
+}
+
 .image-show {
     background: none repeat scroll 0 0 #000000;
     color: #AAAAAA;
@@ -165,10 +171,14 @@ h2, h3, h4, h5, h6 {
     top: 7px;
 }
 
+#views_slideshow_cycle_main_home_page-block {
+    position: relative;
+}
+
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item {
-    border: 1px solid #333333;
+    border: none;
     height: 305px;
-    width: 298px;
+    width: 320px;
     border-bottom: none;
     overflow: hidden;
 }
@@ -179,7 +189,7 @@ h2, h3, h4, h5, h6 {
     position: absolute;
     top: 250px;
     left: 0;
-    width: 300px;
+    width: 320px;
     z-index: 200;
 }
 
@@ -279,14 +289,14 @@ h2, h3, h4, h5, h6 {
 .views_slideshow_cycle_main {
     background: none repeat scroll 0 0 #333333;
     height: 490px;
-    width: 301px;
+    width: 320px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom {
     height: 60px;
     margin-top: 0;
     left: 0;
-    width: 300px;
+    width: 320px;
     z-index: 500;
     position: absolute;
     top: 430px;
@@ -295,15 +305,15 @@ h2, h3, h4, h5, h6 {
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item img {
     height: auto;
-    margin-left: -23px;
+    margin-left: 0;
     width: 92px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
     display: inline-block;
-    margin-right: -6px;
+    margin-right: 0;
     overflow: hidden;
-    padding: 0 4px 0 5px;
+    padding: 0;
     opacity: 0.4;
 }
 
@@ -324,7 +334,7 @@ h2, h3, h4, h5, h6 {
 }
 
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item .views-field-field-image {
-    margin-left: -23px;
+    margin-left: 0;
 }
 
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item .views-field-field-image .field-content {
@@ -333,9 +343,11 @@ h2, h3, h4, h5, h6 {
 
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item .views-field-field-image img {
     height: auto;
-    margin-left: -14px;
+    margin-left: 0;
     width: 381px;
 }
+
+/* end slideshow style */
 
 #block-views-most-popular-block {
     float: left;
