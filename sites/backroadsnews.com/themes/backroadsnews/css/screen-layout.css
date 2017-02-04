@@ -85,6 +85,10 @@ body.front h1 {
     padding: 0px;
 }
 
+.views-field views-field-body-1  .field-content {
+    color: #ffffff;
+}
+
 .views-field-title .field-content a {
     color: #333;
     font-size: 18px;
@@ -235,7 +239,7 @@ body.front h1 {
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item {
     border: none;
     height: 445px;
-    width: 462px;
+    width: 468px;
     border-bottom: none;
     overflow: hidden;
 }
@@ -247,7 +251,7 @@ body.front h1 {
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame-row-item .views-field-field-image img {
     height: auto;
     margin-left: 0;
-    width: 462px;
+    width: 468px;
 }
 
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .slideshow-overlay {
@@ -256,7 +260,7 @@ body.front h1 {
     color: #FFFFFF;
     position: absolute;
     z-index: 200;
-    width: 462px;
+    width: 468px;
 }
 
 #views_slideshow_cycle_main_home_page-block .views-slideshow-cycle-main-frame .slideshow-overlay a {
@@ -289,7 +293,7 @@ body.front h1 {
     display: block;
     padding: 12px;
     text-shadow: 1px 1px 1px #000000;
-    width: 462px;
+    width: 468px;
     z-index: 1;
 }
 
@@ -340,12 +344,12 @@ body.front h1 {
     background: none repeat scroll 0 0 #333333;
     height: 575px;
     padding-bottom: 0;
-    width: 462px;
+    width: 468px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom {
     border: none;
-    width: 462px;
+    width: 468px;
     border-top: none;
     height: 60px;
     left: 0;
@@ -353,7 +357,7 @@ body.front h1 {
 }
 
 #widget_pager_bottom_home_page-block {
-    width: 462px;
+    width: 468px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
@@ -836,4 +840,22 @@ body.page-taxonomy-term .node-teaser .submitted {
 
 a img {
     max-width: 100%;
+}
+
+/* IMAGE FIELD CAPTION
+--------------------------------------------------------------------------*/
+.view blockquote.image-field-caption, .node-teaser blockquote.image-field-caption {
+    display: none;
+    visibility: hidden;
+}
+
+.page-node .node-article .content .field-type-image blockquote.image-field-caption {
+    float: left;
+    max-width: 380px;
+    margin: 5px 0 0;
+}
+
+blockquote.image-field-caption p {
+    line-height: 1.5em;
+    margin: 0 0 0.6em;
 }
