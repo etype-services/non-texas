@@ -86,7 +86,7 @@ function STARTERKIT_preprocess_html(&$variables, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 
-function beacononline_preprocess_page(&$variables, $hook) {
+function beacononlinenews_preprocess_page(&$variables, $hook) {
   $variables['node_ad'] = '';
   if (isset($variables['node'])) {
     $node = $variables['node'];
