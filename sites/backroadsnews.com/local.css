@@ -21,17 +21,23 @@ body {
     #block-superfish-1 ul li a.active {
         color: #333333;
     }
+
+
+    #block-menu-menu-secondary-menu .menu li a,
+    #block-menu-menu-secondary-menu .menu li a.active {
+        color: #ffffff;
+    }
 }
 
 @media only screen and (max-width: 979px) {
     body {
         background: none #ffffff;
     }
-}
 
-#block-menu-menu-secondary-menu .menu li a,
-#block-menu-menu-secondary-menu .menu li a.active {
-    color: #ffffff;
+    #block-menu-menu-secondary-menu .menu li a,
+    #block-menu-menu-secondary-menu .menu li a.active {
+        color: #333333;
+    }
 }
 
 #block-views-breaking-news-block {
