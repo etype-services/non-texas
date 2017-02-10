@@ -1,0 +1,18 @@
+body {
+    background: url(/sites/all/themes/fredtwentytwo/images/body.png) repeat-x #CBCBCB;
+}
+
+@media only screen and (min-device-width: 980px) and (min-width: 980px), (max-device-width: 1024px) and (min-width: 1024px) and (orientation: landscape) {
+
+    #block-superfish-1 ul {
+        background: url(/sites/all/themes/fredtwentytwo/images/nav_bg.gif) repeat-x scroll 0 0 transparent !important;
+    }
+
+    #block-superfish-1 ul li {
+        border-right: 1px solid #ec5f07;
+    }
+
+    #block-superfish-1 ul li a {
+        color: #FFFFFF;
+    }
+}
