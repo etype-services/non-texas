@@ -10,9 +10,40 @@ body {
 
     #block-superfish-1 ul li {
         border-right: 1px solid #ec5f07;
+        border-top: none;
     }
 
     #block-superfish-1 ul li a {
         color: #FFFFFF;
     }
+}
+
+#block-menu-menu-secondary-menu .menu li a,
+#block-menu-menu-secondary-menu .menu li a.active {
+    color: #ffffff;
+}
+
+#block-views-breaking-news-block {
+    display: block;
+    width: 728px;
+    height: 60px;
+    background-color: #F9760B;
+    margin-left: -10px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+#block-views-breaking-news-block a {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 15px;
+}
+
+#block-views-breaking-news-block h2.block-title {
+    border-bottom: 1px dashed #ffffff;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
 }
