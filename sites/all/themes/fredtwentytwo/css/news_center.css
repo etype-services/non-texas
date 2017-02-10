@@ -140,6 +140,11 @@ img {
     padding: 0;
 }
 
+/* override system menus */
+#block-menu-menu-secondary-menu li.leaf {
+    list-style: none;
+}
+
 #block-menu-menu-secondary-menu .menu li a {
     font-size: 1em;
     font-weight: 600;
