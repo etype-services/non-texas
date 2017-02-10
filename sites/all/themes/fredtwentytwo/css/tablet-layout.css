@@ -12,15 +12,6 @@ body.front h1 {
     display: none;
 }
 
-#logo {
-    margin-top: 10px;
-    width: 100%;
-}
-
-#logo img {
-    max-width: 700px;
-}
-
 #page-wrapper {
     max-width: 768px;
     min-width: 768px;
@@ -35,16 +26,6 @@ body.front h1 {
 
 #block-superfish-1, #block-superfish-1 ul li {
     width: 768px;
-}
-
-#block-superfish-1 ul li a {
-    color: #FFFFFF;
-    display: block;
-    font-weight: bold;
-    height: 23px;
-    margin-top: 0;
-    padding: 7px 15px 0 26px;
-    text-decoration: none;
 }
 
 .sidebar-second #content {
@@ -77,20 +58,11 @@ body.front h1 {
     margin-top: 39px;
 }
 
-.content .menu li a {
-    text-decoration: none;
-    padding: 8px 10px 5px;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-right: 1px solid #242424;
-}
-
 #block-multiblock-1 {
-    margin-bottom: 19px;
+    /*margin-bottom: 19px;
     margin-left: 47px;
     padding: 0;
-    width: 385px;
+    width: 385px;*/
 }
 
 #block-multiblock-1 .form-text {
