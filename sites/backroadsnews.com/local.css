@@ -18,6 +18,12 @@ body {
     }
 }
 
+@media only screen and (max-device-width: 979px) and (max-width: 979px) {
+    body {
+        background: #ffffff;
+    }
+}
+
 #block-menu-menu-secondary-menu .menu li a,
 #block-menu-menu-secondary-menu .menu li a.active {
     color: #ffffff;
