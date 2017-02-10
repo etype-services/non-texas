@@ -117,6 +117,36 @@ img {
     color: #FFFFFF;
 }
 
+/* secondary menu */
+#block-menu-menu-secondary-menu {
+    margin-top: 7px;
+    float: right;
+    height: 24px;
+}
+
+#block-menu-menu-secondary-menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+#block-menu-menu-secondary-menu li {
+    padding: 0 0.3em 0;
+}
+
+#block-menu-menu-secondary-menu li.last {
+    padding: 0;
+}
+
+#block-menu-menu-secondary-menu .menu li a {
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 #block-user-login label {
     display: none;
 }

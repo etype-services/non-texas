@@ -8,24 +8,8 @@ body.front h1 {
     overflow: hidden;
 }
 
-#header .region-header {
-    background: none repeat scroll 0 0 #fff;
-    display: block;
-    min-height: 22px;
-    padding-top: 6px;
-}
-
 #block-user-login {
     display: none;
-}
-
-#logo {
-    margin-top: 10px;
-    width: 100%;
-}
-
-#logo img {
-    width: 100%;
 }
 
 #page-wrapper {
@@ -103,48 +87,8 @@ body.front h1 {
     width: 30px;
 }
 
-#block-superfish-1 {
-    margin-bottom: 0;
+#block-superfish-1, #block-superfish-1 ul li {
     width: 480px;
-    height: 30px
-}
-
-#block-superfish-1 ul {
-    margin-bottom: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-left: 0;
-}
-
-#block-superfish-1 ul li {
-    background: none repeat scroll 0 0 transparent;
-    border-top: 0px dashed #CCCCCC;
-    clear: both;
-    display: inline-block;
-    float: left;
-    margin-left: 0 !important;
-    margin-top: 0;
-    padding: 0;
-    text-transform: uppercase;
-    width: 480px;
-}
-
-#block-superfish-1 ul li a {
-    color: #FFFFFF;
-    display: block;
-    font-weight: bold;
-    height: 23px;
-    margin-top: 0;
-    padding: 7px 15px 0 26px;
-    text-decoration: none;
-}
-
-#block-superfish-1 ul li a.active, #block-superfish-1 ul li a.active-trail, #block-superfish-1 ul li a:hover {
-    color: #FFF;
-}
-
-#block-superfish-1 ul li a.active, #block-menu-menu-news-categories ul li a:first-child {
-    border: medium none !important;
 }
 
 /* SlideShow Block Styles */
