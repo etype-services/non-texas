@@ -1,0 +1,103 @@
+<?php
+
+/**
+ * @file
+ * Wire functions for Etype Services to allow Editors to import and publish stories from other publications
+ *
+ */
+
+/**
+ * Implements hook_permission().
+ */
+function etype_wire_permission() {
+    return array(
+        'access wire content' => array(
+            'title' => t('Access Wire Content'),
+        )
+    );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function etype_wire_menu() {
+
+    $items = array();
+
+    /* display wire content */
+    $items['admin/content/wirecontent'] = array(
+        'title' => 'Wire Content',
+        'description' => "Publish stories from other publications.",
+        'page callback' => 'etype_wire_admin_content',
+        'access callback' => 'user_access',
+        'access arguments' => array('access wire content'),
+        'type' => MENU_LOCAL_TASK,
+        'file' => 'includes/wirecontent.admin.inc'
+    );
+
+    /* to add wire content to site */
+    $items['admin/wirecontent/%/add'] = array(
+        'title' => 'Add Wire Content',
+        'description' => "Add content from other sites to this one.",
+        'page callback' => 'etype_wire_node_add',
+        'page arguments' => array(2),
+        'access arguments' => array('access wire content'),
+        'type' => MENU_CALLBACK,
+        'file' => 'includes/wirecontent.add.inc'
+    );
+
+    /* to be able to run cron job from url */
+    $items['admin/wirecontent/cron'] = array(
+        'title' => 'Wire Content',
+        'description' => "Run Wire cron job.",
+        'page callback' => 'etype_wire_node_export',
+        'access arguments' => array('access wire content'),
+        'type' => MENU_CALLBACK,
+        'file' => 'includes/wirecontent.cron.inc'
+    );
+
+    return $items;
+}
+
+/**
+ * @param $op
+ * @param null $job
+ * @return mixed
+ */
+function etype_wire_cronapi($op, $job = NULL) {
+
+    $items['etype_wire_cron'] = array(
+        'description' => 'Export Nodes to Wire Content',
+        'rule' => '0 0,12 * * *',
+        'callback' => 'etype_wire_node_export',
+        'arguments' => array('all'),
+        'file' => 'includes/wirecontent.cron.inc'
+    );
+
+    return $items;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function etype_wire_theme() {
+    $theme = array(
+        'wire_admin_content' => array(
+            'variables' => array('nodes' => NULL),
+            'file' => 'includes/wirecontent.admin.inc',
+        )
+    );
+    return $theme;
+}
+
+/**
+ * Connect to wire db
+ * @return \PDO
+ */
+function _etype_wire_connect() {
+    $dbHandle = new PDO("mysql:host=104.196.22.53;dbname=wire", 'etype_wire', 'GeMay9k60gL1=2Q');
+    $dbHandle->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    // always disable emulated prepared statement when using the MySQL driver
+    $dbHandle->setAttribute(PDO::ATTR_EMULATE_PREPARES, FALSE);
+    return $dbHandle;
+}
