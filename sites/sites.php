@@ -232,19 +232,19 @@ $sites['thomastribune.com'] = 'thomastribune.etypegoogle8.com';
 $sites['www.thomastribune.com'] = 'thomastribune.etypegoogle8.com';
 
 /* acadiaparishtoday.etypegoogle8.com */
-$sites['acadiaparishtoday.etypegoogle8.com'] = 'acadiaparishtoday.etypegoogle7.com';
-$sites['acadiaparishtoday.com'] = 'acadiaparishtoday.etypegoogle7.com';
-$sites['www.acadiaparishtoday.com'] = 'acadiaparishtoday.etypegoogle7.com';
+$sites['acadiaparishtoday.etypegoogle8.com'] = 'acadiaparishtoday.etypegoogle8.com';
+$sites['acadiaparishtoday.com'] = 'acadiaparishtoday.etypegoogle8.com';
+$sites['www.acadiaparishtoday.com'] = 'acadiaparishtoday.etypegoogle8.com';
 
-$sites['churchpointtoday.com'] ='acadiaparishtoday.etypegoogle7.com';
-$sites['www.churchpointtoday.com'] ='acadiaparishtoday.etypegoogle7.com';
+$sites['churchpointtoday.com'] ='acadiaparishtoday.etypegoogle8.com';
+$sites['www.churchpointtoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 
-$sites['crowleypostsignal.com'] ='acadiaparishtoday.etypegoogle7.com';
-$sites['www.crowleypostsignal.com'] ='acadiaparishtoday.etypegoogle7.com';
+$sites['crowleypostsignal.com'] ='acadiaparishtoday.etypegoogle8.com';
+$sites['www.crowleypostsignal.com'] ='acadiaparishtoday.etypegoogle8.com';
 
-$sites['crowleytoday.com'] ='acadiaparishtoday.etypegoogle7.com';
-$sites['www.crowleytoday.com'] ='acadiaparishtoday.etypegoogle7.com';
+$sites['crowleytoday.com'] ='acadiaparishtoday.etypegoogle8.com';
+$sites['www.crowleytoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 
-$sites['raynetoday.com'] ='acadiaparishtoday.etypegoogle7.com';
-$sites['www.raynetoday.com'] ='acadiaparishtoday.etypegoogle7.com';
+$sites['raynetoday.com'] ='acadiaparishtoday.etypegoogle8.com';
+$sites['www.raynetoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 
