@@ -1,0 +1,5 @@
+/* style for breaking news block on home page */
+
+#block-views-breaking-news-block {display:block; width:728px; height: 60px; background-color:#FF0000; margin-left:-10px; margin-bottom: 8px; overflow:hidden;}
+#block-views-breaking-news-block a {color: #ffffff; font-size: 18px; line-height:24px; margin-left: 15px;}
+#block-views-breaking-news-block h2.block-title {border-bottom: 1px dashed #ffffff; color: #ffffff; font-family: "Open Sans",sans-serif; font-size: 24px; font-weight: 300;}
