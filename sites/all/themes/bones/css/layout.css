@@ -23,7 +23,7 @@
 
 /* Sidebars Both Second */
 
-.sidebars-both-second .first-sidebar, .sidebars-both-second .main-inner, .sidebars-both-second .second-sidebar  {
+.sidebars-both-second .first-sidebar, sidebars-both-second .main-inner, .sidebars-both-second .second-sidebar  {
 	float: right;
 }
 
@@ -40,7 +40,7 @@ body {
 a {
  color: #111111;
  font-weight: bold;
- text-decoration: none;	
+ text-decoration: none;
 }
 
 .header-wrapper-inner, .preface-wrapper-inner, .main-content-wrapper-inner, .footer-wrapper-inner {
@@ -231,7 +231,7 @@ ul.secondary a.active {
 }
 
 #main-menu ul.menu li li a:hover, #main-menu ul.menu li li a.active:hover {
-  background: #333333;  
+  background: #333333;
 }
 
 #main-menu ul.menu li ul ul {
@@ -375,11 +375,11 @@ blockquote {
   margin: 20px 0;
   padding-left: 58px;
   color: #666666;
-} 
+}
 
 blockquote p {
   padding-right: 50px;
-} 
+}
 
 pre {
   padding: 10px;
