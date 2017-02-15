@@ -186,8 +186,8 @@ $sites['www.thebellevilletelescope.com'] = 'thebellevilletelescope.com';
 $sites['nebraskalivingtimes.etypegoogle8.com'] = 'nebraskalivingtimes.com';
 $sites['nebraskalivingtimes.com'] = 'nebraskalivingtimes.com';
 $sites['www.nebraskalivingtimes.com'] = 'nebraskalivingtimes.com';
-$sites['nelivingtimes.com'] = 'nelivingtimes.com';
-$sites['www.nelivingtimes.com'] = 'nelivingtimes.com';
+$sites['nelivingtimes.com'] = 'nebraskalivingtimes.com';
+$sites['www.nelivingtimes.com'] = 'nebraskalivingtimes.com';
 
 /* clintondailynews.etypegoogle8.com */
 $sites['clintondailynews.etypegoogle8.com'] = 'clintondailynews.com';
