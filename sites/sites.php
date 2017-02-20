@@ -245,7 +245,7 @@ $sites['www.raynetoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 
 /* stmarynow.etypegoogle7.com */
 $sites['cni.stmarynow.com'] = 'stmarynow.etypegoogle8.com';
-$sites['stmarynow.etypegoogle9.com'] = 'stmarynow.etypegoogle8.com';
+$sites['stmarynow.etypegoogle8.com'] = 'stmarynow.etypegoogle8.com';
 $sites['stmarynow.com'] = 'stmarynow.etypegoogle8.com';
 $sites['www.stmarynow.com'] = 'stmarynow.etypegoogle8.com';
 
