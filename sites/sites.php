@@ -244,14 +244,14 @@ $sites['raynetoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 $sites['www.raynetoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 
 /* stmarynow.etypegoogle7.com */
-$sites['cni.stmarynow.com'] = 'stmary.etypegoogle8.com';
-$sites['stmarynow.etypegoogle9.com'] = 'stmaryarchive.etypegoogle8.com';
-$sites['stmarynow.com'] = 'stmaryarchive.etypegoogle8.com';
-$sites['www.stmarynow.com'] = 'stmaryarchive.etypegoogle9.com';
+$sites['cni.stmarynow.com'] = 'stmarynow.etypegoogle8.com';
+$sites['stmarynow.etypegoogle9.com'] = 'stmarynow.etypegoogle8.com';
+$sites['stmarynow.com'] = 'stmarynow.etypegoogle8.com';
+$sites['www.stmarynow.com'] = 'stmarynow.etypegoogle8.com';
 
-$sites['banner-tribune.com'] = 'stmaryarchive.etypegoogle8.com';
-$sites['www.banner-tribune.com'] = 'stmaryarchive.etypegoogle8.com';
+$sites['banner-tribune.com'] = 'stmarynow.etypegoogle8.com';
+$sites['www.banner-tribune.com'] = 'stmarynow.etypegoogle8.com';
 
-$sites['daily-review.com'] = 'stmaryarchive.etypegoogle8.com';
-$sites['www.daily-review.com'] = 'stmaryarchive.etypegoogle8.com';
+$sites['daily-review.com'] = 'stmarynow.etypegoogle8.com';
+$sites['www.daily-review.com'] = 'stmarynow.etypegoogle8.com';
 
