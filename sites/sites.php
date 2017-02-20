@@ -211,11 +211,6 @@ $sites['www.newsblade.com'] = 'newsblade.com';
 $sites['newsblade.net'] = 'newsblade.com';
 $sites['www.newsblade.net'] = 'newsblade.com';
 
-/* sequoyahcountytimes.etypegoogle8.com */
-$sites['sequoyahcountytimes.etypegoogle8.com'] = 'sequoyahcountytimes.com';
-$sites['sequoyahcountytimes.com'] = 'sequoyahcountytimes.com';
-$sites['www.sequoyahcountytimes.com'] = 'sequoyahcountytimes.com';
-
 /* courier-record.etypegoogle8.com */
 $sites['courier-record.etypegoogle8.com'] = 'courier-record.com';
 $sites['courier-record.com'] = 'courier-record.com';
@@ -247,4 +242,16 @@ $sites['www.crowleytoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 
 $sites['raynetoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 $sites['www.raynetoday.com'] ='acadiaparishtoday.etypegoogle8.com';
+
+/* stmarynow.etypegoogle7.com */
+$sites['cni.stmarynow.com'] = 'stmary.etypegoogle8.com';
+$sites['stmarynow.etypegoogle9.com'] = 'stmaryarchive.etypegoogle8.com';
+$sites['stmarynow.com'] = 'stmaryarchive.etypegoogle8.com';
+$sites['www.stmarynow.com'] = 'stmaryarchive.etypegoogle9.com';
+
+$sites['banner-tribune.com'] = 'stmaryarchive.etypegoogle8.com';
+$sites['www.banner-tribune.com'] = 'stmaryarchive.etypegoogle8.com';
+
+$sites['daily-review.com'] = 'stmaryarchive.etypegoogle8.com';
+$sites['www.daily-review.com'] = 'stmaryarchive.etypegoogle8.com';
 
