@@ -90,6 +90,20 @@ h3.site-slogan {
     float: left;
 }
 
+/* logo */
+.site-logo {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.site-logo img {
+    width: 100%;
+    max-width: 700px;
+}
+
+
 /* SLIDESHOW
 --------------------------------------------------------------------------*/
 .view-slideshow .views_slideshow_main {
@@ -408,6 +422,18 @@ article .field-image {
     font-size: 0.8em;
 }
 
+#postscript p a {
+    font-size: 1em;
+}
+
+/* full width area in postscript */
+.region-postscript-banner {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+
 /* FOOTER
 --------------------------------------------------------------------------*/
 .region-footer {
@@ -534,6 +560,32 @@ article .field-image {
     background: 0;
 }
 
+/* for sites with user menu below main menu in .region-main-menu */
+#main-menu #block-system-user-menu {
+    background-color: #ffffff;
+    width: 100%;
+    height: 27px;
+    border-bottom: 1px solid black;
+}
+
+#main-menu #block-system-user-menu .content {
+    margin: 0 auto;
+}
+
+#main-menu #block-system-user-menu ul.menu li {
+    height: 27px;
+}
+
+#main-menu #block-system-user-menu ul.menu li a {
+    font-size: 0.8em;
+}
+
+#main-menu #block-system-user-menu ul.menu li a {
+    color: #333333;
+    height: 27px;
+    line-height: 27px;
+}
+
 /* MAIN MENU
 --------------------------------------------------------------------------*/
 
@@ -546,7 +598,8 @@ article .field-image {
 }
 
 #main-menu ul.menu {
-    display: block;
+    display: flex;
+    justify-content: space-around;
     height: 100%;
     min-height: 33px;
     max-height: 85px;
@@ -577,6 +630,7 @@ article .field-image {
 /* Main Menu custom styling */
 #block-superfish-1 {
     height: 33px;
+    background-color: #007DBF;
 }
 
 #block-superfish-1 .block-inner {
@@ -1267,44 +1321,6 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     padding: 0;
 }
 
-/* SIMPLE ADS
---------------------------------------------------------------------------*/
-
-#main-content .block-simpleads .block-inner {
-    padding: 0;
-    margin: 0;
-    border: none;
-    box-shadow: none;
-}
-
-.region-main-menu .block-simpleads {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.region-main-menu-second-level .block-simpleads {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.slideshow-wrapper-inner .block-simpleads {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* OWN LOCAL
---------------------------------------------------------------------------*/
-#block-etype-own-local .block-inner {
-    padding: 0;
-    margin: 0;
-    border: none;
-    box-shadow: none;
-}
-
-#block-etype-own-local .block-inner .content {
-    padding: 0;
-}
-
 /* ADVANCED POLL
 --------------------------------------------------------------------------*/
 #block-advpoll-advpoll-recent h2.title {
@@ -1356,28 +1372,52 @@ article.node-webform .node-content-wrapper h1.title {
     padding: 0;
 }
 
-/* GALLERIA override gallleria classic theme */
+/* GALLERIA -- override galleria classic theme */
+.galleria-theme-classic {
+    background-color: #ffffff;
+}
 
-/* different heights for different content types */
-.node-type-photos .galleria-info {
-    top: 450px;
+.galleria-theme-classic .galleria-stage {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.galleria-theme-classic .galleria-thumb-nav-left, .galleria-theme-classic .galleria-thumb-nav-right, .galleria-theme-classic .galleria-info-link, .galleria-theme-classic .galleria-info-close, .galleria-theme-classic .galleria-image-nav-left, .galleria-theme-classic .galleria-image-nav-right {
+    background-image: url(../../../../all/themes/cni/images/classic-map-cni.png);
+}
+
+.galleria-theme-classic .galleria-info {
+    top: 31px;
     left: 0;
 }
 
-.galleria-container, .galleria-info-text, .galleria-info-title {
-    background-color: #ffffff;
-    color: #000000;
+.galleria-theme-classic .galleria-info-text {
+    display: block;
+    opacity: 0.5;
 }
 
-.galleria-thumb-nav-left,
-.galleria-thumb-nav-right,
-.galleria-info-close,
-.galleria-image-nav-left,
-.galleria-image-nav-right {
-    background-image: url(../images/classic-map-cni.png);
+.galleria-theme-classic .galleria-info-title {
+    margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
 }
 
-.galleria-info-link {
+.galleria-theme-classic .galleria-info-link {
     display: none;
     visibility: hidden;
 }
+
+.galleria-theme-classic.notouch .galleria-thumb-nav-left:hover, .galleria-theme-classic.notouch .galleria-thumb-nav-right:hover {
+    background-color: #fff;
+}
+
+.galleria-theme-classic .galleria-thumbnails .galleria-image {
+    width: 50px;
+    height: 50px;
+}
+
+.galleria-theme-classic .galleria-thumb-nav-right, .galleria-theme-classic .galleria-thumb-nav-keft {
+    top: 4px;
+}
+
