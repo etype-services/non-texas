@@ -1,0 +1,17 @@
+/* changed font size so menu doesn't wrap to two lines */
+/* #block-superfish-1 ul li a {
+    background: transparent none repeat scroll 0 0;
+    border-left: medium none;
+    border-right: medium none;
+    color: #ffffff;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 0;
+    padding: 0 17px;
+    text-decoration: none;
+} */
+
+#block-superfish-1 ul li a {
+    font-size: 12px;
+}
