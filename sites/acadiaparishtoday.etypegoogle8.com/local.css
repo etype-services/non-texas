@@ -29,22 +29,12 @@
 /* wide desktop browsers */
 @media only screen and (min-width: 959px) {
 
-    /* main menu */
-    #block-superfish-1 .content {
-        width: 891px;
-    }
-
     /* dfp ads */
 
 }
 
 /* desktop browsers */
 @media only screen and (min-width: 768px) and (max-width: 958px) {
-
-    /* main menu */
-    #block-superfish-1 .content {
-        width: 730px;
-    }
 
     /* dfp ads */
 
@@ -58,6 +48,9 @@
 
 @media only screen and (min-width: 768px) {
 
-    /* Hide larger DFP ads on non full-size browsers */
+    /* etype network df ad in footer */
+    #block-block-46 {
+
+    }
 
 }
