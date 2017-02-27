@@ -357,6 +357,7 @@ article .field-image {
 .postscript-wrapper h3 {
     display: block;
     margin-bottom: 0.4em;
+    line-height: 1.4em; /* for titles that go to second line */
 }
 
 .postscript-wrapper h3 span {
@@ -630,7 +631,7 @@ article .field-image {
 /* Main Menu custom styling */
 #block-superfish-1 {
     height: 33px;
-    background-color: #007DBF;
+    background-color: #000000;
 }
 
 #block-superfish-1 .block-inner {
@@ -1005,6 +1006,10 @@ article .field-image {
 
 .instagram {
     background: url(../images/instagram.png) no-repeat;
+}
+
+.googleplus {
+    background: url(../images/googleplus.png) no-repeat;
 }
 
 /* MISC
@@ -1419,19 +1424,4 @@ article.node-webform .node-content-wrapper h1.title {
 
 .galleria-theme-classic .galleria-thumb-nav-right, .galleria-theme-classic .galleria-thumb-nav-keft {
     top: 4px;
-}
-
-/* css for Crowdy news sidebar ads */
-
-#CrowdynewsAd {margin: -20px;}
-
-/* css for etype google DFP sidebar ads */
-
-#div-gpt-ad-1487352373268-1 {margin: -20px;}
-
-/* css for etype google DFP bottom leaderboard */
-
-#div-gpt-ad-1487352373268-0 {
-    margin: 0 auto 20px;
-    width: 728px;
 }
