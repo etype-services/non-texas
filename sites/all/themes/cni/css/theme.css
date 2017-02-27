@@ -1421,3 +1421,17 @@ article.node-webform .node-content-wrapper h1.title {
     top: 4px;
 }
 
+/* css for Crowdy news sidebar ads */
+
+#CrowdynewsAd {margin: -20px;}
+
+/* css for etype google DFP sidebar ads */
+
+#div-gpt-ad-1487352373268-1 {margin: -20px;}
+
+/* css for etype google DFP bottom leaderboard */
+
+#div-gpt-ad-1487352373268-0 {
+    margin: 0 auto 20px;
+    width: 728px;
+}
