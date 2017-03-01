@@ -197,16 +197,6 @@ function _etype_e_edition_content() {
     return $output;
 }
 
-$etype_site_path = etype_site_path();
-$own_local_file = $etype_site_path . '/ownlocal/ownlocal.js';
-if (file_exists($own_local_file)) {
-    drupal_add_js($etype_site_path . '/ownlocal/ownlocal.js', 'file');
-    drupal_add_css($etype_site_path . '/ownlocal/ownlocal.css', array(
-        'group' => CSS_THEME,
-        'type' => 'file'
-    ));
-}
-
 /**
  * Cron Jobs
  * @param $op
@@ -217,20 +207,23 @@ function etype_cronapi($op, $job = NULL) {
 
     $cron_schedule = ''; // set in include file, just to avoid IDE errors
     $etype_site_path = etype_site_path();
-    include($etype_site_path . '/etype_settings.php');
+    $file = $etype_site_path . '/etype_settings.php';
+    if (file_exists($file)) {
+      include($etype_site_path . '/etype_settings.php');
 
-    /* run job at 7:30am Eastern every Wednesday */
-    $items['etype_cron'] = array(
+      /* run job at 7:30am Eastern every Wednesday */
+      $items['etype_cron'] = array(
         'title' => 'Import Classified Ads',
         'module' => 'etype',
         'callback' => 'etype_classified_ad_importer',
         'scheduler' => array(
-            'name' => 'crontab',
-            'crontab' => array(
-                'rules' => array($cron_schedule),
-            ),
+          'name' => 'crontab',
+          'crontab' => array(
+            'rules' => array($cron_schedule),
+          ),
         ),
-    );
+      );
+    }
 
     $items['cache_clear_cron'] = array(
         'title' => 'Clear Cache',
@@ -295,4 +288,9 @@ function etype_node_cleanup() {
         }
         node_delete_multiple($nids);
     }
+}
+
+function etype_site_path() {
+  $path = $_SERVER['DOCUMENT_ROOT'] . base_path() . conf_path();
+  return $path;
 }
