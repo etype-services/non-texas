@@ -86,8 +86,7 @@ if($Password==$resp->GetPasswordByUserNameResult)
                             $( "#tabs" ).tabs();
                           });
                           </script>
-                        </head>
-                        <body>
+
                          
                         <div id="tabs">
                           <ul>
