@@ -176,13 +176,13 @@ function _etype_twitter_content() {
  * @return string
  */
 function _etype_ownlocal_content() {
-  $output = '';
-  $path = path_to_theme();
-  $file = '/data/web/public/drupal/' . $path . '/templates/ownlocal.html';
-  if (file_exists($file)) {
-    $output .= file_get_contents($file);
-  }
-  return $output;
+    $output = '';
+    $path = etype_site_path();
+    $file = $path . '/ownlocal.html';
+    if (file_exists($file)) {
+        $output .= file_get_contents($file);
+    }
+    return $output;
 }
 
 function _etype_e_edition_content() {
@@ -194,17 +194,63 @@ function _etype_e_edition_content() {
   $output = '
 <p class="rtecenter" style="text-align: center;"><a href="https://etypeservices.com/' . $e_edition . '/"><img src="https://etypeservices.com/LandingPageImages/' . $fixed . '/currentpg1.jpg" width="193"></a></p><h4 class="rtecenter" style="text-align: center;"><a href="https://etypeservices.com/' . $e_edition . '/">Click here to read ' . $site_name . '</a></h4>
 ';
-  return $output;
+    return $output;
 }
 
-$ownlocal_path = drupal_get_path('module', 'etype') . '/ownlocal/ownlocal.js';
-if (file_exists($ownlocal_path)) {
-    drupal_add_js(drupal_get_path('module', 'etype') . '/ownlocal/ownlocal.js', 'file');
-    drupal_add_css(drupal_get_path('module', 'etype') . '/ownlocal/ownlocal.css', array('group' => CSS_THEME, 'type' => 'file'));
-
+$etype_site_path = etype_site_path();
+$own_local_file = $etype_site_path . '/ownlocal/ownlocal.js';
+if (file_exists($own_local_file)) {
+    drupal_add_js($etype_site_path . '/ownlocal/ownlocal.js', 'file');
+    drupal_add_css($etype_site_path . '/ownlocal/ownlocal.css', array(
+        'group' => CSS_THEME,
+        'type' => 'file'
+    ));
 }
 
+/**
+ * Cron Jobs
+ * @param $op
+ * @param null $job
+ * @return mixed
+ */
+function etype_cronapi($op, $job = NULL) {
 
+    $cron_schedule = ''; // set in include file, just to avoid IDE errors
+    $etype_site_path = etype_site_path();
+    include($etype_site_path . '/etype_settings.php');
+
+    /* run job at 7:30am Eastern every Wednesday */
+    $items['etype_cron'] = array(
+        'title' => 'Import Classified Ads',
+        'module' => 'etype',
+        'callback' => 'etype_classified_ad_importer',
+        'scheduler' => array(
+            'name' => 'crontab',
+            'crontab' => array(
+                'rules' => array($cron_schedule),
+            ),
+        ),
+    );
+
+    $items['cache_clear_cron'] = array(
+        'title' => 'Clear Cache',
+        'module' => 'etype',
+        'callback' => 'etype_clear_cache',
+        'scheduler' => array(
+            'name' => 'crontab',
+            'crontab' => array(
+                'rules' => array('*/30 * * * *'),
+            ),
+        ),
+    );
+
+    return $items;
+}
+
+/**
+ * add e-Edition link to user menu
+ * @return array
+ */
 function etype_menu() {
 
   $items = array();
@@ -229,8 +275,10 @@ function etype_menu() {
   return $items;
 }
 
+/**
+ * redirect to e-Edition
+ */
 function _etype_e_edition() {
-    /* redirect to e-Edition */
     $e_edition = theme_get_setting('e_edition', 'cni');
     $path = 'https://etypeservices.com/' . $e_edition . '/';
     drupal_goto($path);
