@@ -73,7 +73,6 @@ if (isset($_POST['change'])) {
   }
   else {
     $msg = "Enter The Correct Old Password";
-  }
 }
 ?>
 
