@@ -57,7 +57,6 @@ p {
 td {
     padding: 5px;
     vertical-align: middle;
-    border: 1px solid #dddddd;
 }
 
 img {
@@ -362,7 +361,6 @@ article .field-image {
 
 .postscript-wrapper h3 span {
     padding-right: 5px;
-    background: #333333;
     color: #999999;
 }
 
@@ -629,9 +627,8 @@ article .field-image {
 }
 
 /* Main Menu custom styling */
-#block-superfish-1 {
-    height: 33px;
-    background-color: #000000;
+#block-superfish-1, .sf-menu.sf-style-space li, .sf-menu.sf-style-space li li, .sf-menu.sf-style-space li li li, .sf-menu.sf-style-space.sf-navbar {
+    background: #000000;
 }
 
 #block-superfish-1 .block-inner {
@@ -1200,11 +1197,6 @@ blockquote p {
     background: none;
 }
 
-#views-slideshow-galleria-1 .views-slideshow-galleria-images-1 {
-    max-width: 230px;
-    height: auto;
-}
-
 .views-slideshow-controls-bottom img {
     float: left;
     margin-right: 10px;
@@ -1281,16 +1273,6 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     margin-bottom: 10px;
     color: #999999;
     border-bottom: 1px solid #dddddd;
-}
-
-.page-node .node-article .galleria-info-link {
-    display: none;
-    visibility: hidden;
-}
-
-/* galleria on article pages */
-.page-node .node-article .galleria-info {
-    top: 308px;
 }
 
 /* DFP / GOOGLE ADS
@@ -1377,51 +1359,23 @@ article.node-webform .node-content-wrapper h1.title {
     padding: 0;
 }
 
-/* GALLERIA -- override galleria classic theme */
-.galleria-theme-classic {
-    background-color: #ffffff;
+/* flexslider overrides */
+.flexslider {
+    font: 0.8em/1.4 lato;
 }
 
-.galleria-theme-classic .galleria-stage {
-    top: 0;
-    left: 0;
-    right: 0;
+.flex-control-nav {
+    bottom: -30px;
 }
 
-.galleria-theme-classic .galleria-thumb-nav-left, .galleria-theme-classic .galleria-thumb-nav-right, .galleria-theme-classic .galleria-info-link, .galleria-theme-classic .galleria-info-close, .galleria-theme-classic .galleria-image-nav-left, .galleria-theme-classic .galleria-image-nav-right {
-    background-image: url(../../../../all/themes/cni/images/classic-map-cni.png);
+.content .node-page ul.flex-direction-nav,
+.content .node-article ul.flex-direction-nav,
+ul.flex-direction-nav {
+    list-style: none;
 }
 
-.galleria-theme-classic .galleria-info {
-    top: 31px;
-    left: 0;
-}
-
-.galleria-theme-classic .galleria-info-text {
-    display: block;
-    opacity: 0.5;
-}
-
-.galleria-theme-classic .galleria-info-title {
-    margin-bottom: 0;
-    font-family: 'Lato', sans-serif;
-    font-weight: normal;
-}
-
-.galleria-theme-classic .galleria-info-link {
-    display: none;
-    visibility: hidden;
-}
-
-.galleria-theme-classic.notouch .galleria-thumb-nav-left:hover, .galleria-theme-classic.notouch .galleria-thumb-nav-right:hover {
-    background-color: #fff;
-}
-
-.galleria-theme-classic .galleria-thumbnails .galleria-image {
-    width: 50px;
-    height: 50px;
-}
-
-.galleria-theme-classic .galleria-thumb-nav-right, .galleria-theme-classic .galleria-thumb-nav-keft {
-    top: 4px;
+.content .node-page ul.slides,
+.content .node-article ul.slides,
+ul.slides {
+    margin: 0;
 }
