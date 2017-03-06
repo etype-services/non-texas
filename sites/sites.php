@@ -243,7 +243,7 @@ $sites['www.crowleytoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 $sites['raynetoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 $sites['www.raynetoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 
-/* stmarynow.etypegoogle7.com */
+/* stmarynow.etypegoogle8.com */
 $sites['stmarynow.etypegoogle8.com'] = 'stmarynow.etypegoogle8.com';
 $sites['stmarynow.com'] = 'stmarynow.etypegoogle8.com';
 $sites['www.stmarynow.com'] = 'stmarynow.etypegoogle8.com';
@@ -254,3 +254,13 @@ $sites['www.banner-tribune.com'] = 'stmarynow.etypegoogle8.com';
 $sites['daily-review.com'] = 'stmarynow.etypegoogle8.com';
 $sites['www.daily-review.com'] = 'stmarynow.etypegoogle8.com';
 
+/* vermiliontoday.etypegoogle8.com */
+$sites['vermiliontoday.etypegoogle8.com'] = 'vermiliontoday.etypegoogle8.com';
+$sites['vermiliontoday.com'] = 'vermiliontoday.etypegoogle8.com';
+$sites['www.vermiliontoday.com'] = 'vermiliontoday.etypegoogle8.com';
+$sites['abbevillenow.com'] = 'vermiliontoday.etypegoogle8.com';
+$sites['www.abbevillenow.com'] = 'vermiliontoday.etypegoogle8.com';
+$sites['gueydantoday.com'] = 'vermiliontoday.etypegoogle8.com';
+$sites['www.gueydantoday.com'] = 'vermiliontoday.etypegoogle8.com';
+$sites['kaplantoday.com'] = 'vermiliontoday.etypegoogle8.com';
+$sites['www.kaplantoday.com'] = 'vermiliontoday.etypegoogle8.com';
