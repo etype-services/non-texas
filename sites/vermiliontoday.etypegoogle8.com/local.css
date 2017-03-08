@@ -1,0 +1,65 @@
+/* logo */
+.site-logo {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 460px;
+}
+
+.site-logo img {
+    width: 100%;
+    max-width: 460px;
+}
+
+/* main-menu background-color */
+#block-superfish-1 {
+    background-color: #68000e;
+}
+
+.sf-menu.sf-style-space li, .sf-menu.sf-style-space li li, .sf-menu.sf-style-space li li li, .sf-menu.sf-style-space.sf-navbar {
+    background: #68000e;
+}
+
+/* SIMPLE ADS
+--------------------------------------------------------------------------*/
+
+
+/* Google DFP Ads
+--------------------------------------------------------------------------*/
+
+/* wide desktop browsers */
+@media only screen and (min-width: 959px) {
+
+    /* main menu */
+    #block-superfish-1 .content {
+        width: 891px;
+    }
+
+    #main-menu ul.menu li ul {
+        width: 220px;
+    }
+
+}
+
+/* desktop browsers */
+@media only screen and (min-width: 768px) and (max-width: 958px) {
+
+    /* main menu */
+    #block-superfish-1 .content {
+        width: 730px;
+    }
+
+    /* dfp ads */
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* Hide larger DFP ads on non full-size browsers */
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* Hide larger DFP ads on non full-size browsers */
+
+}
