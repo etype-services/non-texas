@@ -296,6 +296,8 @@ function etype_site_path() {
 }
 
 function etype_premium_access(&$node, $teaser) {
+  echo request_uri();
+  exit;
   var_dump($node);
   exit;
 }
