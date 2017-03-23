@@ -296,8 +296,15 @@ function etype_site_path() {
 }
 
 function etype_premium_access(&$node, $teaser) {
-  $uri = request_uri();
-  if ($uri == '/news-mobile.xml') {
+  $permitido = array(
+    '/news-mobile.xml',
+    '/sports-mobile.xml',
+    'lifestyle-mobile.xml',
+    'obits-mobile.xml',
+    'commentary-mobile.xml'
+  );
+  $solicitud = request_uri();
+  if (in_array($solicitud, $permitido)) {
     return TRUE;
   }
 }
