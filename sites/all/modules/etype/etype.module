@@ -318,5 +318,7 @@ function etype_premium_access(&$node, $teaser) {
   $solicitud = request_uri();
   if (in_array($solicitud, $permitido)) {
     return TRUE;
+  } else {
+    return FALSE;
   }
 }
