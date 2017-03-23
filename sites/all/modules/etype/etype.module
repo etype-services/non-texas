@@ -316,8 +316,6 @@ function etype_premium_access(&$node, $teaser) {
     '/commentary-mobile.xml'
   );
   $solicitud = request_uri();
-  echo $solicitud;
-  exit;
   if (in_array($solicitud, $permitido)) {
     return TRUE;
   }
