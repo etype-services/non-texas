@@ -311,9 +311,9 @@ function etype_premium_access(&$node, $teaser) {
   $permitido = array(
     '/news-mobile.xml',
     '/sports-mobile.xml',
-    'lifestyle-mobile.xml',
-    'obits-mobile.xml',
-    'commentary-mobile.xml'
+    '/lifestyle-mobile.xml',
+    '/obits-mobile.xml',
+    '/commentary-mobile.xml'
   );
   $solicitud = request_uri();
   if (in_array($solicitud, $permitido)) {
