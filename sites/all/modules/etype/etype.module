@@ -277,8 +277,10 @@ function _etype_e_edition() {
     drupal_goto($path);
 }
 
+/**
+ * Clean up node table
+ */
 function etype_node_cleanup() {
-
     $res = db_query('SELECT n.nid FROM node n LEFT JOIN node_revision nr ON nr.nid = n.nid WHERE nr.vid IS NULL');
     if (count($res) > 0) {
         $nids = array();
@@ -290,11 +292,21 @@ function etype_node_cleanup() {
     }
 }
 
+/**
+ * @return string
+ * get path to site folder
+ */
 function etype_site_path() {
   $path = $_SERVER['DOCUMENT_ROOT'] . base_path() . conf_path();
   return $path;
 }
 
+/**
+ * @param $node
+ * @param $teaser
+ * @return bool
+ * override premium level for shoutem feeds
+ */
 function etype_premium_access(&$node, $teaser) {
   $permitido = array(
     '/news-mobile.xml',
