@@ -17,6 +17,10 @@ a:hover {
   text-decoration: underline;
 }
 
+img {
+    max-width: 100%;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Lato', sans-serif;
   line-height: 1.0em;
@@ -76,7 +80,9 @@ td {
 }
 
 header {
-  float: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .site-logo img {

@@ -352,7 +352,7 @@ Note: Design for a width of 420px
   margin: 0px 0px 20px 0px;
 }
 .page-taxonomy #capption {display:none;}
-#block-simpleads-ad-groups-52 {margin-left: 470px; float: left; margin-top: -70px;}
+
 .field-name-field-subhead {font-weight: bold; font-size: 22px; margin-bottom: 20px; margin-top: 10px;}
 .field-name-field-kicker {border-top: 1px solid #ccc; font-style:italic;}
 .field-name-field-dateline {display:inline; font-weight:bold; text-transform:uppercase; float: left; margin-right: 8px;}
@@ -395,6 +395,6 @@ blockquote  {background-image: none; margin: 0px; padding: 0px;}
 }
 
 #views-slideshow-galleria-1 .views-slideshow-galleria-images-1 {max-width: 230px; height: auto;}
-#block-simpleads-ad-groups-65 img {margin-left: 107px;}
+#block-simpleads-ad-groups-65  {width: 100%; text-align: center;}
 .views-slideshow-controls-bottom img {float: left; margin-right: 10px;}
 #leader {margin-top: 30px; margin-bottom: -90px; padding: 0px; text-align:center; margin-left: 100px;}
