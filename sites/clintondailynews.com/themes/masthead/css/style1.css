@@ -17,10 +17,11 @@ a:hover {
     text-decoration: underline;
 }
 
+/* style for image below was messing up the slideshow images, so commented it out 
 img {
     max-width: 100%;
 }
-
+*/
 h1, h2, h3, h4, h5 {
     font-family: 'Lato', sans-serif;
     line-height: 1.0em;
@@ -1038,3 +1039,8 @@ ul.quicktabs-tabs.quicktabs-style-nostyle li.active a {
 .premium-message p {
     display: block;
 }
+
+/* make ad block images fit on small screens */
+#block-simpleads-ad-groups-52 img, #block-simpleads-ad-groups-65 img {
+	max-width:100%;
+	}
