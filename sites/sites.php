@@ -212,10 +212,9 @@ $sites['newsblade.net'] = 'newsblade.com';
 $sites['www.newsblade.net'] = 'newsblade.com';
 
 /* courier-record.etypegoogle8.com */
-$sites['courier-record.etypegoogle8.com'] = 'courier-record.com';
-$sites['courier-record.com'] = 'courier-record.com';
-$sites['www.courier-record.com'] = 'courier-record.com';
-$sites['courier-recordcni.etypegoogle8.com'] = 'courier-record.etypegoogle8.com';
+$sites['courier-record.etypegoogle8.com'] = 'courier-record.etypegoogle8.com';
+$sites['courier-record.com'] = 'courier-record.etypegoogle8.com';
+$sites['www.courier-record.com'] = 'courier-record.etypegoogle8.com';
 
 /* marshallcountyjournal.etypegoogle8.com */
 $sites['marshallcountyjournal.etypegoogle8.com'] = 'marshallcountyjournal.etypegoogle8.com';
