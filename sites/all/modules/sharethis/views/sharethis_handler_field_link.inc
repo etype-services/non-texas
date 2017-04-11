@@ -8,7 +8,7 @@
 /**
  * Field handler for ShareThis.
  */
-class SharethisHandlerFieldLink extends views_handler_field_entity {
+class sharethis_handler_field_link extends views_handler_field_entity {
 
   /**
    * Render values.
@@ -24,6 +24,7 @@ class SharethisHandlerFieldLink extends views_handler_field_entity {
    */
   public function renderSharethisLink($entity) {
     $path = url('node/' . $entity->nid, array('absolute' => TRUE));
+    sharethis_include_js();
 
     // @todo
     // The line below requires theming of the sharethis button HTML as described

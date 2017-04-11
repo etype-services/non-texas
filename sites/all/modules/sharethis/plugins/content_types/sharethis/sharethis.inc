@@ -23,7 +23,7 @@ $plugin = array(
  */
 function sharethis_sharethis_content_type_render($subtype, $conf, $panel_args, $context) {
   if (!empty($context[0])) {
-    $entity_type = end($context[0]->type);
+    $entity_type = is_array($context[0]->type) ? end($context[0]->type) : $context[0]->type;
     $uri = entity_uri($entity_type, $context[0]->data);
     $url = url($uri['path'], array('absolute' => TRUE));
     $title = entity_label($entity_type, $context[0]->data);

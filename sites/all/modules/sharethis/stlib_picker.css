@@ -1,3 +1,8 @@
+/**
+ * @file
+ * Styling for stlib_picker.
+ */
+
 .stp_pickerLeft,
 .stp_pickerArrow,
 .stp_pickerRight {
@@ -17,7 +22,6 @@
   border: none;
   margin-top: 40px;
 }
-
 
 .stp_header {
   display: block;
@@ -53,7 +57,7 @@
 }
 
 .stp_li img {
-  display: inline-    block;
+  display: inline-block;
   margin: 0px;
   padding: 0px;
   margin-left: 5px;

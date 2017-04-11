@@ -77,3 +77,12 @@ function sharethis_update_7001() {
     return t('Switched from the custom ShareThis table to the Variables table.');
   }
 }
+
+/**
+ * Removes variables sharethis_override_* & sharethis_service_option.
+ */
+function sharethis_update_7002() {
+  db_delete('variable')->condition('name', db_like('sharethis_override_') . '%', 'LIKE')->execute();
+  variable_set("sharethis_service_option", str_replace('&quot;', '"', variable_get("sharethis_service_option")));
+  cache_clear_all('variables', 'cache');
+}
