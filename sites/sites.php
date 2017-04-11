@@ -264,3 +264,9 @@ $sites['www.kaplantoday.com'] = 'vermiliontoday.etypegoogle8.com';
 $sites['eunicetoday.etypegoogle8.com'] = 'eunicetoday.etypegoogle8.com';
 $sites['eunicetoday.com'] = 'eunicetoday.etypegoogle8.com';
 $sites['www.eunicetoday.com'] = 'eunicetoday.etypegoogle8.com';
+
+/* comancheok.etypegoogle8.com */
+$sites['comancheok.etypegoogle8.com'] = 'comancheok.etypegoogle8.com';
+$sites['comancheok.net'] = 'comancheok.etypegoogle8.com';
+$sites['comancheok.news'] = 'comancheok.etypegoogle8.com';
+
