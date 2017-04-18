@@ -275,3 +275,6 @@ $sites['www.comancheok.news'] = 'comancheok.etypegoogle8.com';
 $sites['mysullivannews.etypegoogle8.com'] = 'mysullivannews.etypegoogle8.com';
 $sites['mysullivannews.com'] = 'mysullivannews.etypegoogle8.com';
 $sites['www.mysullivannews.com'] = 'mysullivannews.etypegoogle8.com';
+
+/* newhavenindependentnews.etypegoogle8.com */
+$sites['newhavenindependentnews.etypegoogle8.com'] = 'newhavenindependentnews.etypegoogle8.com';
