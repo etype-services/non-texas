@@ -267,5 +267,11 @@ $sites['www.eunicetoday.com'] = 'eunicetoday.etypegoogle8.com';
 /* comancheok.etypegoogle8.com */
 $sites['comancheok.etypegoogle8.com'] = 'comancheok.etypegoogle8.com';
 $sites['comancheok.net'] = 'comancheok.etypegoogle8.com';
+$sites['www.comancheok.net'] = 'comancheok.etypegoogle8.com';
 $sites['comancheok.news'] = 'comancheok.etypegoogle8.com';
+$sites['www.comancheok.news'] = 'comancheok.etypegoogle8.com';
 
+/* mysullivannews.etypegoogle8.com */
+$sites['mysullivannews.etypegoogle8.com'] = 'mysullivannews.etypegoogle8.com';
+$sites['mysullivannews.com'] = 'mysullivannews.etypegoogle8.com';
+$sites['www.mysullivannews.com'] = 'mysullivannews.etypegoogle8.com';
