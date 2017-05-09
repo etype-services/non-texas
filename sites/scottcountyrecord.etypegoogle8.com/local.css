@@ -1,0 +1,6 @@
+@media only screen and (min-width: 959px) {
+    .main-menu-wrapper {
+        width: 940px;
+        margin: auto;
+    }
+}
