@@ -12,4 +12,5 @@
 .node .field-name-field-image img {
     width: initial;
     max-width: 100%;
+    margin: auto;
 }
