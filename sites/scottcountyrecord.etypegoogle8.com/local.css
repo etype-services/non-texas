@@ -10,6 +10,6 @@
 }
 
 .node .field-name-field-image img {
-    width: inherit;
+    width: initial;
     max-width: 100%;
 }
