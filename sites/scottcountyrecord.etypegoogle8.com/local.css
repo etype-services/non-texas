@@ -1,6 +1,10 @@
 @media only screen and (min-width: 959px) {
+    /* "cut off" main menu */
     .main-menu-wrapper {
         width: 940px;
         margin: auto;
+    }
+    #main-menu ul.menu {
+        justify-content: space-between;
     }
 }
