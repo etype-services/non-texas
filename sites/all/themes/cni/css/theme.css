@@ -755,7 +755,9 @@ article .field-image {
 /* NODES
 --------------------------------------------------------------------------*/
 
-.node .field-name-field-image img {
+/* image display on article page with flexslider override */
+.node .field-name-field-image img,
+.flexslider .slides img {
     display: block;
     height: auto;
     width: initial;
@@ -1359,13 +1361,6 @@ article.node-webform .node-content-wrapper h1.title {
 .flexslider {
     font: 0.8em/1.4 lato;
     margin: 0;
-}
-
-.flexslider .slides img {
-    max-width: 100%;
-    display: block;
-    width: initial;
-    margin: auto;
 }
 
 .flex-control-nav {
