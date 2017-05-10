@@ -1361,6 +1361,13 @@ article.node-webform .node-content-wrapper h1.title {
     margin: 0;
 }
 
+.flexslider .slides img {
+    max-width: 100%;
+    display: block;
+    width: initial;
+    margin: auto;
+}
+
 .flex-control-nav {
     bottom: -30px;
 }
