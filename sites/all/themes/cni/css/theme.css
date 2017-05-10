@@ -195,7 +195,8 @@ h3.site-slogan {
     overflow: hidden;
 }
 
-.preface-wrapper .views-row .views-field-field-image img {
+.preface-wrapper .views-row .views-field-field-image img,
+.preface-wrapper .views-row .views-field-field-mugshot img {
     display: block;
     float: left;
     margin-right: 10px;
