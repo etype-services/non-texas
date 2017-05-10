@@ -824,7 +824,7 @@ article .field-image {
 }
 
 .node-teaser .field-image .field-name-field-image .field-items .field-item:first-child img,
-.node-teaser .field-image .field-name-field-mugshot .field-items .field-item:first-child img {
+.node-teaser .field-name-field-mugshot .field-items .field-item:first-child img {
     display: block;
     padding: 10px;
     float: left;
