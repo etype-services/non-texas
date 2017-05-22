@@ -9,7 +9,6 @@ function etype_wire_node_export() {
   /* get last 10 published nodes from this site */
   $results = db_select('node', 'n')
     ->fields('n')
-    ->condition('status', 0, '!=')
     ->condition('type', 'article')
     ->condition('status', '1')
     ->orderBy('created', 'DESC')
