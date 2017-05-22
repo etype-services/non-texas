@@ -13,7 +13,8 @@
  */
 function etype_wire_admin_content() {
 
-    global $base_url;
+  $site_name = variable_get('site_name', 'Drupal');
+  global $base_url;
 
     $pattern = '/http:\\/\\/(www)*\./i';
     $sub = '';
@@ -44,7 +45,7 @@ function etype_wire_admin_content() {
     $sql = "
 SELECT * FROM `node` n 
 LEFT JOIN `node_site` ns ON n.nid = ns.original_nid 
-WHERE (n.site NOT LIKE \"%$url%\" 
+WHERE (n.site_name NOT LIKE \"%$site_name%\" 
 AND (ns.site_base is NULL OR ns.site_base NOT LIKE \"%$url%\"))
 ORDER BY $order $sort
 ";

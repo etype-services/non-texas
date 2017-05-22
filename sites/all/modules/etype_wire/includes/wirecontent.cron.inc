@@ -36,7 +36,7 @@ function etype_wire_node_export() {
     $site_name = variable_get('site_name', 'Drupal');
 
     /* Delete old nodes */
-    $sql = "DELETE FROM node WHERE `site` = '$base_url'";
+    $sql = "DELETE FROM node WHERE `site_name` LIKE '$site_name'";
     if ($mysqli->query($sql) !== TRUE) {
       // echo $sql . "\n";
       watchdog('etype_wire', "EType Wire delete failed: %error", array('%error' => $mysqli->error), WATCHDOG_ERROR);
