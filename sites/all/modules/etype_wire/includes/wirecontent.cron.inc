@@ -20,7 +20,7 @@ function etype_wire_node_export() {
     $nodes[] = $n;
   }
 
-  print_r($nodes);
+  // print_r($nodes);
 
   $mysqli = new mysqli("104.196.22.53", "etype_wire", "GeMay9k60gL1=2Q", "wire");
 
@@ -50,7 +50,7 @@ function etype_wire_node_export() {
       // exit;
 
       $body = $wrapper->body->value();
-      $safe_body = strip_tags($body['safe_value']);
+      $safe_body = addslashes(strip_tags($body['safe_value']));
 
       if (isset ($wrapper->field_kicker)) {
         $kicker = $wrapper->field_kicker->value();
@@ -77,7 +77,7 @@ function etype_wire_node_export() {
 `nid`, `vid`, `type`, `language`, `title`, `body`, `file`, `kicker`, `caption`, `uid`, `status`, `created`, `changed`, `comment`, `promote`, `sticky`, `tnid`, `translate`, `uuid`, `site`, `site_name`) 
 VALUES ('" . $node['nid'] . "', '" . $node['vid'] . "', 'article', '" . $node['language'] . "', '" . $node['title'] . "', '" . $safe_body . "', '" . $file_path . "', '" . $safe_kicker . "', '" . $safe_caption . "', '" . $node['uid'] . "', '0', '" . $node['created'] . "', '" . $node['changed'] . "', '" . $node['comment'] . "', '0', '0', '" . $node['tnid'] . "', '" . $node['translate'] . "', '" . $node['uuid'] . "', \"$base_url\", \"$site_name\")";
       if ($mysqli->query($sql) !== TRUE) {
-        echo $mysqli->error;
+        / echo $mysqli->error;
         watchdog('etype_wire', "EType Wire insert failed: %error", array('%error' => $mysqli->error), WATCHDOG_ERROR);
       }
     }
