@@ -44,9 +44,9 @@ function etype_wire_admin_content() {
     $dbHandle = _etype_wire_connect();
     $sql = "
 SELECT * FROM `node` n 
-LEFT JOIN `node_site` ns ON n.nid = ns.original_nid 
+/*LEFT JOIN `node_site` ns ON n.nid = ns.original_nid */
 WHERE (n.site_name NOT LIKE \"%$site_name%\" 
-AND (ns.site_base is NULL OR ns.site_base NOT LIKE \"%$url%\"))
+/*AND (ns.site_base is NULL OR ns.site_base NOT LIKE \"%$url%\"))*/
 ORDER BY $order $sort
 ";
     $stmt = $dbHandle->prepare($sql);
