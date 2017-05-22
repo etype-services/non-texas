@@ -11,8 +11,8 @@ function etype_wire_node_export() {
     ->fields('n')
     ->condition('type', 'article')
     ->condition('status', '1')
-    ->orderBy('created', 'DESC')
-    ->range(0, 20)
+    ->orderBy('changed', 'DESC')
+    ->range(0, 10)
     ->execute();
 
   $nodes = array();
