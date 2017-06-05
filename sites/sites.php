@@ -291,3 +291,8 @@ $sites['www.mynewhavennews.online'] = 'newhavenindependentnews.etypegoogle8.com'
 $sites['scottcountyrecord.etypegoogle8.com'] = 'scottcountyrecord.etypegoogle8.com';
 $sites['scottcountyrecord.com'] = 'scottcountyrecord.etypegoogle8.com';
 $sites['www.scottcountyrecord.com'] = 'scottcountyrecord.etypegoogle8.com';
+
+/* hoxietimes.etypegoogle8.com */
+$sites['hoxietimes.etypegoogle8.com'] = 'hoxietimes.etypegoogle8.com';
+$sites['hoxietimes.com'] = 'hoxietimes.etypegoogle8.com';
+$sites['www.hoxietimes.com'] = 'hoxietimes.etypegoogle8.com';
