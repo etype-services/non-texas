@@ -92,6 +92,13 @@ function cni_form_system_theme_settings_alter(&$form, $form_state) {
     '#attributes' => array('maxlength' => 255),
   );
 
+  $form['advanced_settings']['misc_settings']['e_edition_2'] = array(
+    '#type'          => 'textarea',
+    '#title' => t('e-Edition'),
+    '#description' => t('For one paper enter the e-Edition like <code>Mitchell%20News-JournalID617</code>, for more than one format like this: <code>Mitchell%20News-JournalID617|Mitchell News Journal,The%20Yorktown%20News-ViewID84|The Yorktown News View</code>'),
+    '#default_value' => theme_get_setting('e_edition'),
+  );
+
   $form['advanced_settings']['misc_settings']['pub'] = array(
     '#type' => 'textfield',
     '#title' => t('Pub'),
