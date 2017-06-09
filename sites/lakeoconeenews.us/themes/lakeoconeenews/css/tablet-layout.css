@@ -286,14 +286,13 @@ body.front h1 {
 }
 
 .view-id-home_page .views-slideshow-controls-bottom {
-    border: none;
     height: 60px;
     margin-top: 0;
     position: absolute;
-    left: 84px;
-    width: 700px;
+    left: 10px;
+    width: 747px;
     z-index: 200;
-    top: 464px;
+    top: 566px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
