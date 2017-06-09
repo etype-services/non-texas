@@ -289,8 +289,8 @@ body.front h1 {
 
 .view-id-home_page .views-slideshow-controls-bottom {
     top: 454px;
-    left: 0;
-    width: 400px;
+    left: 10px;
+    width: 460px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom #widget_pager_bottom_home_page-block {
