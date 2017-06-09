@@ -284,11 +284,9 @@ body.front h1 {
 }
 
 .view-id-home_page .views-slideshow-controls-bottom {
-    top: 454px;
-    left: 50px;
-    width: 400px;
-    display: flex;
-    justify-content: space-around;
+    top: 562px;
+    left: 10px;
+    width: 460px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item img {
