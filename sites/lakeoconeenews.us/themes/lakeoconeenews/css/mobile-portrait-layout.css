@@ -296,8 +296,8 @@ h2, h3, h4, h5, h6 {
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item img {
     height: auto;
-    margin-left: -23px;
-    width: 92px;
+    margin-left: 0;
+    width: 45px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
