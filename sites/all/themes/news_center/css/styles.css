@@ -289,7 +289,7 @@ blockquote.image-field-caption p {
     margin-left: 0;
 }
 
-#widget_pager_bottom_home_page-block {
+#widget_pager_bottom_home_page-block_1 {
     display: flex;
     justify-content: space-between;
 }
@@ -372,4 +372,16 @@ blockquote.image-field-caption p {
 #footer a {
     color: #cccccc;
     text-decoration: underline;
+}
+
+/* slideshow fixes */
+#widget_pager_bottom_home_page-block_1 {
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+    width: inherit;
+}
+
+.view-id-home_page .views-slideshow-controls-bottom {
+    width: 100%;
 }
