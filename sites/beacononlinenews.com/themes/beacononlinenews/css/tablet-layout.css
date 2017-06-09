@@ -287,10 +287,10 @@ body.front h1 {
     height: 60px;
     margin-top: 0;
     position: absolute;
-    left: 0;
+    left: 10px;
     width: 728px;
     z-index: 200;
-    top: 464px;
+    top: 471px;
 }
 
 .view-id-home_page .views-slideshow-controls-bottom #widget_pager_bottom_home_page-block {
