@@ -706,7 +706,7 @@ h3.site-slogan {
 
 #comments .comment {
     padding: 10px 0;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     border-bottom: 1px solid #dddddd;
 }
 
@@ -953,7 +953,7 @@ ul.quicktabs-tabs.quicktabs-style-nostyle li {
     border: 1px solid #e5e5e5;
     border-bottom: none;
     padding: 2px 3px;
-    margin: 0 0px 0 0;
+    margin: 0;
     position: relative;
 }
 
@@ -1017,7 +1017,7 @@ ul.quicktabs-tabs.quicktabs-style-nostyle li.active a {
 }
 
 .preface-wrapper .attachment .views-row-last {
-    border-bottom: 0px dotted #999;
+    border-bottom: 0 dotted #999;
 }
 
 .preface-wrapper .attachment .views-row a {
