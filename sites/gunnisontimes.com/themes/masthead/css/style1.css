@@ -607,11 +607,7 @@ h3.site-slogan {
 
 .node .taxonomy .field-type-taxonomy-term-reference {
     margin: 5px 0;
-    field-type-taxonomy-term-reference background: #f9f9f9;
-}
-
-.node .taxonomy-inner {
-    ≈
+    background: #f9f9f9;
 }
 
 .node .taxonomy a {
@@ -706,7 +702,7 @@ h3.site-slogan {
 
 #comments .indented .comment {
     padding: 10px;
-    margin-left: 0px;
+    margin-left: 0;
     margin-bottom: 0;
     background: #f9f9f9;
     border-bottom: 0;
@@ -723,7 +719,7 @@ h3.site-slogan {
 }
 
 #search-block-form {
-    margin-top: 0x;
+    margin-top: 0;
     background: 0;
     line-height: 25px;
     border-left: 1px solid #dddddd;
@@ -982,6 +978,25 @@ ul.quicktabs-tabs.quicktabs-style-nostyle li.active a {
 .preface-wrapper .attachment .views-row a {
     font-weight: normal;
     font-size: 12px;
+}
+
+/* slideshow fixes */
+#block-views-slideshow-block .block-inner {
+    padding: 0 0 20px 0;
+}
+
+#widget_pager_bottom_slideshow-block_1 {
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.views-slideshow-pager-fields > div {
+    padding-left: 0;
+}
+
+.view-slideshow .views-slideshow-controls-bottom .views-field-field-image img {
+    margin: 0;
 }
 
 /* slideshow fixes */

@@ -974,3 +974,22 @@ ul.quicktabs-tabs.quicktabs-style-nostyle li.active a {
   font-weight: normal;
   font-size: 12px;
 }
+
+/* slideshow fixes */
+#block-views-slideshow-block .block-inner {
+    padding: 0 0 20px 0;
+}
+
+#widget_pager_bottom_slideshow-block_1 {
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.views-slideshow-pager-fields > div {
+    padding-left: 0;
+}
+
+.view-slideshow .views-slideshow-controls-bottom .views-field-field-image img {
+    margin: 0;
+}
