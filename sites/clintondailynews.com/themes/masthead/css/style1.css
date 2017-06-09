@@ -17,7 +17,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* style for image below was messing up the slideshow images, so commented it out 
+/* style for image below was messing up the slideshow images, so commented it out
 img {
     max-width: 100%;
 }
@@ -114,14 +114,10 @@ h3.site-slogan {
 
 .view-slideshow .views_slideshow_main .views-field-field-image {
     position: absolute;
-    top: -20px;
-    left: -20px;
 }
 
 .view-slideshow .views_slideshow_main .views-field-field-video {
     position: absolute;
-    top: -20px;
-    left: -20px;
 }
 
 .view-slideshow .views_slideshow_main .views-field-field-image img {
@@ -132,8 +128,6 @@ h3.site-slogan {
     position: absolute;
     padding: 20px;
     width: 578px;
-    top: -20px;
-    left: -20px;
     background: url(../images/style1/trans.png);
     color: #ffffff;
 }
@@ -152,7 +146,6 @@ h3.site-slogan {
     width: 578px;
     padding: 20px;
     top: 290px;
-    left: -20px;
     background: url(../images/style2/trans.png);
     color: #fff;
     text-shadow: -1px -1px #000000;
@@ -1043,4 +1036,23 @@ ul.quicktabs-tabs.quicktabs-style-nostyle li.active a {
 /* make ad block images fit on small screens */
 #block-simpleads-ad-groups-52 img, #block-simpleads-ad-groups-65 img {
 	max-width:100%;
-	}
+}
+
+/* slideshow fixes */
+#block-views-slideshow-block .block-inner {
+    padding: 0  0 20px 0 ;
+}
+
+#widget_pager_bottom_slideshow-block {
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.views-slideshow-pager-fields > div {
+    padding-left: 0;
+}
+
+.view-slideshow .views-slideshow-controls-bottom .views-field-field-image img {
+    margin: 0;
+}
