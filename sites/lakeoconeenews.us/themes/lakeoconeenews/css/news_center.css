@@ -931,3 +931,15 @@ h2.node-title {
     margin-top: -20px;
     padding: 0px
 }
+
+/* slideshow fixes */
+#widget_pager_bottom_home_page-block_1 {
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+    width: inherit;
+}
+
+.view-id-home_page .views-slideshow-controls-bottom {
+    width: 100%;
+}
