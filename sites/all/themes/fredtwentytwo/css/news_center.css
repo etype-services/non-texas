@@ -818,6 +818,11 @@ h2.node-title {
     display: flex;
     margin: 0;
     justify-content: space-around;
+    width: inherit;
+}
+
+.view-id-home_page .views-slideshow-controls-bottom {
+    width: 100%;
 }
 
 /* general simpleads styling */
