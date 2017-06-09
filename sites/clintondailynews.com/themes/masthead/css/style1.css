@@ -109,7 +109,7 @@ h3.site-slogan {
 
 .view-slideshow .views_slideshow_main {
     position: relative;
-    height: 400px;
+    height: 320px;
 }
 
 .view-slideshow .views_slideshow_main .views-field-field-image {
@@ -1035,12 +1035,12 @@ ul.quicktabs-tabs.quicktabs-style-nostyle li.active a {
 
 /* make ad block images fit on small screens */
 #block-simpleads-ad-groups-52 img, #block-simpleads-ad-groups-65 img {
-	max-width:100%;
+    max-width: 100%;
 }
 
 /* slideshow fixes */
 #block-views-slideshow-block .block-inner {
-    padding: 0  0 20px 0 ;
+    padding: 0 0 20px 0;
 }
 
 #widget_pager_bottom_slideshow-block {
