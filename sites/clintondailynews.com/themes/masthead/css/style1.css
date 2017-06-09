@@ -106,7 +106,7 @@ h3.site-slogan {
 
 .view-slideshow .views_slideshow_main {
     position: relative;
-    height: 396px;
+    height: 444px;
 }
 
 .view-slideshow .views_slideshow_main .views-field-field-image {
@@ -139,10 +139,10 @@ h3.site-slogan {
 
 .view-slideshow .views_slideshow_main .views-field-body {
     position: absolute;
-    height: 50px;
+    height: 84px;
     width: 578px;
     padding: 20px;
-    top: 290px;
+    top: 300px;
     background: url(../images/style2/trans.png);
     color: #fff;
     text-shadow: -1px -1px #000000;
