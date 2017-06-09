@@ -234,10 +234,8 @@ body.front h1 {
     left: 0;
 }
 
-#widget_pager_bottom_home_page-block {
+#widget_pager_bottom_home_page-block_1 {
     width: 470px;
-    display: flex;
-    justify-content: space-between;
     margin: 0 5px;
 }
 
