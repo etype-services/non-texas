@@ -927,3 +927,10 @@ h2.node-title {
     border-left: 1px solid #eeeeee;
     padding-left: 10px;
 }
+
+/* slideshow fixes */
+#widget_pager_bottom_home_page-block_1 {
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+}
