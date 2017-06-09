@@ -640,7 +640,7 @@ h3.site-slogan {
 .node ul.inline li {
     display: inline;
     list-style-type: none;
-    padding: 0 5px 0 0px;
+    padding: 0 5px 0 0;
 }
 
 .node ul.links li a {
@@ -810,7 +810,7 @@ h3.site-slogan {
 }
 
 #search-block-form input:focus {
-    box-shadow: 0 0 0px 0 #22d7cc;
+    box-shadow: 0 0 0 0 #22d7cc;
 }
 
 /* SOCIAL
@@ -901,24 +901,24 @@ ul.primary li a {
 
 .profile {
     clear: both;
-    margin: 0em 0;
+    margin: 0 0;
 }
 
 .profile .user-picture {
     float: none;
-    margin: 0 0em 1em 0;
+    margin: 0 0 1em 0;
 }
 
 /* QUICKTABS
 --------------------------------------------------------------------------*/
 
 body #main-content .quicktabs-wrapper .block-inner {
-    padding: 0px;
-    margin-bottom: 0px;
-    border: 0px solid #dddddd;
-    border-bottom: 0px solid #920000;
+    padding: 0;
+    margin-bottom: 0;
+    border: 0 solid #dddddd;
+    border-bottom: 0 solid #920000;
     background: 0;
-    box-shadow: 0px 0px 0px #bbbbbb;
+    box-shadow: 0 0 0 #bbbbbb;
 }
 
 .quicktabs_main.quicktabs-style-nostyle {
