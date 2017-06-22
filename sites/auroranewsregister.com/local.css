@@ -1,0 +1,6 @@
+/* style to create two columns of small ads in the second sidebar */
+
+#block-simpleads-ad-groups-58 img {
+	float: left;
+	padding: 2px;
+	}
