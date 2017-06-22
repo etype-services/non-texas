@@ -145,7 +145,6 @@ Note: Design for a width of 420px
 
     .node .content img {
         max-width: 380px;
-        max-height: auto;
     }
 
     .node-teaser .field-name-field-image img {
@@ -317,11 +316,11 @@ Note: Design for a width of 420px
 
 #block-block-17 .block-inner {
     padding: 5px;
-    margin: 0px;
+    margin: 0;
 }
 
 #block-simpleads-ad-groups-51 .content {
-    padding: 0px;
+    padding: 0;
     color: #000;
 }
 

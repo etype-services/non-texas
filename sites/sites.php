@@ -296,3 +296,15 @@ $sites['www.scottcountyrecord.com'] = 'scottcountyrecord.etypegoogle8.com';
 $sites['hoxietimes.etypegoogle8.com'] = 'hoxietimes.etypegoogle8.com';
 $sites['hoxietimes.com'] = 'hoxietimes.etypegoogle8.com';
 $sites['www.hoxietimes.com'] = 'hoxietimes.etypegoogle8.com';
+
+/* techetoday.etypegoogle8.com */
+$sites['techetoday.etypegoogle8.com'] = 'techetoday.etypegoogle8.com';
+$sites['techetoday.com'] = 'techetoday.etypegoogle8.com';
+$sites['www.techetoday.com'] = 'techetoday.etypegoogle8.com';
+$sites['breauxbridgetoday.com'] = 'techetoday.etypegoogle8.com';
+$sites['www.breauxbridgetoday.com'] = 'techetoday.etypegoogle8.com';
+
+/* richlandtoday.etypegoogle7.com */
+$sites['richlandtoday.etypegoogle8.com'] = 'richlandtoday.etypegoogle8.com';
+$sites['richlandtoday.com'] = 'richlandtoday.etypegoogle8.com';
+$sites['www.richlandtoday.com'] = 'richlandtoday.etypegoogle8.com';
