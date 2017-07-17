@@ -304,12 +304,19 @@ $sites['www.techetoday.com'] = 'techetoday.etypegoogle8.com';
 $sites['breauxbridgetoday.com'] = 'techetoday.etypegoogle8.com';
 $sites['www.breauxbridgetoday.com'] = 'techetoday.etypegoogle8.com';
 
-/* richlandtoday.etypegoogle7.com */
+/* richlandtoday.etypegoogle8.com */
 $sites['richlandtoday.etypegoogle8.com'] = 'richlandtoday.etypegoogle8.com';
 $sites['richlandtoday.com'] = 'richlandtoday.etypegoogle8.com';
 $sites['www.richlandtoday.com'] = 'richlandtoday.etypegoogle8.com';
 
-/* baldwinbulletin.etypegoogle7.com */
+/* baldwinbulletin.etypegoogle8.com */
 $sites['baldwinbulletin.etypegoogle8.com'] = 'baldwinbulletin.etypegoogle8.com';
 $sites['baldwinbulletin.com'] = 'baldwinbulletin.etypegoogle8.com';
 $sites['www.baldwinbulletin.com'] = 'baldwinbulletin.etypegoogle8.com';
+
+/* tangilena.etypegoogle8.com */
+$sites['tangilena.etypegoogle8.com'] = 'tangilena.etypegoogle8.com';
+$sites['tangilena.com'] = 'tangilena.etypegoogle8.com';
+$sites['www.tangilena.com'] = 'tangilena.etypegoogle8.com';
+$sites['amitetoday.com'] = 'tangilena.etypegoogle8.com';
+$sites['www.amitetoday.com'] = 'tangilena.etypegoogle8.com';
