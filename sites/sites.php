@@ -313,6 +313,8 @@ $sites['www.richlandtoday.com'] = 'richlandtoday.etypegoogle8.com';
 $sites['baldwinbulletin.etypegoogle8.com'] = 'baldwinbulletin.etypegoogle8.com';
 $sites['baldwinbulletin.com'] = 'baldwinbulletin.etypegoogle8.com';
 $sites['www.baldwinbulletin.com'] = 'baldwinbulletin.etypegoogle8.com';
+$sites['bbnews.today'] = 'baldwinbulletin.etypegoogle8.com';
+$sites['www.bbnews.today'] = 'baldwinbulletin.etypegoogle8.com';
 
 /* tangilena.etypegoogle8.com */
 $sites['tangilena.etypegoogle8.com'] = 'tangilena.etypegoogle8.com';
