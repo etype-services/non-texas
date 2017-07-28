@@ -322,3 +322,5 @@ $sites['tangilena.com'] = 'tangilena.etypegoogle8.com';
 $sites['www.tangilena.com'] = 'tangilena.etypegoogle8.com';
 $sites['amitetoday.com'] = 'tangilena.etypegoogle8.com';
 $sites['www.amitetoday.com'] = 'tangilena.etypegoogle8.com';
+$sites['kentwoodtoday.com'] = 'tangilena.etypegoogle8.com';
+$sites['www.kentwoodtoday.com'] = 'tangilena.etypegoogle8.com';
