@@ -1,5 +1,5 @@
 <?php
-$sites['test.etypegoogle8.com'] = 'clintondailynews.com';
+$sites['test.etypegoogle8.com'] = 'stmarynow.etypegoogle8.com';
 
 $sites['prairiepress.etypegoogle8.com'] = 'prairiepress.net';
 $sites['prairiepress.net'] = 'prairiepress.net';
@@ -324,3 +324,4 @@ $sites['amitetoday.com'] = 'tangilena.etypegoogle8.com';
 $sites['www.amitetoday.com'] = 'tangilena.etypegoogle8.com';
 $sites['kentwoodtoday.com'] = 'tangilena.etypegoogle8.com';
 $sites['www.kentwoodtoday.com'] = 'tangilena.etypegoogle8.com';
+  
