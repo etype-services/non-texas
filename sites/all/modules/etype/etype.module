@@ -512,18 +512,12 @@ function etype_e_editions() {
 /**
  * @param $node
  * @param $action
+ * Scheduler loses Premium Level
  */
 function etype_scheduler_api($node, $action) {
-
   if ($action == 'publish') {
     $arr = premium_node_level_data($node);
     $level = $arr['level_name'];
-
-    $filename = "/Users/charlie/Sites/ETypeServices/repos/non-texas/res.txt";
-    $text = $level['level_name'] . " " . $action . "\r";
-    file_put_contents ($filename, $text);
-
     _premium_set_premium($node, $level);
   }
-
 }
