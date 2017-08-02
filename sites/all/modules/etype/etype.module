@@ -37,6 +37,13 @@ function etype_menu() {
     'access arguments' => array('access administration pages')
   );
 
+  $items['admin/etype-test'] = array(
+    'title' => t('Test'),
+    'page callback' => 'etype_test_hook',
+    'type' => MENU_CALLBACK,
+    'access arguments' => array('access administration pages')
+  );
+
   return $items;
 }
 
@@ -507,4 +514,15 @@ function etype_e_editions() {
     $ptr++;
   }
   return $e_editions;
+}
+
+/**
+ * @param $node
+ * @param $action
+ */
+function etype_scheduler_api($node, $action) {
+  $level = premium_node_level_data($node);
+  $filename = "/Users/charlie/Sites/ETypeServices/repos/non-texas/res.txt";
+  $text = $level . " " . $action . "\r";
+  file_put_contents ($filename, $text);
 }
