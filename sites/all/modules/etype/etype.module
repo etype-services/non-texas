@@ -521,7 +521,7 @@ function etype_e_editions() {
  * @param $action
  */
 function etype_scheduler_api($node, $action) {
-  $level = printr(premium_node_level_data($node));
+  $level = print_r(premium_node_level_data($node));
   $filename = "/Users/charlie/Sites/ETypeServices/repos/non-texas/res.txt";
   $text = $level . " " . $action . "\r";
   file_put_contents ($filename, $text);
