@@ -265,6 +265,17 @@ $sites['eunicetoday.etypegoogle8.com'] = 'eunicetoday.etypegoogle8.com';
 $sites['eunicetoday.com'] = 'eunicetoday.etypegoogle8.com';
 $sites['www.eunicetoday.com'] = 'eunicetoday.etypegoogle8.com';
 
+/* avoyellestoday.etypegoogle8.com */
+$sites['avoyellestoday.etypegoogle8.com'] = 'avoyellestoday.etypegoogle8.com';
+$sites['avoyellestoday.com'] = 'avoyellestoday.etypegoogle8.com';
+$sites['www.avoyellestoday.com'] = 'avoyellestoday.etypegoogle8.com';
+$sites['bunkietoday.com'] = 'avoyellestoday.etypegoogle8.com';
+$sites['www.bunkietoday.com'] = 'avoyellestoday.etypegoogle8.com';
+$sites['marksvilletoday.com'] = 'avoyellestoday.etypegoogle8.com';
+$sites['www.marksvilletoday.com'] = 'avoyellestoday.etypegoogle8.com';
+$sites['marksvilleweekly.com'] = 'avoyellestoday.etypegoogle8.com';
+$sites['www.marksvilleweekly.com'] = 'avoyellestoday.etypegoogle8.com';
+
 /* comancheok.etypegoogle8.com */
 $sites['comancheok.etypegoogle8.com'] = 'comancheok.etypegoogle8.com';
 $sites['comancheok.net'] = 'comancheok.etypegoogle8.com';
@@ -325,4 +336,3 @@ $sites['amitetoday.com'] = 'tangilena.etypegoogle8.com';
 $sites['www.amitetoday.com'] = 'tangilena.etypegoogle8.com';
 $sites['kentwoodtoday.com'] = 'tangilena.etypegoogle8.com';
 $sites['www.kentwoodtoday.com'] = 'tangilena.etypegoogle8.com';
-  
