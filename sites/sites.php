@@ -341,3 +341,9 @@ $sites['www.kentwoodtoday.com'] = 'tangilena.etypegoogle8.com';
 $sites['sequoyahcountytimes.etypegoogle8.com'] = 'sequoyahcountytimes.etypegoogle8.com';
 $sites['sequoyahcountytimes.com'] = 'sequoyahcountytimes.etypegoogle8.com';
 $sites['www.sequoyahcountytimes.com'] = 'sequoyahcountytimes.etypegoogle8.com';
+
+/* sequoyahcountytimes.etypegoogle8.com */
+$sites['northeastnebraskanews.etypegoogle8.com'] = 'northeastnebraskanews.etypegoogle8.com';
+$sites['sequoyahcountytimes.us'] = 'northeastnebraskanews.etypegoogle8.com';
+$sites['www.northeastnebraskanews.us'] = 'northeastnebraskanews.etypegoogle8.com';
+
