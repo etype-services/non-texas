@@ -336,3 +336,8 @@ $sites['amitetoday.com'] = 'tangilena.etypegoogle8.com';
 $sites['www.amitetoday.com'] = 'tangilena.etypegoogle8.com';
 $sites['kentwoodtoday.com'] = 'tangilena.etypegoogle8.com';
 $sites['www.kentwoodtoday.com'] = 'tangilena.etypegoogle8.com';
+
+/* sequoyahcountytimes.etypegoogle8.com */
+$sites['sequoyahcountytimes.etypegoogle8.com'] = 'sequoyahcountytimes.etypegoogle8.com';
+$sites['sequoyahcountytimes.com'] = 'sequoyahcountytimes.etypegoogle8.com';
+$sites['www.sequoyahcountytimes.com'] = 'sequoyahcountytimes.etypegoogle8.com';
