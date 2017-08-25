@@ -133,7 +133,7 @@ function _etype_social_content() {
     $output .= '<li><a class="googleplus" href="https://plus.google.com/' . $googleplus . '"></a></li>';
   }
   if (!empty($youtube)) {
-    $output .= '<li><a class="googleplus" href="https://youtube.com/user/' .
+    $output .= '<li><a class="youtube" href="https://youtube.com/user/' .
       $youtube . '"></a></li>';
   }
   if (!empty($rssfeed)) {
