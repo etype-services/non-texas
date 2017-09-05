@@ -140,7 +140,7 @@ function etype_wire_admin() {
     '#weight' => '1',
     '#type' => 'checkboxes',
     '#options' => $etype_wire_cluster_options,
-    '#default_value' => $etype_wire_cluster_default,
+    '#default_value' => array($etype_wire_cluster_default),
   ];
 
   $form['etype_wire_host'] = [
