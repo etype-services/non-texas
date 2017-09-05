@@ -125,7 +125,7 @@ function theme_wire_admin_content($variables) {
 function etype_wire_admin() {
 
   /* get current setting */
-  $etype_wire_cluster_default = variable_get('etype_wire_cluster', 'Main');
+  $etype_wire_cluster_default = variable_get('etype_wire_cluster', 'main');
 
   $etype_wire_cluster_options = [
     'main' => 'Main',
