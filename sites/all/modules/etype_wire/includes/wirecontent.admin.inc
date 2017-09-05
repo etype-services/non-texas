@@ -115,8 +115,13 @@ function theme_wire_admin_content($variables) {
   return theme('table', ['header' => $header, 'rows' => $rows]);
 }
 
-
-/* admin settings form */
+/**
+ * Admin settings form -- needs to be customized to each user
+ * TODO set up clusters to be administered through config
+ *
+ * @return mixed
+ *
+ */
 function etype_wire_admin() {
 
   /* get current setting */
