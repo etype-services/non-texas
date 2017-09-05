@@ -5,6 +5,7 @@
  * Wire functions for Etype Services to allow Editors to import and publish
  *   stories from other publications
  *
+ * TODO: add install and uninstall functions
  */
 
 /**
@@ -95,7 +96,7 @@ function etype_wire_cronapi($op, $job = NULL) {
 
   $items['etype_wire_cron'] = [
     'description' => 'Export Nodes to Wire Content',
-    'rule' => '0 0,12 * * *',
+    'rule' => '1 * * * *',
     'callback' => 'etype_wire_node_export',
     'arguments' => ['all'],
     'file' => 'includes/wirecontent.cron.inc',
@@ -119,6 +120,7 @@ function etype_wire_theme() {
 
 /**
  * Connect to wire db
+ * needs set up for each customer
  *
  * @return \PDO
  */

@@ -143,6 +143,7 @@ function etype_wire_admin() {
     '#default_value' => $etype_wire_cluster_default,
   ];
 
+  /*
   $form['etype_wire_host'] = [
     '#type' => 'textfield',
     '#title' => t('Wire Host'),
@@ -174,6 +175,7 @@ function etype_wire_admin() {
     '#size' => 55,
     '#default_value' => variable_get('etype_wire_pass'),
   ];
+  */
 
   return system_settings_form($form);
 }
