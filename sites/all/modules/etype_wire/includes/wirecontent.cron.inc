@@ -101,7 +101,7 @@ VALUES (
       var_dump($stmt);
       // echo "----------------------\n\n";
       try {
-        $stmt->execute(["$base_url", "$site_name", "$cluster"]);
+        //$stmt->execute(["$base_url", "$site_name", "$cluster"]);
       } catch (Exception $e) {
         // var_dump($stmt);
         // var_dump($safe_body);
