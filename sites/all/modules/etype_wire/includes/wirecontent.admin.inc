@@ -127,6 +127,7 @@ function etype_wire_admin() {
   /* get current setting */
   $etype_wire_cluster_default = variable_get('etype_wire_cluster', 'main');
 
+  /* set cluster options */
   $etype_wire_cluster_options = [
     'main' => 'Main',
   ];
@@ -142,40 +143,6 @@ function etype_wire_admin() {
     '#options' => $etype_wire_cluster_options,
     '#default_value' => $etype_wire_cluster_default,
   ];
-
-  /*
-  $form['etype_wire_host'] = [
-    '#type' => 'textfield',
-    '#title' => t('Wire Host'),
-    '#description' => t('Enter the host to connect to.'),
-    '#size' => 55,
-    '#default_value' => variable_get('etype_wire_host'),
-  ];
-
-  $form['etype_wire_db'] = [
-    '#type' => 'textfield',
-    '#title' => t('Wire Database'),
-    '#description' => t('Enter the database to connect to.'),
-    '#size' => 55,
-    '#default_value' => variable_get('etype_wire_db'),
-  ];
-
-  $form['etype_wire_user'] = [
-    '#type' => 'textfield',
-    '#title' => t('Wire User'),
-    '#description' => t('Enter the user for the connection'),
-    '#size' => 55,
-    '#default_value' => variable_get('etype_wire_user'),
-  ];
-
-  $form['etype_wire_pass'] = [
-    '#type' => 'textfield',
-    '#title' => t('Wire Password'),
-    '#description' => t('Enter the user’s password'),
-    '#size' => 55,
-    '#default_value' => variable_get('etype_wire_pass'),
-  ];
-  */
 
   return system_settings_form($form);
 }
