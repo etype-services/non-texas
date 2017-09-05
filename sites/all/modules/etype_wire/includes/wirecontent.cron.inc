@@ -19,12 +19,19 @@ function etype_wire_node_export() {
     $nodes[] = $n;
   }
 
- if (count($nodes) > 0) {
+  if (count($nodes) > 0) {
 
-   $dbHandle = _etype_wire_connect();
+    $dbHandle = _etype_wire_connect();
 
-   global $base_url;
+    global $base_url;
     $site_name = variable_get('site_name', 'Drupal');
+    $etype_wire_cluster = variable_get('etype_wire_cluster');
+
+    /* barf if cluster is not set up */
+    if (empty($etype_wire_cluster)) {
+      return;
+    }
+    $cluster = implode($etype_wire_cluster, ',');
 
     /* Delete old nodes */
     $sql = "DELETE FROM node WHERE `site_name` LIKE '$site_name'";
@@ -63,14 +70,37 @@ function etype_wire_node_export() {
       }
 
       $sql = "INSERT INTO node (
-`nid`, `vid`, `type`, `language`, `title`, `body`, `file`, `kicker`, `caption`, `uid`, `status`, `created`, `changed`, `comment`, `promote`, `sticky`, `tnid`, `translate`, `uuid`, `site`, `site_name`)
-VALUES ('" . $node['nid'] . "', '" . $node['vid'] . "', 'article', '" . $node['language'] . "', '" . $node['title'] . "', '" . $safe_body . "', '" . $file_path . "', '" . $safe_kicker . "', '" . $safe_caption . "', '" . $node['uid'] . "', '0', '" . $node['created'] . "', '" . $node['changed'] . "', '" . $node['comment'] . "', '0', '0', '" . $node['tnid'] . "', '" . $node['translate'] . "', '" . $node['uuid'] . "', \"$base_url\", \"$site_name\")";
+`nid`, `vid`, `type`, `language`, `title`, `body`, `file`, `kicker`, `caption`, `uid`, `status`, `created`, `changed`, `comment`, `promote`, `sticky`, `tnid`, `translate`, `uuid`, `site`, `site_name`, `cluster`)
+VALUES (
+    '" . $node['nid'] . "',
+    '" . $node['vid'] . "',
+     'article',
+     '" . $node['language'] . "',
+      " . $dbHandle->quote($node['title']) . ",
+       " . $dbHandle->quote($safe_body) . ",
+        '" . $file_path . "',
+         '" . $safe_kicker . "',
+          '" . $safe_caption . "',
+           '" . $node['uid'] . "',
+            '0',
+             '" . $node['created'] . "',
+              '" . $node['changed'] . "',
+               '" . $node['comment'] . "',
+                '0',
+                 '0',
+                  '" . $node['tnid'] . "',
+                   '" . $node['translate'] . "',
+                    '" . $node['uuid'] . "',
+                     ?,
+                      ?,
+                       ?)";
 
+      // echo $sql ."\n\n";
       $stmt = $dbHandle->prepare($sql);
       // var_dump($stmt);
       // echo "----------------------\n\n";
       try {
-        $stmt->execute();
+        $stmt->execute(["$base_url", "$site_name", "$cluster"]);
       } catch (Exception $e) {
         var_dump($stmt);
         var_dump($safe_body);
