@@ -52,7 +52,7 @@ function etype_wire_node_export() {
         $kicker = $wrapper->field_kicker->value();
       }
       else {
-        $kicker = '';
+        $kicker = ['safe_value'];
       }
       $safe_kicker = strip_tags($kicker['safe_value']);
 
