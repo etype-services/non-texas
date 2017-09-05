@@ -81,7 +81,7 @@ VALUES (
        '',
         '" . $file_path . "',
          '" . $safe_kicker . "',
-          '',
+          '" . $safe_caption . "',
            '" . $node['uid'] . "',
             '0',
              '" . $node['created'] . "',
