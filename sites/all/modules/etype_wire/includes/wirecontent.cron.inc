@@ -46,13 +46,11 @@ function etype_wire_node_export() {
       // exit;
 
       $body = $wrapper->body->value();
-
-      var_dump($body);
-      exit;
       $safe_body = $body['safe_value'];
 
       if (isset ($wrapper->field_kicker)) {
         $kicker = $wrapper->field_kicker->value();
+        var_dump($kicker);
       }
       else {
         $kicker = ['safe_value'];
