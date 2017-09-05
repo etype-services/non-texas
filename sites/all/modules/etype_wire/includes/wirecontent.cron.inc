@@ -15,20 +15,13 @@ function etype_wire_node_export() {
     ->range(0, 10)
     ->execute();
 
-  $nodes = array();
+  $nodes = [];
   while ($n = $results->fetchAssoc()) {
     $nodes[] = $n;
   }
 
   // print_r($nodes);
-
-  $mysqli = new mysqli("35.196.56.75", "etype_wire", "GeMay9k60gL1=2Q", "wire");
-
-  /* check connection */
-  if (mysqli_connect_errno()) {
-    watchdog('etype_wire', "EType Wire connect failed: %error", array('%error' => mysqli_connect_error()), WATCHDOG_ERROR);
-    exit();
-  }
+  $dbHandle = _etype_wire_connect();
 
   if (count($nodes) > 0) {
 
@@ -37,10 +30,8 @@ function etype_wire_node_export() {
 
     /* Delete old nodes */
     $sql = "DELETE FROM node WHERE `site_name` LIKE '$site_name'";
-    if ($mysqli->query($sql) !== TRUE) {
-      // echo $sql . "\n";
-      watchdog('etype_wire', "EType Wire delete failed: %error", array('%error' => $mysqli->error), WATCHDOG_ERROR);
-    }
+    $stmt = $dbHandle->prepare($sql);
+    $stmt->execute();
 
     foreach ($nodes as $node) {
       $object = node_load($node['nid']);
@@ -74,16 +65,20 @@ function etype_wire_node_export() {
       }
 
       $sql = "INSERT INTO node (
-`nid`, `vid`, `type`, `language`, `title`, `body`, `file`, `kicker`, `caption`, `uid`, `status`, `created`, `changed`, `comment`, `promote`, `sticky`, `tnid`, `translate`, `uuid`, `site`, `site_name`) 
+`nid`, `vid`, `type`, `language`, `title`, `body`, `file`, `kicker`, `caption`, `uid`, `status`, `created`, `changed`, `comment`, `promote`, `sticky`, `tnid`, `translate`, `uuid`, `site`, `site_name`)
 VALUES ('" . $node['nid'] . "', '" . $node['vid'] . "', 'article', '" . $node['language'] . "', '" . $node['title'] . "', '" . $safe_body . "', '" . $file_path . "', '" . $safe_kicker . "', '" . $safe_caption . "', '" . $node['uid'] . "', '0', '" . $node['created'] . "', '" . $node['changed'] . "', '" . $node['comment'] . "', '0', '0', '" . $node['tnid'] . "', '" . $node['translate'] . "', '" . $node['uuid'] . "', \"$base_url\", \"$site_name\")";
-      if ($mysqli->query($sql) !== TRUE) {
-        // echo $mysqli->error;
-        watchdog('etype_wire', "EType Wire insert failed: %error", array('%error' => $mysqli->error), WATCHDOG_ERROR);
+
+      $stmt = $dbHandle->prepare($sql);
+      // var_dump($stmt);
+      // echo "----------------------\n\n";
+      try {
+        $stmt->execute();
+      } catch (Exception $e) {
+        var_dump($stmt);
+        var_dump($safe_body);
+        echo "There was an error inserting the data";
+        exit;
       }
     }
-
   }
-
-  $mysqli->close();
-
 }

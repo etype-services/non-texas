@@ -1,4 +1,4 @@
-name = Wire Publishing
+name = eType Wire Publishing
 description = Custom wire publishing module for eType Services.
 package = eType Services Custom Modules
 core = 7.x
