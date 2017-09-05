@@ -107,7 +107,7 @@ VALUES (
         // var_dump($safe_body);
         echo "There was an error inserting the data";
         watchdog('etype_wire', "There was an error inserting the data for $base_url.",
-          [], WATCHDOG_ERROR);
+          array(), WATCHDOG_ERROR);
       }
     }
   }
