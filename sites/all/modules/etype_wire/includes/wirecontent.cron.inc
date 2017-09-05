@@ -77,8 +77,8 @@ VALUES (
     '" . $node['vid'] . "',
      'article',
      '" . $node['language'] . "',
-      '" . $dbHandle->quote($node['title']) . "',
-       '" . $dbHandle->quote($safe_body) . "',
+      " . $dbHandle->quote($node['title']) . ",
+       " . $dbHandle->quote($safe_body) . ",
         '" . $file_path . "',
          '" . $safe_kicker . "',
           '" . $safe_caption . "',
@@ -99,9 +99,9 @@ VALUES (
       // echo $sql ."\n\n";
       $stmt = $dbHandle->prepare($sql);
       var_dump($stmt);
-      // echo "----------------------\n\n";
+      echo "----------------------\n\n";
       try {
-        //$stmt->execute(["$base_url", "$site_name", "$cluster"]);
+        $stmt->execute(["$base_url", "$site_name", "$cluster"]);
       } catch (Exception $e) {
         // var_dump($stmt);
         // var_dump($safe_body);
