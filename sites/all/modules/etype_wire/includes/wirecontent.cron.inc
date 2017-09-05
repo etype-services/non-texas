@@ -27,6 +27,9 @@ function etype_wire_node_export() {
     $site_name = variable_get('site_name', 'Drupal');
     $etype_wire_cluster = variable_get('etype_wire_cluster');
 
+    print_r($etype_wire_cluster);
+    exit;
+
     /* barf if cluster is not set up */
     if (empty($etype_wire_cluster)) {
       $etype_wire_cluster = ['main'];
