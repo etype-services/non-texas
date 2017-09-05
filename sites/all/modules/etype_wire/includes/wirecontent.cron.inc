@@ -22,7 +22,7 @@ function etype_wire_node_export() {
 
   // print_r($nodes);
 
-  $mysqli = new mysqli("104.196.22.53", "etype_wire", "GeMay9k60gL1=2Q", "wire");
+  $mysqli = new mysqli("35.196.56.75", "etype_wire", "GeMay9k60gL1=2Q", "wire");
 
   /* check connection */
   if (mysqli_connect_errno()) {
