@@ -4,6 +4,9 @@
  * @file
  * Functions to add Wire content.
  */
+require_once('Encoding.php');
+
+use \ForceUTF8\Encoding;  // It's namespaced now.
 
 function etype_wire_node_add($nid) {
 
@@ -14,12 +17,10 @@ function etype_wire_node_add($nid) {
     return;
   }
 
-  global $base_url;
-
   /* connect to wire db and get desired node */
   $dbHandle = _etype_wire_connect();
 
-  function get_all($dbHandle, $base_url, $nid) {
+  function get_all($dbHandle, $nid) {
     $sql = "SELECT * FROM node WHERE nid = $nid";
     $stmt = $dbHandle->prepare($sql);
     $stmt->execute();
@@ -28,7 +29,7 @@ function etype_wire_node_add($nid) {
     return $result;
   }
 
-  $nodes = get_all($dbHandle, $base_url, $nid);
+  $nodes = get_all($dbHandle, $nid);
 
   if (count($nodes) == 0) {
     drupal_set_message(t('Unable to continue, no nodes available'), 'error');
@@ -48,7 +49,6 @@ function etype_wire_node_add($nid) {
   ));
 
   $entity = entity_metadata_wrapper($entity_type, $new_node);
-
   $entity->title->set($old_node->title);
   $entity->body->set(array('value' => check_plain($old_node->body)));
 
@@ -83,9 +83,9 @@ function etype_wire_node_add($nid) {
 
   // record saved node
   global $base_url;
-  $sql = "INSERT INTO node_site SET `original_nid` = $nid, `real_nid` = $new_nid, `site_base` = '$base_url' ";
+  $sql = "REPLACE INTO node_site SET `original_nid` = $nid, `real_nid` = $new_nid, `site_base` = '$base_url' ";
   $stmt = $dbHandle->prepare($sql);
-  // !!!$stmt->execute();
+  $stmt->execute();
 
   drupal_set_message(t('Node added.'));
   drupal_goto('node/' . $new_nid . '/edit');

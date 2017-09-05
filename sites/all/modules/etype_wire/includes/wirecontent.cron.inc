@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * Export last 10 published nodes from site to concatenation db
  */
@@ -20,12 +19,11 @@ function etype_wire_node_export() {
     $nodes[] = $n;
   }
 
-  // print_r($nodes);
-  $dbHandle = _etype_wire_connect();
+ if (count($nodes) > 0) {
 
-  if (count($nodes) > 0) {
+   $dbHandle = _etype_wire_connect();
 
-    global $base_url;
+   global $base_url;
     $site_name = variable_get('site_name', 'Drupal');
 
     /* Delete old nodes */
