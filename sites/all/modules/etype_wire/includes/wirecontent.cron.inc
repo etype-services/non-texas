@@ -29,7 +29,7 @@ function etype_wire_node_export() {
 
     /* barf if cluster is not set up */
     if (empty($etype_wire_cluster)) {
-      return;
+      $etype_wire_cluster = ['main'];
     }
     $cluster = implode($etype_wire_cluster, ',');
 
