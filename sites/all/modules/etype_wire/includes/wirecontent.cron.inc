@@ -78,7 +78,7 @@ VALUES (
      'article',
      '" . $node['language'] . "',
       \"" . $dbHandle->quote($node['title']) . "\",
-       \"" . $dbHandle->quote($safe_body) . "\",
+       '',
         '" . $file_path . "',
          '" . $safe_kicker . "',
           '" . $safe_caption . "',
