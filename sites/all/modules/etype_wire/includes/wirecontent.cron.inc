@@ -81,7 +81,7 @@ VALUES (
        " . $dbHandle->quote($safe_body) . ",
         '" . $file_path . "',
          '" . $safe_kicker . "',
-          '',
+          " . $dbHandle->quote($safe_caption) . ",
            '" . $node['uid'] . "',
             '0',
              '" . $node['created'] . "',
