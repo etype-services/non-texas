@@ -98,8 +98,8 @@ VALUES (
 
       // echo $sql ."\n\n";
       $stmt = $dbHandle->prepare($sql);
-      var_dump($stmt);
-      echo "----------------------\n\n";
+      // var_dump($stmt);
+      // echo "----------------------\n\n";
       try {
         $stmt->execute(["$base_url", "$site_name", "$cluster"]);
       } catch (Exception $e) {
