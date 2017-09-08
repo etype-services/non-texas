@@ -1,1 +1,5 @@
-/* local.css */
+/* own local */
+#block-block-36 .block-inner {
+  padding: 0;
+  border: none
+}
