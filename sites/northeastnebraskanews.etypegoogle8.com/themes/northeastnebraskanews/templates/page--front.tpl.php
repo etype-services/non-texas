@@ -56,7 +56,8 @@
             <div class="main-content-wrapper-inner">
                 <section id="main-content">
 
-                    <div class="main">
+                    <!-- Main 1 -->
+                    <div class="main clearfix">
                         <div class="main-inner grid_8">
 
                           <?php if ($page['slideshow']): ?>
@@ -69,28 +70,61 @@
                               </div>
                           <?php endif; ?>
 
-                          <?php if ($page['highlighted']): ?>
-                              <div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
-                          <?php print render($tabs); ?>
-                          <?php if (!isset($node)): ?>
-                            <?php print render($title_prefix); ?>
-                            <?php if ($title): ?><h1 class="title"
-                                                     id="page-title">
-                                  <span><?php print $title; ?></span>
-                                  </h1><?php endif; ?>
-                            <?php print render($title_suffix); ?>
+                          <?php if ($page['preface_1']): ?>
+                              <div class="preface-wrapper
+                                preface-wrapper-top clearfix">
+                                  <div class="preface-wrapper-inner">
+                                      <div class="preface-wrapper-inner-inner">
+                                          <section id="preface_1">
+                                              <div><?php print render
+                                                ($page['preface_1']); ?></div>
+                                          </section>
+                                      </div>
+                                  </div>
+                              </div>
                           <?php endif; ?>
-                          <?php print render($page['help']); ?>
-                          <?php print render($page['content']); ?>
-                          <?php if ($action_links): ?>
-                              <ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+
+                        </div>
+                      <?php if ($page['sidebar_first']): ?>
+                          <aside class="sidebar first-sidebar grid_4 clearfix">
+                            <?php print render($page['sidebar_first']); ?>
+                          </aside>
+                      <?php endif; ?>
+                    </div>
+
+                    <!-- Main 2 Editor's Pick-->
+                    <div class="main clearfix">
+                        <div class="main-inner grid_12">
+                          <?php print render($page['content_middle']); ?>
                         </div>
 
-                        <aside class="sidebar second-sidebar grid_4 clearfix">
-                          <?php print render($page['sidebar_first']); ?>
-                          <?php print render($page['sidebar_second']); ?>
-                        </aside>
-                    </div>
+
+                        <!-- Main 3 -->
+                        <div class="main clearfix">
+                            <div class="main-inner grid_8">
+
+                              <?php if ($page['preface_2'] || $page['preface_3']): ?>
+                                  <div class="preface-wrapper clearfix">
+                                      <div class="preface-wrapper-inner">
+                                          <div class="preface-wrapper-inner-inner">
+                                              <section id="preface">
+                                                  <div><?php print render($page['preface_2']); ?></div>
+                                                  <div><?php print render($page['preface_3']); ?></div>
+                                              </section>
+                                          </div>
+                                      </div>
+                                  </div>
+                              <?php endif; ?>
+
+
+                            </div>
+
+                          <?php if ($page['sidebar_second']): ?>
+                              <aside class="sidebar second-sidebar grid_4 clearfix">
+                                <?php print render($page['sidebar_second']); ?>
+                              </aside>
+                          <?php endif; ?>
+                        </div>
 
                 </section>
             </div>
@@ -98,12 +132,10 @@
 
       <?php print render($page['content_bottom']); ?>
 
-      <?php if ($page['footer']): ?>
-        <?php print render($page['footer']); ?>
-      <?php endif; ?>
     </div>
 </div><!-- page -->
-<?php if ($page['postscript_1'] || $page['postscript_2'] || $page['postscript_3']): ?>
+
+<?php if ($page['postscript_1'] || $page['postscript_2'] || $page['postscript_3'] || $page['postscript_4']): ?>
     <div class="postscript-wrapper clearfix">
         <div class="postscript-wrapper-inner">
             <div class="postscript-wrapper-inner-inner">
@@ -120,4 +152,7 @@
             </div>
         </div>
     </div>
+<?php endif; ?>
+<?php if ($page['footer']): ?>
+  <?php print render($page['footer']); ?>
 <?php endif; ?>
