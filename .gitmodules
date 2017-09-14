@@ -1,0 +1,3 @@
+[submodule "sites/all/themes/cni"]
+	path = sites/all/themes/cni
+	url = https://github.com/etype-services/cnitheme.git
