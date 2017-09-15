@@ -81,6 +81,11 @@
                             <?php print render($title_suffix); ?>
                           <?php endif; ?>
 
+                          <?php print render($page['help']); ?>
+                          <?php print render($page['content']); ?>
+
+                            /* Preface 1 to show blocks on each main paper
+                            page */
                           <?php if ($page['preface_1']): ?>
                               <div class="preface-wrapper
                                 preface-wrapper-top clearfix">
@@ -94,9 +99,6 @@
                                   </div>
                               </div>
                           <?php endif; ?>
-
-                          <?php print render($page['help']); ?>
-                          <?php print render($page['content']); ?>
                           <?php if ($action_links): ?>
                               <ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
                         </div>
