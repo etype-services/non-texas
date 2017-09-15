@@ -2,6 +2,22 @@ body {
   font-size: 10pt;
   line-height: 1.5em;
 }
+header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.site-logo {
+  flex-basis: 57%;
+}
+.region-header {
+  display: table-cell;
+  width: 320px;
+  height: 100px;
+  padding: 0;
+  margin: auto;
+}
 /* own local */
 #block-block-40 .block-inner {
   padding: 0;
