@@ -84,9 +84,9 @@
                           <?php print render($page['help']); ?>
                           <?php print render($page['content']); ?>
 
-                            <!--Preface 1 to show blocks on each main paper
-                            page -->
                           <?php if ($page['preface_1']): ?>
+                              <!--Preface 1 to show blocks on each main paper
+  page -->
                               <div class="preface-wrapper
                                 preface-wrapper-top clearfix">
                                   <div class="preface-wrapper-inner">
