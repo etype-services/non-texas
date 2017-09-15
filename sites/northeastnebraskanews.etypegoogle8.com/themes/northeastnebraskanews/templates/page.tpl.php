@@ -69,6 +69,8 @@
                               </div>
                           <?php endif; ?>
 
+                            
+
                           <?php if ($page['preface_1']): ?>
                               <div class="preface-wrapper
                                 preface-wrapper-top clearfix">
