@@ -69,6 +69,20 @@
                               </div>
                           <?php endif; ?>
 
+                          <?php if ($page['preface_1']): ?>
+                              <div class="preface-wrapper
+                                preface-wrapper-top clearfix">
+                                  <div class="preface-wrapper-inner">
+                                      <div class="preface-wrapper-inner-inner">
+                                          <section id="preface_1">
+                                              <div><?php print render
+                                                ($page['preface_1']); ?></div>
+                                          </section>
+                                      </div>
+                                  </div>
+                              </div>
+                          <?php endif; ?>
+
                           <?php if ($page['highlighted']): ?>
                               <div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
                           <?php print render($tabs); ?>
