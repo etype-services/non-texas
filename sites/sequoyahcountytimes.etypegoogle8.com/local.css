@@ -9,7 +9,7 @@ body {
 .preface-wrapper .block .content {
   background-color: #fff;
 }
-.preface-wrapper .block .content h3.title a {
+.preface-wrapper .block h3.title a {
   color: #c00;
 }
 /* own local */
