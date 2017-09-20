@@ -9,6 +9,9 @@ body {
 .preface-wrapper .block .content {
   background-color: #fff;
 }
+.preface-wrapper .block .content h3.title a {
+  color: #c00;
+}
 /* own local */
 #block-block-36 .block-inner,
 #block-block-35 .block-inner {
