@@ -6,6 +6,9 @@ body {
 .page-inner {
   background-color: #ccc;
 }
+.preface-wrapper .block .content {
+  background-color: #fff;
+}
 /* own local */
 #block-block-36 .block-inner,
 #block-block-35 .block-inner {
