@@ -1,6 +1,10 @@
 body {
   font-size: 10pt;
   line-height: 1.5em;
+  background-color: #ccc;
+}
+.page-inner {
+  background-color: #ccccc;
 }
 /* own local */
 #block-block-36 .block-inner,
