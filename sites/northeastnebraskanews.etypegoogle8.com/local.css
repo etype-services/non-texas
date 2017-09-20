@@ -12,9 +12,7 @@ header {
   flex-basis: 57%;
 }
 .region-header {
-  display: table-cell;
   width: 320px;
-  height: 100px;
   padding: 0;
   margin: auto;
 }
