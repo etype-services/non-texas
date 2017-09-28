@@ -27,3 +27,9 @@ body {
     margin-right: 0;
   }
 }
+@media only screen and (max-width: 767px) {
+  .region-user-menu {
+    margin: 0 0 0.6em;
+    background-color: #f3f1f1;
+  }
+}
