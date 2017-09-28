@@ -7,6 +7,7 @@ body {
   margin: 0 2em auto;
   background-color: #ccc;
   max-width: 1000px;
+}
 #user-menu ul.menu li a {
   border: none;
 }
