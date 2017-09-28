@@ -6,6 +6,12 @@ body {
 .region-user-menu {
   margin: 0 2em 0.6em;
   background-color: #ccc;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+}
+#user-menu ul.menu li a {
+  border: none;
 }
 .page-inner {
   background-color: #ccc;
