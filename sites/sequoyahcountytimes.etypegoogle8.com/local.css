@@ -1,18 +1,13 @@
 body {
   font-size: 10pt;
   line-height: 1.5em;
-  background-color: #ccc;
 }
 .region-user-menu {
   margin: 0 auto;
-  background-color: #ccc;
   max-width: 1000px;
 }
 #user-menu ul.menu li a {
   border: none;
-}
-.page-inner {
-  background-color: #ccc;
 }
 .preface-wrapper .block .content {
   background-color: #fff;
