@@ -34,6 +34,17 @@ header {
   display: none;
   visibility: hidden;
 }
+/* weather blocks */
+#block-block-45 .block-inner,
+#block-block-46 .block-inner,
+#block-block-48 .block-inner,
+#block-block-47 .block-inner,
+#block-block-49 .block-inner {
+  padding: 0;
+  border-style: none;
+  border-width: 0;
+  box-shadow: none;
+}
 /* own local */
 #block-block-40 .block-inner {
   padding: 0;
