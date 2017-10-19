@@ -46,6 +46,9 @@ header {
   .postscript-wrapper {
     margin-right: 0;
   }
+  #main-menu ul.menu li ul {
+    top: 40px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .site-logo {
