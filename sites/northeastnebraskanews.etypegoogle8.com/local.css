@@ -24,6 +24,16 @@ header {
   line-height: 40px;
   font-weight: bold;
 }
+/* hide title, etc on paper concatenation pages */
+.laurel-advocate article,
+.cedar-county-news article,
+.coleridge-blade article,
+.osmond-republican article,
+.randolph-times article,
+.wausa-gazette article {
+  display: none;
+  visibility: hidden;
+}
 /* own local */
 #block-block-40 .block-inner {
   padding: 0;
