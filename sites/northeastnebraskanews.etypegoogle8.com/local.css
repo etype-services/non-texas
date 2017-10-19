@@ -16,6 +16,13 @@ header {
   padding: 0;
   margin: auto;
 }
+#main-menu ul.menu {
+  min-height: 40px;
+}
+#main-menu ul.menu li a {
+  height: 40px;
+  line-height: 40px;
+}
 /* own local */
 #block-block-40 .block-inner {
   padding: 0;
