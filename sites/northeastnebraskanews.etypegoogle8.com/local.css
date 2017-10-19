@@ -65,4 +65,13 @@ header {
   .site-logo {
     flex-basis: inherit;
   }
+  /* mobile menu */
+  #mobile-menu li {
+    display: none;
+    visibility: hidden;
+  }
+  #mobile-menu #menu-4291-1 {
+    display: block;
+    visibility: visible;
+  }
 }
