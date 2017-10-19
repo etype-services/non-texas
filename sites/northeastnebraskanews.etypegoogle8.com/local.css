@@ -82,4 +82,14 @@ header {
     display: block;
     visibility: visible;
   }
+  /* hide weather */
+  #block-block-1,
+  #block-block-45,
+  #block-block-46,
+  #block-block-48,
+  #block-block-47,
+  #block-block-49 {
+    display: none;
+    visibility: hidden;
+  }
 }
