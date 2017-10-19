@@ -25,12 +25,12 @@ header {
   font-weight: bold;
 }
 /* hide title, etc on paper concatenation pages */
-.laurel-advocate article,
-.cedar-county-news article,
-.coleridge-blade article,
-.osmond-republican article,
-.randolph-times article,
-.wausa-gazette article {
+.laurel-advocate .region-content,
+.cedar-county-news .region-content,
+.coleridge-blade .region-content,
+.osmond-republican .region-content,
+.randolph-times .region-content,
+.wausa-gazette .region-content {
   display: none;
   visibility: hidden;
 }
