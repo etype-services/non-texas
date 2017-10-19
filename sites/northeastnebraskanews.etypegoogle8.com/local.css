@@ -70,7 +70,14 @@ header {
     display: none;
     visibility: hidden;
   }
-  #mobile-menu #menu-4291-1 {
+  #mobile-menu #menu-4291-1,
+  #mobile-menu #menu-4478-1,
+  #mobile-menu #menu-4476-1,
+  #mobile-menu #menu-4475-1,
+  #mobile-menu #menu-4474-1,
+  #mobile-menu #menu-4624-1,
+  #mobile-menu #menu-4625-1,
+  #mobile-menu .leaf {
     display: block;
     visibility: visible;
   }
