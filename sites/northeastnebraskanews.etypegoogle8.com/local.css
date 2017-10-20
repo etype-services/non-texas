@@ -92,4 +92,9 @@ header {
     display: none;
     visibility: hidden;
   }
+  #block-simpleads-ad-groups-490,
+  #block-simpleads-ad-groups-422 {
+    display: none;
+    visibility: hidden;
+  }
 }
