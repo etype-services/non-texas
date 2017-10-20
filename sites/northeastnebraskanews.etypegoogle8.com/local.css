@@ -97,4 +97,8 @@ header {
     display: none;
     visibility: hidden;
   }
+  #block-block-40 {
+    display: flex;
+    justify-content: center;
+  }
 }
