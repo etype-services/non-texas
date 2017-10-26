@@ -102,3 +102,7 @@ header {
     justify-content: center;
   }
 }
+/* change link color */
+.node .content a {
+  color: #396;
+}
