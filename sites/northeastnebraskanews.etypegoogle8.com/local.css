@@ -23,6 +23,7 @@ header {
   height: 40px;
   line-height: 40px;
   font-weight: bold;
+  text-decoration: none;
 }
 /* hide title, etc on paper concatenation pages */
 .laurel-advocate .region-content,
