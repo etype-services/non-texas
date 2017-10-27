@@ -103,8 +103,8 @@ header {
     justify-content: center;
   }
 }
-/* change link color */
-.node .content a {
+/* change link color in body text */
+.node .content .field-name-body a {
   color: #396;
   text-decoration: underline;
 }
