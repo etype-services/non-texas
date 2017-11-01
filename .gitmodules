@@ -4,3 +4,9 @@
 [submodule "sites/all/modules/etype_wire"]
 	path = sites/all/modules/etype_wire
 	url = https://github.com/etype-services/etype_wire.git
+[submodule "sites/all/modules/etype"]
+	path = sites/all/modules/etype
+	url = git@github.com:etype-services/etype.git
+[submodule "sites/all/modules/etype_xml_importer"]
+	path = sites/all/modules/etype_xml_importer
+	url = git@github.com:etype-services/etype_xml_importer.git
