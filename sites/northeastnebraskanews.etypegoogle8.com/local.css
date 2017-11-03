@@ -62,7 +62,7 @@ header {
     top: 40px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 958px) {
   .site-logo {
     flex-basis: inherit;
   }
