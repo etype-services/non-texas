@@ -242,15 +242,15 @@ $sites['www.raynetoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 
 
 /* evangelinetoday.etypegoogle8.com */
-$sites['evangelinetoday.etypegoogle8.com'] = 'evangelinearchive.etypegoogle8.com';
-$sites['evangelinetoday.com'] = 'evangelinearchive.etypegoogle8.com';
-$sites['www.evangelinetoday.com'] = 'evangelinearchive.etypegoogle8.com';
-$sites['basiletoday.com'] = 'evangelinearchive.etypegoogle8.com';
-$sites['www.basiletoday.com'] = 'evangelinearchive.etypegoogle8.com';
-$sites['mamoutoday.com'] = 'evangelinearchive.etypegoogle8.com';
-$sites['www.mamoutoday.com'] = 'evangelinearchive.etypegoogle8.com';
-$sites['villeplattetoday.com'] = 'evangelinearchive.etypegoogle8.com';
-$sites['www.villeplattetoday.com'] = 'evangelinearchive.etypegoogle8.com';
+$sites['evangelinetoday.etypegoogle8.com'] = 'evangelinetoday.etypegoogle8.com';
+$sites['evangelinetoday.com'] = 'evangelinetoday.etypegoogle8.com';
+$sites['www.evangelinetoday.com'] = 'evangelinetoday.etypegoogle8.com';
+$sites['basiletoday.com'] = 'evangelinetoday.etypegoogle8.com';
+$sites['www.basiletoday.com'] = 'evangelinetoday.etypegoogle8.com';
+$sites['mamoutoday.com'] = 'evangelinetoday.etypegoogle8.com';
+$sites['www.mamoutoday.com'] = 'evangelinetoday.etypegoogle8.com';
+$sites['villeplattetoday.com'] = 'evangelinetoday.etypegoogle8.com';
+$sites['www.villeplattetoday.com'] = 'evangelinetoday.etypegoogle8.com';
 
 /* stmarynow.etypegoogle8.com */
 $sites['stmarynow.etypegoogle8.com'] = 'stmarynow.etypegoogle8.com';
