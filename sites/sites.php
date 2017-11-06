@@ -240,7 +240,6 @@ $sites['www.crowleytoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 $sites['raynetoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 $sites['www.raynetoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 
-
 /* evangelinetoday.etypegoogle8.com */
 $sites['evangelinetoday.etypegoogle8.com'] = 'evangelinetoday.etypegoogle8.com';
 $sites['evangelinetoday.com'] = 'evangelinetoday.etypegoogle8.com';
