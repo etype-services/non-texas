@@ -18,13 +18,11 @@ $sites['theclaycountynews.com'] = 'theclaycountynews.com';
 $sites['www.theclaycountynews.com'] = 'theclaycountynews.com';
 
 /* gunnisontimes.etypegoogle8.com */
-$sites['gunnisontimes.etypegoogle8.com'] = 'gunnisontimes.com';
-$sites['gunnisontimes.com'] = 'gunnisontimes.com';
-$sites['www.gunnisontimes.com'] = 'gunnisontimes.com';
-$sites['photo.gunnisontimes.com'] = 'gunnisontimes.com';
-
-$sites['gunnisoncountrytimes.com'] = 'gunnisontimes.com';
-$sites['www.gunnisoncountrytimes.com'] = 'gunnisontimes.com';
+$sites['gunnisontimes.etypegoogle8.com'] = 'archive.gunnisontimes.com';
+$sites['gunnisontimes.com'] = 'archive.gunnisontimes.com';
+$sites['www.gunnisontimes.com'] = 'archive.gunnisontimes.com';
+$sites['photo.gunnisontimes.com'] = 'archive.gunnisontimes.com';
+$sites['archive.gunnisontimes.com'] = 'archive.gunnisontimes.com';
 
 /* ouraynews.etypegoogle8.com */
 $sites['ouraynews.etypegoogle8.com'] = 'ouraynews.com';
