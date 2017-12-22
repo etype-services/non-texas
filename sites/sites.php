@@ -19,9 +19,6 @@ $sites['www.theclaycountynews.com'] = 'theclaycountynews.com';
 
 /* gunnisontimes.etypegoogle8.com */
 $sites['gunnisontimes.etypegoogle8.com'] = 'archive.gunnisontimes.com';
-$sites['gunnisontimes.com'] = 'archive.gunnisontimes.com';
-$sites['www.gunnisontimes.com'] = 'archive.gunnisontimes.com';
-$sites['photo.gunnisontimes.com'] = 'archive.gunnisontimes.com';
 $sites['archive.gunnisontimes.com'] = 'archive.gunnisontimes.com';
 
 /* ouraynews.etypegoogle8.com */
