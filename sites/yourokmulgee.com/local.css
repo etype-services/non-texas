@@ -18,3 +18,10 @@
     visibility: hidden;
   }
 }
+@media only screen and (min-width: 768px) {
+  /* hide mobile ads on desktop */
+  #block-simpleads-ad-groups-23 {
+    display: none;
+    visibility: hidden;
+  }
+}
