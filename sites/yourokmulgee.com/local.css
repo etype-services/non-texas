@@ -10,3 +10,11 @@
     clear: left;
     float: left;
 }
+/* ads */
+@media only screen and (max-width: 420px) {
+  /* hide leaderboard on mobile */
+  #block-simpleads-ad-groups-29 {
+    display: none;
+    visibility: hidden;
+  }
+}
