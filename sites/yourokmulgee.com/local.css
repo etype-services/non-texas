@@ -17,6 +17,9 @@
     display: none;
     visibility: hidden;
   }
+  #header .region-header {
+    justify-content: center;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* hide mobile ads on desktop */
@@ -24,8 +27,4 @@
     display: none;
     visibility: hidden;
   }
-  #header .region-header {
-    justify-content: center;
-  }
-
 }
