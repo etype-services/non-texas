@@ -20,6 +20,10 @@
   #header .region-header {
     justify-content: center;
   }
+  #block-simpleads-ad-groups-44 {
+    flex-basis: 100%;
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* hide mobile ads on desktop */
