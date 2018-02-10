@@ -11,7 +11,7 @@
     float: left;
 }
 /* ads */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 767px) {
   /* hide leaderboard on mobile */
   #block-simpleads-ad-groups-29 {
     display: none;
