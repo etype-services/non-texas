@@ -1,12 +1,33 @@
 /* fixing the way captions appear with text wrapped around */
 .page-node .node-article .content .field-type-image blockquote.image-field-caption {
-    float: left;
-    margin: 5px 9px 0 0;
-    max-width: 428px;
+  float: left;
+  margin: 5px 9px 0 0;
+  max-width: 428px;
 }
-
-/* fixing the Rate this article appearance */ 
+/* fixing the Rate this article appearance */
 .field-label-inline .field-label, .field-label-inline .field-items {
-    clear: left;
-    float: left;
+  clear: left;
+  float: left;
+}
+/* ads */
+@media only screen and (max-width: 767px) {
+  /* hide leaderboard on mobile */
+  #block-simpleads-ad-groups-29 {
+    display: none;
+    visibility: hidden;
+  }
+  #header .region-header {
+    justify-content: center;
+  }
+  #block-simpleads-ad-groups-44 {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* hide mobile ads on desktop */
+  #block-simpleads-ad-groups-44 {
+    display: none;
+    visibility: hidden;
+  }
 }
