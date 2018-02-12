@@ -31,4 +31,17 @@ body {
     margin: 0 0 0.6em;
     background-color: #f3f1f1;
   }
+  /* hide leaderboard on mobile */
+  #block-simpleads-ad-groups-416,
+  #block-simpleads-ad-groups-416 {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* hide mobile ads on desktop */
+  #block-simpleads-ad-groups-619 {
+    display: none;
+    visibility: hidden;
+  }
 }
