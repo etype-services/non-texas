@@ -43,11 +43,11 @@ function ctools_object_cache_get($obj, $name, $skip_cache = FALSE, $sid = NULL) 
   }
 
   if (!array_key_exists($key, $cache)) {
-    $data = db_query('SELECT * FROM {ctools_object_cache} WHERE sid = :session_id AND obj = :object AND name = :name', [
+    $data = db_query('SELECT * FROM {ctools_object_cache} WHERE sid = :session_id AND obj = :object AND name = :name', array(
       ':session_id' => $sid,
       ':object' => $obj,
       ':name' => md5($name),
-    ])->fetchObject();
+    ))->fetchObject();
     if ($data) {
       $cache[$key] = unserialize($data->data);
     }
@@ -144,11 +144,11 @@ function ctools_object_cache_test($obj, $name, $sid = NULL) {
     $sid = session_id();
   }
 
-  return db_query('SELECT s.uid, c.updated FROM {ctools_object_cache} c INNER JOIN {sessions} s ON c.sid = s.sid WHERE s.sid <> :session_id AND c.obj = :obj AND c.name = :name ORDER BY c.updated ASC', [
+  return db_query('SELECT s.uid, c.updated FROM {ctools_object_cache} c INNER JOIN {sessions} s ON c.sid = s.sid WHERE s.sid <> :session_id AND c.obj = :obj AND c.name = :name ORDER BY c.updated ASC', array(
     ':session_id' => $sid,
     ':obj' => $obj,
     ':name' => md5($name),
-  ])->fetchObject();
+  ))->fetchObject();
 }
 
 /**
