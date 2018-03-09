@@ -111,7 +111,7 @@ body form#page-manager-list-pages-form {
 
 #page-manager-edit .page-manager-edit-operations li.active,
 #page-manager-edit .page-manager-edit-operations li.active-group .page-manager-group-title {
-  background: #ffffff url(../images/arrow-active.png) no-repeat scroll right center;
+  background: #fff url(../images/arrow-active.png) no-repeat scroll right center;
 }
 
 #page-manager-edit .page-manager-edit-operations li.changed,
@@ -125,14 +125,13 @@ body form#page-manager-list-pages-form {
 #page-manager-edit .page-manager-edit-operations li.changed-group li.not-changed .page-manager-group-title {
   background: #f6f6f6;
 }
-
 #page-manager-edit .page-manager-edit-operations li.active {
   border-right: 1px solid white;
 }
 
 #page-manager-edit .page-manager-edit-operations li.active a,
 #page-manager-edit .page-manager-edit-operations li.active a:hover {
-  background: #ffffff url(../images/arrow-active.png) no-repeat scroll right center;
+  background: #fff url(../images/arrow-active.png) no-repeat scroll right center;
   color: #000000;
   font-weight: bold;
 }
@@ -274,7 +273,6 @@ body form#page-manager-list-pages-form {
   color: #0062a0;
   background-color: #f6f6f6;
 }
-
 #page-manager-edit .page-manager-changed {
   float: right; /* LTR */
   font-style: italic;
