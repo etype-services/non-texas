@@ -1,9 +1,9 @@
 [submodule "sites/all/themes/cni"]
 	path = sites/all/themes/cni
-	url = https://github.com/etype-services/cnitheme.git
+	url = git@github.com:etype-services/cnitheme.git
 [submodule "sites/all/modules/etype_wire"]
 	path = sites/all/modules/etype_wire
-	url = https://github.com/etype-services/etype_wire.git
+	url = git@github.com:etype-services/etype_wire.git
 [submodule "sites/all/modules/etype"]
 	path = sites/all/modules/etype
 	url = git@github.com:etype-services/etype.git
