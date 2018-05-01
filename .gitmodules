@@ -10,9 +10,6 @@
 [submodule "sites/all/modules/etype_newsletters"]
 	path = sites/all/modules/etype_newsletters
 	url = git@github.com:etype-services/etype_newsletters.git
-[submodule "sites/all/modules/etype_wire"]
-	path = sites/all/modules/etype_wire
-	url = git@github.com:etype-services/etype_wire.git
 [submodule "sites/all/modules/etype"]
 	path = sites/all/modules/etype
 	url = git@github.com:etype-services/etype.git
