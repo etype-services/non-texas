@@ -1,9 +1,6 @@
 [submodule "sites/all/themes/cni"]
 	path = sites/all/themes/cni
 	url = git@github.com:etype-services/cnitheme.git
-[submodule "sites/all/modules/etype"]
-	path = sites/all/modules/etype
-	url = git@github.com:etype-services/etype.git
 [submodule "sites/all/modules/etype_xml_importer"]
 	path = sites/all/modules/etype_xml_importer
 	url = git@github.com:etype-services/etype_xml_importer.git
@@ -16,3 +13,6 @@
 [submodule "sites/all/modules/etype_newsletters"]
 	path = sites/all/modules/etype_newsletters
 	url = git@github.com:etype-services/etype_newsletters.git
+[submodule "sites/all/modules/etype_wire"]
+	path = sites/all/modules/etype_wire
+	url = git@github.com:etype-services/etype_wire.git
