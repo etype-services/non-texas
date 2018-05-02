@@ -372,3 +372,8 @@ $sites['www.perkinscountypost.com'] = 'perkinscountypost.etypegoogle8.com';
 $sites['iolaregister.etypegoogle8.com'] = 'iolaregister.etypegoogle8.com';
 $sites['iolaregister.com'] = 'iolaregister.etypegoogle8.com';
 $sites['www.iolaregister.com'] = 'iolaregister.etypegoogle8.com';
+
+/* themillerpress.etypegoogle8.com */
+$sites['themillerpress.etypegoogle8.com'] = 'themillerpress.etypegoogle8.com';
+$sites['themillerpress.com'] = 'themillerpress.etypegoogle8.com';
+$sites['www.themillerpress.com'] = 'themillerpress.etypegoogle8.com';
