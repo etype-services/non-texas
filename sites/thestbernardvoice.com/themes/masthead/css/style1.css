@@ -977,3 +977,12 @@ ul.quicktabs-tabs.quicktabs-style-nostyle li.active a {
 .view-slideshow .views-slideshow-controls-bottom .views-field-field-image img {
     margin: 0;
 }
+
+/* ads */
+#block-block-29 .block-inner,
+#block-block-30 .block-inner {
+    padding: 0;
+    border: none;
+    background: #ffffff;
+    box-shadow: none;
+}
