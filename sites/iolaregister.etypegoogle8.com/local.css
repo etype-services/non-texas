@@ -44,3 +44,12 @@
   .view-slideshow .views_slideshow_main .views-field-title {
     width: 278px; } }
 
+/* mobile-menu options */
+@media only screen and (max-width: 767px) {
+  #menu-3392-1 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+
