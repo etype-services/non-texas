@@ -65,6 +65,7 @@ $sites['www.yourokmulgee.com'] = 'yourokmulgee.com';
 $sites['lutchernews.etypegoogle8.com'] = 'lutchernews.com';
 $sites['lutchernews.com'] = 'lutchernews.com';
 $sites['www.lutchernews.com'] = 'lutchernews.com';
+$sites['archive.lutchernews.com'] = 'lutchernews.com';
 $sites['stjamesparishtoday.etypegoogle8.com'] = 'lutchernews.com';
 $sites['stjamesparishtoday.com'] = 'lutchernews.com';
 $sites['www.stjamesparishtoday.com'] = 'lutchernews.com';
@@ -125,6 +126,7 @@ $sites['www.mysanfordherald.com'] = 'mysanfordherald.com';
 $sites['lakeoconeenews.etypegoogle8.com'] = 'lakeoconeenews.us';
 $sites['lakeoconeenews.us'] = 'lakeoconeenews.us';
 $sites['www.lakeoconeenews.us'] = 'lakeoconeenews.us';
+$sites['archive.lakeoconeenews.us'] = 'lakeoconeenews.us';
 
 $sites['plaqueminesgazette.etypegoogle8.com'] = 'plaqueminesgazette.com';
 $sites['plaqueminesgazette.com'] = 'plaqueminesgazette.com';
