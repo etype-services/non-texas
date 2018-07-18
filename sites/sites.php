@@ -132,23 +132,6 @@ $sites['www.timberlakesouthdakota.com'] = 'timberlakesouthdakota.com';
 $sites['timberlaketopic.com'] = 'timberlakesouthdakota.com';
 $sites['www.timberlaketopic.com'] = 'timberlakesouthdakota.com';
 
-/* thekansascityglobe.etypegoogle8.com */
-$sites['thekansascityglobe.etypegoogle8.com'] = 'thekansascityglobe.com';
-$sites['thekansascityglobe.com'] = 'thekansascityglobe.com';
-$sites['www.thekansascityglobe.com'] = 'thekansascityglobe.com';
-
-$sites['thekansascityglobe.net'] = 'thekansascityglobe.com';
-$sites['www.thekansascityglobe.net'] = 'thekansascityglobe.com';
-
-$sites['thekansascityglobe.info'] = 'thekansascityglobe.com';
-$sites['www.thekansascityglobe.info'] = 'thekansascityglobe.com';
-
-$sites['thekansascityglobe.org'] = 'thekansascityglobe.com';
-$sites['www.thekansascityglobe.org'] = 'thekansascityglobe.com';
-
-$sites['thekcglobe.com'] = 'thekansascityglobe.com';
-$sites['www.thekcglobe.com'] = 'thekansascityglobe.com';
-
 /* auroranewsregister.etypegoogle8.com */
 $sites['auroranewsregister.etypegoogle8.com'] = 'auroranewsregister.com';
 $sites['auroranewsregister.com'] = 'auroranewsregister.com';
