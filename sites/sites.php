@@ -61,17 +61,8 @@ $sites['yourokmulgee.etypegoogle8.com'] = 'yourokmulgee.com';
 $sites['yourokmulgee.com'] = 'yourokmulgee.com';
 $sites['www.yourokmulgee.com'] = 'yourokmulgee.com';
 
-/* lutchernews.etypegoogle8.com */
-$sites['lutchernews.etypegoogle8.com'] = 'lutchernews.com';
-$sites['lutchernews.com'] = 'lutchernews.com';
-$sites['www.lutchernews.com'] = 'lutchernews.com';
-$sites['archive.lutchernews.com'] = 'lutchernews.com';
-$sites['stjamesparishtoday.etypegoogle8.com'] = 'lutchernews.com';
-$sites['stjamesparishtoday.com'] = 'lutchernews.com';
-$sites['www.stjamesparishtoday.com'] = 'lutchernews.com';
-$sites['vacherienews.etypegoogle8.com'] = 'lutchernews.com';
-$sites['vacherienews.com'] = 'lutchernews.com';
-$sites['www.vacherienews.com'] = 'lutchernews.com';
+/* archive.stjamesparishtoday.etypegoogle8.com */
+$sites['archive.stjamesparishtoday.com'] = 'archive.stjamesparishtoday.etypegoogle8.com';
 
 /* tecumsehchieftain.etypegoogle8.com */
 $sites['tecumsehchieftain.etypegoogle8.com'] = 'tecumsehchieftain.com';
@@ -123,10 +114,7 @@ $sites['mysanfordherald.etypegoogle8.com'] = 'mysanfordherald.com';
 $sites['mysanfordherald.com'] = 'mysanfordherald.com';
 $sites['www.mysanfordherald.com'] = 'mysanfordherald.com';
 
-$sites['lakeoconeenews.etypegoogle8.com'] = 'lakeoconeenews.us';
-$sites['lakeoconeenews.us'] = 'lakeoconeenews.us';
-$sites['www.lakeoconeenews.us'] = 'lakeoconeenews.us';
-$sites['archive.lakeoconeenews.us'] = 'lakeoconeenews.us';
+$sites['archive.lakeoconeenews.us'] = 'archive.lakeoconeenews.etypegoogle8.com';
 
 $sites['plaqueminesgazette.etypegoogle8.com'] = 'plaqueminesgazette.com';
 $sites['plaqueminesgazette.com'] = 'plaqueminesgazette.com';
