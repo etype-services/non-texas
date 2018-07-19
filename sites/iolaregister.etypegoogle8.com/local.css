@@ -53,3 +53,8 @@
 }
 
 
+/* customer requests to change bg color and increase font sizes */
+.postscript-wrapper {background: #666666;}
+#postscript p {font-size: 0.9em;}
+#postscript a {font-size: 0.9em;}
+.postscript-wrapper h3 span {font-size: 1.2em;}
