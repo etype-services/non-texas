@@ -19,8 +19,8 @@ $sites['theclaycountynews.com'] = 'theclaycountynews.com';
 $sites['www.theclaycountynews.com'] = 'theclaycountynews.com';
 
 /* gunnisontimes.etypegoogle8.com */
-$sites['gunnisontimes.etypegoogle8.com'] = 'archive.gunnisontimes.com';
-$sites['archive.gunnisontimes.com'] = 'archive.gunnisontimes.com';
+$sites['gunnisontimes.etypegoogle8.com'] = 'archive.gunnisontimes.etypegoogle8.com';
+$sites['archive.gunnisontimes.com'] = 'archive.gunnisontimes.etypegoogle8.com';
 
 /* ouraynews.etypegoogle8.com */
 $sites['ouraynews.etypegoogle8.com'] = 'ouraynews.com';
@@ -53,13 +53,14 @@ $sites['barbadosadvocate.etypegoogle8.com'] = 'barbadosadvocate.com';
 $sites['barbadosadvocate.com'] = 'barbadosadvocate.com';
 $sites['www.barbadosadvocate.com'] = 'barbadosadvocate.com';
 
-$sites['henryettafree-lance.etypegoogle8.com'] = 'henryettafree-lance.com';
-$sites['henryettafree-lance.com'] = 'henryettafree-lance.com';
-$sites['www.henryettafree-lance.com'] = 'henryettafree-lance.com';
+$sites['henryettafree-lance.etypegoogle8.com'] = 'archive.henryettafree-lance.etypegoogle8.com';
+$sites['www.henryettafree-lance.com'] = 'archive.henryettafree-lance.etypegoogle8.com';
+$sites['archive.henryettafree-lance.com'] = 'archive.henryettafree-lance.etypegoogle8.com';
 
-$sites['yourokmulgee.etypegoogle8.com'] = 'yourokmulgee.com';
-$sites['yourokmulgee.com'] = 'yourokmulgee.com';
-$sites['www.yourokmulgee.com'] = 'yourokmulgee.com';
+$sites['yourokmulgee.etypegoogle8.com'] = 'archive.yourokmulgee.etypegoogle8.com';
+$sites['yourokmulgee.com'] = 'archive.yourokmulgee.etypegoogle8.com';
+$sites['www.yourokmulgee.com'] = 'archive.yourokmulgee.etypegoogle8.com';
+$sites['archive.yourokmulgee.com'] = 'archive.yourokmulgee.etypegoogle8.com';
 
 /* archive.stjamesparishtoday.etypegoogle8.com */
 $sites['archive.stjamesparishtoday.com'] = 'archive.stjamesparishtoday.etypegoogle8.com';
