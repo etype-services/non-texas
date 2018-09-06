@@ -87,9 +87,9 @@ $sites['indyrepnews.etypegoogle8.com'] = 'indyrepnews.com';
 $sites['indyrepnews.com'] = 'indyrepnews.com';
 $sites['www.indyrepnews.com'] = 'indyrepnews.com';
 
-$sites['msgr.etypegoogle8.com'] = 'msgr.com';
-$sites['msgr.com'] = 'msgr.com';
-$sites['www.msgr.com'] = 'msgr.com';
+$sites['msgr.com'] = 'archive.msgr.etypegoogle8.com';
+$sites['www.msgr.com'] = 'archive.msgr.etypegoogle8.com';
+$sites['www.archive.com'] = 'archive.msgr.etypegoogle8.com';
 
 $sites['myironcountynews.etypegoogle8.com'] = 'myironcountynews.com';
 $sites['myironcountynews.com'] = 'myironcountynews.com';
@@ -107,9 +107,9 @@ $sites['westessextribune.etypegoogle8.com'] = 'westessextribune.net';
 $sites['westessextribune.net'] = 'westessextribune.net';
 $sites['www.westessextribune.net'] = 'westessextribune.net';
 
-$sites['jcnews.etypegoogle8.com'] = 'jcnews.com';
-$sites['jcnews.com'] = 'jcnews.com';
-$sites['www.jcnews.com'] = 'jcnews.com';
+$sites['jcnews.com'] = 'archive.jcnews.etypegoogle8.com';
+$sites['www.jcnews.com'] = 'archive.jcnews.etypegoogle8.com';
+$sites['archive.jcnews.com'] = 'archive.jcnews.etypegoogle8.com';
 
 $sites['mysanfordherald.etypegoogle8.com'] = 'mysanfordherald.com';
 $sites['mysanfordherald.com'] = 'mysanfordherald.com';
@@ -303,11 +303,11 @@ $sites['richlandtoday.com'] = 'richlandtoday.etypegoogle8.com';
 $sites['www.richlandtoday.com'] = 'richlandtoday.etypegoogle8.com';
 
 /* baldwinbulletin.etypegoogle8.com */
-$sites['baldwinbulletin.etypegoogle8.com'] = 'baldwinbulletin.etypegoogle8.com';
-$sites['baldwinbulletin.com'] = 'baldwinbulletin.etypegoogle8.com';
-$sites['www.baldwinbulletin.com'] = 'baldwinbulletin.etypegoogle8.com';
-$sites['bbnews.today'] = 'baldwinbulletin.etypegoogle8.com';
-$sites['www.bbnews.today'] = 'baldwinbulletin.etypegoogle8.com';
+$sites['baldwinbulletin.com'] = 'archive.baldwinbulletin.etypegoogle8.com';
+$sites['www.baldwinbulletin.com'] = 'archive.baldwinbulletin.etypegoogle8.com';
+$sites['bbnews.today'] = 'archive.baldwinbulletin.etypegoogle8.com';
+$sites['www.bbnews.today'] = 'archive.baldwinbulletin.etypegoogle8.com';
+$sites['archive.bbnews.today'] = 'archive.baldwinbulletin.etypegoogle8.com';
 
 /* tangilena.etypegoogle8.com */
 $sites['tangilena.etypegoogle8.com'] = 'tangilena.etypegoogle8.com';
