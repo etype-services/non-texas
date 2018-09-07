@@ -78,11 +78,6 @@ $sites['www.pawneerepublican.com'] = 'pawneerepublican.com';
 $sites['pawneenews.com'] = 'pawneerepublican.com';
 $sites['www.pawneenews.com'] = 'pawneerepublican.com';
 
-/* beacononlinenews.etypegoogle8.com */
-$sites['beacononlinenews.etypegoogle8.com'] = 'beacononlinenews.com';
-$sites['beacononlinenews.com'] = 'beacononlinenews.com';
-$sites['www.beacononlinenews.com'] = 'beacononlinenews.com';
-
 $sites['indyrepnews.etypegoogle8.com'] = 'indyrepnews.com';
 $sites['indyrepnews.com'] = 'indyrepnews.com';
 $sites['www.indyrepnews.com'] = 'indyrepnews.com';
@@ -273,11 +268,6 @@ $sites['www.mynewhavennews.online'] = 'newhavenindependentnews.etypegoogle8.com'
 $sites['scottcountyrecord.etypegoogle8.com'] = 'scottcountyrecord.etypegoogle8.com';
 $sites['scottcountyrecord.com'] = 'scottcountyrecord.etypegoogle8.com';
 $sites['www.scottcountyrecord.com'] = 'scottcountyrecord.etypegoogle8.com';
-
-/* hoxietimes.etypegoogle8.com */
-$sites['hoxietimes.etypegoogle8.com'] = 'hoxietimes.etypegoogle8.com';
-$sites['hoxietimes.com'] = 'hoxietimes.etypegoogle8.com';
-$sites['www.hoxietimes.com'] = 'hoxietimes.etypegoogle8.com';
 
 /* techetoday.etypegoogle8.com */
 $sites['techetoday.etypegoogle8.com'] = 'techetoday.etypegoogle8.com';
