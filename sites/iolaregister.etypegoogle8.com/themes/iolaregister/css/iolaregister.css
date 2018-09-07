@@ -5,14 +5,14 @@
   padding: 10px; }
 
 .flexslider {
-  margin: 0 0 2em 0;
-}
+  margin: 0 0 2em 0; }
 
 .view-slideshow .views-field-title {
   margin-top: 0.5em; }
-  .view-slideshow .views-field-title h3 {
-    text-transform: capitalize;
-    font-size: 1.4em; }
+
+.view-slideshow .views-field-title h3 {
+  text-transform: capitalize;
+  font-size: 1.4em; }
 
 /* override module defaults */
 .views-slideshow-pager-fields > div {
@@ -20,46 +20,53 @@
 
 .free-message {
   display: none;
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 /* RESPONSIVE */
 @media only screen and (max-width: 958px) and (min-width: 768px) {
   .view-slideshow .views_slideshow_main .views-field-body {
     font-size: inherit;
     width: 470px; }
+
   .view-slideshow .views_slideshow_main .views-field-title {
     width: 470px; } }
 @media only screen and (max-width: 767px) and (min-width: 480px) {
   .view-slideshow .views_slideshow_main .views-field-body {
     width: 398px;
     display: block; }
+
   .view-slideshow .views_slideshow_main .views-field-title {
     width: 398px; } }
 @media only screen and (max-width: 479px) and (min-width: 421px) {
   .view-slideshow .views_slideshow_main .views-field-body {
     width: 278px;
     display: block; }
+
   .view-slideshow .views_slideshow_main .views-field-title {
     width: 278px; } }
 @media only screen and (max-width: 420px) {
   .view-slideshow .views_slideshow_main .views-field-body {
     display: block;
     width: 278px; }
+
   .view-slideshow .views_slideshow_main .views-field-title {
     width: 278px; } }
-
 /* mobile-menu options */
 @media only screen and (max-width: 767px) {
   #menu-2301-1, #menu-3392-1, #menu-3393-1, #menu-3394-1, #menu-3401-1, #menu-2301-1 #menu-3580-1, #menu-3581-1, #menu-3582-1, #menu-3387-1, #menu-2423-1, #menu-699-1, #menu-2424-1, #menu-3400-1, #menu-2298-1, #menu-3400-1, #menu-3388-1 {
     display: none;
-    visibility: hidden;
-  }
-}
-
-
+    visibility: hidden; } }
 /* customer requests to change bg color and increase font sizes */
-.postscript-wrapper {background: #666666;}
-#postscript p {font-size: 0.9em;}
-#postscript a {font-size: 0.9em;}
-.postscript-wrapper h3 span {font-size: 1.2em;}
+.postscript-wrapper {
+  background: #666666; }
+
+#postscript p {
+  font-size: 0.9em; }
+
+#postscript a {
+  font-size: 0.9em; }
+
+.postscript-wrapper h3 span {
+  font-size: 1.2em; }
+
+/*# sourceMappingURL=iolaregister.css.map */
