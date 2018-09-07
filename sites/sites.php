@@ -95,20 +95,11 @@ $sites['myironcountynews.etypegoogle8.com'] = 'myironcountynews.com';
 $sites['myironcountynews.com'] = 'myironcountynews.com';
 $sites['www.myironcountynews.com'] = 'myironcountynews.com';
 
-/* fairburyjournalnews.etypegoogle8.com
-$sites['fairburyjournalnews.etypegoogle8.com'] = 'fairburyjournalnews.com';
-$sites['fairburyjournalnews.com'] = 'fairburyjournalnews.com';
-$sites['www.fairburyjournalnews.com'] = 'fairburyjournalnews.com';
-$sites['thefairburyjournal.com'] = 'fairburyjournalnews.com';
-$sites['www.thefairburyjournal.com'] = 'fairburyjournalnews.com';*/
-
 /* westessextribune.etypegoogle8.com */
 $sites['westessextribune.etypegoogle8.com'] = 'westessextribune.net';
 $sites['westessextribune.net'] = 'westessextribune.net';
 $sites['www.westessextribune.net'] = 'westessextribune.net';
 
-$sites['jcnews.com'] = 'archive.jcnews.etypegoogle8.com';
-$sites['www.jcnews.com'] = 'archive.jcnews.etypegoogle8.com';
 $sites['archive.jcnews.com'] = 'archive.jcnews.etypegoogle8.com';
 
 $sites['mysanfordherald.etypegoogle8.com'] = 'mysanfordherald.com';
@@ -303,10 +294,6 @@ $sites['richlandtoday.com'] = 'richlandtoday.etypegoogle8.com';
 $sites['www.richlandtoday.com'] = 'richlandtoday.etypegoogle8.com';
 
 /* baldwinbulletin.etypegoogle8.com */
-$sites['baldwinbulletin.com'] = 'archive.baldwinbulletin.etypegoogle8.com';
-$sites['www.baldwinbulletin.com'] = 'archive.baldwinbulletin.etypegoogle8.com';
-$sites['bbnews.today'] = 'archive.baldwinbulletin.etypegoogle8.com';
-$sites['www.bbnews.today'] = 'archive.baldwinbulletin.etypegoogle8.com';
 $sites['archive.bbnews.today'] = 'archive.baldwinbulletin.etypegoogle8.com';
 
 /* tangilena.etypegoogle8.com */
