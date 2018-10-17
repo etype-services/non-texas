@@ -9,5 +9,7 @@
 function iolaregister_preprocess_html(&$variables) {
   if ($node = menu_get_object()) {
     $node_wrapper = entity_metadata_wrapper('node', $node);
+    $val = $node_wrapper->field_section->value();
+    print_r($val);
   }
 }
