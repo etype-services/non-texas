@@ -6,7 +6,7 @@
  * Time: 1:00 PM
  */
 
-function iolaregister_preprocess_html() {
+function iolaregister_preprocess_html(&$variables) {
   echo 'yes';
   if ($node = menu_get_object()) {
     $item = entity_load('field_section', array($node->nid));
