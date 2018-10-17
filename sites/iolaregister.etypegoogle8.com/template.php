@@ -8,6 +8,7 @@
 
 function iolaregister_preprocess_html() {
   if ($node = menu_get_object()) {
-    dpm($node);
+    $item = entity_load('field_section', array($node->nid));
+    print_r($item);
   }
 }
