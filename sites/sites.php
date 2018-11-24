@@ -1,7 +1,37 @@
 <?php
-/* testing */
-$sites['test.etypegoogle8.com'] = 'iolaregister.etypegoogle8.com';
-$sites['local.stmarynow.com'] = 'stmarynow.etypegoogle8.com';
+/* eunice today archive */
+$sites['archive.eunicetoday.com'] = 'eunicearchive.etypegoogle7.com';
+$sites['35.229.54.49'] = 'eunicearchive.etypegoogle7.com';
+
+/* acadia parish archive */
+$sites['archive.acadiaparishtoday.com'] = 'acadiaparisharchive.etypegoogle7.com';
+
+/* avoyellestoday.etypegoogle7.com */
+$sites['avoyellestoday.etypegoogle7.com'] = 'avoyellestoday.etypegoogle7.com';
+$sites['avoyellesarchive.etypegoogle7.com'] = 'avoyellesarchive.etypegoogle7.com';
+$sites['archive.avoyellestoday.com'] = 'avoyellesarchive.etypegoogle7.com';
+
+/* evangelinetoday.etypegoogle7.com */
+$sites['evangelinetoday.etypegoogle7.com'] = 'evangelinearchive.etypegoogle7.com';
+$sites['archive.evangelinetoday.com'] = 'evangelinearchive.etypegoogle7.com';
+
+/* richlandtoday.etypegoogle7.com */
+$sites['richlandtoday.etypegoogle7.com'] = 'richlandarchive.etypegoogle7.com';
+$sites['archive.richlandtoday.com'] = 'richlandarchive.etypegoogle7.com';
+
+/* stmarynow.etypegoogle7.com */
+$sites['stmarynow.etypegoogle7.com'] = 'stmaryarchive.etypegoogle7.com';
+$sites['archive.stmarynow.com'] = 'stmaryarchive.etypegoogle7.com';
+$sites['archive.banner-tribune.com'] = 'stmaryarchive.etypegoogle7.com';
+$sites['archive.daily-review.com'] = 'stmaryarchive.etypegoogle7.com';
+
+/* techetoday.etypegoogle7.com */
+$sites['techetoday.etypegoogle7.com'] = 'techearchive.etypegoogle7.com';
+$sites['archive.techetoday.com'] = 'techearchive.etypegoogle7.com';
+
+/* vermiliontoday.etypegoogle7.com */
+$sites['vermiliontoday.etypegoogle7.com'] = 'vermilionarchive.etypegoogle7.com';
+$sites['archive.vermiliontoday.com'] = 'vermilionarchive.etypegoogle7.com';
 
 $sites['prairiepress.etypegoogle8.com'] = 'prairiepress.net';
 $sites['prairiepress.net'] = 'prairiepress.net';
@@ -277,15 +307,6 @@ $sites['www.richlandtoday.com'] = 'richlandtoday.etypegoogle8.com';
 
 /* baldwinbulletin.etypegoogle8.com */
 $sites['archive.bbnews.today'] = 'archive.baldwinbulletin.etypegoogle8.com';
-
-/* tangilena.etypegoogle8.com */
-$sites['tangilena.etypegoogle8.com'] = 'tangilena.etypegoogle8.com';
-$sites['tangilena.com'] = 'tangilena.etypegoogle8.com';
-$sites['www.tangilena.com'] = 'tangilena.etypegoogle8.com';
-$sites['amitetoday.com'] = 'tangilena.etypegoogle8.com';
-$sites['www.amitetoday.com'] = 'tangilena.etypegoogle8.com';
-$sites['kentwoodtoday.com'] = 'tangilena.etypegoogle8.com';
-$sites['www.kentwoodtoday.com'] = 'tangilena.etypegoogle8.com';
 
 /* sequoyahcountytimes.etypegoogle8.com */
 $sites['sequoyahcountytimes.etypegoogle8.com'] = 'sequoyahcountytimes.etypegoogle8.com';

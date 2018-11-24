@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Custom functions and hooks for Etype Services
+ *
+ */
+
+/**
+ * Set Body to be Plain Text by default when editing content
+ * @param $form
+ * @param $form_state
+ * @param $form_id
+ */
+function etype_form_alter(&$form, $form_state, $form_id) {
+
+  if ($form_id == 'article_node_form') {
+    $form['body'][LANGUAGE_NONE][0]['#format'] = 'plain_text';
+  }
+
+}

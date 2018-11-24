@@ -1,0 +1,64 @@
+<?php
+/**
+ * @file
+ * Libraries API definition for phpseclib.
+ *
+ * @author John P Warren <jpwarren00@gmail.com>
+ * @author Christian "corvus_ch" Häusler <christian.haeusler@md-systems.ch>
+ */
+
+/**
+ * Implements hook_libraries_info()
+ */
+function phpseclib_libraries_info() {
+  $libraries['phpseclib'] = array(
+    'name' => 'phpseclib',
+    'vendor url' => 'http://phpseclib.sourceforge.net',
+    'download url' => 'http://sourceforge.net/projects/phpseclib/files/phpseclib0.3.1.zip/download',
+
+    'version callback' => '_phpseclib_detect_version',
+
+    'files' => array(
+      'php' => array(
+        // Note: The order inside this array is the order the files are
+        // included. Changing the order might brake the loading process.
+
+        'Math/BigInteger.php',
+
+        'Crypt/Random.php',
+        'Crypt/Hash.php',
+
+        'Crypt/AES.php',
+        'Crypt/DES.php',
+        'Crypt/RC4.php',
+        'Crypt/RSA.php',
+        'Crypt/Rijndael.php',
+        'Crypt/TripleDES.php',
+
+        'File/ANSI.php',
+        'File/ASN1.php',
+        'File/X509.php',
+
+        'Net/SSH1.php',
+        'Net/SSH2.php',
+        'Net/SFTP.php',
+      ),
+    ),
+  );
+
+  return $libraries;
+}
+
+/**
+ * The version stub
+ *
+ * phpseclib does not proivide any clue about its version inside the
+ * code. For Libraries API needs a version defined, this function just
+ * return the latest version of when this was written.
+ *
+ * @return string
+ *  The faked version string.
+ */
+function _phpseclib_detect_version() {
+  return '0.3.1';
+}

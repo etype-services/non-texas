@@ -1,0 +1,39 @@
+<?php
+/**
+ * @file
+ * Contains update tests for Drupal phpseclib integration.
+ *
+ * @author Christian "corvus_ch" Häusler <christian.haeusler@md-systems.ch>
+ */
+
+class PhpseclibUpdateTestCase extends  UpdatePathTestCase {
+
+  public static function getInfo() {
+    return array(
+      'name'  => 'phpseclib 7.x update path',
+      'description'  => 'phpseclib 7.x update path tests.',
+      'group' => 'phpseclib',
+    );
+  }
+
+  public function setUp() {
+    $this->databaseDumpFiles = array(
+      drupal_get_path('module', 'simpletest') . '/tests/upgrade/drupal-7.bare.minimal.database.php.gz',
+      drupal_get_path('module', 'phpseclib') . '/tests/drupal-7.updatetest.database.php',
+    );
+    parent::setUp();
+  }
+
+  /**
+   * Test an update.
+   */
+  public function testUpdate() {
+    $this->assertTrue($this->performUpgrade(), t('The update was completed successfully.'));
+
+    $this->assertFalse(variable_get('phpseclib_ssh2_enabled'),'The variable phpseclib_ssh2_enabled was deleted.');
+    $this->assertFalse(variable_get('phpseclib_ssh1_enabled'),'The variable phpseclib_ssh1_enabled was deleted.');
+    $this->assertFalse(variable_get('phpseclib_sftp_enabled'),'The variable phpseclib_sftp_enabled was deleted.');
+    $this->assertFalse(variable_get('phpseclib_crypt_enabled'),'The variable phpseclib_crypt_enabled was deleted.');
+    $this->assertFalse(variable_get('phpseclib_biginteger_enabled'),'The variable phpseclib_biginteger_enabled was deleted.');
+  }
+}

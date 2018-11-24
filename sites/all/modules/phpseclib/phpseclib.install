@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Update functions for the Drupal phpseclib integration.
+ *
+ * @author Christian "corvus_ch" Häusler <christian.haeusler@md-systems.ch>
+ */
+
+/**
+ * Remove variable leftovers.
+ *
+ * Previous versions of phpseclib had made use of variables to only
+ * load the files needed. Switching to Libraries API this is no longer
+ * possible and this variables are no longer needed.
+ */
+function phpseclib_update_7000() {
+  variable_del('phpseclib_ssh2_enabled');
+  variable_del('phpseclib_ssh1_enabled');
+  variable_del('phpseclib_sftp_enabled');
+  variable_del('phpseclib_crypt_enabled');
+  variable_del('phpseclib_biginteger_enabled');
+}
