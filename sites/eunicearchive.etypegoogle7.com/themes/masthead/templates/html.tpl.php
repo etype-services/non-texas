@@ -1,4 +1,4 @@
-<?php 
+<?php
 $count = 1;
 if (isset($_COOKIE["eunice"])) {
     $count = (int)$_COOKIE["eunice"];
@@ -31,9 +31,9 @@ $ua = $_SERVER["HTTP_USER_AGENT"];
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-   <link href="/sites/eunicetoday.com/themes/masthead/templates/popupdata/styles.css" rel="stylesheet" type="text/css" />
+   <link href="/sites/eunicearchive.etypegoogle7.com/themes/masthead/templates/popupdata/styles.css" rel="stylesheet" type="text/css" />
 
-<script type="text/javascript" src="/sites/eunicetoday.com/themes/masthead/templates/popupdata/css-pop.js"></script>
+<script type="text/javascript" src="/sites/eunicearchive.etypegoogle7.com/themes/masthead/templates/popupdata/css-pop.js"></script>
 </head>
 
 <!-- -----Load Body Based on OS type Start-------->
@@ -56,10 +56,10 @@ else
 	
 	<div id="popUpDiv" style="display:none;text-align:center;top:25% !important;">
  <div style="text-align:right;width:100%;height:44%;">
- <a href="#" onclick="popup('popUpDiv')" style="margin-right: 3%;"><img src="/sites/eunicetoday.com/themes/masthead/templates/popupdata/close_icon.png" width="70" height="70" style="margin-top:1%;"></a></div>
+ <a href="#" onclick="popup('popUpDiv')" style="margin-right: 3%;"><img src="/sites/eunicearchive.etypegoogle7.com/themes/masthead/templates/popupdata/close_icon.png" width="70" height="70" style="margin-top:1%;"></a></div>
 		<?php if($android) { ?><a href="https://play.google.com/store/apps/details?id=com.etype.eunicenews.android.rssviewer&hl=en" >
-		<img src="/sites/eunicetoday.com/themes/masthead/templates/popupdata/EuniceAnd.jpg" style="width:100%;border:0px solid;" /> </a> <?php } if($iphone) { ?><a href="https://itunes.apple.com/us/app/the-eunice-news-rss/id912315311?mt=8" >
-	<img src="/sites/eunicetoday.com/themes/masthead/templates/popupdata/EuniceIOS.jpg" style="width:100%;border:0px solid;" /></a><?php } ?>
+		<img src="/sites/eunicearchive.etypegoogle7.com/themes/masthead/templates/popupdata/EuniceAnd.jpg" style="width:100%;border:0px solid;" /> </a> <?php } if($iphone) { ?><a href="https://itunes.apple.com/us/app/the-eunice-news-rss/id912315311?mt=8" >
+	<img src="/sites/eunicearchive.etypegoogle7.com/themes/masthead/templates/popupdata/EuniceIOS.jpg" style="width:100%;border:0px solid;" /></a><?php } ?>
 		
 	
 	</div>	
