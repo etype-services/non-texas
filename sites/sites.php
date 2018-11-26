@@ -278,15 +278,6 @@ $sites['www.richlandtoday.com'] = 'richlandtoday.etypegoogle8.com';
 /* baldwinbulletin.etypegoogle8.com */
 $sites['archive.bbnews.today'] = 'archive.baldwinbulletin.etypegoogle8.com';
 
-/* tangilena.etypegoogle8.com */
-$sites['tangilena.etypegoogle8.com'] = 'tangilena.etypegoogle8.com';
-$sites['tangilena.com'] = 'tangilena.etypegoogle8.com';
-$sites['www.tangilena.com'] = 'tangilena.etypegoogle8.com';
-$sites['amitetoday.com'] = 'tangilena.etypegoogle8.com';
-$sites['www.amitetoday.com'] = 'tangilena.etypegoogle8.com';
-$sites['kentwoodtoday.com'] = 'tangilena.etypegoogle8.com';
-$sites['www.kentwoodtoday.com'] = 'tangilena.etypegoogle8.com';
-
 /* sequoyahcountytimes.etypegoogle8.com */
 $sites['sequoyahcountytimes.etypegoogle8.com'] = 'sequoyahcountytimes.etypegoogle8.com';
 $sites['sequoyahcountytimes.com'] = 'sequoyahcountytimes.etypegoogle8.com';
