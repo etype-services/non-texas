@@ -1,0 +1,60 @@
+<?php
+/**
+ * @file
+ * Contains tests for Drupal phpseclib integration.
+ *
+ * @author Christian "corvus_ch" Häusler <christian.haeusler@md-systems.ch>
+ */
+
+class PhpseclibTest extends DrupalWebTestCase {
+
+
+  protected $profile = 'testing';
+
+  /**
+   * Implements getInfo().
+   */
+  static function getInfo() {
+    return array(
+      'name' => 'phpseclib tests',
+      'description' => 'Thests for the integration of phpseclib',
+      'group' => 'phpseclib',
+    );
+  }
+
+  /**
+   * Overrides DrupalWebTestCase::setUp()
+   */
+  function setUp() {
+    parent::setUp(array('phpseclib'));
+  }
+
+  function testLoadLibrary() {
+    $lib = libraries_load('phpseclib');
+
+    $this->assertEqual($lib['loaded'], 15, 'Expected 15 files to be loaded.');
+
+    $loaded_classes = get_declared_classes();
+    $classes = array(
+      'Math_BigInteger',
+      'Crypt_Hash',
+      'Crypt_Rijndael',
+      'Crypt_AES',
+      'Crypt_DES',
+      'Crypt_RC4',
+      'Crypt_RSA',
+      'Crypt_TripleDES',
+      'File_ANSI',
+      'File_ASN1_Element',
+      'File_ASN1',
+      'File_X509',
+      'Net_SSH1',
+      'Net_SSH2',
+      'Net_SFTP',
+    );
+
+    foreach ($classes as $clazz) {
+      $this->assertTrue(in_array($clazz, $loaded_classes), "Expect class $clazz to exist.");
+    }
+  }
+}
