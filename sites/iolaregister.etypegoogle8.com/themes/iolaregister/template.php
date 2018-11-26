@@ -6,7 +6,7 @@
  * Time: 1:00 PM
  */
 
-function cni_form_system_theme_settings_alter(&$form, $form_state) {
+function iolaregister_form_system_theme_settings_alter(&$form, $form_state) {
   $form['advanced_settings']['misc_settings']['mailchimp_locations'] = [
     '#type'          => 'textfield',
     '#title'         => t('Sections for Mailchimp Pop-up'),
