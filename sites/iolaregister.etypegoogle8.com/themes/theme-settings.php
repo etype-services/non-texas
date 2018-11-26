@@ -288,7 +288,7 @@ function iolaregister_form_system_theme_settings_alter(&$form, $form_state)
     $form['advanced_settings']['misc_settings']['mailchimp_locations'] = [
       '#type'          => 'textfield',
       '#title'         => t('Sections for Mailchimp Pop-up'),
-      '#default_value' => theme_get_setting('mailchimp_locations', 'iolaregister'),
+      '#default_value' => theme_get_setting('mailchimp_locations'),
       '#description'   => t("Add tids for desired sections."),
     ];
 
