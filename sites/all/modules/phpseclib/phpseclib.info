@@ -1,0 +1,15 @@
+name = phpseclib
+description = An Drupal integration for phpseclib.
+core = 7.x
+package = Security
+dependencies[] = libraries
+
+files[] = tests/phpseclib.test
+files[] = tests/update.test
+
+; Information added by drupal.org packaging script on 2013-10-01
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "phpseclib"
+datestamp = "1380623108"
+
