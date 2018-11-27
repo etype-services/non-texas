@@ -7,3 +7,7 @@ sites/*/private
 sites/*/tmp
 sites/*/archive
 .idea/
+
+#composer
+vendor
+

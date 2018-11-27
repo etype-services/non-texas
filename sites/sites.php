@@ -1,10 +1,6 @@
 <?php
 /* eunice today archive */
 $sites['archive.eunicetoday.com'] = 'eunicearchive.etypegoogle7.com';
-$sites['35.229.54.49'] = 'eunicearchive.etypegoogle7.com';
-
-/* acadia parish archive */
-$sites['archive.acadiaparishtoday.com'] = 'acadiaparisharchive.etypegoogle7.com';
 
 /* avoyellestoday.etypegoogle7.com */
 $sites['avoyellestoday.etypegoogle7.com'] = 'avoyellestoday.etypegoogle7.com';
