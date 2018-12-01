@@ -338,3 +338,7 @@ $sites['www.iolaregister.com'] = 'iolaregister.etypegoogle8.com';
 $sites['themillerpress.etypegoogle8.com'] = 'themillerpress.etypegoogle8.com';
 $sites['themillerpress.com'] = 'themillerpress.etypegoogle8.com';
 $sites['www.themillerpress.com'] = 'themillerpress.etypegoogle8.com';
+
+/* columbusnews-report.etypegoogle9.com */
+$sites['columbusnews-report.etypegoogle9.com'] = 'columbusnews-report.etypegoogle9.com';
+$sites['www.columbusnews-report.com'] = 'columbusnews-report.etypegoogle9.com';
