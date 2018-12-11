@@ -1,10 +1,6 @@
 <?php
 /* eunice today archive */
 $sites['archive.eunicetoday.com'] = 'eunicearchive.etypegoogle7.com';
-$sites['35.229.54.49'] = 'eunicearchive.etypegoogle7.com';
-
-/* acadia parish archive */
-$sites['archive.acadiaparishtoday.com'] = 'acadiaparisharchive.etypegoogle7.com';
 
 /* avoyellestoday.etypegoogle7.com */
 $sites['avoyellestoday.etypegoogle7.com'] = 'avoyellestoday.etypegoogle7.com';
@@ -43,6 +39,7 @@ $sites['www.theprairiepress.net'] = 'prairiepress.net';
 $sites['backroadsnews.etypegoogle8.com'] = 'backroadsnews.com';
 $sites['backroadsnews.com'] = 'backroadsnews.com';
 $sites['www.backroadsnews.com'] = 'backroadsnews.com';
+$sites['cni.local'] = 'backroadsnews.com';
 
 $sites['theclaycountynews.etypegoogle8.com'] = 'theclaycountynews.com';
 $sites['theclaycountynews.com'] = 'theclaycountynews.com';
@@ -342,3 +339,7 @@ $sites['www.iolaregister.com'] = 'iolaregister.etypegoogle8.com';
 $sites['themillerpress.etypegoogle8.com'] = 'themillerpress.etypegoogle8.com';
 $sites['themillerpress.com'] = 'themillerpress.etypegoogle8.com';
 $sites['www.themillerpress.com'] = 'themillerpress.etypegoogle8.com';
+
+/* columbusnews-report.etypegoogle9.com */
+$sites['columbusnews-report.etypegoogle9.com'] = 'columbusnews-report.etypegoogle9.com';
+$sites['www.columbusnews-report.com'] = 'columbusnews-report.etypegoogle9.com';
