@@ -343,3 +343,7 @@ $sites['www.themillerpress.com'] = 'themillerpress.etypegoogle8.com';
 /* columbusnews-report.etypegoogle9.com */
 $sites['columbusnews-report.etypegoogle9.com'] = 'columbusnews-report.etypegoogle9.com';
 $sites['www.columbusnews-report.com'] = 'columbusnews-report.etypegoogle9.com';
+
+/* dovecreekpress.etypegoogle7.com */
+$sites['dovecreekpress.etypegoogle9.com'] = 'dovecreekpress.etypegoogle9.com';
+$sites['www.dovecreekpress.com'] = 'dovecreekpress.etypegoogle9.com';
