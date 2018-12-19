@@ -28,7 +28,8 @@
 /* advanced poll */
 #block-advpoll-advpoll-recent {
   background-color: #EAEAE8; }
-  #block-advpoll-advpoll-recent block-inner {
-    background: none; }
+  #block-advpoll-advpoll-recent .block-inner {
+    background: none;
+    border: none; }
 
 /*# sourceMappingURL=iolaregister.css.map */
