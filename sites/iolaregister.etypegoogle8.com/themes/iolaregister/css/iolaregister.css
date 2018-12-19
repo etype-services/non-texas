@@ -26,9 +26,9 @@
   float: right; }
 
 /* advanced poll */
-#block-advpoll-advpoll-recent {
+#main-content #block-advpoll-advpoll-recent {
   background-color: #EAEAE8; }
-  #block-advpoll-advpoll-recent .block-inner {
+  #main-content #block-advpoll-advpoll-recent .block-inner {
     background: none;
     border: none; }
 
