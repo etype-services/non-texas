@@ -144,10 +144,10 @@ $sites['www.timberlakesouthdakota.com'] = 'timberlakesouthdakota.com';
 $sites['timberlaketopic.com'] = 'timberlakesouthdakota.com';
 $sites['www.timberlaketopic.com'] = 'timberlakesouthdakota.com';
 
-/* auroranewsregister.etypegoogle8.com
+/* auroranewsregister.etypegoogle8.com */
 $sites['auroranewsregister.etypegoogle8.com'] = 'auroranewsregister.com';
 $sites['auroranewsregister.com'] = 'auroranewsregister.com';
-$sites['www.auroranewsregister.com'] = 'auroranewsregister.com';*/
+$sites['www.auroranewsregister.com'] = 'auroranewsregister.com';
 
 /* hennesseyclipper.etypegoogle8.com */
 $sites['hennesseyclipper.etypegoogle8.com'] = 'hennesseyclipper.com';
@@ -513,9 +513,9 @@ $sites['belleplainenews.etypegoogle9.com'] = 'belleplainenews.etypegoogle9.com';
 $sites['belleplainenews.com'] = 'belleplainenews.etypegoogle9.com';
 $sites['www.belleplainenews.com'] = 'belleplainenews.etypegoogle9.com';
 
-$sites['auroranewsregister.etypegoogle9.com'] = 'auroranewsregister.etypegoogle9.com';
+/*$sites['auroranewsregister.etypegoogle9.com'] = 'auroranewsregister.etypegoogle9.com';
 $sites['auroranewsregister.com'] = 'auroranewsregister.etypegoogle9.com';
-$sites['www.auroranewsregister.com'] = 'auroranewsregister.etypegoogle9.com';
+$sites['www.auroranewsregister.com'] = 'auroranewsregister.etypegoogle9.com';*/
 
 $sites['stjamesparishtoday.etypegoogle9.com'] = 'stjamesparishtoday.etypegoogle9.com';
 $sites['stjamesparishtoday.com'] = 'stjamesparishtoday.etypegoogle9.com';
