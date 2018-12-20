@@ -1,1 +1,0 @@
-[31-Dec-2015 08:28:06 UTC] PHP Fatal error:  Call to undefined function theme_get_setting() in /data/etypeam4/public_html/acadia/sites/all/themes/masthead/template.php on line 3
