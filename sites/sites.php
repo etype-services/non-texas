@@ -513,9 +513,7 @@ $sites['belleplainenews.etypegoogle9.com'] = 'belleplainenews.etypegoogle9.com';
 $sites['belleplainenews.com'] = 'belleplainenews.etypegoogle9.com';
 $sites['www.belleplainenews.com'] = 'belleplainenews.etypegoogle9.com';
 
-/*$sites['auroranewsregister.etypegoogle9.com'] = 'auroranewsregister.etypegoogle9.com';
-$sites['auroranewsregister.com'] = 'auroranewsregister.etypegoogle9.com';
-$sites['www.auroranewsregister.com'] = 'auroranewsregister.etypegoogle9.com';*/
+$sites['auroranewsregister.etypegoogle7.com'] = 'auroranewsregister.etypegoogle9.com';
 
 $sites['stjamesparishtoday.etypegoogle9.com'] = 'stjamesparishtoday.etypegoogle9.com';
 $sites['stjamesparishtoday.com'] = 'stjamesparishtoday.etypegoogle9.com';
