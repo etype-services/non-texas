@@ -145,9 +145,8 @@ $sites['timberlaketopic.com'] = 'timberlakesouthdakota.com';
 $sites['www.timberlaketopic.com'] = 'timberlakesouthdakota.com';
 
 /* auroranewsregister.etypegoogle8.com */
-$sites['auroranewsregister.etypegoogle8.com'] = 'auroranewsregister.com';
-$sites['auroranewsregister.com'] = 'auroranewsregister.com';
-$sites['www.auroranewsregister.com'] = 'auroranewsregister.com';
+$sites['auroranewsregister.etypegoogle8.com'] = 'archive.auroranewsregister.com';
+$sites['www.auroranewsregister.com'] = 'archive.auroranewsregister.com';
 
 /* hennesseyclipper.etypegoogle8.com */
 $sites['hennesseyclipper.etypegoogle8.com'] = 'hennesseyclipper.com';
