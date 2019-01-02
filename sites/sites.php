@@ -511,6 +511,7 @@ $sites['auroranewsregister.etypegoogle7.com'] = 'auroranewsregister.etypegoogle9
 $sites['archive.stjamesparishtoday.com'] = 'archive.stjamesparishtoday.etypegoogle8.com';
 
 $sites['stjamesparishtoday.etypegoogle9.com'] = 'stjamesparishtoday.etypegoogle9.com';
+$sites['stjamesparishtoday.etypegoogle7.com'] = 'stjamesparishtoday.etypegoogle9.com';
 $sites['stjamesparishtoday.com'] = 'stjamesparishtoday.etypegoogle9.com';
 $sites['www.stjamesparishtoday.com'] = 'stjamesparishtoday.etypegoogle9.com';
 $sites['lutchernews.com'] = 'stjamesparishtoday.etypegoogle9.com';
