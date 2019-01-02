@@ -80,10 +80,6 @@ $sites['barbadosadvocate.etypegoogle8.com'] = 'barbadosadvocate.com';
 $sites['barbadosadvocate.com'] = 'barbadosadvocate.com';
 $sites['www.barbadosadvocate.com'] = 'barbadosadvocate.com';
 
-$sites['henryettafree-lance.etypegoogle8.com'] = 'archive.henryettafree-lance.etypegoogle8.com';
-$sites['www.henryettafree-lance.com'] = 'archive.henryettafree-lance.etypegoogle8.com';
-$sites['archive.henryettafree-lance.com'] = 'archive.henryettafree-lance.etypegoogle8.com';
-
 $sites['yourokmulgee.etypegoogle8.com'] = 'archive.yourokmulgee.etypegoogle8.com';
 $sites['yourokmulgee.com'] = 'archive.yourokmulgee.etypegoogle8.com';
 $sites['www.yourokmulgee.com'] = 'archive.yourokmulgee.etypegoogle8.com';
@@ -549,7 +545,8 @@ $sites['yourokmulgee.etypegoogle9.com'] = 'yourokmulgee.etypegoogle9.com';
 $sites['yourokmulgee.com'] = 'yourokmulgee.etypegoogle9.com';
 $sites['www.yourokmulgee.com'] = 'yourokmulgee.etypegoogle9.com';
 
-$sites['henryettafree-lance.etypegoogle9.com'] = 'henryettafree-lance.etypegoogle9.com';
+$sites['henryettafree-lance.etypegoogle8.com'] = 'archive.henryettafree-lance.etypegoogle9.com';
+$sites['archive.henryettafree-lance.com'] = 'archive.henryettafree-lance.etypegoogle8.com';
 $sites['henryettafree-lance.com'] = 'henryettafree-lance.etypegoogle9.com';
 $sites['www.henryettafree-lance.com'] = 'henryettafree-lance.etypegoogle9.com';
 
