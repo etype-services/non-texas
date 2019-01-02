@@ -85,9 +85,6 @@ $sites['yourokmulgee.com'] = 'archive.yourokmulgee.etypegoogle8.com';
 $sites['www.yourokmulgee.com'] = 'archive.yourokmulgee.etypegoogle8.com';
 $sites['archive.yourokmulgee.com'] = 'archive.yourokmulgee.etypegoogle8.com';
 
-/* archive.stjamesparishtoday.etypegoogle8.com */
-$sites['archive.stjamesparishtoday.com'] = 'archive.stjamesparishtoday.etypegoogle8.com';
-
 /* tecumsehchieftain.etypegoogle8.com */
 $sites['tecumsehchieftain.etypegoogle8.com'] = 'tecumsehchieftain.com';
 $sites['tecumsehchieftain.com'] = 'tecumsehchieftain.com';
@@ -509,6 +506,9 @@ $sites['belleplainenews.com'] = 'belleplainenews.etypegoogle9.com';
 $sites['www.belleplainenews.com'] = 'belleplainenews.etypegoogle9.com';
 
 $sites['auroranewsregister.etypegoogle7.com'] = 'auroranewsregister.etypegoogle9.com';
+
+/* archive.stjamesparishtoday.etypegoogle8.com */
+$sites['archive.stjamesparishtoday.com'] = 'archive.stjamesparishtoday.etypegoogle8.com';
 
 $sites['stjamesparishtoday.etypegoogle9.com'] = 'stjamesparishtoday.etypegoogle9.com';
 $sites['stjamesparishtoday.com'] = 'stjamesparishtoday.etypegoogle9.com';
