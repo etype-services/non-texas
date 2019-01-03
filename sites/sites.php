@@ -434,8 +434,8 @@ $sites['waunetanebraska.com'] = 'waunetabreeze.etypegoogle9.com';
 $sites['www.waunetanebraska.com'] = 'waunetabreeze.etypegoogle9.com';
 
 $sites['southarkansassun.etypegoogle9.com'] = 'southarkansassun.etypegoogle9.com';
-$sites['southarkansassun.com'] = 'southarkansassun.etypegoogle9.com';
-$sites['www.southarkansassun.com'] = 'southarkansassun.etypegoogle9.com';
+/*$sites['southarkansassun.com'] = 'southarkansassun.etypegoogle9.com';
+$sites['www.southarkansassun.com'] = 'southarkansassun.etypegoogle9.com';*/
 $sites['southarkansassun.net'] = 'southarkansassun.etypegoogle9.com';
 $sites['www.southarkansassun.net'] = 'southarkansassun.etypegoogle9.com';
 
