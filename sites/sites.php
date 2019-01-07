@@ -332,13 +332,8 @@ $sites['themillerpress.etypegoogle8.com'] = 'themillerpress.etypegoogle8.com';
 $sites['themillerpress.com'] = 'themillerpress.etypegoogle8.com';
 $sites['www.themillerpress.com'] = 'themillerpress.etypegoogle8.com';
 
-/* columbusnews-report.etypegoogle9.com */
-$sites['columbusnews-report.etypegoogle9.com'] = 'columbusnews-report.etypegoogle9.com';
-$sites['www.columbusnews-report.com'] = 'columbusnews-report.etypegoogle9.com';
-
 /* dovecreekpress.etypegoogle7.com */
-$sites['dovecreekpress.etypegoogle9.com'] = 'dovecreekpress.etypegoogle9.com';
-$sites['www.dovecreekpress.com'] = 'dovecreekpress.etypegoogle9.com';
+$sites['www.dovecreekpress.com'] = 'dovecreekpress.etypegoogle7.com';
 
 $sites['chamberlainsun.etypegoogle9.com'] = 'chamberlainsun.etypegoogle9.com';
 $sites['www.chamberlainsun.com'] = 'chamberlainsun.etypegoogle9.com';
@@ -362,9 +357,6 @@ $sites['www.deweycountyrecord.com'] = 'deweycountyrecord.etypegoogle9.com';
 $sites['okeenerecord.etypegoogle9.com'] = 'okeenerecord.etypegoogle9.com';
 $sites['okeenerecord.com'] = 'okeenerecord.etypegoogle9.com';
 $sites['www.okeenerecord.com'] = 'okeenerecord.etypegoogle9.com';
-
-$sites['columbusnews-report.etypegoogle9.com'] = 'columbusnews-report.etypegoogle9.com';
-$sites['www.columbusnews-report.com'] = 'archive.columbusnews-report.etypegoogle9.com';
 
 $sites['lincolnsentinel.etypegoogle9.com'] = 'lincolnsentinel.etypegoogle9.com';
 $sites['lincolnsentinel.com'] = 'lincolnsentinel.etypegoogle9.com';
@@ -442,10 +434,6 @@ $sites['www.southarkansassun.net'] = 'southarkansassun.etypegoogle9.com';
 $sites['humphreydemocrat.etypegoogle9.com'] = 'humphreydemocrat.etypegoogle9.com';
 $sites['humphreydemocrat.com'] = 'humphreydemocrat.etypegoogle9.com';
 $sites['www.humphreydemocrat.com'] = 'humphreydemocrat.etypegoogle9.com';
-
-$sites['rileycountian.etypegoogle9.com'] = 'rileycountian.etypegoogle9.com';
-$sites['rileycountian.com'] = 'rileycountian.etypegoogle9.com';
-$sites['www.rileycountian.com'] = 'rileycountian.etypegoogle9.com';
 
 $sites['councilgroverepublican.etypegoogle9.com'] = 'councilgroverepublican.etypegoogle9.com';
 $sites['councilgroverepublican.com'] = 'councilgroverepublican.etypegoogle9.com';
