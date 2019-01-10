@@ -1,5 +1,5 @@
-name = EType CNI
-description = EType CNI theme.
+name = Valley News and Views
+description = EType CNI theme for Valley News and Views.
 core = 7.x
 engine = phptemplate
 screenshot = screenshot.png
