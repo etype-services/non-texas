@@ -271,11 +271,8 @@ $sites['mysullivannews.online'] = 'mysullivannews.etypegoogle8.com';
 $sites['www.mysullivannews.online'] = 'mysullivannews.etypegoogle8.com';
 
 /* newhavenindependentnews.etypegoogle8.com */
-$sites['newhavenindependentnews.etypegoogle8.com'] = 'newhavenindependentnews.etypegoogle8.com';
 $sites['mynewhavennews.net'] = 'newhavenindependentnews.etypegoogle8.com';
 $sites['www.mynewhavennews.net'] = 'newhavenindependentnews.etypegoogle8.com';
-$sites['mynewhavennews.online'] = 'newhavenindependentnews.etypegoogle8.com';
-$sites['www.mynewhavennews.online'] = 'newhavenindependentnews.etypegoogle8.com';
 
 /* scottcountyrecord.etypegoogle8.com */
 $sites['scottcountyrecord.etypegoogle8.com'] = 'scottcountyrecord.etypegoogle8.com';
