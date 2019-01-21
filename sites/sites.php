@@ -225,12 +225,8 @@ $sites['villeplattetoday.com'] = 'evangelinetoday.etypegoogle8.com';
 $sites['www.villeplattetoday.com'] = 'evangelinetoday.etypegoogle8.com';
 
 /* stmarynow.etypegoogle8.com */
-$sites['stmarynow.etypegoogle8.com'] = 'stmarynow.etypegoogle8.com';
-$sites['stmarynow.com'] = 'stmarynow.etypegoogle8.com';
 $sites['www.stmarynow.com'] = 'stmarynow.etypegoogle8.com';
-$sites['banner-tribune.com'] = 'stmarynow.etypegoogle8.com';
 $sites['www.banner-tribune.com'] = 'stmarynow.etypegoogle8.com';
-$sites['daily-review.com'] = 'stmarynow.etypegoogle8.com';
 $sites['www.daily-review.com'] = 'stmarynow.etypegoogle8.com';
 
 /* vermiliontoday.etypegoogle8.com */
@@ -423,8 +419,6 @@ $sites['waunetanebraska.com'] = 'waunetabreeze.etypegoogle9.com';
 $sites['www.waunetanebraska.com'] = 'waunetabreeze.etypegoogle9.com';
 
 $sites['southarkansassun.etypegoogle9.com'] = 'southarkansassun.etypegoogle9.com';
-/*$sites['southarkansassun.com'] = 'southarkansassun.etypegoogle9.com';
-$sites['www.southarkansassun.com'] = 'southarkansassun.etypegoogle9.com';*/
 $sites['southarkansassun.net'] = 'southarklocalansassun.etypegoogle9.com';
 $sites['www.southarkansassun.net'] = 'southarkansassun.etypegoogle9.com';
 
