@@ -247,8 +247,8 @@ $sites['www.eunicetoday.com'] = 'eunicetoday.etypegoogle8.com';
 
 /* avoyellestoday.etypegoogle8.com */
 $sites['avoyellestoday.etypegoogle8.com'] = 'avoyellestoday.etypegoogle8.com';
-$sites['avoyellestoday.com'] = 'avoyellestoday.etypegoogle8.com';
 $sites['www.avoyellestoday.com'] = 'avoyellestoday.etypegoogle8.com';
+$sites['www.bunkietoday.com'] = 'avoyellestoday.etypegoogle8.com';
 
 /* comancheok.etypegoogle8.com */
 $sites['comancheok.etypegoogle8.com'] = 'comancheok.etypegoogle8.com';
