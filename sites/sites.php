@@ -1,4 +1,7 @@
 <?php
+/* test.etypegoogle7.com */
+$sites['test.eunicetoday.com'] = 'test.etypegoogle7.com';
+
 /* eunice today archive */
 $sites['archive.eunicetoday.com'] = 'eunicearchive.etypegoogle7.com';
 
