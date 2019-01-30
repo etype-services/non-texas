@@ -167,9 +167,9 @@ $sites['nelivingtimes.com'] = 'nebraskalivingtimes.com';
 $sites['www.nelivingtimes.com'] = 'nebraskalivingtimes.com';
 
 /* clintondailynews.etypegoogle8.com */
-$sites['clintondailynews.etypegoogle8.com'] = 'clintondailynews.com';
-$sites['clintondailynews.com'] = 'clintondailynews.com';
-$sites['www.clintondailynews.com'] = 'clintondailynews.com';
+$sites['clintondailynews.etypegoogle8.com'] = 'archive.clintondailynews.com';
+$sites['www.clintondailynews.com'] = 'archive.clintondailynews.com';
+$sites['archive.clintondailynews.com'] = 'archive.clintondailynews.com';
 
 /* thejenatimes.etypegoogle8.com */
 $sites['thejenatimes.etypegoogle8.com'] = 'thejenatimes.net';
