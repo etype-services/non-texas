@@ -1,3 +1,0 @@
-<?php                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-require_once('sites/clintondailynews.com/inc/login.inc');
-?>
