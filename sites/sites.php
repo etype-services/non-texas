@@ -54,6 +54,7 @@ $sites['archive.gunnisontimes.com'] = 'archive.gunnisontimes.etypegoogle8.com';
 
 /* ouraynews.etypegoogle8.com */
 $sites['ouraynews.etypegoogle8.com'] = 'ouraynews.com';
+$sites['ouraynews.etypegoogle7.com'] = 'ouraynews.com';
 $sites['ouraynews.com'] = 'ouraynews.com';
 $sites['www.ouraynews.com'] = 'ouraynews.com';
 
@@ -555,3 +556,9 @@ $sites['www.newcastlepacer.com'] = 'newcastlepacer.etypegoogle9.com';
 
 /* heringtontimes.etypegoogle9.com */
 $sites['www.heringtontimes.com'] = 'heringtontimes.etypegoogle9.com';
+
+/* anjournal.etypegoogle7.com  */
+$sites['www.anjournal.com'] = 'anjournal.etypegoogle7.com';
+
+/* bayoujournal.etypegoogle7.com  */
+$sites['www.bayoujournal.com'] = 'bayoujournal.etypegoogle7.com';
