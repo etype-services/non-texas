@@ -9,34 +9,34 @@
     visibility: hidden; }
 
   /* desktop ad blocks */
-  #block-simpleads-ad_groups_415,
-  #block-simpleads-ad_groups_416,
-  #block-simpleads-ad_groups_417,
-  #block-simpleads-ad_groups_437 {
+  #block-simpleads-ad-groups-415,
+  #block-simpleads-ad-groups-416,
+  #block-simpleads-ad-groups-417,
+  #block-simpleads-ad-groups-437 {
     display: none;
     visibility: hidden; }
 
   /* mobile ad blocks */
-  #block-simpleads-ad_groups_5623,
-  #block-simpleads-ad_groups_5624,
-  #block-simpleads-ad_groups_5625,
-  #block-simpleads-ad_groups_5626 {
+  #block-simpleads-ad-groups-5623,
+  #block-simpleads-ad-groups-5624,
+  #block-simpleads-ad-groups-5625,
+  #block-simpleads-ad-groups-5626 {
     display: block;
     visibility: visible; } }
 @media only screen and (min-width: 768px) {
   /* desktop ad blocks */
-  #block-simpleads-ad_groups_415,
-  #block-simpleads-ad_groups_416,
-  #block-simpleads-ad_groups_417,
-  #block-simpleads-ad_groups_437 {
+  #block-simpleads-ad-groups-415,
+  #block-simpleads-ad-groups-416,
+  #block-simpleads-ad-groups-417,
+  #block-simpleads-ad-groups-437 {
     display: block;
     visibility: visible; }
 
   /* mobile ad blocks */
-  #block-simpleads-ad_groups_5623,
-  #block-simpleads-ad_groups_5624,
-  #block-simpleads-ad_groups_5625,
-  #block-simpleads-ad_groups_5626 {
+  #block-simpleads-ad-groups-5623,
+  #block-simpleads-ad-groups-5624,
+  #block-simpleads-ad-groups-5625,
+  #block-simpleads-ad-groups-5626 {
     display: none;
     visibility: hidden; } }
 /* customer requests to change bg color and increase font sizes */
