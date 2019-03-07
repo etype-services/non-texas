@@ -3,9 +3,50 @@
   visibility: hidden;
 }
 
-/* mobile-menu options */
 @media only screen and (max-width: 767px) {
+
+  /* mobile-menu options */
   #menu-2301-1, #menu-3392-1, #menu-3393-1, #menu-3394-1, #menu-3401-1, #menu-2301-1 #menu-3580-1, #menu-3581-1, #menu-3582-1, #menu-3387-1, #menu-699-1, #menu-2424-1, #menu-3400-1, #menu-2298-1, #menu-3400-1, #menu-3388-1 {
+    display: none;
+    visibility: hidden;
+  }
+
+  /* desktop ad blocks */
+  #block-simpleads-ad_groups_415,
+  #block-simpleads-ad_groups_416,
+  #block-simpleads-ad_groups_417,
+  #block-simpleads-ad_groups_437 {
+    display: none;
+    visibility: hidden;
+  }
+
+  /* mobile ad blocks */
+  #block-simpleads-ad_groups_5623,
+  #block-simpleads-ad_groups_5624,
+  #block-simpleads-ad_groups_5625,
+  #block-simpleads-ad_groups_5626 {
+    display: block;
+    visibility: visible;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* desktop ad blocks */
+  #block-simpleads-ad_groups_415,
+  #block-simpleads-ad_groups_416,
+  #block-simpleads-ad_groups_417,
+  #block-simpleads-ad_groups_437 {
+    display: block;
+    visibility: visible;
+  }
+
+  /* mobile ad blocks */
+  #block-simpleads-ad_groups_5623,
+  #block-simpleads-ad_groups_5624,
+  #block-simpleads-ad_groups_5625,
+  #block-simpleads-ad_groups_5626 {
     display: none;
     visibility: hidden;
   }
