@@ -24,9 +24,25 @@
     justify-content: center;
 }
 
+/* Move body text to top of page. */
+body.node-type-article .node-article .field-name-body {
+    padding-top: 0;
+}
+body.node-type-article .node-article .field-name-field-image img {
+    width: fit-content;
+}
+.page-node .node-article .content .field-type-image blockquote.image-field-caption {
+    max-width: 100%;
+}
 @media only screen and (min-width: 767px) {
     /* Move body text to top of page. */
     body.node-type-article .node-article .field-name-body {
         padding-top: 0;
+    }
+    body.node-type-article .node-article .field-name-field-image img {
+        width: fit-content;
+    }
+    .page-node .node-article .content .field-type-image blockquote.image-field-caption {
+        max-width: 100%;
     }
 }
