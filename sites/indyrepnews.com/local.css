@@ -24,12 +24,17 @@
     justify-content: center;
 }
 
+.body.node-type-article .node .content {
+    display: grid;
+}
 /* Move body text to top of page. */
 body.node-type-article .node-article .field-name-body {
     padding-top: 0;
 }
 body.node-type-article .node-article .field-name-field-image img {
     width: fit-content;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 .page-node .node-article .content .field-type-image blockquote.image-field-caption {
     max-width: 100%;
@@ -41,6 +46,8 @@ body.node-type-article .node-article .field-name-field-image img {
     }
     body.node-type-article .node-article .field-name-field-image img {
         width: fit-content;
+        margin-right: 0;
+        margin-bottom: 0;
     }
     .page-node .node-article .content .field-type-image blockquote.image-field-caption {
         max-width: 100%;
