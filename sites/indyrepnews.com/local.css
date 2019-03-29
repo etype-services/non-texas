@@ -19,6 +19,14 @@
     text-decoration: none;
 }
 
+/* Center header ad banner. */
 #header .region-header {
     justify-content: center;
+}
+
+@media only screen and (min-width: 767px) {
+    /* Move body text to top of page. */
+    body.node-type-article .node-article .field-name-body {
+        padding-top: 0;
+    }
 }
