@@ -24,7 +24,7 @@
     justify-content: center;
 }
 
-.body.node-type-article .node .content {
+.body.node-type-article #block-system-main .content {
     display: grid;
 }
 /* Move body text to top of page. */
