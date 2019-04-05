@@ -102,9 +102,9 @@ $sites['www.pawneerepublican.com'] = 'pawneerepublican.com';
 $sites['pawneenews.com'] = 'pawneerepublican.com';
 $sites['www.pawneenews.com'] = 'pawneerepublican.com';
 
-$sites['indyrepnews.etypegoogle8.com'] = 'indyrepnews.com';
-$sites['indyrepnews.com'] = 'indyrepnews.com';
-$sites['www.indyrepnews.com'] = 'indyrepnews.com';
+$sites['indyrepnews.etypegoogle8.com'] = 'archive.indyrepnews.com';
+$sites['indyrepnews.com'] = 'archive.indyrepnews.com';
+$sites['www.indyrepnews.com'] = 'archive.indyrepnews.com';
 
 $sites['archive.msgr.com'] = 'archive.msgr.etypegoogle8.com';
 
