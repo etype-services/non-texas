@@ -353,11 +353,10 @@ $sites['okeenerecord.etypegoogle9.com'] = 'okeenerecord.etypegoogle9.com';
 $sites['okeenerecord.com'] = 'okeenerecord.etypegoogle9.com';
 $sites['www.okeenerecord.com'] = 'okeenerecord.etypegoogle9.com';
 
-$sites['lincolnsentinel.etypegoogle9.com'] = 'lincolnsentinel.etypegoogle9.com';
-$sites['lincolnsentinel.com'] = 'lincolnsentinel.etypegoogle9.com';
+$sites['lincolnsentinel.etypegoogle7.com'] = 'lincolnsentinel.etypegoogle9.com';
 $sites['www.lincolnsentinel.com'] = 'lincolnsentinel.etypegoogle9.com';
 
-$sites['dickinsonnewstimes.etypegoogle9.com'] = 'dickinsonnewstimes.etypegoogle9.com';
+$sites['dickinsonnewstimes.etypegoogle7.com'] = 'dickinsonnewstimes.etypegoogle9.com';
 $sites['www.dickinsonnewstimes.com'] = 'dickinsonnewstimes.etypegoogle9.com';
 
 $sites['anewspaper.etypegoogle9.com'] = 'anewspaper.etypegoogle9.com';
@@ -424,8 +423,7 @@ $sites['southarkansassun.etypegoogle9.com'] = 'southarkansassun.etypegoogle9.com
 $sites['southarkansassun.net'] = 'southarklocalansassun.etypegoogle9.com';
 $sites['www.southarkansassun.net'] = 'southarkansassun.etypegoogle9.com';
 
-$sites['humphreydemocrat.etypegoogle9.com'] = 'humphreydemocrat.etypegoogle9.com';
-$sites['humphreydemocrat.com'] = 'humphreydemocrat.etypegoogle9.com';
+$sites['humphreydemocrat.etypegoogle7.com'] = 'humphreydemocrat.etypegoogle9.com';
 $sites['www.humphreydemocrat.com'] = 'humphreydemocrat.etypegoogle9.com';
 
 $sites['councilgroverepublican.etypegoogle9.com'] = 'councilgroverepublican.etypegoogle9.com';
@@ -464,8 +462,7 @@ $sites['yourxgroup.etypegoogle9.com'] = 'yourxgroup.etypegoogle9.com';
 $sites['yourxgroup.com'] = 'yourxgroup.etypegoogle9.com';
 $sites['www.yourxgroup.com'] = 'yourxgroup.etypegoogle9.com';
 
-$sites['oologahonline.etypegoogle9.com'] = 'oologahonline.etypegoogle9.com';
-$sites['oologahonline.com'] = 'oologahonline.etypegoogle9.com';
+$sites['oologahonline.etypegoogle7.com'] = 'oologahonline.etypegoogle9.com';
 $sites['www.oologahonline.com'] = 'oologahonline.etypegoogle9.com';
 
 $sites['wilmingtonmatters.etypegoogle9.com'] = 'wilmingtonmatters.etypegoogle9.com';
