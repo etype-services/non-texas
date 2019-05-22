@@ -15,18 +15,16 @@ body {
 .preface-wrapper .block h3.title, .preface-wrapper .block h3.title a {
   color: #c00;
 }
-/* own local */
+/* own local, video feed */
 #block-block-36 .block-inner,
 #block-block-35 .block-inner,
 #block-block-39 .block-inner {
   padding: 0;
   border: none;
 }
-
 #block-block-39 .block-inner {
   margin-bottom: 0;
 }
-
 @media only screen and (min-width: 959px) {
   .postscript-wrapper {
     margin-right: 0;
