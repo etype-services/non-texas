@@ -17,7 +17,8 @@ body {
 }
 /* own local */
 #block-block-36 .block-inner,
-#block-block-35 .block-inner {
+#block-block-35 .block-inner,
+#block-block-39 .block-inner {
   padding: 0;
   border: none;
 }
