@@ -494,10 +494,6 @@ $sites['www.stjamesparishtoday.com'] = 'stjamesparishtoday.etypegoogle9.com';
 $sites['lutchernews.com'] = 'stjamesparishtoday.etypegoogle9.com';
 $sites['www.lutchernews.com'] = 'stjamesparishtoday.etypegoogle9.com';
 
-$sites['seoksports.etypegoogle9.com'] = 'seoksports.etypegoogle9.com';
-$sites['seoksports.com'] = 'seoksports.etypegoogle9.com';
-$sites['www.seoksports.com'] = 'seoksports.etypegoogle9.com';
-
 $sites['drippingspringsnews.etypegoogle9.com'] = 'drippingspringsnews.etypegoogle9.com';
 $sites['drippingspringsnews.com'] = 'drippingspringsnews.etypegoogle9.com';
 $sites['www.drippingspringsnews.com'] = 'drippingspringsnews.etypegoogle9.com';
