@@ -1,6 +1,7 @@
 <?php
 /* test.etypegoogle7.com */
 $sites['test.eunicetoday.com'] = 'test.etypegoogle7.com';
+$sites['www.etypetest.com'] = 'test.etypegoogle7.com';
 
 /* eunice today archive */
 $sites['archive.eunicetoday.com'] = 'eunicearchive.etypegoogle7.com';
@@ -103,8 +104,6 @@ $sites['pawneenews.com'] = 'pawneerepublican.com';
 $sites['www.pawneenews.com'] = 'pawneerepublican.com';
 
 $sites['indyrepnews.etypegoogle8.com'] = 'archive.indyrepnews.com';
-$sites['indyrepnews.com'] = 'archive.indyrepnews.com';
-$sites['www.indyrepnews.com'] = 'archive.indyrepnews.com';
 
 $sites['archive.msgr.com'] = 'archive.msgr.etypegoogle8.com';
 
@@ -496,10 +495,6 @@ $sites['www.stjamesparishtoday.com'] = 'stjamesparishtoday.etypegoogle9.com';
 $sites['lutchernews.com'] = 'stjamesparishtoday.etypegoogle9.com';
 $sites['www.lutchernews.com'] = 'stjamesparishtoday.etypegoogle9.com';
 
-$sites['seoksports.etypegoogle9.com'] = 'seoksports.etypegoogle9.com';
-$sites['seoksports.com'] = 'seoksports.etypegoogle9.com';
-$sites['www.seoksports.com'] = 'seoksports.etypegoogle9.com';
-
 $sites['drippingspringsnews.etypegoogle9.com'] = 'drippingspringsnews.etypegoogle9.com';
 $sites['drippingspringsnews.com'] = 'drippingspringsnews.etypegoogle9.com';
 $sites['www.drippingspringsnews.com'] = 'drippingspringsnews.etypegoogle9.com';
@@ -562,3 +557,7 @@ $sites['www.bayoujournal.com'] = 'bayoujournal.etypegoogle7.com';
 
 /* theinquisitor.etypegoogle7.com  */
 $sites['www.theinquisitor.com'] = 'theinquisitor.etypegoogle7.com';
+ 
+ 
+/* giddingscni.etypegoogle7.com  */
+$sites['www.giddingscni.com'] = 'giddingscni.etypegoogle7.com';
