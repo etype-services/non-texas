@@ -556,3 +556,7 @@ $sites['www.bayoujournal.com'] = 'bayoujournal.etypegoogle7.com';
 
 /* theinquisitor.etypegoogle7.com  */
 $sites['www.theinquisitor.com'] = 'theinquisitor.etypegoogle7.com';
+ 
+ 
+/* giddingscni.etypegoogle7.com  */
+$sites['www.giddingscni.com'] = 'giddingscni.etypegoogle7.com';
