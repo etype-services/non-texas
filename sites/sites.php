@@ -397,8 +397,6 @@ $sites['gspublishing.etypegoogle9.com'] = 'gspublishing.etypegoogle9.com';
 $sites['gspublishing.net'] = 'gspublishing.etypegoogle9.com';
 $sites['www.gspublishing.net'] = 'gspublishing.etypegoogle9.com';
 
-$sites['sulphurtimes.etypegoogle9.com'] = 'sulphurtimes.etypegoogle9.com';
-$sites['sulphurtimes.com'] = 'sulphurtimes.etypegoogle9.com';
 $sites['www.sulphurtimes.com'] = 'sulphurtimes.etypegoogle9.com';
 
 $sites['imperialrepublican.etypegoogle9.com'] = 'imperialrepublican.etypegoogle9.com';
