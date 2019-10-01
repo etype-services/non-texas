@@ -44,6 +44,7 @@ $sites['backroadsnews.etypegoogle8.com'] = 'backroadsnews.com';
 $sites['backroadsnews.com'] = 'backroadsnews.com';
 $sites['www.backroadsnews.com'] = 'backroadsnews.com';
 $sites['cni.local'] = 'backroadsnews.com';
+$sites['local.drupal7.com'] = 'backroadsnews.com';
 
 $sites['theclaycountynews.etypegoogle8.com'] = 'theclaycountynews.com';
 $sites['theclaycountynews.com'] = 'theclaycountynews.com';
