@@ -1,6 +1,6 @@
 <?php
 /* test.etypegoogle7.com */
-$sites['d7.etypetest.com'] = 'yourokmulgee.etypegoogle9.com';
+$sites['d7.etypetest.com'] = 'acadiaparishtoday.etypegoogle9.com';
 $sites['cni.local'] = 'backroadsnews.com';
 $sites['local.drupal7.com'] = 'backroadsnews.com';
 
