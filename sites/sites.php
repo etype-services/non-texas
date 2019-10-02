@@ -1,7 +1,8 @@
 <?php
 /* test.etypegoogle7.com */
-$sites['test.eunicetoday.com'] = 'test.etypegoogle7.com';
-$sites['www.etypetest.com'] = 'test.etypegoogle7.com';
+$sites['d7.etypetest.com'] = 'acadiaparishtoday.etypegoogle8.com';
+$sites['cni.local'] = 'backroadsnews.com';
+$sites['local.drupal7.com'] = 'backroadsnews.com';
 
 /* eunice today archive */
 $sites['archive.eunicetoday.com'] = 'eunicearchive.etypegoogle7.com';
@@ -43,8 +44,6 @@ $sites['www.theprairiepress.net'] = 'prairiepress.net';
 $sites['backroadsnews.etypegoogle8.com'] = 'backroadsnews.com';
 $sites['backroadsnews.com'] = 'backroadsnews.com';
 $sites['www.backroadsnews.com'] = 'backroadsnews.com';
-$sites['cni.local'] = 'backroadsnews.com';
-$sites['local.drupal7.com'] = 'backroadsnews.com';
 
 $sites['theclaycountynews.etypegoogle8.com'] = 'theclaycountynews.com';
 $sites['theclaycountynews.com'] = 'theclaycountynews.com';
