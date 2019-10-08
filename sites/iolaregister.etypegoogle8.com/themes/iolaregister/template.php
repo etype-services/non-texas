@@ -16,9 +16,7 @@ function iolaregister_preprocess_html(&$variables) {
         foreach ($val as $item) {
           if (strpos($matches,$item->tid) !== false) {
             $variables['mailchimp_js'] = <<<EOT
- 
-<script>(function(t,e,s,o){var n,a,c;t.SMCX=t.SMCX||[],e.getElementById(o)||(n=e.getElementsByTagName(s),a=n[n.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=o,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd9CtyzhFcbPoDustZqz0RO8AukBdBd8Hq1042gLoX6Zf.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script>
-
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"1b2c72e5a787c1eeb66fea624","lid":"e393fc4d97","uniqueMethods":true}) })</script>
 EOT;
             break;
           }
