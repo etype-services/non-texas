@@ -107,10 +107,6 @@ $sites['indyrepnews.etypegoogle8.com'] = 'archive.indyrepnews.com';
 
 $sites['archive.msgr.com'] = 'archive.msgr.etypegoogle8.com';
 
-$sites['myironcountynews.etypegoogle8.com'] = 'myironcountynews.com';
-$sites['myironcountynews.com'] = 'myironcountynews.com';
-$sites['www.myironcountynews.com'] = 'myironcountynews.com';
-
 /* westessextribune.etypegoogle8.com */
 $sites['westessextribune.etypegoogle8.com'] = 'westessextribune.net';
 $sites['westessextribune.net'] = 'westessextribune.net';
