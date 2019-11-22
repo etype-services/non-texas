@@ -14,7 +14,7 @@
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <?php print $head_script; ?>
-  <?php if (isset($mailchimp_js)) print $mailchimp_js; ?>
+  <?php // if (isset($mailchimp_js)) print $mailchimp_js; ?>
 </head>
 <body class="<?php print $classes; ?>"<?php print $attributes; ?>>
 <div id="fb-root"></div>

@@ -28,4 +28,4 @@ regions[postscript_banner] = Postscript Banner
 regions[footer] = Footer
 regions[bottom_frame] = Bottom Frame
 
-settings[mailchimp_sections] = '468 208 463';
+#settings[mailchimp_sections] = '468 208 463';
