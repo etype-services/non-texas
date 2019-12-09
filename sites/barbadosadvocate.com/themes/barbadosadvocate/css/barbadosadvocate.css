@@ -7,6 +7,14 @@ body {
     border: none;
 }
 
+.main-menu-wrapper {
+    background-color: #ff0000;
+}
+
 #main-menu ul.menu li a {
     color: #ffff00;
+}
+
+.main-menu-second-level-wrapper {
+    background-color: #ffffff;
 }

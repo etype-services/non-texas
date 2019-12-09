@@ -54,7 +54,7 @@
 <?php endif; ?>
 
 <?php if ($page['main_menu_second_level']): ?>
-    <div class="main-menu-second-level-wrapper clearfix">
+    <div class="main-menu-second-level-wrapper clearfix <?php echo $grid_size ?>">
         <div class="main-menu-second-level-wrapper-inner">
             <nav id="main-menu-second-level">
                 <?php print render($page['main_menu_second_level']); ?>
