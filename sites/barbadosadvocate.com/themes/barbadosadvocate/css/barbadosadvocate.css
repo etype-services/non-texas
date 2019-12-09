@@ -18,3 +18,9 @@ body {
 .main-menu-second-level-wrapper {
     background-color: #ffffff;
 }
+
+@media only screen and (max-width: 767px) {
+    .header-wrapper-inner {
+        padding-bottom: 0;
+    }
+}
