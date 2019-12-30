@@ -979,8 +979,7 @@ ul.quicktabs-tabs.quicktabs-style-nostyle li.active a {
 }
 
 /* ads */
-#block-block-24 .block-inner {
-    padding: 0;
+.sidebar_ad {
     border: none;
     box-shadow: none;
 }

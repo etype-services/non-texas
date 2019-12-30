@@ -986,3 +986,9 @@ ul.quicktabs-tabs.quicktabs-style-nostyle li.active a {
     background: #ffffff;
     box-shadow: none;
 }
+
+/* ads */
+.sidebar_ad {
+    border: none;
+    box-shadow: none;
+}
