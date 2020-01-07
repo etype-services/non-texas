@@ -1,8 +1,20 @@
 /* style for SDNA network ad */
 #block-block-37 {
 	margin: 1.6em auto 0;
-    width: 728px;
-	}
+  width: 728px;
+}
+
+/* sidebar ads */
+#ad_groups_422 {
+  display: block;
+}
+
+#main-content #block-block-38 .block-inner {
+  padding: 0;
+  border: none;
+  border-bottom: none;
+}
+
 /* smaller browsers, tablets, phones */
 @media only screen and (max-width: 767px) and (min-width: 280px) {
 
