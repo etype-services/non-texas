@@ -550,3 +550,4 @@ $sites['www.theinquisitor.com'] = 'theinquisitor.etypegoogle7.com';
 
 /* giddingstimes.etypegoogle7.com  */
 $sites['www.giddingstimes.com'] = 'giddingstimes.etypegoogle7.com';
+$sites['www.beachesleader.com'] = 'beachesleader.etypegoogle7.com';
