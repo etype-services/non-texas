@@ -361,9 +361,8 @@ $sites['nemahacountyherald.com'] = 'anewspaper.etypegoogle9.com';
 $sites['www.nemahacountyherald.com'] = 'anewspaper.etypegoogle9.com';
 
 $sites['www.claycountycourier.com'] = 'claycountycourier.com';
+$sites['www.claycountyliving.com'] = 'claycountycourier.com';
 
-$sites['thehonker.etypegoogle9.com'] = 'thehonker.etypegoogle9.com';
-$sites['thehonker.com'] = 'thehonker.etypegoogle9.com';
 $sites['www.thehonker.com'] = 'thehonker.etypegoogle9.com';
 
 $sites['bannerpresspaper.etypegoogle9.com'] = 'bannerpresspaper.etypegoogle9.com';
