@@ -360,13 +360,9 @@ $sites['www.anewspaper.net'] = 'anewspaper.etypegoogle9.com';
 $sites['nemahacountyherald.com'] = 'anewspaper.etypegoogle9.com';
 $sites['www.nemahacountyherald.com'] = 'anewspaper.etypegoogle9.com';
 
-$sites['claycountyliving.etypegoogle9.com'] = 'claycountyliving.etypegoogle9.com';
-$sites['claycountyliving.com'] = 'claycountyliving.etypegoogle9.com';
-$sites['www.claycountyliving.com'] = 'claycountyliving.etypegoogle9.com';
-$sites['www.claycountycourier.com'] = 'claycountyliving.etypegoogle9.com';
+$sites['www.claycountycourier.com'] = 'claycountycourier.com';
+$sites['www.claycountyliving.com'] = 'claycountycourier.com';
 
-$sites['thehonker.etypegoogle9.com'] = 'thehonker.etypegoogle9.com';
-$sites['thehonker.com'] = 'thehonker.etypegoogle9.com';
 $sites['www.thehonker.com'] = 'thehonker.etypegoogle9.com';
 
 $sites['bannerpresspaper.etypegoogle9.com'] = 'bannerpresspaper.etypegoogle9.com';
@@ -547,6 +543,4 @@ $sites['www.bayoujournal.com'] = 'bayoujournal.etypegoogle7.com';
 
 /* theinquisitor.etypegoogle7.com  */
 $sites['www.theinquisitor.com'] = 'theinquisitor.etypegoogle7.com';
-
-/* giddingstimes.etypegoogle7.com  */
-$sites['www.giddingstimes.com'] = 'giddingstimes.etypegoogle7.com';
+$sites['www.beachesleader.com'] = 'beachesleader.etypegoogle7.com';
