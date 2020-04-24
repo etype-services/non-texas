@@ -104,7 +104,7 @@ $sites['www.pawneenews.com'] = 'pawneerepublican.com';
 
 $sites['indyrepnews.etypegoogle8.com'] = 'archive.indyrepnews.com';
 
-$sites['archive.msgr.com'] = 'archive.msgr.etypegoogle8.com';
+$sites['archive.msgrnews.com'] = 'archive.msgr.etypegoogle8.com';
 
 /* westessextribune.etypegoogle8.com */
 $sites['westessextribune.etypegoogle8.com'] = 'westessextribune.net';

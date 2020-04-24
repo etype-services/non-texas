@@ -1,9 +1,22 @@
 <?php
+
 /**
- * Implementation of hook_audiofield_players().
+ * @file
+ * Declares the available audio players for the Audio Field module.
+ */
+
+/**
+ * Implements hook_audiofield_players().
  */
 function audiofield_players() {
   $players = module_invoke_all('audiofield_players');
+
+  $players['html5'] = array(
+    'name' => 'HTML5 <audio>',
+    'filetypes' => array('mp3', 'wav', 'ogg', 'opus', 'webm', 'flac'),
+    'local' => TRUE,
+    'callback' => 'audiofield_html5_audio',
+  );
 
   $players['wpaudioplayer'] = array(
     'path' => variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/audio-player/player.swf",
@@ -29,302 +42,457 @@ function audiofield_players() {
     'callback' => 'audiofield_xspf_button',
   );
 
-  //#1414398: Premium Beat players no longer available
+  // #1414398: Premium Beat players no longer available.
   $players['premium_beat_single_track'] = array(
     'path' => variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/playerSinglePackage/playerSingle.swf",
     'name' => 'Premium Beat Single Player',
-    //'download_link' => 'http://www.premiumbeat.com/flash_resources/free_flash_music_player/single_track_flash_mp3_player.php',
     'filetypes' => array('mp3'),
     'callback' => 'audiofield_premium_beat_single_track',
   );
 
+  // #1414398: Premium Beat players no longer available.
   $players['premium_beat_thin'] = array(
     'path' => variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/OriginalThinMusicPlayer.swf",
     'name' => 'Premium Beat Thin Player',
-    //'download_link' => 'http://www.premiumbeat.com/flash_music_players/original/thin/',
     'filetypes' => array('mp3'),
     'callback' => 'audiofield_premium_beat_thin',
   );
 
+  // #1414398: Premium Beat players no longer available.
   $players['premium_beat_mini'] = array(
     'path' => variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/LWMusicPlayer.swf",
     'name' => 'Premium Beat Mini Player',
-    //'download_link' => 'http://www.premiumbeat.com/flash_music_players/original/mini/',
     'filetypes' => array('mp3'),
     'callback' => 'audiofield_premium_beat_mini',
   );
 
-    $players['flowplayer'] = array(
-      'path' => drupal_get_path('module', 'flowplayer') . '/flowplayer/flowplayer.swf',
-      'name' => 'Flowplayer',
-      'download_link' => 'http://drupal.org/project/flowplayer',
-      'filetypes' => array('mp3'),
-      'callback' => 'audiofield_flowplayer',
-      'module' => 'flowplayer',
-    );
-
+  $players['flowplayer'] = array(
+    'name' => 'Flowplayer',
+    'download_link' => 'http://drupal.org/project/flowplayer',
+    'filetypes' => array('mp3'),
+    'callback' => 'audiofield_flowplayer',
+    'module' => 'flowplayer',
+  );
 
   $players['soundmanager2'] = array(
     'path' => variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/soundmanager2",
     'name' => 'SoundManager2 360',
     'download_link' => 'http://www.schillmania.com/projects/soundmanager2/',
-    'filetypes' => array('mp3', 'wav'),
-    'callback' => 'audiofield_soundmanager2',
+    'filetypes' => array('mp3', 'wav', 'ogg', 'opus', 'wav', 'flac'),
+    'callback' => 'audiofield_soundmanager2_360player',
   );
 
-  $players['google_reader'] = array(
-    'path' => '',
-    'name' => 'Google Reader MP3 Player',
-    'filetypes' => array('mp3'),
-    'callback' => 'audiofield_googlereader',
-    'external' => TRUE,
+  $players['soundmanager2_barui'] = array(
+    'path' => variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/soundmanager2",
+    'name' => 'SoundManager2 Bar UI',
+    'download_link' => 'http://www.schillmania.com/projects/soundmanager2/',
+    'filetypes' => array('mp3', 'wav', 'ogg', 'opus', 'wav', 'flac'),
+    'callback' => 'audiofield_soundmanager2_baruiplayer',
   );
-    $players['jplayer'] = array(
-      'path' => variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/jplayer/jquery.jplayer.min.js",
-      'css' => variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/jplayer/jplayer.css",
-      'name' => 'jPlayer',
-      'download_link' => 'https://www.drupal.org/project/jplayer',
-      'module' => 'jplayer',
-      'filetypes' => array('mp3'),
-      'callback' => 'audiofield_jplayer',
-    );
+
+  $players['soundmanager2_button'] = array(
+    'path' => variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/soundmanager2",
+    'name' => 'SoundManager2 Inline',
+    'download_link' => 'http://www.schillmania.com/projects/soundmanager2/',
+    'filetypes' => array('mp3', 'wav', 'ogg', 'opus', 'wav', 'flac'),
+    'callback' => 'audiofield_soundmanager2_buttonplayer',
+  );
+
+  $players['jplayer'] = array(
+    'path' => variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/jplayer/jquery.jplayer.min.js",
+    'css' => variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/jplayer/jplayer.css",
+    'name' => 'jPlayer',
+    'download_link' => 'https://www.drupal.org/project/jplayer',
+    'module' => 'jplayer',
+    'filetypes' => array('mp3', 'mp4', 'wav', 'ogg', 'oga', 'webm'),
+    'callback' => 'audiofield_jplayer',
+  );
+
+  $players['wavesurfer'] = array(
+    'path' => variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/wavesurfer/dist/wavesurfer.min.js",
+    'name' => 'wavesurfer.js',
+    'download_link' => 'https://github.com/katspaugh/wavesurfer.js/',
+    'module' => 'jplayer',
+    'filetypes' => array('mp3', 'wav', 'ogg', 'oga'),
+    'callback' => 'audiofield_wavesurfer_player',
+  );
 
   return $players;
 }
 
+/**
+ * Defining AudioField theme callbacks.
+ */
 function _audiofield_theme() {
   return array(
     // Themes for the players.
+    'audiofield_html5_audio' => array(
+      'path' => drupal_get_path('module', 'audiofield') . '/templates',
+      'template' => 'audiofield--html5',
+      'variables' => array(
+        'audio_file' => NULL,
+        'download_access' => FALSE,
+      ),
+    ),
     'audiofield_players_wpaudioplayer' => array(
-      'variables' => array('player_path' => NULL, 'audio_file' => NULL),
+      'path' => drupal_get_path('module', 'audiofield') . '/templates',
+      'template' => 'audiofield--wpaudio',
+      'variables' => array(
+        'id' => NULL,
+        'audio_file' => NULL,
+      ),
     ),
     'audiofield_players_xspf_slim' => array(
-      'variables' => array('player_path' => NULL, 'audio_file' => NULL),
+      'path' => drupal_get_path('module', 'audiofield') . '/templates',
+      'template' => 'audiofield--xspf-slim',
+      'variables' => array(
+        'player_path' => NULL,
+        'audio_file' => NULL,
+        'audio_title' => NULL,
+      ),
     ),
     'audiofield_players_xspf_button' => array(
-      'variables' => array('player_path' => NULL, 'audio_file' => NULL),
+      'path' => drupal_get_path('module', 'audiofield') . '/templates',
+      'template' => 'audiofield--xspf-button',
+      'variables' => array(
+        'player_path' => NULL,
+        'audio_file' => NULL,
+        'audio_title' => NULL,
+      ),
     ),
     'audiofield_players_premium_beat_single_track' => array(
-      'variables' => array('player_path' => NULL, 'audio_file' => NULL),
+      'path' => drupal_get_path('module', 'audiofield') . '/templates',
+      'template' => 'audiofield--premiumbeat-singletrack',
+      'variables' => array(
+        'player_path' => NULL,
+        'audio_file' => NULL,
+      ),
     ),
     'audiofield_players_premium_beat_thin' => array(
-      'variables' => array('player_path' => NULL, 'audio_file' => NULL),
+      'path' => drupal_get_path('module', 'audiofield') . '/templates',
+      'template' => 'audiofield--premiumbeat-thin',
+      'variables' => array(
+        'player_path' => NULL,
+        'audio_file' => NULL,
+      ),
     ),
     'audiofield_players_premium_beat_mini' => array(
-      'variables' => array('player_path' => NULL, 'audio_file' => NULL),
-    ),
-    'audiofield_googlereader' => array(
-      'arguments' => array('player_path' => NULL, 'audio_file' => NULL),
-    ),
-  );
-}
-
-/* Audio Callback Functions */
-
-function audiofield_embeddedplayer($audio_file) {
-  return '<embed height="15" src="' . $audio_file . '" autostart="false"></embed>';
-}
-
-function audiofield_wpaudioplayer($player_path, $audio_file) {
-  $variables = array(
-    'player_path' => $player_path,
-    'audio_file' => $audio_file,
-  );
-  return theme('audiofield_players_wpaudioplayer', $variables);
-}
-
-function theme_audiofield_players_wpaudioplayer($variables) {
-  $player_path = $variables['player_path'];
-  $audio_file = $variables['audio_file'];
-  return '<object class="audioplayer2" height="24" width="290" data="' . $player_path . '" type="application/x-shockwave-flash">
-                          <param value="' . $player_path . '" name="movie"/>
-                          <param value="playerID=2&amp;bg=0xCDDFF3&amp;leftbg=0x357DCE&amp;lefticon=0xF2F2F2&amp;rightbg=0xF06A51&amp;rightbghover=0xAF2910&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x357DCE&amp;slider=0x357DCE&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0xAF2910&amp;soundFile=' . $audio_file . '" name="FlashVars"/>
-                          <param value="high" name="quality"/>
-                          <param value="false" name="menu"/>
-                          <param value="transparent" name="wmode"/>
-                          </object>';
-}
-
-function audiofield_xspf_slim($player_path, $audio_file) {
-  $variables = array(
-    'player_path' => $player_path,
-    'audio_file' => $audio_file,
-  );
-  return theme('audiofield_players_xspf_slim', $variables);
-}
-
-function theme_audiofield_players_xspf_slim($variables) {
-  $player_path = $variables['player_path'];
-  $audio_file = $variables['audio_file'];
-  return '<object type="application/x-shockwave-flash" width="175" height="14"
-          data="' . $player_path . '?song_url=' . $audio_file . '">
-          <param name="movie" value="' . $player_path . '?song_url=' . $audio_file . '" />
-          <param name="wmode" value="transparent" />
-          </object>';
-}
-
-function audiofield_xspf_button($player_path, $audio_file) {
-  $variables = array(
-    'player_path' => $player_path,
-    'audio_file' => $audio_file,
-  );
-  return theme('audiofield_xspf_button', $variables);
-}
-
-function theme_audiofield_xspf_button($variables) {
-  $player_path = $variables['player_path'];
-  $audio_file = $variables['audio_file'];
-  return '<object type="application/x-shockwave-flash" width="17" height="17"
-          data="' . $player_path . '?song_url=' . $audio_file . '">
-          <param name="movie" value="' . $player_path . '?song_url=' . $audio_file . '" />
-          <param name="wmode" value="transparent" />
-          </object>';
-}
-
-function audiofield_premium_beat_single_track($player_path, $audio_file) {
-  $variables = array(
-    'player_path' => $player_path,
-    'audio_file' => $audio_file,
-  );
-  return theme('audiofield_players_premium_beat_single_track', $variables);
-}
-
-function theme_audiofield_players_premium_beat_single_track($variables) {
-  $player_path = $variables['player_path'];
-  $audio_file = $variables['audio_file'];
-  return '<object><param name="autoplay" value="true" />
-          <param name="controller"value="true" />
-          <embed src="' . $player_path . '"  width="192" height="80" float="left" wmode="transparent" flashvars="mediaPath=' . $audio_file . '"
-		  autostart="true" loop="false"  controller="true" bgcolor="#FF9900" pluginspage="http://www.macromedia.com/go/getflashplayer" >
-          </embed></object>';
-}
-
-function audiofield_premium_beat_thin($player_path, $audio_file) {
-  $variables = array(
-    'player_path' => $player_path,
-    'audio_file' => $audio_file,
-  );
-  return theme('audiofield_players_premium_beat_thin', $variables);
-}
-
-function theme_audiofield_players_premium_beat_thin($variables) {
-  $player_path = $variables['player_path'];
-  $audio_file = $variables['audio_file'];
-  return '<object><param name="autoplay" value="true" />
-        <param name="controller"value="true" />
-        <embed src="' . $player_path . '"  width="220" height="21" float="left" wmode="transparent" flashvars="mediaPath=' . $audio_file . '&defaultVolume=100" autostart="true" loop="false"  controller="true" bgcolor="#FF9900" pluginspage="http://www.macromedia.com/go/getflashplayer" >
-        </embed></object>';
-}
-
-function audiofield_premium_beat_mini($player_path, $audio_file) {
-  $variables = array(
-    'player_path' => $player_path,
-    'audio_file' => $audio_file,
-  );
-  return theme('audiofield_players_premium_beat_mini', $variables);
-}
-
-function theme_audiofield_players_premium_beat_mini($variables) {
-  $player_path = $variables['player_path'];
-  $audio_file = $variables['audio_file'];
-  return '<object><param name="autoplay" value="true" />
-        <param name="controller"value="true" />
-        <embed src="' . $player_path . '"  width="65" height="21" float="left" wmode="transparent" flashvars="mediaPath=' . $audio_file . '&defaultVolume=100" autostart="true" loop="false"  controller="true" bgcolor="#FF9900" pluginspage="http://www.macromedia.com/go/getflashplayer" >
-        </embed></object>';
-}
-
-function audiofield_soundmanager2($player_path, $audio_file) {
-  static $instanceIndex = 0;
-  if ($audio_file == '') {
-    return t('HTML5 media player for soundmanager2 (skin 360-player)');
-  }
-  else {
-    $instanceIndex += 1;
-    $player_base_path = variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/soundmanager2";
-    $ie_js = array(
-      '#type' => 'markup',
-      '#markup' => '<!--[if IE]><script type="text/javascript" src="' . $player_path . '/demo/360-player/script/excanvas.js"></script><![endif]-->',
-    );
-    drupal_add_html_head($ie_js, 'audiofield');
-
-    drupal_add_js($player_base_path . '/script/soundmanager2.js');
-
-    //360 viewer
-    drupal_add_js($player_base_path . '/demo/360-player/script/berniecode-animator.js');
-    drupal_add_js($player_base_path . '/demo/360-player/script/360player.js');
-    drupal_add_css($player_base_path . '/demo/360-player/360player.css');
-
-    return '
-    	<div id="sm2-container-real" class="ui360">
-		<a href="' . $audio_file . '"></a>
-    	</div>
-    <script type="text/javascript">
-
-    soundManager.url = "' . $player_path . '/swf"; // directory where SM2 .SWFs live
-    soundManager.useFastPolling = true; // increased JS callback frequency, combined with useHighPerformance = true
-    soundManager.waitForWindowLoad = true;
-
-    //so Firefox and others without MP3 support work
-    soundManager.preferFlash = true;
-
-    // disable debug mode after development/testing..
-    //soundManager.debugMode = true;
-    soundManager.onready(function () {
-      soundManager.stopAll();
-      threeSixtyPlayer.init();
-    });
-    </script>';
-  }
-}
-
-if (module_exists('flowplayer')) {
-  function audiofield_flowplayer($player_path, $audio_file) {
-    static $seq = 1;
-    $variables = array(
-      'config' => array(
-        'clip' => array(
-          'url' => $audio_file,
-          'autoPlay' => FALSE,
-        ),
+      'path' => drupal_get_path('module', 'audiofield') . '/templates',
+      'template' => 'audiofield--premiumbeat-mini',
+      'variables' => array(
+        'player_path' => NULL,
+        'audio_file' => NULL,
       ),
-      'id' => 'audiofield-' . $seq++,
-      'attributes' => array('style' => 'height: 24px'),
-    );
-    return theme('flowplayer', $variables);
-  }
+    ),
+    'audiofield_players_soundmanager2_360player' => array(
+      'path' => drupal_get_path('module', 'audiofield') . '/templates',
+      'template' => 'audiofield--soundmanager2-360player',
+      'variables' => array(
+        'id' => NULL,
+        'audio_file' => NULL,
+      ),
+    ),
+    'audiofield_players_soundmanager2_baruiplayer' => array(
+      'path' => drupal_get_path('module', 'audiofield') . '/templates',
+      'template' => 'audiofield--soundmanager2-barui',
+      'variables' => array(
+        'audio_file' => NULL,
+        'audio_title' => NULL,
+      ),
+    ),
+    'audiofield_players_soundmanager2_buttonplayer' => array(
+      'path' => drupal_get_path('module', 'audiofield') . '/templates',
+      'template' => 'audiofield--soundmanager2-button',
+      'variables' => array(
+        'audio_file' => NULL,
+        'audio_title' => NULL,
+      ),
+    ),
+    'audiofield_players_wavesurfer_player' => array(
+      'path' => drupal_get_path('module', 'audiofield') . '/templates',
+      'template' => 'audiofield--wavesurfer',
+      'variables' => array(
+        'container_id' => NULL,
+        'audio_title' => NULL,
+      ),
+    ),
+  );
 }
 
-function audiofield_googlereader($player_path, $audio_file) {
-  $variables = array(
+/**
+ * Callback function for AudioField HTML5 player.
+ */
+function audiofield_html5_audio($player_path, $audio_path, $options) {
+  return theme('audiofield_html5_audio', array(
+    'audio_file' => file_create_url($audio_path),
+    'download_access' => $options['display']['settings']['download_link'] && user_access('download all audio files'),
+  ));
+}
+
+/**
+ * Callback function for AudioField WordPress standalone player.
+ */
+function audiofield_wpaudioplayer($player_path, $audio_file) {
+  // Add the javascript which renders the player.
+  drupal_add_js(variable_get('audiofield_players_dir', 'sites/all/libraries/player') . '/audio-player/audio-player.js', array(
+    'type' => 'file',
+    'scope' => 'footer',
+    'group' => JS_LIBRARY,
+    'weight' => 0,
+  ));
+  drupal_add_js(drupal_get_path('module', 'audiofield') . '/js/wordpress.builder.js', array(
+    'type' => 'file',
+    'scope' => 'footer',
+    'group' => JS_LIBRARY,
+    'weight' => 10,
+  ));
+  return theme('audiofield_players_wpaudioplayer', array(
+    'id' => drupal_html_id('audiofield-wordpress-player'),
+    'audio_file' => file_create_url($audio_file),
+  ));
+}
+
+/**
+ * Callback function for AudioField XSPF Slim player.
+ */
+function audiofield_xspf_slim($player_path, $audio_file, $options) {
+  $audio_title = t('XSPF Slim Music Player');
+  if (!empty($options)) {
+    if (!empty($options['item']['description'])) {
+      $audio_title = $options['item']['description'];
+    }
+    elseif (!empty($options['item']['filename'])) {
+      $audio_title = $options['item']['filename'];
+    }
+  }
+  return theme('audiofield_players_xspf_slim', array(
+    'player_path' => $player_path,
+    'audio_file' => file_create_url($audio_file),
+    'audio_title' => urlencode($audio_title),
+  ));
+}
+
+/**
+ * Callback function for AudioField XSPF Button player.
+ */
+function audiofield_xspf_button($player_path, $audio_file, $options) {
+  $audio_title = t('XSPF Slim Music Player');
+  if (!empty($options)) {
+    if (!empty($options['item']['description'])) {
+      $audio_title = $options['item']['description'];
+    }
+    elseif (!empty($options['item']['filename'])) {
+      $audio_title = $options['item']['filename'];
+    }
+  }
+  return theme('audiofield_players_xspf_button', array(
+    'player_path' => $player_path,
+    'audio_file' => file_create_url($audio_file),
+    'audio_title' => urlencode($audio_title),
+  ));
+}
+
+/**
+ * Callback function for AudioField Premium Beat single-track player.
+ */
+function audiofield_premium_beat_single_track($player_path, $audio_file) {
+  return theme('audiofield_players_premium_beat_single_track', array(
     'player_path' => $player_path,
     'audio_file' => $audio_file,
+  ));
+}
+
+/**
+ * Callback function for AudioField Premium Beat thin player.
+ */
+function audiofield_premium_beat_thin($player_path, $audio_file) {
+  return theme('audiofield_players_premium_beat_thin', array(
+    'player_path' => $player_path,
+    'audio_file' => $audio_file,
+  ));
+}
+
+/**
+ * Callback function for AudioField Premium Beat mini player.
+ */
+function audiofield_premium_beat_mini($player_path, $audio_file) {
+  return theme('audiofield_players_premium_beat_mini', array(
+    'player_path' => $player_path,
+    'audio_file' => $audio_file,
+  ));
+}
+
+/**
+ * Callback function for AudioField SoundManager2 360 player.
+ */
+function audiofield_soundmanager2_360player($player_path, $audio_file) {
+
+  $player_base_path = variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/soundmanager2";
+  $ie_js = array(
+    '#type' => 'markup',
+    '#markup' => '<!--[if IE]><script type="text/javascript" src="' . $player_path . '/demo/360-player/script/excanvas.js"></script><![endif]-->',
   );
-  return theme('audiofield_googlereader', $variables);
+  drupal_add_html_head($ie_js, 'audiofield');
+
+  drupal_add_js($player_base_path . '/script/soundmanager2.js', array('weight' => 0));
+
+  // Add 360 viewer javascript.
+  drupal_add_js($player_base_path . '/demo/360-player/script/berniecode-animator.js', array('weight' => 1));
+  drupal_add_js($player_base_path . '/demo/360-player/script/360player.js', array('weight' => 1));
+  drupal_add_css($player_base_path . '/demo/360-player/360player.css');
+  // Pass settings to builder.
+  drupal_add_js(array(
+    'audiofield' => array(
+      'swf_path' => $player_path . '/swf',
+    ),
+  ), array('type' => 'setting'));
+  // Add the builder javascript.
+  drupal_add_js(drupal_get_path('module', 'audiofield') . '/js/soundmanager2-360player.builder.js', array(
+    'type' => 'file',
+    'scope' => 'footer',
+    'weight' => 10,
+  ));
+
+  return theme('audiofield_players_soundmanager2_360player', array(
+    'id' => drupal_html_id('sm2-container-real'),
+    'audio_file' => file_create_url($audio_file),
+  ));
 }
 
-function theme_audiofield_googlereader($variables) {
-  $audio_file = $variables['audio_file'];
-  return '<embed type="application/x-shockwave-flash" flashvars="audioUrl=' . $audio_file . '" src="http://www.google.com/reader/ui/3523697345-audio-player.swf" width="400" height="27" quality="best"></embed>';
+/**
+ * Callback function for AudioField SoundManager2 Bar UI player.
+ */
+function audiofield_soundmanager2_baruiplayer($player_path, $audio_file, $options) {
+  $audio_title = $audio_file;
+  if (!empty($options)) {
+    if (!empty($options['item']['description'])) {
+      $audio_title = $options['item']['description'];
+    }
+    elseif (!empty($options['item']['filename'])) {
+      $audio_title = $options['item']['filename'];
+    }
+  }
+
+  $player_base_path = variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/soundmanager2";
+  drupal_add_js($player_base_path . '/script/soundmanager2.js', array('weight' => 0));
+
+  // Add Bar UI javascript.
+  drupal_add_js($player_base_path . '/demo/bar-ui/script/bar-ui.js', array('weight' => 1));
+  // Add Bar UI style.
+  drupal_add_css($player_base_path . '/demo/bar-ui/css/bar-ui.css');
+
+  return theme('audiofield_players_soundmanager2_baruiplayer', array(
+    'audio_file' => file_create_url($audio_file),
+    'audio_title' => $audio_title,
+  ));
 }
 
+/**
+ * Callback function for AudioField SoundManager2 Button player.
+ */
+function audiofield_soundmanager2_buttonplayer($player_path, $audio_file, $options) {
+  $audio_title = $audio_file;
+  if (!empty($options)) {
+    if (!empty($options['item']['description'])) {
+      $audio_title = $options['item']['description'];
+    }
+    elseif (!empty($options['item']['filename'])) {
+      $audio_title = $options['item']['filename'];
+    }
+  }
+
+  $player_base_path = variable_get('audiofield_players_dir', 'sites/all/libraries/player') . "/soundmanager2";
+  drupal_add_js($player_base_path . '/script/soundmanager2.js', array('weight' => 0));
+
+  // Add Bar UI javascript.
+  drupal_add_js($player_base_path . '/demo/mp3-player-button/script/mp3-player-button.js', array('weight' => 1));
+  // Add Bar UI style.
+  drupal_add_css($player_base_path . '/demo/mp3-player-button/css/mp3-player-button.css');
+
+  return theme('audiofield_players_soundmanager2_buttonplayer', array(
+    'audio_file' => file_create_url($audio_file),
+    'audio_title' => $audio_title,
+  ));
+}
+
+/**
+ * Callback function for AudioField Flowplayer player.
+ */
+function audiofield_flowplayer($player_path, $audio_file) {
+  static $seq = 1;
+  return theme('flowplayer', array(
+    'config' => array(
+      'clip' => array(
+        'url' => $audio_file,
+        'autoPlay' => FALSE,
+      ),
+    ),
+    'id' => 'audiofield-' . $seq++,
+    'attributes' => array('style' => 'height: 24px'),
+  ));
+}
+
+/**
+ * Callback function for AudioField jPlayer player.
+ */
 function audiofield_jplayer($player_path, $audio_file, $options) {
-  return theme(
-    'jplayer',
-    array(
-      'entity_type' => $options['entity_type'],
-      'entity' => $options['entity'],
-      'field_name' => $options['instance']['field_name'],
-      'items' => $options['items'],
-      'settings' => array(
-    'autoplay' => 0,
-    'solution' => 'html, flash',
-    'preload' => 'metadata',
-    'volume' => 80,
-    'muted' => FALSE,
-    'repeat' => 'none',
-    'backgroundColor' => '000000',
-    'mode' => 'playlist',
-  ),
-    )
-  );
+  return theme('jplayer', array(
+    'entity_type' => $options['entity_type'],
+    'entity' => $options['entity'],
+    'field_name' => $options['instance']['field_name'],
+    'items' => array($options['item']),
+    'settings' => array(
+      'autoplay' => 0,
+      'solution' => 'html, flash',
+      'preload' => 'metadata',
+      'volume' => 80,
+      'muted' => FALSE,
+      'repeat' => 'none',
+      'backgroundColor' => '000000',
+      'mode' => 'playlist',
+      'continuous' => FALSE,
+    ),
+  ));
+}
+
+/**
+ * Callback function for AudioField wavesurfer.js player.
+ */
+function audiofield_wavesurfer_player($player_path, $audio_file, $options) {
+  $audio_title = $audio_file;
+  if (!empty($options)) {
+    if (!empty($options['item']['description'])) {
+      $audio_title = $options['item']['description'];
+    }
+    elseif (!empty($options['item']['filename'])) {
+      $audio_title = $options['item']['filename'];
+    }
+  }
+
+  $player_base_path = variable_get('audiofield_players_dir', 'sites/all/libraries/player') . '/wavesurfer';
+  drupal_add_js($player_base_path . '/dist/wavesurfer.min.js', array('weight' => 0));
+
+  // Generate a unique ID.
+  $unique_id = drupal_html_id('wavesurfer-player-id');
+
+  // Pass settings to builder.
+  drupal_add_js(array(
+    'audiofield' => array(
+      $unique_id => file_create_url($audio_file),
+    ),
+  ), array('type' => 'setting'));
+  // Add the builder javascript.
+  drupal_add_js(drupal_get_path('module', 'audiofield') . '/js/wavesurfer.builder.js', array(
+    'type' => 'file',
+    'scope' => 'footer',
+    'weight' => 10,
+  ));
+
+  // Add a default wavesurfer CSS.
+  drupal_add_css(drupal_get_path('module', 'audiofield') . '/css/audiofield.wavesurfer.css');
+
+  return theme('audiofield_players_wavesurfer_player', array(
+    'container_id' => $unique_id,
+    'audio_title' => $audio_title,
+  ));
 }
