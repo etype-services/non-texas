@@ -15,9 +15,10 @@ body, #main-menu ul.menu, #user-menu {
 }
 
 #menu-4429-1  a {
-  color: #fc0;
+  color: #006!important;
 }
 
 #menu-4429-1 a.active {
   background: #006 !important;
+  color: #333!important;
 }
