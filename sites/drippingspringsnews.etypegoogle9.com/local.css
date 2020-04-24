@@ -1,19 +1,23 @@
 #main-menu ul.menu li a {
-	font-size: 15px;
+  font-size: 15px;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: "Anton", sans-serif;
+  font-family: "Anton", sans-serif;
 }
 
 body, #main-menu ul.menu, #user-menu {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #menu-4429-1 {
-    background: #ffcc00!important;
+  background: #fc0 !important;
+}
+
+#menu-4429-1  a {
+  color: #fc0;
 }
 
 #menu-4429-1 a.active {
-    background: #000066!important;
+  background: #006 !important;
 }
