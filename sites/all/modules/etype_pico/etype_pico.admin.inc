@@ -1,12 +1,12 @@
 <?php
 
-function etype_admin() {
+function etype_pico_admin() {
 
   $form = [];
 
   $etype_picoPublisherId = variable_get('etype_picoPublisherId');
 
-  $form['e_edition']['etype_picoPublisherId'] = [
+  $form['etype_picoPublisherId'] = [
     '#type' => 'textfield',
     '#title' => t('Pico Id'),
     '#size' => 55,

@@ -12,9 +12,9 @@ function etype_pico_menu() {
 
   $items = [];
 
-  $items['admin/config/etype_pico/settings'] = [
-    'title' => 'eType Settings',
-    'description' => 'eType integration options',
+  $items['admin/config/etype/etype_pico/settings'] = [
+    'title' => 'Pico Settings',
+    'description' => 'Pico integration settings',
     'page callback' => 'drupal_get_form',
     'page arguments' => ['etype_pico_admin'],
     'file' => 'etype_pico.admin.inc',
@@ -29,25 +29,48 @@ function etype_pico_menu() {
  * Implements hook_process_html().
  *
  */
-function etype_pico_process_html(&$variables) {
+function etype_pico_preprocess_html(&$variables) {
   $etype_picoPublisherId = variable_get('etype_picoPublisherId');
-  $variables['pico_head_script'] = '';
   if (!empty($etype_picoPublisherId)) {
-    $script = array(
-      '#tag' => 'script',
-      '#attributes' => array('type' => 'text/javascript'),
-      '#value' => '<script>
+    $pico_head_script = [
+      '#type' => 'markup',
+      '#markup' => '<script>
 (function(p,i,c,o){var n=new Event("pico-init");i[p]=i[p]||function(){(i[p].queue=i[p].queue||[]).push(arguments)},i.document.addEventListener("pico-init",function(e){var t=i.Pico.getInstance(e,{publisherId:o,picoInit:n},i);t.handleQueueItems(i[p].queue),i[p]=function(){return t.handleQueueItems([arguments])}},!1);var e=i.document.createElement("script"),t=i.document.getElementsByTagName("script")[0];e.async=1,e.src=c,e.onload=function(e){return i.Pico.getInstance(e,{publisherId:o,picoInit:n},i)},t.parentNode.insertBefore(e,t)})("pico",window,"https://widget.pico.tools/wrapper.min.js","' . $etype_picoPublisherId . '");
 </script>',
-    );
-    drupal_add_html_head($script, 'script');
+    ];
+    drupal_add_html_head($pico_head_script, 'pico');
+    drupal_add_js(drupal_get_path('module', 'etype_pico') . '/js/etype_pico.js');
+    drupal_add_css(drupal_get_path('module', 'etype_pico') . '/css/etype_pico.css');
   }
-}
-
-/**
- * @param $variables
- */
-function etype_pico_preprocess_html(&$variables) {
-
+  $node = menu_get_object();
+  if ($node && isset($node->nid)) {
+    if ($node->type == 'article') {
+      $tids = [];
+      $names = [];
+      if (count($node->field_section["und"]) > 0) {
+        foreach ($node->field_section["und"] as $v) {
+          $tids[] = $v['tid'];
+        }
+        $terms = taxonomy_term_load_multiple($tids);
+        foreach ($terms as $term) {
+          $names[] = $term->name;
+        }
+      }
+      $pico_bottom_script = '<script>
+var pageInfo = {
+	article: true,
+	post_id: ' . $node->nid . ',
+	post_type: "article",
+	tags: ' . json_encode($names) . ',
+	url: window.location.href
+};
+window.pico(\'visit\', pageInfo);
+</script>';
+      drupal_add_js($pico_bottom_script, [
+        "type" => "inline",
+        "scope" => "footer"
+       ]);
+    }
+  }
 }
 
