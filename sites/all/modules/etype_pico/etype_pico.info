@@ -1,0 +1,7 @@
+name = Pico
+description = Pico integration for eType Services.
+package = eType Services Custom Modules
+core = 7.x
+project = "etype_pico"
+files[] = etype_pico.admin.inc
+scripts[] = js/etype_pico.js
