@@ -12,6 +12,22 @@ function etype_pico_menu() {
 
   $items = [];
 
+  $items['pico-login'] = [
+    'title' => 'Log In',
+    'description' => 'Log In',
+    'access arguments' => ['access content'],
+    'menu_name' => 'user-menu',
+    'type' => MENU_NORMAL_ITEM,
+  ];
+
+  $items['pico-subscribe'] = [
+    'title' => 'Subscribe',
+    'description' => 'Subscribe',
+    'access arguments' => ['access content'],
+    'menu_name' => 'user-menu',
+    'type' => MENU_NORMAL_ITEM,
+  ];
+
   $items['admin/config/etype/etype_pico/settings'] = [
     'title' => 'Pico Settings',
     'description' => 'Pico integration settings',
