@@ -70,7 +70,7 @@ function etype_pico_preprocess_html(&$variables) {
           $names[] = $term->name;
         }
       }
-      $variables['body_script'] .= '
+      $variables['body_script'] = '
 <script>
 var pageInfo = {
 	article: true,
