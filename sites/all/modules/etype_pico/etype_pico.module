@@ -40,7 +40,7 @@ function etype_pico_menu() {
 }
 
 /**
- * Implements hook_process_html().
+ * Implements hook_preprocess_html().
  *
  */
 function etype_pico_preprocess_html(&$variables) {
