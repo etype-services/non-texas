@@ -15,7 +15,6 @@ function etype_pico_menu() {
   $items['pico-login'] = [
     'title' => 'Log In',
     'description' => 'Log In',
-    'access arguments' => ['access content'],
     'menu_name' => 'user-menu',
     'type' => MENU_NORMAL_ITEM,
   ];
@@ -23,7 +22,6 @@ function etype_pico_menu() {
   $items['pico-subscribe'] = [
     'title' => 'Subscribe',
     'description' => 'Subscribe',
-    'access arguments' => ['access content'],
     'menu_name' => 'user-menu',
     'type' => MENU_NORMAL_ITEM,
   ];
