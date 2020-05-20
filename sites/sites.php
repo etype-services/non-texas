@@ -2,6 +2,7 @@
 /* test.etypegoogle7.com */
 $sites['cni.local'] = 'backroadsnews.com';
 $sites['local.drupal7.com'] = 'claycountycourier.com';
+$sites['etypetest.com'] = 'etypetest.com';
 
 /* eunice today archive */
 $sites['archive.eunicetoday.com'] = 'eunicearchive.etypegoogle7.com';
