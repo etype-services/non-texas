@@ -22,7 +22,7 @@ function etype_pico_menu() {
   ];
 
   $items['pico-subscribe'] = [
-    'title' => 'Pico Subscribe',
+    'title' => 'Subscribe',
     'description' => 'Subscribe with Pico',
     'menu_name' => 'user-menu',
     'page callback' => 'etype_pico_dummy',
