@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Custom functions and hooks for Etype Services
+ * Integrate Pico system with site.
  */
 
 /**
@@ -14,15 +14,19 @@ function etype_pico_menu() {
 
   $items['pico-login'] = [
     'title' => 'Log In',
-    'description' => 'Log In',
+    'description' => 'Log In with Pico',
     'menu_name' => 'user-menu',
+    'page callback' => 'etype_pico_dummy',
+    'access arguments' => ['access content'],
     'type' => MENU_NORMAL_ITEM,
   ];
 
   $items['pico-subscribe'] = [
-    'title' => 'Subscribe',
-    'description' => 'Subscribe',
+    'title' => 'Pico Subscribe',
+    'description' => 'Subscribe with Pico',
     'menu_name' => 'user-menu',
+    'page callback' => 'etype_pico_dummy',
+    'access arguments' => ['access content'],
     'type' => MENU_NORMAL_ITEM,
   ];
 
@@ -37,6 +41,10 @@ function etype_pico_menu() {
   ];
 
   return $items;
+}
+
+function etype_pico_dummy() {
+  //
 }
 
 /**
