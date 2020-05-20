@@ -72,7 +72,7 @@ function etype_pico_preprocess_html(&$variables) {
           $names[] = $term->name;
         }
       }
-      $pico_bottom_script = '<script>
+      $pico_bottom_script = '
 var pageInfo = {
 	article: true,
 	post_id: ' . $node->nid . ',
@@ -81,7 +81,7 @@ var pageInfo = {
 	url: window.location.href
 };
 window.pico(\'visit\', pageInfo);
-</script>';
+';
       drupal_add_js($pico_bottom_script, [
         "type" => "inline",
         "scope" => "footer"
