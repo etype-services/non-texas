@@ -55,6 +55,8 @@ function etype_pico_dummy() {
 function etype_pico_preprocess_html(&$variables) {
   $etype_picoPublisherId = variable_get('etype_picoPublisherId');
   if (!empty($etype_picoPublisherId)) {
+    $picoOn = 'false';
+    $picoType = 'page';
     $pico_head_script = [
       '#type' => 'markup',
       '#markup' => '<script>
@@ -64,32 +66,37 @@ function etype_pico_preprocess_html(&$variables) {
     drupal_add_html_head($pico_head_script, 'pico');
     drupal_add_js(drupal_get_path('module', 'etype_pico') . '/js/etype_pico.js');
     drupal_add_css(drupal_get_path('module', 'etype_pico') . '/css/etype_pico.css');
-  }
-  $node = menu_get_object();
-  if ($node && isset($node->nid)) {
-    if ($node->type == 'article') {
-      $tids = [];
-      $names = [];
-      if (count($node->field_section["und"]) > 0) {
-        foreach ($node->field_section["und"] as $v) {
-          $tids[] = $v['tid'];
+
+    $node = menu_get_object();
+    if ($node && isset($node->nid)) {
+      if ($node->type == 'article') {
+        $tids = [];
+        $names = [];
+        $picoOn = 'true';
+        $picoType = 'article';
+        if (count($node->field_section["und"]) > 0) {
+          foreach ($node->field_section["und"] as $v) {
+            $tids[] = $v['tid'];
+          }
+          $terms = taxonomy_term_load_multiple($tids);
+          foreach ($terms as $term) {
+            $names[] = $term->name;
+          }
         }
-        $terms = taxonomy_term_load_multiple($tids);
-        foreach ($terms as $term) {
-          $names[] = $term->name;
-        }
-      }
-      $variables['body_script'] = '<script>
+        $picoCategories = json_encode($names);
+        $variables['body_script'] = <<<EOF
+<script>
 var pageInfo = {
-	article: true,
-	post_id: ' . $node->nid . ',
-	post_type: "article",
-	tags: ' . json_encode($names) . ',
+	article: $picoOn,
+	post_id: $node->nid,
+	post_type: $picoType,
+	taxonomies: { tags: $picoCategories },
 	url: window.location.href
 };
-window.pico(\'visit\', pageInfo);
+window.pico('visit', pageInfo);
 </script>
-';
+EOF;
+      }
     }
   }
 }
