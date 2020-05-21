@@ -6,7 +6,7 @@
       $('#user-menu a[href="/pico-login"]').addClass('PicoRule PicoSignal').click(function(e) {
         e.preventDefault();
       });
-      $('#user-menu a[href="/pico=subscribe"]').addClass('PicoPlan PicoSignal').click(function(e) {
+      $('#user-menu a[href="/pico-subscribe"]').addClass('PicoPlan PicoSignal').click(function(e) {
         e.preventDefault();
       });
     }
