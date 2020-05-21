@@ -74,7 +74,7 @@ function etype_pico_preprocess_html(&$variables) {
       if ($node->type == 'article') {
         $picoPostId = $node->nid;
         $tids = [];
-        $names = [];
+        $names = ['article'];
         $picoOn = 'true';
         $picoType = 'article';
         if (count($node->field_section["und"]) > 0) {
