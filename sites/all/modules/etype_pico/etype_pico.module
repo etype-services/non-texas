@@ -94,7 +94,7 @@ function etype_pico_preprocess_html(&$variables) {
 var pageInfo = {
 	article: $picoOn,
 	post_id: $picoPostId,
-	post_type: $picoType,
+	post_type: "$picoType",
 	taxonomies: { tags: $picoCategories },
 	url: window.location.href
 };
