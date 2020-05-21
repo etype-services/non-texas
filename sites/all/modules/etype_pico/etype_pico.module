@@ -57,6 +57,7 @@ function etype_pico_preprocess_html(&$variables) {
   if (!empty($etype_picoPublisherId)) {
     $picoOn = 'false';
     $picoType = 'page';
+    $picoCategories = '[]';
     $pico_head_script = [
       '#type' => 'markup',
       '#markup' => '<script>
@@ -84,7 +85,9 @@ function etype_pico_preprocess_html(&$variables) {
           }
         }
         $picoCategories = json_encode($names);
-        $variables['body_script'] = <<<EOF
+      }
+    }
+    $variables['body_script'] = <<<EOF
 <script>
 var pageInfo = {
 	article: $picoOn,
@@ -96,7 +99,5 @@ var pageInfo = {
 window.pico('visit', pageInfo);
 </script>
 EOF;
-      }
-    }
   }
 }
