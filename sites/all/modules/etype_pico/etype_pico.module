@@ -57,6 +57,7 @@ function etype_pico_preprocess_html(&$variables) {
   if (!empty($etype_picoPublisherId)) {
     $picoOn = 'false';
     $picoType = 'page';
+    $picoPostId = '0';
     $picoCategories = '[]';
     $pico_head_script = [
       '#type' => 'markup',
@@ -71,6 +72,7 @@ function etype_pico_preprocess_html(&$variables) {
     $node = menu_get_object();
     if ($node && isset($node->nid)) {
       if ($node->type == 'article') {
+        $picoPostId = $node->nid;
         $tids = [];
         $names = [];
         $picoOn = 'true';
@@ -91,7 +93,7 @@ function etype_pico_preprocess_html(&$variables) {
 <script>
 var pageInfo = {
 	article: $picoOn,
-	post_id: $node->nid,
+	post_id: $picoPostId,
 	post_type: $picoType,
 	taxonomies: { tags: $picoCategories },
 	url: window.location.href
