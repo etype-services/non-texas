@@ -8,3 +8,6 @@ sites/*/tmp
 
 # Ignore vendor directory
 vendor
+
+# Ignore local testing site
+sites/local.drupal7.com
