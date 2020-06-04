@@ -33,6 +33,7 @@ $plugin = array(
 
 /**
  * Form for editing Premium content levels.
+ * 'all' works as forever for 'Free' level
  */
 function premium_levels_ctools_export_ui_form(&$form, &$form_state) {
   $level = $form_state['item'];
@@ -45,7 +46,7 @@ function premium_levels_ctools_export_ui_form(&$form, &$form_state) {
     '#title' => t('Protection type'),
     '#default_value' => $level->protection_type,
     '#options' => array(
-      'all' => t('Premium items are permanently restricted'),
+      'all' => t('Premium/Non-premium items are permanently restricted/available'),
       'archive' => t('Protect archives only: Items switch to premium status after a specified period'),
       'latest' => t('Protect latest content only: Items switch to non-premium status after a specified period'),
     ),

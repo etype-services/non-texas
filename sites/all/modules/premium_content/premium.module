@@ -7,7 +7,8 @@
 /**
  * Implements hook_perm().
  */
-function premium_permission() {
+function premium_permission()
+{
     $perms = array(
         'administer premium content levels' => array(
             'title' => t('Administer premium content levels'),
@@ -29,7 +30,8 @@ function premium_permission() {
 /**
  * Implements hook_cron().
  */
-function premium_cron() {
+function premium_cron()
+{
     $ts = $_SERVER['REQUEST_TIME'];
 
     // Clean out premium node data that has expired.
@@ -43,7 +45,8 @@ function premium_cron() {
 /**
  * Implements hook_node_load().
  */
-function premium_node_load($nodes, $types) {
+function premium_node_load($nodes, $types)
+{
     foreach ($nodes as $node) {
         $node->premium_level = premium_node_level_data($node);
         $node->premium = premium_node_level($node);
@@ -56,7 +59,8 @@ function premium_node_load($nodes, $types) {
  * If content is premium, and user does not have access, replace body
  * with message regarding premium status.
  */
-function premium_node_view($node, $view_mode, $langcode) {
+function premium_node_view($node, $view_mode, $langcode)
+{
     $node->premium_access = premium_user_content_access($node);
 
     // Always grant access to teasers.
@@ -72,17 +76,20 @@ function premium_node_view($node, $view_mode, $langcode) {
 /**
  * Implements hook_node_insert().
  */
-function premium_node_insert($node) {
-    if ( ! isset ($node->premium)) {
+function premium_node_insert($node)
+{
+    if (!isset ($node->premium)) {
         $node->premium = premium_node_level($node);
     }
     _premium_set_premium($node, $node->premium);
 }
+
 /**
  * Implements hook_node_update().
  */
-function premium_node_update($node) {
-    if ( ! isset ($node->premium)) {
+function premium_node_update($node)
+{
+    if (!isset ($node->premium)) {
         $node->premium = premium_node_level($node);
     }
     _premium_set_premium($node, $node->premium);
@@ -91,14 +98,16 @@ function premium_node_update($node) {
 /**
  * Implements hook_node_delete().
  */
-function premium_node_delete($node) {
+function premium_node_delete($node)
+{
     _premium_set_premium($node, $node->premium);
 }
 
 /**
  * Implements hook_node_operations().
  */
-function premium_node_operations() {
+function premium_node_operations()
+{
 
     $operations = array();
 
@@ -122,7 +131,8 @@ function premium_node_operations() {
 /**
  * Callback for hook_node_operations()
  */
-function _premium_node_operations_premium($nids, $machine_name = FALSE) {
+function _premium_node_operations_premium($nids, $machine_name = FALSE)
+{
     // Get the node data used by _premium_set_premium.
     $result = db_select('node', 'n')
         ->fields('n', array('nid', 'created'))
@@ -138,7 +148,8 @@ function _premium_node_operations_premium($nids, $machine_name = FALSE) {
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function premium_form_node_type_form_alter(&$form, &$form_state) {
+function premium_form_node_type_form_alter(&$form, &$form_state)
+{
     $node_type = $form['#node_type']->type;
 
     $form['workflow']['premium'] = array(
@@ -155,7 +166,8 @@ function premium_form_node_type_form_alter(&$form, &$form_state) {
  * Add the Premium checkbox to the node editing options and default settings
  * The Premium flag will behave like other options (published, promote, etc).
  */
-function premium_form_alter(&$form, $form_state, $form_id) {
+function premium_form_alter(&$form, $form_state, $form_id)
+{
     if (isset($form['type']['#value']) && $form['type']['#value'] . '_node_form' == $form_id) {
         if (user_access('administer node premium status')) {
             $node = $form['#node'];
@@ -163,12 +175,11 @@ function premium_form_alter(&$form, $form_state, $form_id) {
 
                 $premium_level = premium_node_level_data($node);
                 /* get rid of error on node edit pages --  not sure why no $premium_level['machine_name'] */
-                if (! isset($premium_level['machine_name'])) {
+                if (!isset($premium_level['machine_name'])) {
                     $premium_level['machine_name'] = 'default';
                 }
                 $default = is_array($premium_level) ? $premium_level['machine_name'] : 'default';
-            }
-            else {
+            } else {
                 $default = variable_get("premium_{$node->type}", 'default');
                 // $default = 'default';
             }
@@ -186,7 +197,8 @@ function premium_form_alter(&$form, $form_state, $form_id) {
 /**
  * Implements hook_ctools_plugin_api().
  */
-function premium_ctools_plugin_api($owner, $api) {
+function premium_ctools_plugin_api($owner, $api)
+{
     if ($owner == 'premium' && $api == 'premium_levels') {
         return array('version' => 1);
     }
@@ -195,7 +207,8 @@ function premium_ctools_plugin_api($owner, $api) {
 /**
  * Implements hook_ctools_plugin_directory().
  */
-function premium_ctools_plugin_directory($module, $plugin) {
+function premium_ctools_plugin_directory($module, $plugin)
+{
     if ($module == 'ctools' && in_array($plugin, array(
             'access',
             'export_ui'
@@ -207,12 +220,11 @@ function premium_ctools_plugin_directory($module, $plugin) {
 
 /**
  * Implements hook_default_premium_levels().
- *
  * Provide a default Premium level.
  */
-function premium_default_premium_levels() {
+function premium_default_premium_levels()
+{
     $export = array();
-
     $preset = new stdClass();
     $preset->api_version = 1;
     $preset->name = 'Premium content';
@@ -223,19 +235,17 @@ function premium_default_premium_levels() {
     $preset->denied_message = t('Full text available to premium subscribers only.');
     $preset->denied_message_format = filter_fallback_format();
     $preset->wordcount = 0;
-
     $export['default'] = $preset;
-
     return $export;
 }
 
 /**
  * Load a premium level based on machine name.
- *
- * @param string $machine_name
- *   The machine name of the premium level to load.
+ * @param string $machine_name The machine name of the premium level to load.
+ * @return false|string
  */
-function premium_level_load($machine_name) {
+function premium_level_load($machine_name)
+{
     ctools_include('export');
     $result = ctools_export_load_object('premium_levels', 'names', array($machine_name));
     if (isset($result[$machine_name])) {
@@ -248,7 +258,8 @@ function premium_level_load($machine_name) {
 /**
  * Get a list of premium levels keyed by machine name.
  */
-function premium_level_load_all() {
+function premium_level_load_all()
+{
     ctools_include('export');
     return ctools_export_load_object('premium_levels');
 }
@@ -258,7 +269,8 @@ function premium_level_load_all() {
  *
  * Useful for selection menus, etc.
  */
-function premium_level_option_list() {
+function premium_level_option_list()
+{
     $levels = array();
 
     foreach (premium_level_load_all() as $machine_name => $level) {
@@ -281,7 +293,8 @@ function premium_level_option_list() {
  * @return stdClass
  *   The saved level, with its level_id set.
  */
-function premium_level_save(&$level) {
+function premium_level_save(&$level)
+{
     $a = $level->denied_message;
     $level->denied_message = $a['value'];
     $level->denied_message_format = $a['format'];
@@ -296,7 +309,8 @@ function premium_level_save(&$level) {
  * @param string $machine_name
  *   An int containing the ID of a record.
  */
-function premium_level_delete($machine_name) {
+function premium_level_delete($machine_name)
+{
     db_delete('premium_levels')
         ->condition('machine_name', $machine_name)
         ->execute();
@@ -308,7 +322,8 @@ function premium_level_delete($machine_name) {
 /**
  * Calculate time offset for auto-aging / auto-archiving
  */
-function _premium_offset($timestamp, &$start_ts, &$end_ts, $mode, $count, $unit) {
+function _premium_offset($timestamp, &$start_ts, &$end_ts, $mode, $count, $unit)
+{
 
     // If the timestamp is zero, set it to "now" so mktime() will work properly.
     $ts = $timestamp ? $timestamp : $_SERVER['REQUEST_TIME'];
@@ -337,7 +352,8 @@ function _premium_offset($timestamp, &$start_ts, &$end_ts, $mode, $count, $unit)
  * @param $node
  * @return array
  */
-function premium_node_level_data($node) {
+function premium_node_level_data($node)
+{
 
     if ($node) {
 
@@ -356,7 +372,7 @@ function premium_node_level_data($node) {
 
             if ($level) {
                 // Merge in the settings from the premium level.
-                $level += (array) premium_level_load($level['level_name']);
+                $level += (array)premium_level_load($level['level_name']);
 
                 return $level;
             }
@@ -369,7 +385,8 @@ function premium_node_level_data($node) {
 /**
  * Get premium level for a node.
  */
-function premium_node_level($node) {
+function premium_node_level($node)
+{
     // This is a node type: use default settings.
     if (is_string($node)) {
         return variable_get("premium_{$node}", 0);
@@ -410,7 +427,8 @@ function premium_node_level($node) {
  * @return boolean
  *   TRUE if access is granted, FALSE if not.
  */
-function premium_user_content_access($node, $account = NULL) {
+function premium_user_content_access($node, $account = NULL)
+{
     global $user;
 
     // Fall back to the current user if none was provided.
@@ -447,8 +465,7 @@ function premium_user_content_access($node, $account = NULL) {
         // access and give a suitable message.
         if ($level) {
             return user_access(_premium_permission_name($level->name));
-        }
-        else {
+        } else {
             drupal_set_message(t('Node @nid uses level @level which does no longer exist.', array(
                 '@nid' => $node->nid,
                 '@level' => $node->premium
@@ -473,7 +490,8 @@ function premium_user_content_access($node, $account = NULL) {
  * @param $machine_name
  *   Machine name of the premium level we want to set.
  */
-function _premium_set_premium($node, $machine_name = FALSE) {
+function _premium_set_premium($node, $machine_name = FALSE)
+{
     // First, delete the current premium status, if any.
     db_delete('premium_nodes')->condition('nid', $node->nid)->execute();
 
@@ -498,14 +516,16 @@ function _premium_set_premium($node, $machine_name = FALSE) {
 /**
  * Helper function to generate permission name.
  */
-function _premium_permission_name($level_name) {
+function _premium_permission_name($level_name)
+{
     return 'access “' . check_plain($level_name) . '” premium content';
 }
 
 /**
  * Implements hook_theme().
  */
-function premium_theme() {
+function premium_theme()
+{
     return array(
         'premium_body' => array(
             'variables' => array('node' => NULL),
@@ -516,35 +536,54 @@ function premium_theme() {
 /**
  * Reformat the message body with a premium content message.
  */
-function theme_premium_body($arguments) {
+function theme_premium_body($arguments)
+{
     drupal_add_css(drupal_get_path('module', 'premium') . '/css/premium.css');
     $node = $arguments['node'];
+    $node->title = '';
     node_build_content($node, 'teaser');
     $level = premium_level_load($node->premium);
     if ($level->denied_message) {
         $denied_message = $level->denied_message;
         $denied_message_format = $level->denied_message_format;
-    }
-    else {
+    } else {
         $denied_message = variable_get('premium_message', t('Full text available to premium subscribers only.'));
         $denied_message_format = variable_get('premium_format');
     }
 
-    if (!empty($node->content['body'])) {
-        $text = $node->content['body']['#object']->body['und'][0]['value'];
-        if ($level->wordcount > 0) {
-            $cut = '<div id="premium-content-teaser"><p>';
-            $tmp = strip_tags($text);
-            $words = implode(" ", array_slice( explode(" ", $tmp), 0, $level->wordcount));
-            if (preg_match("/[.!?,;:]$/", $words)) {
-                $cut .= $words;
-            } else {
-                $cut .= $words . ' ...';
+    switch ($node->type) {
+        case 'fotoname'; // for jailbirds
+            $uri = $node->field_image['und'][0]['uri'];
+            $name = $node->field_name['und'][0]['value'];
+            $wrapper = file_stream_wrapper_get_instance_by_uri($uri);
+            $path = $wrapper->getDirectoryPath() . "/" . file_uri_target($uri);
+            return '
+<div class="premium-message">
+    <div class="image"><img alt="' . $name . '" src="' . $path . '" /></div>
+    <div class="name">' . $name . '</div>
+    ' . check_markup($denied_message, $denied_message_format) . '
+</div>
+';
+            break;
+
+        default;
+
+            if (!empty($node->content['body'])) {
+                $text = $node->content['body']['#object']->body['und'][0]['value'];
+                if ($level->wordcount > 0) {
+                    $cut = '<div id="premium-content-teaser"><p>';
+                    $tmp = strip_tags($text);
+                    $words = implode(" ", array_slice(explode(" ", $tmp), 0, $level->wordcount));
+                    if (preg_match("/[.!?,;:]$/", $words)) {
+                        $cut .= $words;
+                    } else {
+                        $cut .= $words . ' ...';
+                    }
+                    $cut .= '</p></div>';
+                } else {
+                    $cut = '';
+                }
+                return '<div class="premium-message">' . $cut . check_markup($denied_message, $denied_message_format) . '</div>';
             }
-            $cut .= '</p></div>';
-        } else {
-            $cut = '';
-        }
-        return '<div class="premium-message">' . $cut . check_markup($denied_message, $denied_message_format) . '</div>';
     }
 }
