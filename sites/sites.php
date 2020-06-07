@@ -301,11 +301,6 @@ $sites['hartington.etypegoogle8.com'] = 'hartington.etypegoogle8.com';
 $sites['hartington.net'] = 'hartington.etypegoogle8.com';
 $sites['www.hartington.net'] = 'hartington.etypegoogle8.com';
 
-/* ledgerlcj.etypegoogle8.com */
-$sites['ledgerlcj.etypegoogle8.com'] = 'ledgerlcj.etypegoogle8.com';
-$sites['ledgerlcj.com'] = 'ledgerlcj.etypegoogle8.com';
-$sites['www.ledgerlcj.com'] = 'ledgerlcj.etypegoogle8.com';
-
 /* perkinscountypost.etypegoogle8.com */
 $sites['perkinscountypost.etypegoogle8.com'] = 'perkinscountypost.etypegoogle8.com';
 $sites['perkinscountypost.com'] = 'perkinscountypost.etypegoogle8.com';
