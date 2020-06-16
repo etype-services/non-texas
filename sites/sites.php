@@ -2,6 +2,7 @@
 /* test.etypegoogle7.com */
 $sites['local.drupal7.com'] = 'local.drupal7.com';
 $sites['etypetest.com'] = 'etypetest.com';
+$sites['d7.etypetest.com'] = 'etypetest.com';
 
 /* eunice today archive */
 $sites['archive.eunicetoday.com'] = 'eunicearchive.etypegoogle7.com';
