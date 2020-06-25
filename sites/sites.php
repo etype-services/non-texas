@@ -90,19 +90,6 @@ $sites['yourokmulgee.com'] = 'archive.yourokmulgee.etypegoogle8.com';
 $sites['www.yourokmulgee.com'] = 'archive.yourokmulgee.etypegoogle8.com';
 $sites['archive.yourokmulgee.com'] = 'archive.yourokmulgee.etypegoogle8.com';
 
-/* tecumsehchieftain.etypegoogle8.com */
-$sites['tecumsehchieftain.etypegoogle8.com'] = 'tecumsehchieftain.com';
-$sites['tecumsehchieftain.com'] = 'tecumsehchieftain.com';
-$sites['www.tecumsehchieftain.com'] = 'tecumsehchieftain.com';
-
-/* pawneerepublican.etypegoogle8.com */
-$sites['pawneerepublican.etypegoogle8.com'] = 'pawneerepublican.com';
-$sites['pawneerepublican.com'] = 'pawneerepublican.com';
-$sites['www.pawneerepublican.com'] = 'pawneerepublican.com';
-
-$sites['pawneenews.com'] = 'pawneerepublican.com';
-$sites['www.pawneenews.com'] = 'pawneerepublican.com';
-
 $sites['indyrepnews.etypegoogle8.com'] = 'archive.indyrepnews.com';
 
 $sites['archive.msgrnews.com'] = 'archive.msgr.etypegoogle8.com';
