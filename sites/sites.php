@@ -53,33 +53,6 @@ $sites['www.theclaycountynews.com'] = 'theclaycountynews.com';
 $sites['gunnisontimes.etypegoogle8.com'] = 'archive.gunnisontimes.etypegoogle8.com';
 $sites['archive.gunnisontimes.com'] = 'archive.gunnisontimes.etypegoogle8.com';
 
-/* ouraynews.etypegoogle8.com */
-$sites['ouraynews.etypegoogle8.com'] = 'ouraynews.com';
-$sites['ouraynews.etypegoogle7.com'] = 'ouraynews.com';
-$sites['ouraynews.com'] = 'ouraynews.com';
-$sites['www.ouraynews.com'] = 'ouraynews.com';
-
-$sites['ouraycoloradonews.com'] = 'ouraynews.com';
-$sites['www.ouraycoloradonews.com'] = 'ouraynews.com';
-
-$sites['ouraycountyplaindealer.com'] = 'ouraynews.com';
-$sites['www.ouraycountyplaindealer.com'] = 'ouraynews.com';
-
-$sites['ourayplaindealer.com'] = 'ouraynews.com';
-$sites['www.ourayplaindealer.com'] = 'ouraynews.com';
-
-$sites['ridgewaycoloradonews.com'] = 'ouraynews.com';
-$sites['www.ridgewaycoloradonews.com'] = 'ouraynews.com';
-
-$sites['ridgewaynews.com'] = 'ouraynews.com';
-$sites['www.ridgewaynews.com'] = 'ouraynews.com';
-
-$sites['ridgewaysun.com'] = 'ouraynews.com';
-$sites['www.ridgewaysun.com'] = 'ouraynews.com';
-
-$sites['theridgewaysun.com'] = 'ouraynews.com';
-$sites['www.theridgewaysun.com'] = 'ouraynews.com';
-
 /* barbadosadvocate.etypegoogle8.com */
 $sites['barbadosadvocate.etypegoogle8.com'] = 'barbadosadvocate.com';
 $sites['barbadosadvocate.com'] = 'barbadosadvocate.com';
@@ -124,8 +97,8 @@ $sites['timberlaketopic.com'] = 'timberlakesouthdakota.com';
 $sites['www.timberlaketopic.com'] = 'timberlakesouthdakota.com';
 
 /* auroranewsregister.etypegoogle8.com */
-$sites['auroranewsregister.etypegoogle8.com'] = 'archive.auroranewsregister.com';
-$sites['www.auroranewsregister.com'] = 'archive.auroranewsregister.com';
+$sites['auroranewsregister.etypegoogle8.com'] = 'auroranewsregister.etypegoogle9.com';
+$sites['www.auroranewsregister.com'] = 'auroranewsregister.etypegoogle9.com';
 
 /* hennesseyclipper.etypegoogle8.com */
 $sites['hennesseyclipper.etypegoogle8.com'] = 'hennesseyclipper.com';
@@ -447,8 +420,6 @@ $sites['www.lexingtonchronicle.com'] = 'lexingtonchronicle.etypegoogle9.com';
 $sites['belleplainenews.etypegoogle9.com'] = 'belleplainenews.etypegoogle9.com';
 $sites['belleplainenews.com'] = 'belleplainenews.etypegoogle9.com';
 $sites['www.belleplainenews.com'] = 'belleplainenews.etypegoogle9.com';
-
-$sites['auroranewsregister.etypegoogle7.com'] = 'auroranewsregister.etypegoogle9.com';
 
 /* archive.stjamesparishtoday.etypegoogle8.com */
 $sites['archive.stjamesparishtoday.com'] = 'archive.stjamesparishtoday.etypegoogle8.com';
