@@ -275,9 +275,6 @@ $sites['www.themillerpress.com'] = 'themillerpress.etypegoogle8.com';
 /* dovecreekpress.etypegoogle7.com */
 $sites['www.dovecreekpress.com'] = 'dovecreekpress.etypegoogle7.com';
 
-$sites['chamberlainsun.etypegoogle9.com'] = 'chamberlainsun.etypegoogle9.com';
-$sites['www.chamberlainsun.com'] = 'chamberlainsun.etypegoogle9.com';
-
 $sites['southreporter.etypegoogle9.com'] = 'southreporter.etypegoogle9.com';
 $sites['southreporter.com'] = 'southreporter.etypegoogle9.com';
 $sites['www.southreporter.com'] = 'southreporter.etypegoogle9.com';
