@@ -90,14 +90,6 @@ $sites['thestbernardvoice.etypegoogle8.com'] = 'thestbernardvoice.com';
 $sites['thestbernardvoice.com'] = 'thestbernardvoice.com';
 $sites['www.thestbernardvoice.com'] = 'thestbernardvoice.com';
 
-/* timberlakesouthdakota.etypegoogle8.com */
-$sites['timberlakesouthdakota.etypegoogle8.com'] = 'timberlakesouthdakota.com';
-$sites['timberlakesouthdakota.com'] = 'timberlakesouthdakota.com';
-$sites['www.timberlakesouthdakota.com'] = 'timberlakesouthdakota.com';
-
-$sites['timberlaketopic.com'] = 'timberlakesouthdakota.com';
-$sites['www.timberlaketopic.com'] = 'timberlakesouthdakota.com';
-
 /* auroranewsregister.etypegoogle8.com */
 $sites['auroranewsregister.etypegoogle8.com'] = 'auroranewsregister.etypegoogle9.com';
 $sites['www.auroranewsregister.com'] = 'auroranewsregister.etypegoogle9.com';
