@@ -43,10 +43,6 @@ $sites['www.prairiepress.net'] = 'prairiepress.net';
 $sites['theprairiepress.net'] = 'prairiepress.net';
 $sites['www.theprairiepress.net'] = 'prairiepress.net';
 
-$sites['backroadsnews.etypegoogle8.com'] = 'backroadsnews.com';
-$sites['backroadsnews.com'] = 'backroadsnews.com';
-$sites['www.backroadsnews.com'] = 'backroadsnews.com';
-
 $sites['theclaycountynews.etypegoogle8.com'] = 'theclaycountynews.com';
 $sites['theclaycountynews.com'] = 'theclaycountynews.com';
 $sites['www.theclaycountynews.com'] = 'theclaycountynews.com';
@@ -89,10 +85,6 @@ $sites['www.plaqueminesgazette.com'] = 'plaqueminesgazette.com';
 $sites['thestbernardvoice.etypegoogle8.com'] = 'thestbernardvoice.com';
 $sites['thestbernardvoice.com'] = 'thestbernardvoice.com';
 $sites['www.thestbernardvoice.com'] = 'thestbernardvoice.com';
-
-/* auroranewsregister.etypegoogle8.com */
-$sites['auroranewsregister.etypegoogle8.com'] = 'auroranewsregister.etypegoogle9.com';
-$sites['www.auroranewsregister.com'] = 'auroranewsregister.etypegoogle9.com';
 
 /* hennesseyclipper.etypegoogle8.com */
 $sites['hennesseyclipper.etypegoogle8.com'] = 'hennesseyclipper.com';
@@ -385,10 +377,6 @@ $sites['www.sayrerecord.com'] = 'beckhamcountyrecord.etypegoogle9.com';
 $sites['spitzerpublishing.com'] = 'beckhamcountyrecord.etypegoogle9.com';
 $sites['www.spitzerpublishing.com'] = 'beckhamcountyrecord.etypegoogle9.com';
 
-$sites['yourxgroup.etypegoogle9.com'] = 'yourxgroup.etypegoogle9.com';
-$sites['yourxgroup.com'] = 'yourxgroup.etypegoogle9.com';
-$sites['www.yourxgroup.com'] = 'yourxgroup.etypegoogle9.com';
-
 $sites['oologahonline.etypegoogle7.com'] = 'oologahonline.etypegoogle9.com';
 $sites['www.oologahonline.com'] = 'oologahonline.etypegoogle9.com';
 
@@ -470,9 +458,6 @@ $sites['www.beloitcall.com'] = 'beloitcall.etypegoogle9.com';
 
 /* newcastlepacer.etypegoogle9.com */
 $sites['www.newcastlepacer.com'] = 'newcastlepacer.etypegoogle9.com';
-
-/* heringtontimes.etypegoogle9.com */
-$sites['www.heringtontimes.com'] = 'heringtontimes.etypegoogle9.com';
 
 /* anjournal.etypegoogle7.com  */
 $sites['www.anjournal.com'] = 'anjournal.etypegoogle7.com';
