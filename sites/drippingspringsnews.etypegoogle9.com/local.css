@@ -9,16 +9,3 @@ h1, h2, h3, h4, h5 {
 body, #main-menu ul.menu, #user-menu {
   font-family: "Roboto", sans-serif;
 }
-
-#menu-4429-1 {
-  background: #fc0 !important;
-}
-
-#menu-4429-1  a {
-  color: #006!important;
-}
-
-#menu-4429-1 a.active {
-  background: #006 !important;
-  color: #333!important;
-}
