@@ -3,7 +3,7 @@
 $sites['local.drupal7.com'] = 'local.drupal7.com';
 $sites['etypetest.com'] = 'etypetest.com';
 $sites['d7.etypetest.com'] = 'etypetest.com';
-$sites['migrate.drupal7.com'] = 'snyderdailynews.com';
+$sites['migrate.drupal7.com'] = 'eunicetoday.etypegoogle8.com';
 
 
 /* eunice today archive */
