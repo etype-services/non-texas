@@ -260,14 +260,6 @@ $sites['southreporter.etypegoogle9.com'] = 'southreporter.etypegoogle9.com';
 $sites['southreporter.com'] = 'southreporter.etypegoogle9.com';
 $sites['www.southreporter.com'] = 'southreporter.etypegoogle9.com';
 
-$sites['ainsworthnews.etypegoogle9.com'] = 'ainsworthnews.etypegoogle9.com';
-$sites['ainsworthnews.com'] = 'ainsworthnews.etypegoogle9.com';
-$sites['www.ainsworthnews.com'] = 'ainsworthnews.etypegoogle9.com';
-$sites['valentinenews.com'] = 'ainsworthnews.etypegoogle9.com';
-$sites['www.valentinenews.com'] = 'ainsworthnews.etypegoogle9.com';
-$sites['gregorynews.com'] = 'ainsworthnews.etypegoogle9.com';
-$sites['www.gregorynews.com'] = 'ainsworthnews.etypegoogle9.com';
-
 $sites['deweycountyrecord.etypegoogle9.com'] = 'deweycountyrecord.etypegoogle9.com';
 $sites['deweycountyrecord.com'] = 'deweycountyrecord.etypegoogle9.com';
 $sites['www.deweycountyrecord.com'] = 'deweycountyrecord.etypegoogle9.com';
@@ -347,18 +339,6 @@ $sites['www.humphreydemocrat.com'] = 'humphreydemocrat.etypegoogle9.com';
 $sites['councilgroverepublican.etypegoogle9.com'] = 'councilgroverepublican.etypegoogle9.com';
 $sites['councilgroverepublican.com'] = 'councilgroverepublican.etypegoogle9.com';
 $sites['www.councilgroverepublican.com'] = 'councilgroverepublican.etypegoogle9.com';
-
-$sites['perrysburg.etypegoogle9.com'] = 'perrysburg.etypegoogle9.com';
-$sites['perrysburg.com'] = 'perrysburg.etypegoogle9.com';
-$sites['www.perrysburg.com'] = 'perrysburg.etypegoogle9.com';
-$sites['rossford.com'] = 'perrysburg.etypegoogle9.com';
-$sites['www.rossford.com'] = 'perrysburg.etypegoogle9.com';
-$sites['pointandshoreland.com'] = 'perrysburg.etypegoogle9.com';
-$sites['www.pointandshoreland.com'] = 'perrysburg.etypegoogle9.com';
-$sites['hollandsfj.us'] = 'perrysburg.etypegoogle9.com';
-$sites['www.hollandsfj.us'] = 'perrysburg.etypegoogle9.com';
-$sites['welchpublishing.com'] = 'perrysburg.etypegoogle9.com';
-$sites['www.welchpublishing.com'] = 'perrysburg.etypegoogle9.com';
 
 $sites['eurekaherald.etypegoogle9.com'] = 'eurekaherald.etypegoogle9.com';
 $sites['eurekaherald.com'] = 'eurekaherald.etypegoogle9.com';
