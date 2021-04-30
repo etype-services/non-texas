@@ -183,11 +183,6 @@ $sites['www.gueydantoday.com'] = 'vermiliontoday.etypegoogle8.com';
 $sites['kaplantoday.com'] = 'vermiliontoday.etypegoogle8.com';
 $sites['www.kaplantoday.com'] = 'vermiliontoday.etypegoogle8.com';
 
-/* eunicetoday.etypegoogle8.com' */
-$sites['eunicetoday.etypegoogle8.com'] = 'eunicetoday.etypegoogle8.com';
-$sites['eunicetoday.com'] = 'eunicetoday.etypegoogle8.com';
-$sites['www.eunicetoday.com'] = 'eunicetoday.etypegoogle8.com';
-
 /* avoyellestoday.etypegoogle8.com */
 $sites['avoyellestoday.etypegoogle8.com'] = 'avoyellestoday.etypegoogle8.com';
 $sites['www.avoyellestoday.com'] = 'avoyellestoday.etypegoogle8.com';
