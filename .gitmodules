@@ -22,3 +22,6 @@
 [submodule "sites/all/modules/etype_sliderad"]
 	path = sites/all/modules/etype_sliderad
 	url = git@github.com:etype-services/etype_sliderad.git
+[submodule "sites/all/themes/cni"]
+	path = sites/all/themes/cni
+	url = git@github.com:etype-services/cnitheme.git
