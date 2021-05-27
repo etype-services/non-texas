@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the trusttxt module.
+ */
+
+/**
+ * Implements hook_requirements().
+ */
+function trusttxt_requirements($phase) {
+  $requirements = array();
+  $t = get_t();
+
+  switch ($phase) {
+    case 'runtime':
+      if (file_exists(DRUPAL_ROOT . '/trust.txt')) {
+        $requirements['trusttxt_file'] = array(
+          'title' => $t('trust.txt'),
+          'severity' => REQUIREMENT_WARNING,
+          'value' => $t('trust.txt module works only if you remove the existing trust.txt file in your website root.'),
+        );
+      }
+  }
+  return $requirements;
+}
+
+/**
+ * Implements hook_install().
+ */
+function trusttxt_install() {
+  $content = file_get_contents(drupal_get_path('module', 'trusttxt') . '/trust.txt');
+
+  variable_set('trusttxt', $content);
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function trusttxt_uninstall() {
+  variable_del('trusttxt');
+}

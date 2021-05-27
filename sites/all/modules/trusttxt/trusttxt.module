@@ -1,0 +1,72 @@
+<?php
+
+/**
+ * Implements hook_help().
+ */
+function trusttxt_help($path, $arg) {
+  switch ($path) {
+    case 'admin/help#trusttxt':
+      return '<p>' . t('In a multisite environment, there is no mechanism for having a separate trust.txt file for each site. This module addresses that need by letting you administer the trust.txt file from the settings interface.') . '</p>';
+
+    case 'admin/config/system/trusttxt':
+      if (file_exists(DRUPAL_ROOT . '/trust.txt')) {
+        drupal_set_message(t('One or more problems have been detected with the trustTxt configuration. Check the <a href="@status">status report</a> for more information.', array('@status' => url('admin/reports/status'))), 'warning');
+      }
+      return t('See <a href="https://iabtechlab.com/trust-txt/">https://iabtechlab.com/trust-txt/</a> for more information concerning how to write your <a href="@trusttxt">trust.txt</a> file.', array('@trusttxt' => base_path() . 'trust.txt'));
+  }
+}
+
+/**
+ * Implements hook_permission().
+ */
+function trusttxt_permission() {
+  return array(
+    'administer trust.txt' => array(
+      'title' => t('Administer trust.txt'),
+      'description' => t('Administer trust.txt.'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function trusttxt_menu() {
+  $items['trust.txt'] = array(
+    'page callback' => 'trusttxt_callback',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  $items['admin/config/system/trusttxt'] = array(
+    'title' => 'trustTxt',
+    'description' => 'Manage your trust.txt file.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('trusttxt_admin_settings'),
+    'access arguments' => array('administer trust.txt'),
+    'file' => 'trusttxt.admin.inc',
+  );
+
+  return $items;
+}
+
+/**
+ * Show the trust.txt file.
+ */
+function trusttxt_callback() {
+  $content = array();
+  $content[] = variable_get('trusttxt', '');
+
+  // Hook other modules for adding additional lines.
+  if ($additions = module_invoke_all('trusttxt')) {
+    $content = array_merge($content, $additions);
+  }
+
+  // Trim any extra whitespace and filter out empty strings.
+  $content = array_map('trim', $content);
+  $content = array_filter($content);
+
+  drupal_add_http_header('Content-type', 'text/plain');
+  echo implode(PHP_EOL, $content);
+  drupal_page_footer();
+  exit;
+}
