@@ -1,6 +1,6 @@
-name = trust.txt
+name = Trust.txt
 description = "Generates the trust.txt file dynamically and gives you the chance to edit it, on a per-site basis, from the web UI."
-package = Advertising
+package = Security
 core = 7.x
 files[] = trusttxt.test
 configure = admin/config/system/trusttxt
