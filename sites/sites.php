@@ -3,7 +3,7 @@
 $sites['local.drupal7.com'] = 'local.drupal7.com';
 $sites['etypetest.com'] = 'etypetest.com';
 $sites['d7.etypetest.com'] = 'etypetest.com';
-$sites['migrate.drupal7.com'] = 'evangelinetoday.etypegoogle8.com';
+/*$sites['migrate.drupal7.com'] = 'evangelinetoday.etypegoogle8.com'; */
 
 
 /* eunice today archive */
@@ -156,16 +156,6 @@ $sites['crowleytoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 $sites['www.crowleytoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 $sites['raynetoday.com'] ='acadiaparishtoday.etypegoogle8.com';
 $sites['www.raynetoday.com'] ='acadiaparishtoday.etypegoogle8.com';
-
-/* evangelinetoday.etypegoogle8.com */
-$sites['evangelinetoday.etypegoogle8.com'] = 'evangelinetoday.etypegoogle8.com';
-$sites['evangelinetoday.com'] = 'evangelinetoday.etypegoogle8.com';
-$sites['www.evangelinetoday.com'] = 'evangelinetoday.etypegoogle8.com';
-$sites['www.basiletoday.com'] = 'evangelinetoday.etypegoogle8.com';
-$sites['mamoutoday.com'] = 'evangelinetoday.etypegoogle8.com';
-$sites['www.mamoutoday.com'] = 'evangelinetoday.etypegoogle8.com';
-$sites['villeplattetoday.com'] = 'evangelinetoday.etypegoogle8.com';
-$sites['www.villeplattetoday.com'] = 'evangelinetoday.etypegoogle8.com';
 
 /* stmarynow.etypegoogle8.com */
 $sites['www.stmarynow.com'] = 'stmarynow.etypegoogle8.com';
