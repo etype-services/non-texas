@@ -112,11 +112,6 @@ $sites['www.nelivingtimes.com'] = 'nebraskalivingtimes.com';
 $sites['clintondailynews.etypegoogle8.com'] = 'archive.clintondailynews.com';
 $sites['archive.clintondailynews.com'] = 'archive.clintondailynews.com';
 
-/* thejenatimes.etypegoogle8.com */
-$sites['thejenatimes.etypegoogle8.com'] = 'thejenatimes.net';
-$sites['thejenatimes.net'] = 'thejenatimes.net';
-$sites['www.thejenatimes.net'] = 'thejenatimes.net';
-
 /* stiglernews.etypegoogle8.com */
 $sites['stiglernews.etypegoogle8.com'] = 'stiglernews.com';
 $sites['stiglernews.com'] = 'stiglernews.com';
@@ -217,11 +212,6 @@ $sites['www.richlandtoday.com'] = 'richlandtoday.etypegoogle8.com';
 
 /* baldwinbulletin.etypegoogle8.com */
 $sites['archive.bbnews.today'] = 'archive.baldwinbulletin.etypegoogle8.com';
-
-/* sequoyahcountytimes.etypegoogle8.com */
-$sites['sequoyahcountytimes.etypegoogle8.com'] = 'sequoyahcountytimes.etypegoogle8.com';
-$sites['sequoyahcountytimes.com'] = 'sequoyahcountytimes.etypegoogle8.com';
-$sites['www.sequoyahcountytimes.com'] = 'sequoyahcountytimes.etypegoogle8.com';
 
 /* northeastnebraskanews.etypegoogle8.com */
 $sites['northeastnebraskanews.etypegoogle8.com'] = 'northeastnebraskanews.etypegoogle8.com';
