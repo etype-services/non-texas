@@ -86,11 +86,6 @@ $sites['thestbernardvoice.etypegoogle8.com'] = 'thestbernardvoice.com';
 $sites['thestbernardvoice.com'] = 'thestbernardvoice.com';
 $sites['www.thestbernardvoice.com'] = 'thestbernardvoice.com';
 
-/* hennesseyclipper.etypegoogle8.com */
-$sites['hennesseyclipper.etypegoogle8.com'] = 'hennesseyclipper.com';
-$sites['hennesseyclipper.com'] = 'hennesseyclipper.com';
-$sites['www.hennesseyclipper.com'] = 'hennesseyclipper.com';
-
 /* douglasenterprise.etypegoogle8.com */
 $sites['douglasenterprise.etypegoogle8.com'] = 'douglasenterprise.net';
 $sites['douglasenterprise.net'] = 'douglasenterprise.net';
@@ -133,11 +128,6 @@ $sites['www.courier-record.com'] = 'courier-record.etypegoogle8.com';
 $sites['marshallcountyjournal.etypegoogle8.com'] = 'marshallcountyjournal.etypegoogle8.com';
 $sites['marshallcountyjournal.com'] = 'marshallcountyjournal.etypegoogle8.com';
 $sites['www.marshallcountyjournal.com'] = 'marshallcountyjournal.etypegoogle8.com';
-
-/* thomastribune.etypegoogle8.com */
-$sites['thomastribune.etypegoogle8.com'] = 'thomastribune.etypegoogle8.com';
-$sites['thomastribune.com'] = 'thomastribune.etypegoogle8.com';
-$sites['www.thomastribune.com'] = 'thomastribune.etypegoogle8.com';
 
 /* acadiaparishtoday.etypegoogle8.com */
 $sites['acadiaparishtoday.etypegoogle8.com'] = 'acadiaparishtoday.etypegoogle8.com';
@@ -235,14 +225,6 @@ $sites['southreporter.etypegoogle9.com'] = 'southreporter.etypegoogle9.com';
 $sites['southreporter.com'] = 'southreporter.etypegoogle9.com';
 $sites['www.southreporter.com'] = 'southreporter.etypegoogle9.com';
 
-$sites['deweycountyrecord.etypegoogle9.com'] = 'deweycountyrecord.etypegoogle9.com';
-$sites['deweycountyrecord.com'] = 'deweycountyrecord.etypegoogle9.com';
-$sites['www.deweycountyrecord.com'] = 'deweycountyrecord.etypegoogle9.com';
-
-$sites['okeenerecord.etypegoogle9.com'] = 'okeenerecord.etypegoogle9.com';
-$sites['okeenerecord.com'] = 'okeenerecord.etypegoogle9.com';
-$sites['www.okeenerecord.com'] = 'okeenerecord.etypegoogle9.com';
-
 $sites['lincolnsentinel.etypegoogle7.com'] = 'lincolnsentinel.etypegoogle9.com';
 $sites['www.lincolnsentinel.com'] = 'lincolnsentinel.etypegoogle9.com';
 
@@ -271,10 +253,6 @@ $sites['www.covebanner.com'] = 'covebanner.etypegoogle9.com';
 $sites['starheraldnews.etypegoogle9.com'] = 'starheraldnews.etypegoogle9.com';
 $sites['starheraldnews.com'] = 'starheraldnews.etypegoogle9.com';
 $sites['www.starheraldnews.com'] = 'starheraldnews.etypegoogle9.com';
-
-$sites['canton-times.etypegoogle9.com'] = 'canton-times.etypegoogle9.com';
-$sites['canton-times.com'] = 'canton-times.etypegoogle9.com';
-$sites['www.canton-times.com'] = 'canton-times.etypegoogle9.com';
 
 $sites['eagleprint.etypegoogle9.com'] = 'eagleprint.etypegoogle9.com';
 $sites['eagleprint.net'] = 'eagleprint.etypegoogle9.com';
